@@ -1,0 +1,40 @@
+.ai-inline-interactive {
+  margin-top: 50px;
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.ai-question {
+  margin-top: 20px;
+}
+
+.ai-options {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.ai-options button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: rgba(255,255,255,0.12);
+  color: #eaeaf0;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.ai-options button:hover {
+  transform: scale(1.05);
+}
+
+.ai-feedback {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+
+

@@ -1,0 +1,56 @@
+.ai-classification {
+  margin-top: 50px;
+  padding: 28px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.classify-item {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.05);
+}
+
+.classify-item p {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.classify-item button {
+  margin-right: 10px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: rgba(255,255,255,0.12);
+  color: #eaeaf0;
+  transition: 0.3s;
+}
+
+.classify-item button:hover {
+  transform: scale(1.05);
+}
+
+.classify-item button.correct {
+  background: rgba(34,197,94,0.9);
+  color: #000;
+}
+
+.classify-item button.wrong {
+  background: rgba(239,68,68,0.9);
+  color: #000;
+}
+
+.classify-item button:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.feedback {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #9aa4bf;
+}

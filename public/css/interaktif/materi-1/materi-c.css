@@ -1,0 +1,60 @@
+.ai-flow {
+  margin-top: 60px;
+  padding: 28px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.flow-items {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.flow-item {
+  padding: 14px 20px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #00f5ff, #8b5cf6);
+  color: #000;
+  font-weight: 700;
+  cursor: grab;
+  box-shadow: 0 0 14px rgba(0,245,255,0.45);
+  transition: 0.3s ease;
+}
+
+.flow-item:active {
+  cursor: grabbing;
+  transform: scale(1.03);
+}
+
+.flow-item.correct {
+  background: rgba(34,197,94,0.8);
+}
+
+.flow-item.wrong {
+  background: rgba(239,68,68,0.8);
+}
+
+.btn-flow-check {
+  margin-top: 16px;
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, #00f5ff, #8b5cf6);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-flow-check:hover {
+  transform: scale(1.05);
+}
+
+.flow-result {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+

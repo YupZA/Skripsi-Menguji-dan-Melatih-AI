@@ -1,0 +1,57 @@
+/* ===============================
+   GLOBAL MATERI IMAGE SYSTEM
+================================ */
+
+.materi-image {
+  margin: 32px auto;
+  text-align: center;
+}
+
+.materi-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow:
+    0 12px 28px rgba(0,0,0,0.45),
+    inset 0 0 0 1px rgba(255,255,255,0.05);
+  transition: 0.3s ease;
+}
+
+.materi-image img:hover {
+  transform: scale(1.03);
+}
+
+.materi-image span {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: #9aa4bf;
+}
+
+/* ===============================
+   INLINE / MULTI IMAGE
+================================ */
+.materi-image.inline {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.materi-image.inline img {
+  max-width: 180px;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 640px) {
+  .materi-image img {
+    max-width: 100%;
+  }
+
+  .materi-image.inline img {
+    max-width: 100%;
+  }
+}

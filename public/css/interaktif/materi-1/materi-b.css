@@ -1,0 +1,78 @@
+/* Drag and Drop */
+.ai-dragdrop {
+  margin-top: 60px;
+  padding: 28px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.ai-dragdrop h2 {
+  margin-bottom: 8px;
+}
+
+.drag-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.drag-item {
+  padding: 12px 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #00f5ff, #8b5cf6);
+  color: #000;
+  font-weight: 600;
+  cursor: grab;
+  user-select: none;
+  box-shadow: 0 0 12px rgba(0,245,255,0.4);
+}
+
+.drag-item:active {
+  cursor: grabbing;
+}
+
+.drop-zones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.drop-zone {
+  min-height: 140px;
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.04);
+  border: 2px dashed rgba(255,255,255,0.2);
+  transition: 0.3s ease;
+}
+
+.drop-zone h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #9aa4bf;
+}
+
+.drop-zone.hover {
+  border-color: #00f5ff;
+  box-shadow: 0 0 18px rgba(0,245,255,0.35);
+}
+
+.drop-zone.correct {
+  border-color: #22c55e;
+  background: rgba(34,197,94,0.12);
+}
+
+.drop-zone.wrong {
+  border-color: #ef4444;
+  background: rgba(239,68,68,0.12);
+}
+
+.drop-feedback {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+

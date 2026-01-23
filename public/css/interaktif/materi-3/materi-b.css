@@ -1,0 +1,31 @@
+.ai-interactive {
+  margin-top: 40px;
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.06);
+}
+
+.ai-question {
+  margin-bottom: 18px;
+}
+
+.ai-options {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.ai-options button {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: rgba(255,255,255,0.12);
+  color: #eaeaf0;
+  font-weight: 600;
+}
+
+.ai-feedback {
+  margin-top: 8px;
+  font-weight: 600;
+}

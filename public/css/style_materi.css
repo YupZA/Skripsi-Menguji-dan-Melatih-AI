@@ -1,0 +1,175 @@
+body {
+  background: linear-gradient(
+    180deg,
+    #0f172a 0%,
+    #0b1222 50%,
+    #0f172a 100%
+  );
+  color: #eaeaf0;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+
+.sb-topnav {
+  background: rgba(15, 23, 42, 0.75) !important;
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sb-topnav .navbar-brand {
+  font-weight: 800;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #00f5ff, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sb-sidenav {
+  background: linear-gradient(180deg,
+      rgba(15, 23, 42, 0.9),
+      rgba(10, 15, 28, 0.95)) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sb-sidenav .sb-sidenav-menu-heading {
+  color: #8b5cf6;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sb-sidenav .nav-link {
+  color: #9aa4bf !important;
+  border-radius: 10px;
+  margin: 4px 10px;
+  transition: 0.3s;
+}
+
+.sb-sidenav .nav-link:hover {
+  color: #fff !important;
+  background: rgba(0, 245, 255, 0.15);
+  box-shadow: inset 0 0 0 1px rgba(0, 245, 255, 0.3);
+}
+
+.sb-sidenav .nav-link.active {
+  background: rgba(0, 245, 255, 0.15);
+  color: #fff !important;
+  box-shadow: inset 0 0 0 1px rgba(0, 245, 255, 0.35);
+}
+
+
+#layoutSidenav_content {
+  background: transparent;
+}
+
+.container-fluid h1 {
+  font-weight: 800;
+  background: linear-gradient(135deg, #00f5ff, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===============================
+   TUJUAN PEMBELAJARAN
+================================ */
+
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.85),
+    rgba(10, 15, 28, 0.95)
+  ) !important;
+  color: #eaeaf0 !important;
+  border-left: 4px solid #00f5ff;
+  box-shadow: 0 0 18px rgba(0, 245, 255, 0.15);
+}
+
+/* Judul Tujuan Pembelajaran */
+.card .card-body {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #00f5ff;
+}
+
+/* Isi tujuan */
+.card .card-footer {
+  color: #d1d5db;
+}
+
+/* List tujuan */
+.card .card-footer ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.card .card-footer li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Bullet futuristik */
+.card .card-footer li::marker {
+  color: #8b5cf6;
+}
+
+
+
+
+.table {
+  color: #eaeaf0;
+}
+
+.table thead {
+  background: rgba(0, 245, 255, 0.15);
+}
+
+.table td,
+.table th {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+footer {
+  background: rgba(15, 23, 42, 0.6) !important;
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ===============================
+   SLIDE SYSTEM
+================================ */
+
+.slide-wrapper {
+  position: relative;
+  min-height: 70vh;
+}
+
+.slide {
+  display: none;
+  animation: fadeSlide 0.4s ease;
+}
+
+.slide.active {
+  display: block;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* navigasi */
+.slide-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  color: #9aa4bf;
+  font-size: 0.85rem;
+}
