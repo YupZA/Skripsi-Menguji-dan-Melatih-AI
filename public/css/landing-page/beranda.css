@@ -1,0 +1,46 @@
+/* =============================
+   IMAGE SECTION (FUTURISTIC)
+============================= */
+.beranda .materi-image {
+  margin: 90px auto 40px;
+  text-align: center;
+}
+
+.image-card {
+  display: inline-block;
+  padding: 18px;
+  border-radius: 22px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 245, 255, 0.18),
+    rgba(139, 92, 246, 0.18)
+  );
+  backdrop-filter: blur(14px);
+  box-shadow:
+    0 0 40px rgba(0, 245, 255, 0.25),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+.beranda .materi-image img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  background: #0a0f1c;
+}
+
+/* caption */
+.materi-image span {
+  display: block;
+  margin-top: 18px;
+  font-size: 0.85rem;
+  color: #9aa4bf;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .materi-image img {
+    max-width: 300px;
+  }
+}

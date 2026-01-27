@@ -4,7 +4,7 @@
 
 @section('content')
     <div>
-        <h1 class="mt-4">PRAKTIK MEMBUAT MODEL AI sederhana</h1>
+        <h1 class="mt-4">PRAKTIK MEMBUAT MODEL AI SEDERHANA</h1>
 
 
         <div class="row">
@@ -33,26 +33,26 @@
             <ol type="a">
                 <li>Memulai Proyek Baru</li>
                 <ul>
-                    <li>Buka peramban (browser) seperti Google Chrome atau Mozilla Firefox.</li>
+                    <li>Buka peramban (<i>browser</i>) seperti Google Chrome atau Mozilla Firefox.</li>
                     <li>Ketik alamat: https://teachablemachine.withgoogle.com.</li>
-                    <li>Klik tombol “Get Started” untuk memulai.</li>
-                    <li>Pilih jenis proyek “Image Project”.</li>
+                    <li>Klik tombol “<i>Get Started</i>” untuk memulai.</li>
+                    <li>Pilih jenis proyek “<i>Image Project</i>”.</li>
                     <li>Akan muncul dua pilihan:</li>
                     <ol>
-                        <li>Standard Image Model – untuk penggunaan umum (pilihan ini yang digunakan).</li>
-                        <li>Embedded Image Model – untuk perangkat kecil seperti Arduino.</li>
+                        <li><i>Standard Image Model</i> – untuk penggunaan umum (pilihan ini yang digunakan).</li>
+                        <li><i>Embedded Image Model</i> – untuk perangkat kecil seperti Arduino.</li>
                     </ol>
-                    <li>Pilih “Standard Image Model”.</li>
+                    <li>Pilih “<i>Standard Image Model</i>”.</li>
                 </ul>
-                <li>Menambahkan dan Mengatur Kelas (Class)
-                    <br>Setiap model AI harus mengenali beberapa kategori yang disebut kelas (class).
+                <li>Menambahkan dan Mengatur Kelas (<i>Class</i>)
+                    <br>Setiap model AI harus mengenali beberapa kategori yang disebut kelas (<i>class</i>).
                     <ul>
-                        <li>Secara default, terdapat dua kelas bernama Class 1 dan Class 2.</li>
+                        <li>Secara <i>default</i>, terdapat dua kelas bernama <i>Class</i> 1 dan <i>Class</i> 2.</li>
                         <li>Klik ikon pensil untuk mengganti nama kelas sesuai objek yang akan dilatih,
                             <br>Misalnya:
                             <ul>
-                                <li>Class 1 → Tangan Terbuka</li>
-                                <li>Class 2 → Tangan Tertutup</li>
+                                <li><i>Class</i> 1 → Tangan Terbuka</li>
+                                <li><i>Class</i> 2 → Tangan Tertutup</li>
                             </ul>
                         </li>
 
@@ -61,7 +61,7 @@
                 </li>
 
 
-                <li>Mengumpulkan Data Latih (Training Data)</li>
+                <li>Mengumpulkan Data Latih (<i>Training Data</i>)</li>
                 <p>
                     Langkah ini bertujuan memberikan contoh kepada AI agar dapat belajar. Ada dua cara untuk menambahkan
                     gambar ke setiap kelas:
@@ -69,13 +69,13 @@
                     <li>Menggunakan Webcam</li>
                     <ul>
                         <li>Klik tombol “Webcam” pada kelas yang dipilih.</li>
-                        <li>Izinkan browser mengakses kamera.</li>
+                        <li>Izinkan <i>browser</i> mengakses kamera.</li>
                         <li>Arahkan objek (misalnya tanganmu) ke kamera.</li>
-                        <li>Tekan dan tahan tombol “Hold to Record” untuk merekam gambar dari berbagai posisi dan kondisi
+                        <li>Tekan dan tahan tombol “<i>Hold to Record</i>” untuk merekam gambar dari berbagai posisi dan kondisi
                             pencahayaan.</li>
                     </ul>
                     <li>Mengunggah Gambar dari Komputer</li>
-                    <br>Klik tombol “Upload”, lalu pilih gambar yang tersimpan di perangkatmu.
+                    <br>Klik tombol “<i>Upload</i>”, lalu pilih gambar yang tersimpan di perangkatmu.
                     <br>Catatan Penting:
                     <ul>
                         <li>Pastikan jumlah gambar di setiap kelas seimbang.</li>
@@ -86,24 +86,24 @@
                 </ol>
                 </p>
                 <li>
-                    Melatih Model (Training)
+                    Melatih Model (<i>Training</i>)
                 </li>
                 <ol>
-                    <li>Setelah seluruh kelas memiliki data gambar, klik tombol “Train Model”.</li>
+                    <li>Setelah seluruh kelas memiliki data gambar, klik tombol “<i>Train Model</i>”.</li>
                     <li>Tunggu proses pelatihan selesai (beberapa detik atau menit).</li>
                     <li>Status akan muncul seperti:</li>
                     <ul>
-                        <li>“Preparing training data…”</li>
-                        <li>“Training model…”</li>
-                        <li>“Model trained!” berarti model telah siap digunakan.</li>
+                        <li>“ <i>Preparing training data…</i>”</li>
+                        <li>“ <i>Training model…</i>”</li>
+                        <li>“ <i>Model trained!</i>” berarti model telah siap digunakan.</li>
                     </ul>
                     <li>Jangan menutup tab saat proses ini berlangsung.</li>
                 </ol>
                 <br>Pada tahap ini, sistem mulai “belajar” dari data yang telah diberikan untuk mengenali pola pada gambar.
-                <li>Menguji Model (Testing / Preview)</li>
+                <li>Menguji Model (<i>Testing / Preview</i>)</li>
                 <ol>
-                    <li>Lihat panel di sisi kanan berjudul “Preview”.</li>
-                    <li>Pilih sumber input: Webcam atau Upload File.</li>
+                    <li>Lihat panel di sisi kanan berjudul “<i>Preview</i>”.</li>
+                    <li>Pilih sumber <i>input</i>: Webcam atau <i>Upload File</i>.</li>
                     <li>Arahkan objek ke kamera, misalnya tangan terbuka.</li>
                     <li>Hasil akan muncul dalam bentuk persentase keyakinan AI terhadap setiap kelas,
                         <br>Misalnya:
@@ -116,7 +116,6 @@
 
                 </ol>
             </ol>
-
         </div>
     </div>
 

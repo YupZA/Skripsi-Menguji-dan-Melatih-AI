@@ -8,8 +8,9 @@
 
         <h2>3. Langkah-Langkah Proses Machine Learning</h2>
         <p>
-            Kecerdasan Buatan (Artificial Intelligence atau AI) membuat komputer bisa berpikir dan melakukan sesuatu seperti
-            manusia. Salah satu cara agar komputer menjadi pintar adalah melalui Machine Learning yaitu proses ketika
+            Kecerdasan Buatan (<i>Artificial Intelligence</i> atau <i>AI</i>) membuat komputer bisa berpikir dan melakukan
+            sesuatu seperti
+            manusia. Salah satu cara agar komputer menjadi pintar adalah melalui <i><strong>Machine Learning</strong></i> yaitu proses ketika
             komputer belajar dari data dan pengalaman, bukan dari perintah langsung. Supaya komputer bisa belajar dengan
             baik, ada beberapa langkah penting yang perlu dilakukan.
         </p>
@@ -47,7 +48,7 @@
                 perbedaan di antara objek tersebut.
             </p>
             <li>
-                Menyiapkan dan Membersihkan Data (Data Preparation & Cleaning)
+                Menyiapkan dan Membersihkan Data (<i>Data Preparation & Cleaning</i>)
             </li>
             <p>
                 Setelah data terkumpul, kita perlu menyiapkan dan membersihkannya agar bisa digunakan. Tahap ini seperti
@@ -59,7 +60,7 @@
             </p>
             <ul>
                 <li>Menghapus data yang rusak, buram, atau duplikat.</li>
-                <li>Mengubah ukuran atau format data agar seragam (misalnya, semua gambar berukuran sama).</li>
+                <li>Mengubah ukuran atau <i>format data</i> agar seragam (misalnya, semua gambar berukuran sama).</li>
                 <li>Memberi label pada data, supaya komputer tahu mana gambar kucing dan mana gambar anjing.</li>
             </ul>
             <div class="materi-image">
@@ -70,7 +71,7 @@
             <p>Gambar kucing yang dipakai</p>
             <p>Gambar kucing yang dihapus</p>
             <li>
-                Melatih Model (Training Model)
+                Melatih Model (<i>Training Model</i>)
             </li>
             <p>
                 Kita memasukkan semua data yang sudah disiapkan ke dalam sistem, lalu komputer mencari pola atau ciri khas
@@ -96,7 +97,7 @@
                 contoh semakin banyak berlatih, semakin pintar hasilnya.
             </p>
             <li>
-                Menguji Model (Testing Model)
+                Menguji Model (<i>Testing Model</i>)
             </li>
             <p>
                 Setelah model selesai dilatih, langkah selanjutnya adalah menguji seberapa baik kemampuan model tersebut.
@@ -127,7 +128,7 @@
             </p>
             <p>Contoh :</p>
             <ul>
-                <li>Model bisa mengenali wajah di kamera ponsel (Face Recognition).</li>
+                <li>Model bisa mengenali wajah di kamera ponsel (<i>Face Recognition</i>).</li>
                 <li>Model bisa mendeteksi apakah seseorang sedang tersenyum atau tidak.</li>
                 <li>Model bisa mengenali suara dan menjawab perintah seperti pada Google Assistant atau Siri.</li>
                 <li>Model bisa menebak apakah suatu foto berisi burung elang atau yang lain.</li>

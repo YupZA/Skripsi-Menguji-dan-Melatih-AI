@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Bab 1 - AI')
+@section('title', 'Bab 2 - AI')
 
 @section('content')
     <div>
@@ -15,7 +15,7 @@
             </p>
             <ol type="a">
                 <li>
-                    Image Project (Proyek Gambar)
+                    <i>Image Project</i> (Proyek Gambar)
                 </li>
                 <p>
                     Proyek ini berfokus pada pelatihan AI untuk mengenali dan membedakan berbagai jenis gambar. Misalnya,
@@ -28,7 +28,7 @@
                     <span>Ilustrasi Kecerdasan Buatan</span>
                 </div>
                 <li>
-                    Audio Project (Proyek Suara)
+                    <i>Audio Project</i> (Proyek Suara)
                 </li>
                 <p>
                     Dalam proyek ini, peserta didik dapat melatih AI untuk mengenali berbagai jenis suara. Contohnya, model
@@ -42,7 +42,7 @@
                     <span>Ilustrasi Kecerdasan Buatan</span>
                 </div>
                 <li>
-                    Pose Project (Proyek Pose Tubuh)
+                    <i>Pose Project</i> (Proyek Pose Tubuh)
                 </li>
                 <p>
                     Proyek ini digunakan untuk melatih AI dalam mengenali gerakan atau posisi tubuh manusia. Contohnya,
@@ -59,7 +59,7 @@
                     untuk:
                 </p>
                 <ul>
-                    <li>Memahami konsep dasar Machine Learning dengan cara yang mudah dan menyenangkan.</li>
+                    <li>Memahami konsep dasar <i>Machine Learning</i> dengan cara yang mudah dan menyenangkan.</li>
                     <li>Membangun dan melatih model AI sederhana secara mandiri tanpa perlu menulis kode.</li>
                     <li>Melihat secara langsung bagaimana komputer dapat “belajar” dan melakukan prediksi terhadap data
                         baru.</li>

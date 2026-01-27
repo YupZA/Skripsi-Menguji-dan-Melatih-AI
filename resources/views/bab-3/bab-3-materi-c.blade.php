@@ -15,16 +15,16 @@
                 <li>Memulai Proyek Baru
                     <ul>
                         <li>Buka situs Teachable Machine.</li>
-                        <li>Pilih “Pose Project”, lalu klik “Get Started”.</li>
+                        <li>Pilih “<i>Pose Project</i>”, lalu klik “<i>Get Started</i>”.</li>
                     </ul>
                 </li>
                 <li>
                     Mengatur Kelas
                     <br>Beri nama kelas sesuai posisi tubuh yang ingin dikenali, misalnya:
                     <ul>
-                        <li>Class 1 → Berdiri</li>
-                        <li>Class 2 → Jongkok</li>
-                        <li>Class 3 → Lambaikan Tangan</li>
+                        <li><i>Class 1</i> → Berdiri</li>
+                        <li><i>Class 2</i> → Jongkok</li>
+                        <li><i>Class 3</i> → Lambaikan Tangan</li>
                     </ul>
                 </li>
                 <li>
@@ -33,7 +33,7 @@
                         <li>Klik “Webcam”, kemudian izinkan akses kamera.</li>
                         <li>Lakukan gerakan yang sesuai dengan setiap kelas, misalnya berdiri, jongkok, atau melambaikan
                             tangan.</li>
-                        <li>Tekan “Hold to Record” untuk merekam pose dari berbagai sudut pandang.</li>
+                        <li>Tekan “<i>Hold to Record</i>” untuk merekam pose dari berbagai sudut pandang.</li>
                     </ul>
                     Tips
                     <ul>
@@ -44,8 +44,8 @@
                 <li>
                     Melatih dan Menguji Model
                     <ul>
-                        <li>Klik “Train Model” untuk memulai proses pelatihan.</li>
-                        <li>Setelah selesai, uji model pada panel “Preview” dengan melakukan gerakan baru.</li>
+                        <li>Klik “<i>Train Model</i>” untuk memulai proses pelatihan.</li>
+                        <li>Setelah selesai, uji model pada panel “<i>Preview</i>” dengan melakukan gerakan baru.</li>
                         <li>AI akan menunjukkan hasil prediksi berupa persentase keyakinan terhadap kelas tertentu.</li>
                     </ul>
                 </li>

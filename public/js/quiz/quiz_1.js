@@ -1,4 +1,4 @@
-let duration = 15 * 60; // detik
+let duration = 10 * 60; 
 let endTime;
 let timerInterval;
 let quizSubmitted = false;
@@ -12,12 +12,12 @@ function renderTime(display, remaining) {
         String(seconds).padStart(2, "0");
 }
 
+// memulai timer
 function startTimer() {
     const display = document.getElementById("timeLeft");
 
     endTime = Date.now() + duration * 1000;
 
-    // 🔹 RENDER AWAL (INI KUNCI UTAMA)
     renderTime(display, duration);
 
     timerInterval = setInterval(() => {
@@ -48,26 +48,26 @@ function startTimer() {
 }
 
 
-
+// submit quiz
 function submitQuiz(auto = false) {
     if (quizSubmitted) return;
     quizSubmitted = true;
     clearInterval(timerInterval);
     lockQuiz();
 
-    // SEMBUNYIKAN SOAL
+    // sembunyi soal
     document.getElementById("quizQuestions").style.display = "none";
 
-    // SEMBUNYIKAN TIMER
+    // sembunyi timer
     document.querySelector(".quiz-timer")?.classList.add("d-none");
 
-    // SEMBUNYIKAN navigator soal
+    // sembunyi navigator soal
     document.querySelector(".quiz-nav")?.classList.add("d-none");
 
     document.body.classList.add("quiz-finished");
 
 
-    // ====== LOGIC PENILAIAN (punyamu tetap) ======
+    // kunci jawaban
     const answers = {
         q1: "b",
         q2: "b",
@@ -128,11 +128,12 @@ function submitQuiz(auto = false) {
         document.getElementById("quizResult")
             .insertAdjacentHTML(
                 "afterbegin",
-                "<p class='text-warning fw-bold'>⏰ Waktu habis! Kuis dikirim otomatis.</p>"
+                "<p class='text-warning fw-bold'>Waktu habis! Kuis dikirim otomatis.</p>"
             );
     }
 }
 
+// reset quiz
 function resetQuiz() {
     quizSubmitted = false;
 
@@ -187,6 +188,7 @@ function resetQuiz() {
     window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
+// kunci quiz
 function lockQuiz() {
     document.querySelectorAll('input[type="radio"]').forEach(r => {
         r.disabled = true;
@@ -196,7 +198,7 @@ function lockQuiz() {
 
 document.addEventListener("DOMContentLoaded", () => {
     showQuestion(currentQuestion);
-    initNavigatorClick();   // 🔥 INI PENTING
+    initNavigatorClick();
 });
 
 
@@ -242,12 +244,12 @@ function showQuestion(index) {
 }
 
 
+// quiz selanjutnya
 function nextQuestion() {
     const navBtn = document.querySelector(
         `.nav-item[data-index="${currentQuestion}"]`
     );
 
-    // cek jawaban sebelum pindah
     if (isAnswered(currentQuestion)) {
         navBtn.classList.add("answered");
         navBtn.classList.remove("doubt");
@@ -262,7 +264,7 @@ function nextQuestion() {
     }
 }
 
-
+// quiz sebelumnya
 function prevQuestion() {
     if (currentQuestion > 0) {
         currentQuestion--;
@@ -270,18 +272,16 @@ function prevQuestion() {
     }
 }
 
+// reset navigasi
 function resetNavigator() {
     document.querySelectorAll(".nav-item").forEach((item, index) => {
         item.classList.remove("answered", "doubt", "active");
     });
 
-    // set soal pertama aktif
     document.querySelector(`.nav-item[data-index="0"]`)
         ?.classList.add("active");
 }
 
-
-// Init
 document.addEventListener("DOMContentLoaded", () => {
     showQuestion(currentQuestion);
 });
@@ -295,7 +295,6 @@ function initNavigatorClick() {
     document.querySelectorAll(".nav-item").forEach(item => {
         item.addEventListener("click", () => {
 
-            // ❌ kalau kuis sudah disubmit, jangan bisa klik
             if (quizSubmitted) return;
 
             const index = parseInt(item.dataset.index);
@@ -306,5 +305,17 @@ function initNavigatorClick() {
         });
     });
 }
+
+// memulai quiz
+function startQuiz() {
+    document.getElementById("quizIntro").classList.add("d-none");
+    document.getElementById("quizContainer").classList.remove("d-none");
+
+    document.querySelector(".quiz-timer")?.classList.remove("d-none");
+
+    quizSubmitted = false;
+    startTimer(); 
+}
+
 
 

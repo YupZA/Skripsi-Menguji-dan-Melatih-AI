@@ -17,16 +17,16 @@
                     Memulai Proyek Baru
                     <ul>
                         <li>Buka situs https://teachablemachine.withgoogle.com.</li>
-                        <li>Klik “Get Started”, lalu pilih “Audio Project”.</li>
+                        <li>Klik “<i>Get Started</i>”, lalu pilih “<i>Audio Project</i>”.</li>
                     </ul>
                 </li>
                 <li>Mengatur Kelas
                     <ul>
-                        <li>Ganti nama Class 1 dan Class 2 menjadi suara yang akan dikenali,
+                        <li>Ganti nama <i>Class</i> 1 dan <i>Class</i> 2 menjadi suara yang akan dikenali,
                             <br>misalnya:
                             <ol>
-                                <li>Class 1 → Tepuk Tangan</li>
-                                <li>Class 2 → Siulan</li>
+                                <li><i>Class 1</i> → Tepuk Tangan</li>
+                                <li><i>Class 2</i> → Siulan</li>
                             </ol>
                         </li>
                         <li>Tambahkan kelas baru jika ingin mengenali lebih banyak suara.</li>
@@ -38,14 +38,14 @@
                     <ol>
                         <li>Rekam Langsung Menggunakan Mikrofon
                             <ul>
-                                <li>Klik tombol “Record” untuk merekam suara langsung dari mikrofon laptop atau komputer.
+                                <li>Klik tombol “<i>Record</i>” untuk merekam suara langsung dari mikrofon laptop atau komputer.
                                 </li>
                                 <li>Pastikan lingkungan sekitar tidak terlalu bising agar hasil rekaman bersih.</li>
                             </ul>
                         </li>
                         <li>
-                            Unggah File Audio
-                            <br>Klik “Upload” untuk menambahkan file suara dari komputer (format WAV atau MP3).
+                            Unggah <i>File Audio</i>
+                            <br>Klik “<i>Upload</i>” untuk menambahkan file suara dari komputer (format WAV atau MP3).
                         </li>
                         Catatan Penting:
                         <ul>
@@ -55,8 +55,8 @@
                         <li>
                             Melatih dan Menguji Model
                             <ul>
-                                <li>Klik “Train Model” dan tunggu prosesnya selesai.</li>
-                                <li>Gunakan fitur “Preview” untuk menguji hasilnya dengan merekam suara baru.</li>
+                                <li>Klik “<i>Train Model</i>” dan tunggu prosesnya selesai.</li>
+                                <li>Gunakan fitur “<i>Preview</i>” untuk menguji hasilnya dengan merekam suara baru.</li>
                                 <li>Lihat hasil dalam bentuk persentase keyakinan AI terhadap kelas yang dikenali.</li>
                             </ul>
                         </li>

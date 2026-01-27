@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Bab 1 - AI')
+@section('title', 'Bab 2 - AI')
 
 @section('content')
     <div>
@@ -28,10 +28,10 @@
         <div>
             <h2>1. Apa Itu Google Teachable Machine</h2>
             <p>
-                Google Teachable Machine adalah alat berbasis web yang dikembangkan oleh Google untuk membantu siapa saja
-                belajar tentang pembelajaran mesin (Machine Learning) dengan cara yang mudah dan menyenangkan. Melalui
+                <strong>Google Teachable Machine</strong> adalah alat berbasis web yang dikembangkan oleh Google untuk membantu siapa saja
+                belajar tentang pembelajaran mesin (<i>Machine Learning</i>) dengan cara yang mudah dan menyenangkan. Melalui
                 Teachable Machine, kita tidak perlu menjadi ahli pemrograman atau menulis kode rumit untuk membuat model
-                kecerdasan buatan (Artificial Intelligence atau AI).
+                kecerdasan buatan (<i>Artificial Intelligence</i> atau AI).
             </p>
             <p>
                 Dengan Teachable Machine, kamu bisa melatih komputer agar mampu mengenali gambar, suara, atau pose tubuh
@@ -43,19 +43,19 @@
                 Alat ini sangat cocok digunakan untuk pelajar, termasuk siswa SMP, karena tampilannya sederhana dan
                 prosesnya cepat. Kamu hanya perlu menyiapkan contoh data (misalnya beberapa gambar atau suara), lalu
                 Teachable Machine akan mempelajari pola dari data tersebut dan membuat model yang bisa digunakan untuk
-                pengenalan otomatis. Dengan Teachable Machine, belajar tentang AI dan Machine Learning jadi lebih seru dan
+                pengenalan otomatis. Dengan Teachable Machine, belajar tentang AI dan <i>Machine Learning</i> jadi lebih seru dan
                 mudah dipahami
             </p>
             <p>
-                Untuk memahami hubungan antara Teachable Machine dan konsep Machine Learning, kita perlu mengenal tiga
-                konsep penting di dalamnya, yaitu supervised learning, input-output, dan training model secara visual.
+                Untuk memahami hubungan antara Teachable Machine dan konsep <i>Machine Learning</i>, kita perlu mengenal tiga
+                konsep penting di dalamnya, yaitu <i>supervised learning</i>, <i>input-output</i>, dan <i>training model</i> secara visual.
             </p>
             <ol type="a">
                 <li>
-                    Supervised Learning (Pembelajaran Terbimbing)
+                    <i>Supervised Learning</i> (Pembelajaran Terbimbing)
                 </li>
                 <p>
-                    Teachable Machine menggunakan pendekatan yang disebut supervised learning atau pembelajaran terbimbing.
+                    Teachable Machine menggunakan pendekatan yang disebut <i>supervised learning</i> atau pembelajaran terbimbing.
                     Artinya, komputer belajar dari contoh data yang sudah diberi label oleh manusia.
                 </p>
                 <p>
@@ -75,20 +75,20 @@
                     “anjing”.
                 </p>
                 <li>
-                    Konsep Input dan Output
+                    Konsep <i>Input</i> dan <i>Output</i>
                 </li>
                 <p>
-                    Dalam Machine Learning, komputer bekerja dengan sistem input dan output.
+                    Dalam <i>Machine Learning</i>, komputer bekerja dengan sistem <i>input</i> dan <i>output</i>.
                 </p>
                 <ol>
-                    <li>• Input adalah data yang dimasukkan ke dalam sistem, seperti gambar, suara, atau pose tubuh.</li>
-                    <li>• Output adalah hasil yang diberikan oleh model setelah memproses data tersebut, seperti label
+                    <li><i><strong>Input</strong></i> adalah data yang dimasukkan ke dalam sistem, seperti gambar, suara, atau pose tubuh.</li>
+                    <li><i><strong>Output</strong></i> adalah hasil yang diberikan oleh model setelah memproses data tersebut, seperti label
                         “kucing”, “anjing”, “tepuk tangan”, atau “senyum”.</li>
                 </ol>
                 <p>
-                    Di Teachable Machine, hubungan input-output ini dapat dilihat secara langsung, saat kita menunjukkan
-                    gambar melalui kamera (input), komputer akan menampilkan hasil prediksi berupa label yang sesuai
-                    (output).
+                    <br>Di Teachable Machine, hubungan <i>input-output</i> ini dapat dilihat secara langsung, saat kita menunjukkan
+                    gambar melalui kamera (<i>input</i>), komputer akan menampilkan hasil prediksi berupa label yang sesuai
+                    (<i>output</i>).
                 </p>
                 <div class="materi-image">
                     <img src="{{ asset('images/bab-2/materi-a/gambar-2.png') }}" alt="Ilustrasi AI">
@@ -97,17 +97,17 @@
                 <p>
                     Contoh: <br>
                     Jika kamu melatih model untuk membedakan ekspresi wajah, maka ketika kamu tersenyum di depan kamera,
-                    output-nya bisa berupa tulisan “senyum”.
+                    <i>output-nya</i> bisa berupa tulisan “senyum”.
                 </p>
                 <li>
-                    Training Model secara Visual
+                    <i>Training Model</i> secara Visual
                 </li>
                 <p>
-                    Salah satu keunggulan Teachable Machine adalah proses training model secara visual, yang membuat
+                    Salah satu keunggulan Teachable Machine adalah proses <i>training model</i> secara visual, yang membuat
                     pembelajaran menjadi lebih mudah dipahami.
                 </p>
                 <p>
-                    Biasanya, pelatihan model Machine Learning dilakukan dengan menulis kode dan menggunakan data dalam
+                    Biasanya, pelatihan model <i>Machine Learning</i> dilakukan dengan menulis kode dan menggunakan data dalam
                     bentuk angka atau file teks. Namun di Teachable Machine, semua proses tersebut ditampilkan dalam bentuk
                     gambar dan tampilan visual yang interaktif.
                 </p>
@@ -117,7 +117,7 @@
                 <ol>
                     <li>Mengunggah atau mengambil data secara langsung (misalnya gambar atau suara).</li>
                     <li>Memberi label pada setiap kelas (misalnya “kucing”, “anjing”, atau “burung”).</li>
-                    <li>Menekan tombol Train Model untuk memulai proses pembelajaran.</li>
+                    <li>Menekan tombol <i>Train Model</i> untuk memulai proses pembelajaran.</li>
                     <li>Setelah selesai, model siap diuji dan digunakan untuk mengenali data baru.</li>
                 </ol>
                 <div class="materi-image">

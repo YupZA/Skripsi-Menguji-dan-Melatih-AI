@@ -1,51 +1,35 @@
-let draggedItem = null;
+function checkAnswer(button, selected) {
+    const question = button.closest('.ai-question');
+    const correct = question.dataset.answer;
+    const buttons = question.querySelectorAll('button');
+    const feedback = question.querySelector('.ai-feedback');
 
-document.querySelectorAll(".drag-item").forEach(item => {
-    item.addEventListener("dragstart", () => {
-        draggedItem = item;
-        setTimeout(() => item.style.opacity = "0.5", 0);
-    });
+    // Jika sudah dijawab, hentikan
+    if (question.classList.contains('answered')) return;
 
-    item.addEventListener("dragend", () => {
-        draggedItem.style.opacity = "1";
-        draggedItem = null;
-    });
-});
+    question.classList.add('answered');
 
-document.querySelectorAll(".drop-zone").forEach(zone => {
-    zone.addEventListener("dragover", e => {
-        e.preventDefault();
-        zone.classList.add("hover");
-    });
+    buttons.forEach(btn => {
+        btn.disabled = true;
 
-    zone.addEventListener("dragleave", () => {
-        zone.classList.remove("hover");
-    });
+        const btnValue = btn.textContent.toLowerCase().includes('program')
+            ? 'program'
+            : 'ai';
 
-    zone.addEventListener("drop", () => {
-        zone.classList.remove("hover");
+        if (btnValue === correct) {
+            btn.classList.add('btn-correct');
+        }
 
-        const accept = zone.dataset.accept;
-        const type = draggedItem.dataset.type;
-
-        if (accept === type) {
-            zone.classList.remove("wrong");
-            zone.classList.add("correct");
-            zone.appendChild(draggedItem);
-
-            draggedItem.setAttribute("draggable", "false");
-            draggedItem.style.cursor = "default";
-
-            showFeedback("✅ Benar! Penempatan tepat.", true);
-        } else {
-            zone.classList.add("wrong");
-            showFeedback("❌ Salah. Coba perhatikan ciri AI.", false);
+        if (btn === button && selected !== correct) {
+            btn.classList.add('btn-wrong');
         }
     });
-});
 
-function showFeedback(text, success) {
-    const feedback = document.getElementById("dropFeedback");
-    feedback.textContent = text;
-    feedback.style.color = success ? "#22c55e" : "#ef4444";
+    if (selected === correct) {
+        feedback.textContent = '✅ Jawaban benar!';
+        feedback.classList.add('feedback-correct');
+    } else {
+        feedback.textContent = '❌ Jawaban kurang tepat.';
+        feedback.classList.add('feedback-wrong');
+    }
 }

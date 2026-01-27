@@ -8,20 +8,20 @@
 
         <h2>2. Apa Itu Machine Learning</h2>
         <p>
-            Machine Learning merupakan salah satu cabang dari Kecerdasan Buatan (Artificial
-            Intelligence/AI) yang memungkinkan komputer belajar dari data tanpa harus diprogram
+            <strong><i>Machine Learning</i></strong> merupakan salah satu cabang dari Kecerdasan Buatan (<i>Artificial
+            Intelligence/AI</i>) yang memungkinkan komputer belajar dari data tanpa harus diprogram
             secara langsung. Dengan kata lain, komputer “belajar sendiri” dari pengalaman yang
             diperoleh melalui data.
         </p>
         <p>
-            Tiga konsep utama dalam proses machine learning :
+            Tiga konsep utama dalam proses <i>machine learning</i> :
         </p>
         <ol type="a">
             <li>
-                Data Pelatihan ( Training Data)
+                Data Pelatihan (<i>Training Data</i>)
             </li>
             <p>
-                Data pelatihan adalah sekumpulan informasi yang digunakan untuk “mengajarkan”
+                <strong>Data pelatihan</strong> adalah sekumpulan informasi yang digunakan untuk “mengajarkan”
                 komputer agar dapat mengenali pola tertentu. Data ini dapat berupa gambar, suara,
                 teks, atau gerakan tubuh, tergantung pada jenis model yang akan dilatih.
             </p>
@@ -41,8 +41,8 @@
                 Model Kecerdasan Buatan
             </li>
             <p>
-                Model kecerdasan buatan adalah hasil akhir dari proses pelatihan (training). Dapat
-                dikatakan bahwa model adalah otak buatan yang terbentuk setelah komputer mempelajari
+                <strong>Model kecerdasan buatan</strong> adalah hasil akhir dari proses pelatihan (<i>training</i>). Dapat
+                dikatakan bahwa <strong>model</strong> adalah otak buatan yang terbentuk setelah komputer mempelajari
                 pola dari data pelatihan. Model inilah yang nantinya digunakan untuk mengenali atau
                 mengklasifikasikan data baru.
             </p>
@@ -61,7 +61,7 @@
                 Prediksi
             </li>
             <p>
-                Prediksi adalah kemampuan model untuk memberikan tebakan cerdas terhadap data baru
+                <strong>Prediksi</strong> adalah kemampuan model untuk memberikan tebakan cerdas terhadap data baru
                 yang belum pernah dilihat sebelumnya. Berdasarkan pengetahuan yang telah diperoleh
                 dari data pelatihan, model akan mencoba mengenali atau mengklasifikasikan input baru
                 tersebut.
@@ -130,7 +130,7 @@
 @endsection
 
 @push('scripts')
-    <script src="{{ asset('js/interaktif/materi-1/materi-a.js') }}"></script>
+    <script src="{{ asset('js/interaktif/materi-1/materi-b.js') }}"></script>
 @endpush
 
 @push('styles')

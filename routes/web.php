@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('dashboard');
+    return view('landing-page/beranda');
 });
 
 Route::get('/materi', function () {
@@ -14,8 +14,8 @@ Route::get('/tes', function () {
     return view('tes');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
+Route::get('/landing-page/beranda', function () {
+    return view('landing-page/beranda');
 });
 
 Route::get('/bab-1/bab-1-materi-a', function () {
@@ -80,5 +80,13 @@ Route::get('/dashboard_tes', function () {
 
 Route::get('/landing-page/informasi', function () {
     return view('landing-page/informasi');
+});
+
+Route::get('/landing-page/materi', function () {
+    return view('landing-page/materi');
+});
+
+Route::get('/landing-page/latih-ai', function () {
+    return view('landing-page/latih-ai');
 });
 

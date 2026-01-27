@@ -1,13 +1,17 @@
 body {
-  background: linear-gradient(
-    180deg,
-    #0f172a 0%,
-    #0b1222 50%,
-    #0f172a 100%
-  );
+  background: linear-gradient(180deg,
+      #0f172a 0%,
+      #0b1222 50%,
+      #0f172a 100%);
   color: #eaeaf0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  letter-spacing: 0.1px;
   min-height: 100vh;
+}
+
+h1, h2, .quiz-title, .navbar-brand {
+font-family: 'Space Grotesk', sans-serif;
+letter-spacing: 0.5px;
 }
 
 
@@ -75,11 +79,9 @@ body {
 ================================ */
 
 .card {
-  background: linear-gradient(
-    180deg,
-    rgba(15, 23, 42, 0.85),
-    rgba(10, 15, 28, 0.95)
-  ) !important;
+  background: linear-gradient(180deg,
+      rgba(15, 23, 42, 0.85),
+      rgba(10, 15, 28, 0.95)) !important;
   color: #eaeaf0 !important;
   border-left: 4px solid #00f5ff;
   box-shadow: 0 0 18px rgba(0, 245, 255, 0.15);
@@ -112,9 +114,6 @@ body {
 .card .card-footer li::marker {
   color: #8b5cf6;
 }
-
-
-
 
 .table {
   color: #eaeaf0;
@@ -158,6 +157,7 @@ footer {
     opacity: 0;
     transform: translateX(20px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);

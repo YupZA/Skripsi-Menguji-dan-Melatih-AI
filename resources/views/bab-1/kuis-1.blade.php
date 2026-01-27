@@ -9,12 +9,36 @@
             Pilih satu jawaban yang paling benar pada setiap soal.
         </p>
 
+
+        <!-- Timer -->
         <div class="quiz-timer">
             <span>Waktu tersisa:</span>
             <strong id="timeLeft">15:00</strong>
         </div>
 
-        <div class="quiz-layout">
+
+        <!-- Layout Tata Pengerjaan -->
+        <div id="quizIntro" class="quiz-intro">
+            <h3>Petunjuk Pengerjaan</h3>
+
+            <ul>
+                <li>Kuis terdiri dari <strong>10 soal pilihan ganda</strong>.</li>
+                <li>Waktu pengerjaan adalah <strong>10 menit</strong>.</li>
+                <li>Setiap soal hanya memiliki <strong>1 jawaban benar</strong>.</li>
+                <li>Kamu dapat berpindah soal menggunakan tombol <em>Selanjutnya</em> atau navigator nomor soal.</li>
+                <li>Jika menekan <em>Selanjutnya</em> tanpa menjawab, soal akan ditandai <strong>ragu-ragu</strong>.</li>
+                <li>Nilai minimum kelulusan adalah <strong>70</strong>.</li>
+                <li>Jika waktu habis, kuis akan <strong>dikumpulkan otomatis</strong>.</li>
+            </ul>
+
+            <button type="button" class="btn-submit mt-4" onclick="startQuiz()">
+                Mulai Kuis
+            </button>
+        </div>
+
+
+        <!-- Layout Quiz -->
+        <div class="quiz-layout d-none" id="quizContainer">
             <form id="quizForm">
                 <div id="quizQuestions">
                     {{-- SOAL 1 --}}
@@ -196,6 +220,7 @@
                         <label><input type="radio" name="q10" value="d"> d. Menghapus fitur prediksi pada model</label>
                     </div>
 
+                    <!-- tombol navigasi quiz -->
                     <div class="quiz-navigation">
                         <button type="button" id="prevBtn" onclick="prevQuestion()" disabled>
                             Sebelumnya
@@ -207,7 +232,7 @@
                             Selanjutnya
                         </button>
 
-                        {{-- TOMBOL --}}
+                        <!-- tombol submit -->
                         <button type="button" class="btn-submit d-none" id="submitBtn" onclick="submitQuiz()">
                             Selesai & Lihat Nilai
                         </button>
@@ -217,6 +242,7 @@
 
             </form>
 
+            <!-- indikator soal -->
             <aside class="quiz-nav">
                 <h4>Nomor Soal</h4>
 
@@ -251,13 +277,16 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            startTimer();
+
             document.body.classList.add("quiz-mode", "sb-sidenav-toggled");
 
             const toggleBtn = document.getElementById("sidebarToggle");
             if (toggleBtn) {
                 toggleBtn.style.display = "none";
             }
+
+            document.querySelector(".quiz-timer")?.classList.add("d-none");
+            document.getElementById("quizContainer")?.classList.add("d-none");
         });
     </script>
 

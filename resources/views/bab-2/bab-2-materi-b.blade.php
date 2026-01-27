@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Bab 1 - AI')
+@section('title', 'Bab 2 - AI')
 
 @section('content')
     <div>
@@ -8,17 +8,17 @@
         <div>
             <h2>2. Google Teachable Machine : Membuat AI Jadi Mudah</h2>
             <p>
-                Google Teachable Machine adalah platform berbasis web yang dikembangkan oleh Google untuk memudahkan siapa
+                <strong>Google Teachable Machine</strong> adalah platform berbasis web yang dikembangkan oleh Google untuk memudahkan siapa
                 pun dalam membuat dan melatih model kecerdasan buatan (AI) tanpa perlu menulis satu baris kode pun.
-                Keunggulan utama Teachable Machine adalah sifatnya yang user-friendly. Pengguna dari berbagai latar belakang
-                baik pelajar, guru, maupun peneliti dapat memahami konsep dasar machine learning secara praktis dan cepat.
+                <strong>Keunggulan utama Teachable Machine</strong> adalah sifatnya yang <i>user-friendly</i>. Pengguna dari berbagai latar belakang
+                baik pelajar, guru, maupun peneliti dapat memahami konsep dasar <i>machine learning</i> secara praktis dan cepat.
                 Platform ini dirancang untuk memberikan pengalaman belajar yang menyenangkan sekaligus edukatif.
             </p>
             <ol type="a">
-                <li>Fungsi dan manfaat:</li>
+                <li>Fungsi dan manfaat</li>
                 <p>
                     Google Teachable Machine memiliki fungsi utama sebagai media pembelajaran interaktif untuk mengenalkan
-                    konsep dasar Machine Learning dengan cara yang sederhana. Melalui alat ini, peserta didik dapat memahami
+                    konsep dasar <i>Machine Learning</i> dengan cara yang sederhana. Melalui alat ini, peserta didik dapat memahami
                     bagaimana komputer dapat belajar dari contoh data yang diberikan tanpa harus mempelajari bahasa
                     pemrograman yang kompleks.
                 </p>
@@ -26,7 +26,7 @@
                     <li>Meningkatkan literasi teknologi dan berpikir komputasional.
                         <br>Siswa belajar mengenali pola dan memahami bagaimana data digunakan untuk mengambil keputusan.
                     </li>
-                    <li>Mendukung pembelajaran berbasis proyek (Project-Based Learning).
+                    <li>Mendukung pembelajaran berbasis proyek (<i>Project-Based Learning</i>).
                         <br>Siswa dapat membuat proyek sederhana seperti pengenalan ekspresi wajah, suara, atau gerakan
                         tubuh.
                     </li>
@@ -65,7 +65,7 @@
                         mempelajari apa yang kamu sukai dan memberikan rekomendasi konten serupa.
                     </li>
                     <li>
-                        Pengenalan Wajah (Face Recognition)
+                        Pengenalan Wajah (<i>Face Recognition</i>)
                         <br>AI digunakan untuk membuka kunci ponsel dengan wajah atau untuk keamanan di tempat tertentu.
                         Sistem ini bekerja dengan mengenali pola unik pada wajah seseorang.
                     </li>

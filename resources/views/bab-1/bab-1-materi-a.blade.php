@@ -25,17 +25,17 @@
             <div>
                 <h2>1. Apa Itu Kecerdasan Buatan</h2>
                 <p>
-                    (Artificial Intelligence) atau dalam Bahasa Indonesia disebut Kecerdasan Buatan, adalah
+                    <i><strong>(Artificial Intelligence)</strong></i> atau dalam Bahasa Indonesia disebut <strong>Kecerdasan Buatan</strong>, adalah
                     sebuah teknologi yang memungkinkan mesin atau komputer untuk meniru kemampuan otak
                     manusia. Artinya, mesin bisa belajar, berpikir, mengenali pola, memecahkan masalah, dan
                     bahkan memahami bahasa, hampir seperti manusia.
                 </p>
                 <p>
-                    Gagasan tentang kecerdasan buatan (Artificial Intelligence) telah ada jauh sebelum
+                    Gagasan tentang kecerdasan buatan (<i>Artificial Intelligence</i>) telah ada jauh sebelum
                     istilah “AI” digunakan secara resmi. Salah satu tokoh penting dalam sejarah ini adalah
-                    Alan Turing, seorang ilmuwan matematika dan komputer asal Inggris. Pada tahun 1950,
+                    <strong>Alan Turing</strong>, seorang ilmuwan matematika dan komputer asal Inggris. Pada tahun 1950,
                     Turing mengajukan pertanyaan terkenal: “Bisakah mesin berpikir?” Pertanyaan ini menjadi
-                    titik awal lahirnya konsep dasar kecerdasan buatan, yaitu upaya untuk membuat mesin
+                    titik awal lahirnya <strong>konsep dasar kecerdasan buatan</strong>, yaitu upaya untuk membuat mesin
                     mampu meniru cara berpikir manusia. Ia juga memperkenalkan Tes Turing, sebuah cara untuk
                     menilai apakah mesin dapat menampilkan perilaku yang tidak dapat dibedakan dari manusia.
                 </p>
@@ -46,7 +46,7 @@
                 </div>
 
                 <p>
-                    Selanjutnya, pada tahun 1956, istilah “Artificial Intelligence” atau kecerdasan buatan
+                    Selanjutnya, pada tahun 1956, istilah “<i>Artificial Intelligence</i>” atau kecerdasan buatan
                     pertama kali digunakan dalam sebuah konferensi ilmiah di Dartmouth College, Amerika
                     Serikat.
                     Pertemuan ini dianggap sebagai momen resmi lahirnya bidang studi AI. Para ilmuwan pada
@@ -194,7 +194,7 @@
 @endsection
 
         @push('scripts')
-            <script src="{{ asset('js/interaktif_materi.js') }}"></script>
+            <script src="{{ asset('js/interaktif/materi-1/materi-a.js') }}"></script>
         @endpush
 
         @push('styles')

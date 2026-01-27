@@ -10,10 +10,13 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- CSS eksternal -->
-    <link rel="stylesheet" href="{{ asset('css/style_dashboard.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style_materi_awal.css') }}">
+    <!-- css -->
+    <link rel="stylesheet" href="{{ asset('css/landing-page/style_dashboard.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/landing-page/materi.css') }}">
     <link rel="stylesheet" href="{{ asset('css/landing-page/informasi.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/latih/latih-ai.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/landing-page/beranda.css') }}">
+    
 </head>
 
 <body>
@@ -26,10 +29,10 @@
         </div>
 
         <nav class="menu">
-            <a href="{{ url(path: '/dashboard') }}">Beranda</a>
-            <a href="{{ url(path: '/materi') }}">Materi</a>
-            <a href="{{ url(path: '/latih') }}">Latih AI</a>
-            <a href="{{ url(path: '/informasi') }}">Informasi</a>
+            <a href="{{ url(path: '/landing-page/beranda') }}">Beranda</a>
+            <a href="{{ url(path: '/landing-page/materi') }}">Materi</a>
+            <a href="{{ url(path: '/landing-page/latih-ai') }}">Latih AI</a>
+            <a href="{{ url(path: '/landing-page/informasi') }}">Informasi</a>
         </nav>
 
         <div class="user">
@@ -41,6 +44,8 @@
     <main>
         @yield('content')
     </main>
+
+    @stack('scripts')
 
 </body>
 

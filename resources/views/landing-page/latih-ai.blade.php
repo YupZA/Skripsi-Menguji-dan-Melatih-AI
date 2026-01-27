@@ -7,7 +7,7 @@
 
 
         <section class="train-ai-card">
-            <h1 class="train-ai-title">🤖 Latih AI</h1>
+            <h1 class="train-ai-title">Latih AI</h1>
 
 
             <p class="train-ai-desc">
@@ -27,12 +27,12 @@
 
 
                 <button id="trainAiCameraBtn" class="train-ai-btn train-ai-btn-secondary">
-                    📷 Kamera
+                    Kamera
                 </button>
 
 
                 <button id="trainAiUploadBtn" class="train-ai-btn train-ai-btn-secondary">
-                    🖼️ Upload Gambar
+                    Upload Gambar
                 </button>
             </div>
 

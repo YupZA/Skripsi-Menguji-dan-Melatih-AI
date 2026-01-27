@@ -8,16 +8,16 @@
         <div>
             <h2>4. Perbandingan Model Suara, Gambar, dan Pose</h2>
             <p>
-                Google Teachable Machine menyediakan tiga jenis model utama model gambar (Image Model), model suara (Audio
-                Model), dan model pose tubuh (Pose Model). Meskipun ketiganya memiliki tujuan yang sama, yaitu melatih
+                Google Teachable Machine menyediakan tiga jenis model utama model gambar (<i>Image Model</i>), model suara (<i>Audio
+                Model</i>), dan model pose tubuh (<i>Pose Model</i>). Meskipun ketiganya memiliki tujuan yang sama, yaitu melatih
                 kecerdasan buatan (AI) agar dapat mengenali pola dari data, setiap model memiliki perbedaan dalam jenis
                 data, cara pelatihan, serta penerapannya.
             </p>
             <ol type="a">
                 <li>
-                    Model Gambar (Image Model)
+                    Model Gambar (<i>Image Model</i>)
                     <br>Model gambar digunakan untuk melatih AI agar mampu mengenali pola visual dari berbagai gambar atau
-                    objek. Data yang digunakan berupa citra (image) yang bisa diambil melalui kamera (webcam) atau diunggah
+                    objek. Data yang digunakan berupa citra (<I>image</I>) yang bisa diambil melalui kamera (webcam) atau diunggah
                     dari komputer.
                     <ul>
                         <li>Jenis Data: Gambar atau foto.</li>
@@ -29,11 +29,11 @@
                     </ul>
                 </li>
                 <li>
-                    Model Suara (Audio Model)
+                    Model Suara (<i>Audio Model</i>)
                     <br>Model suara digunakan untuk melatih AI agar dapat mengenali pola bunyi atau suara tertentu. Data
                     yang digunakan berupa rekaman suara yang direkam langsung melalui mikrofon atau diunggah dari perangkat.
                     <ul>
-                        <li>Jenis Data: Gelombang suara (audio).</li>
+                        <li>Jenis Data: Gelombang suara (<i>audio</i>).</li>
                         <li>Contoh Proyek: Membedakan suara tepuk tangan dan siulan, mengenali kata “ya” dan “tidak”, atau
                             mengidentifikasi suara hewan.</li>
                         <li>Cara Kerja: AI mempelajari perbedaan frekuensi, volume, dan ritme dari suara yang diberikan.
@@ -43,11 +43,11 @@
                     </ul>
                 </li>
                 <li>
-                    Model Pose Tubuh (Pose Model)
+                    Model Pose Tubuh (<i>Pose Model</i>)
                     <br>Model pose digunakan untuk melatih AI agar dapat mengenali gerakan atau posisi tubuh manusia. Data
                     diperoleh melalui kamera (webcam) yang menangkap bentuk tubuh dan pergerakan pengguna.
                     <ul>
-                        <li>Jenis Data: Citra gerakan (pose tubuh).</li>
+                        <li>Jenis Data: Citra gerakan (<i>pose tubuh</i>).</li>
                         <li>Contoh Proyek: Membedakan posisi berdiri dan jongkok, mengenali lambaian tangan, atau mendeteksi
                             gerakan olahraga.</li>
                         <li>Cara Kerja: AI menganalisis posisi titik-titik tubuh (seperti kepala, tangan, kaki) yang
@@ -77,9 +77,9 @@
                         <td>Pose / Gerakan Tubuh</td>
                     </tr>
                     <tr>
-                        <td>Input Data</td>
+                        <td><i>Input Data</i></td>
                         <td>Kamera atau File Gambar</td>
-                        <td>Mikrofon atau File Audio</td>
+                        <td>Mikrofon atau File <i>Audio</i></td>
                         <td>Kamera (Webcam)</td>
                     </tr>
                     <tr>
@@ -112,7 +112,7 @@
                 Ketiga jenis model di Google Teachable Machine memiliki fungsi yang saling melengkapi.
             <ul>
                 <li>Model Gambar cocok untuk pengenalan visual.</li>
-                <li>Model Suara cocok untuk pengenalan audio atau komunikasi berbasis suara.</li>
+                <li>Model Suara cocok untuk pengenalan <i>audio</i> atau komunikasi berbasis suara.</li>
                 <li>Model Pose Tubuh cocok untuk pengenalan gerakan manusia.</li>
             </ul>
             Melalui pemanfaatan berbagai jenis model ini, peserta didik dapat belajar secara langsung bagaimana AI
