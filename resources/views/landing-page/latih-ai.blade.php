@@ -17,7 +17,7 @@
 
 
             <input type="text" id="trainAiModelInput" class="train-ai-input"
-                placeholder="https://teachablemachine.withgoogle.com/models/XXXX/">
+                placeholder="Masukkan link">
 
 
             <div class="train-ai-actions">
@@ -34,10 +34,15 @@
                 <button id="trainAiUploadBtn" class="train-ai-btn train-ai-btn-secondary">
                     Upload Gambar
                 </button>
+
+                <button id="trainAiAudioBtn" class="train-ai-btn train-ai-btn-secondary">
+                    Upload Suara
+                </button>
             </div>
 
 
             <input type="file" id="trainAiImageFile" accept="image/*" hidden>
+            <input type="file" id="trainAiAudioFile" accept="audio/*" hidden>
 
 
             <div class="train-ai-preview" id="trainAiPreviewArea"></div>

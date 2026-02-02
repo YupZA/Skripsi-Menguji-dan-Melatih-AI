@@ -1,87 +1,77 @@
-/* ==========================
-   INFORMASI FUTURISTIK
-========================== */
-
-.ai-info-page {
-  max-width: 1000px;
-  margin: 0 auto;
+/* ===== USER WRAPPER ===== */
+.user {
+  display: flex;
+  justify-content: flex-end; /* tetap kanan */
+  margin: 9px 10px;
 }
 
-/* Title */
-.ai-title {
-  font-size: 2.2rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, #00f5ff, #8b5cf6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 6px;
-}
+/* ===== USER INFO CARD ===== */
+.user-info {
+  display: inline-flex; /* 🔑 biar ngikut konten */
+  align-items: center;
+  gap: 10px;
 
-.ai-subtitle {
-  color: #9aa4bf;
-  margin-bottom: 40px;
-}
+  padding: 8px 12px;   /* 🔽 diperkecil */
+  border-radius: 14px;
 
-/* Card */
-.ai-card {
   background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 18px;
-  padding: 26px 30px;
-  margin-bottom: 32px;
-  box-shadow: 0 0 25px rgba(0, 245, 255, 0.08);
+  border: 1px solid rgba(255,255,255,0.14);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 0 18px rgba(0,245,255,0.15);
 }
 
-.ai-card-title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #eaeaf0;
+/* ===== AVATAR ===== */
+.avatar {
+  width: 32px;   /* 🔽 dari 44 */
+  height: 32px;
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #00f5ff, #8b5cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0.9rem;
 }
 
-/* Table */
-.ai-table {
-  width: 100%;
-  border-collapse: collapse;
+/* ===== META ===== */
+.user-meta {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
 }
 
-.ai-table th {
-  text-align: left;
-  color: #8b5cf6;
-  width: 220px;
-  padding: 8px 0;
+.user-name {
   font-weight: 600;
+  font-size: 0.85rem;
+  color: #fff;
+  white-space: nowrap;
 }
 
-.ai-table td {
-  color: #eaeaf0;
-  padding: 8px 0;
+.user-role {
+  font-size: 0.65rem;
+  color: #9aa4bf;
 }
 
-/* List */
-.ai-list {
-  padding-left: 20px;
+/* ===== LOGOUT ===== */
+.logout-form {
+  margin-left: 6px;
 }
 
-.ai-list li {
-  margin-bottom: 12px;
-  color: #eaeaf0;
-  line-height: 1.6;
+.logout-btn {
+  padding: 4px 10px;   /* 🔽 lebih kecil */
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+
+  font-size: 0.65rem;
+  font-weight: 600;
+
+  background: linear-gradient(135deg, #ff4d4d, #ff7a7a);
+  color: #000;
 }
 
-.ai-list em {
-  color: #00f5ff;
-  font-style: normal;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .ai-title {
-    font-size: 1.8rem;
-  }
-
-  .ai-table th {
-    width: 150px;
-  }
+.logout-btn:hover {
+  opacity: 0.9;
 }

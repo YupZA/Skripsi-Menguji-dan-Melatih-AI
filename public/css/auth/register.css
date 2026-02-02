@@ -1,0 +1,139 @@
+/* ======================================
+   REGISTER PAGE — AI FUTURISTIC STYLE
+====================================== */
+
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Inter', sans-serif;
+  background:
+    radial-gradient(circle at top left, #111b3c, transparent 40%),
+    radial-gradient(circle at bottom right, #2a104f, transparent 45%),
+    #0a0f1c;
+  color: #eaeaf0;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 34px 32px;
+  border-radius: 22px;
+
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  backdrop-filter: blur(14px);
+
+  box-shadow: 0 0 40px rgba(139,92,246,0.25);
+}
+
+.register-title {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+
+  background: linear-gradient(135deg, #00f5ff, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.register-subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #9aa4bf;
+  margin-bottom: 26px;
+}
+
+.register-field {
+  margin-bottom: 16px;
+}
+
+.register-field label {
+  display: block;
+  font-size: 0.8rem;
+  color: #9aa4bf;
+  margin-bottom: 6px;
+}
+
+.register-field input,
+.register-field select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(0,0,0,0.35);
+  color: #fff;
+
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.register-field input:focus,
+.register-field select:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 12px rgba(139,92,246,0.4);
+}
+
+.register-error {
+  background: rgba(255,80,80,0.15);
+  border: 1px solid rgba(255,80,80,0.4);
+  color: #ffb4b4;
+
+  padding: 12px 16px;
+  border-radius: 14px;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+.register-error ul {
+  padding-left: 18px;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+
+  background: linear-gradient(135deg, #00f5ff, #8b5cf6);
+  color: #000;
+
+  box-shadow: 0 0 22px rgba(139,92,246,0.45);
+  transition: 0.35s ease;
+}
+
+.register-btn:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 30px rgba(0,245,255,0.6),
+    0 0 45px rgba(139,92,246,0.5);
+}
+
+.register-footer {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 0.85rem;
+  color: #9aa4bf;
+}
+
+.register-footer a {
+  color: #00f5ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-footer a:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}

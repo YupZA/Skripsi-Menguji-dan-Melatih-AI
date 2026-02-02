@@ -25,7 +25,8 @@
             <div>
                 <h2>1. Apa Itu Kecerdasan Buatan</h2>
                 <p>
-                    <i><strong>(Artificial Intelligence)</strong></i> atau dalam Bahasa Indonesia disebut <strong>Kecerdasan Buatan</strong>, adalah
+                    <i><strong>(Artificial Intelligence)</strong></i> atau dalam Bahasa Indonesia disebut <strong>Kecerdasan
+                        Buatan</strong>, adalah
                     sebuah teknologi yang memungkinkan mesin atau komputer untuk meniru kemampuan otak
                     manusia. Artinya, mesin bisa belajar, berpikir, mengenali pola, memecahkan masalah, dan
                     bahkan memahami bahasa, hampir seperti manusia.
@@ -149,8 +150,23 @@
             </div>
         </div>
 
+        {{-- ===== TANDAI MATERI SELESAI ===== --}}
+        @php use App\Models\UserProgress;
+    $isCompleted = UserProgress::where('user_id', auth()->id())->where('materi_id', 1)->where('status', 'completed')->exists(); @endphp
+
+    <div id="progress"></div>
+
+    <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4">
+        @csrf
+        <input type="hidden" name="materi_id" value="1">
+
+        <button type="submit" class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}" {{ $isCompleted ? 'disabled' : '' }}>
+            {{ $isCompleted ? 'Materi Sudah Selesai' : 'Tandai Materi Selesai' }}
+        </button>
+    </form>
+
         <section class="ai-interactive">
-            <h2>🧠 Aktivitas 1.1</h2>
+            <h2>Aktivitas 1.1</h2>
             <p>Pilih jawaban yang paling tepat untuk setiap pernyataan.</p>
 
             <?php
@@ -176,7 +192,7 @@
             'answer' => 'program'
         ],
     ];
-                ?>
+                    ?>
 
             <?php foreach ($questions as $index => $q): ?>
             <div class="ai-question" data-answer="<?= $q['answer']; ?>">

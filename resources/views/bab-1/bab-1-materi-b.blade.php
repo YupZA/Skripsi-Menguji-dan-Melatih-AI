@@ -9,7 +9,7 @@
         <h2>2. Apa Itu Machine Learning</h2>
         <p>
             <strong><i>Machine Learning</i></strong> merupakan salah satu cabang dari Kecerdasan Buatan (<i>Artificial
-            Intelligence/AI</i>) yang memungkinkan komputer belajar dari data tanpa harus diprogram
+                Intelligence/AI</i>) yang memungkinkan komputer belajar dari data tanpa harus diprogram
             secara langsung. Dengan kata lain, komputer “belajar sendiri” dari pengalaman yang
             diperoleh melalui data.
         </p>
@@ -90,6 +90,20 @@
         </p>
     </div>
 
+    @php use App\Models\UserProgress;
+    $isCompleted = UserProgress::where('user_id', auth()->id())->where('materi_id', 2)->where('status', 'completed')->exists(); @endphp
+
+    <div id="progress"></div>
+
+    <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4">
+        @csrf
+        <input type="hidden" name="materi_id" value="2">
+
+        <button type="submit" class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}" {{ $isCompleted ? 'disabled' : '' }}>
+            {{ $isCompleted ? 'Materi Sudah Selesai' : 'Tandai Materi Selesai' }}
+        </button>
+    </form>
+
     <section class="ai-dragdrop">
         <h2>Aktivitas 1.2</h2>
         <p>Seret setiap contoh ke kategori yang sesuai.</p>
@@ -116,11 +130,11 @@
         <!-- Tempat Drop -->
         <div class="drop-zones">
             <div class="drop-zone" data-accept="program">
-                <h3>📌 Program Biasa</h3>
+                <h3>Program Biasa</h3>
             </div>
 
             <div class="drop-zone" data-accept="ai">
-                <h3>🤖 Kecerdasan Buatan</h3>
+                <h3>Kecerdasan Buatan</h3>
             </div>
         </div>
 

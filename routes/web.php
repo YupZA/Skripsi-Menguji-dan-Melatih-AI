@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\UserProgressController;
 
 Route::get('/', function () {
     return view('landing-page/beranda');
@@ -20,7 +23,7 @@ Route::get('/landing-page/beranda', function () {
 
 Route::get('/bab-1/bab-1-materi-a', function () {
     return view('bab-1/bab-1-materi-a');
-});
+})->middleware('auth');
 
 Route::get('/bab-1/bab-1-materi-b', function () {
     return view('bab-1/bab-1-materi-b');
@@ -74,9 +77,9 @@ Route::get('/evaluasi/evaluasi', function () {
     return view('evaluasi/evaluasi');
 });
 
-Route::get('/dashboard_tes', function () {
-    return view('dashboard_tes');
-});
+// Route::get('/dashboard/dashboard', function () {
+//     return view('dashboard/dashboard');
+// });
 
 Route::get('/landing-page/informasi', function () {
     return view('landing-page/informasi');
@@ -90,3 +93,29 @@ Route::get('/landing-page/latih-ai', function () {
     return view('landing-page/latih-ai');
 });
 
+Route::get('/dosen/data-mahasiswa', function () {
+    return view('dosen/data-mahasiswa');
+});
+
+Route::get('/auth/login', function () {
+    return view('auth/login');
+});
+
+Route::get('/auth/register', function () {
+    return view('auth/register');
+});
+
+
+Route::get('/login', [AuthController::class, 'loginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
+
+Route::get('/register', [AuthController::class, 'registerForm']);
+Route::post('/register', [AuthController::class, 'register']);
+
+Route::get('/dashboard/index', [DashboardController::class, 'index'])
+    ->middleware('auth');
+
+Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth');
+
+Route::post('/materi/selesai', [UserProgressController::class, 'selesai'])
+    ->middleware('auth');

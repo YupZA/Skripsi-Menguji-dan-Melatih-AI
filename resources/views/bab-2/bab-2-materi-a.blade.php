@@ -28,8 +28,10 @@
         <div>
             <h2>1. Apa Itu Google Teachable Machine</h2>
             <p>
-                <strong>Google Teachable Machine</strong> adalah alat berbasis web yang dikembangkan oleh Google untuk membantu siapa saja
-                belajar tentang pembelajaran mesin (<i>Machine Learning</i>) dengan cara yang mudah dan menyenangkan. Melalui
+                <strong>Google Teachable Machine</strong> adalah alat berbasis web yang dikembangkan oleh Google untuk
+                membantu siapa saja
+                belajar tentang pembelajaran mesin (<i>Machine Learning</i>) dengan cara yang mudah dan menyenangkan.
+                Melalui
                 Teachable Machine, kita tidak perlu menjadi ahli pemrograman atau menulis kode rumit untuk membuat model
                 kecerdasan buatan (<i>Artificial Intelligence</i> atau AI).
             </p>
@@ -43,19 +45,23 @@
                 Alat ini sangat cocok digunakan untuk pelajar, termasuk siswa SMP, karena tampilannya sederhana dan
                 prosesnya cepat. Kamu hanya perlu menyiapkan contoh data (misalnya beberapa gambar atau suara), lalu
                 Teachable Machine akan mempelajari pola dari data tersebut dan membuat model yang bisa digunakan untuk
-                pengenalan otomatis. Dengan Teachable Machine, belajar tentang AI dan <i>Machine Learning</i> jadi lebih seru dan
+                pengenalan otomatis. Dengan Teachable Machine, belajar tentang AI dan <i>Machine Learning</i> jadi lebih
+                seru dan
                 mudah dipahami
             </p>
             <p>
-                Untuk memahami hubungan antara Teachable Machine dan konsep <i>Machine Learning</i>, kita perlu mengenal tiga
-                konsep penting di dalamnya, yaitu <i>supervised learning</i>, <i>input-output</i>, dan <i>training model</i> secara visual.
+                Untuk memahami hubungan antara Teachable Machine dan konsep <i>Machine Learning</i>, kita perlu mengenal
+                tiga
+                konsep penting di dalamnya, yaitu <i>supervised learning</i>, <i>input-output</i>, dan <i>training model</i>
+                secara visual.
             </p>
             <ol type="a">
                 <li>
                     <i>Supervised Learning</i> (Pembelajaran Terbimbing)
                 </li>
                 <p>
-                    Teachable Machine menggunakan pendekatan yang disebut <i>supervised learning</i> atau pembelajaran terbimbing.
+                    Teachable Machine menggunakan pendekatan yang disebut <i>supervised learning</i> atau pembelajaran
+                    terbimbing.
                     Artinya, komputer belajar dari contoh data yang sudah diberi label oleh manusia.
                 </p>
                 <p>
@@ -81,12 +87,15 @@
                     Dalam <i>Machine Learning</i>, komputer bekerja dengan sistem <i>input</i> dan <i>output</i>.
                 </p>
                 <ol>
-                    <li><i><strong>Input</strong></i> adalah data yang dimasukkan ke dalam sistem, seperti gambar, suara, atau pose tubuh.</li>
-                    <li><i><strong>Output</strong></i> adalah hasil yang diberikan oleh model setelah memproses data tersebut, seperti label
+                    <li><i><strong>Input</strong></i> adalah data yang dimasukkan ke dalam sistem, seperti gambar, suara,
+                        atau pose tubuh.</li>
+                    <li><i><strong>Output</strong></i> adalah hasil yang diberikan oleh model setelah memproses data
+                        tersebut, seperti label
                         “kucing”, “anjing”, “tepuk tangan”, atau “senyum”.</li>
                 </ol>
                 <p>
-                    <br>Di Teachable Machine, hubungan <i>input-output</i> ini dapat dilihat secara langsung, saat kita menunjukkan
+                    <br>Di Teachable Machine, hubungan <i>input-output</i> ini dapat dilihat secara langsung, saat kita
+                    menunjukkan
                     gambar melalui kamera (<i>input</i>), komputer akan menampilkan hasil prediksi berupa label yang sesuai
                     (<i>output</i>).
                 </p>
@@ -107,7 +116,8 @@
                     pembelajaran menjadi lebih mudah dipahami.
                 </p>
                 <p>
-                    Biasanya, pelatihan model <i>Machine Learning</i> dilakukan dengan menulis kode dan menggunakan data dalam
+                    Biasanya, pelatihan model <i>Machine Learning</i> dilakukan dengan menulis kode dan menggunakan data
+                    dalam
                     bentuk angka atau file teks. Namun di Teachable Machine, semua proses tersebut ditampilkan dalam bentuk
                     gambar dan tampilan visual yang interaktif.
                 </p>
@@ -130,6 +140,20 @@
             </ol>
         </div>
     </div>
+
+    @php use App\Models\UserProgress;
+    $isCompleted = UserProgress::where('user_id', auth()->id())->where('materi_id', 4)->where('status', 'completed')->exists(); @endphp
+
+    <div id="progress"></div>
+
+    <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4">
+        @csrf
+        <input type="hidden" name="materi_id" value="4">
+
+        <button type="submit" class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}" {{ $isCompleted ? 'disabled' : '' }}>
+            {{ $isCompleted ? 'Materi Sudah Selesai' : 'Tandai Materi Selesai' }}
+        </button>
+    </form>
 
     <section class="ai-inline-interactive">
         <h2>Aktivitas 2.1</h2>

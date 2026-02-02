@@ -152,22 +152,36 @@
         </ol>
     </div>
 
+    @php use App\Models\UserProgress;
+    $isCompleted = UserProgress::where('user_id', auth()->id())->where('materi_id', 3)->where('status', 'completed')->exists(); @endphp
+
+    <div id="progress"></div>
+
+    <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4">
+        @csrf
+        <input type="hidden" name="materi_id" value="3">
+
+        <button type="submit" class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}" {{ $isCompleted ? 'disabled' : '' }}>
+            {{ $isCompleted ? 'Materi Sudah Selesai' : 'Tandai Materi Selesai' }}
+        </button>
+    </form>
+
     <section class="ai-flow">
         <h2>Aktivitas 1.3</h2>
         <p>Seret langkah-langkah berikut agar membentuk alur AI yang benar.</p>
 
         <div class="flow-items">
             <div class="flow-item" draggable="true" data-step="2">
-                🧪 Pelatihan Model
+                Pelatihan Model
             </div>
             <div class="flow-item" draggable="true" data-step="4">
-                🔮 Prediksi
+                Prediksi
             </div>
             <div class="flow-item" draggable="true" data-step="1">
-                📊 Data
+                Data
             </div>
             <div class="flow-item" draggable="true" data-step="3">
-                🧠 Model AI
+                Model AI
             </div>
         </div>
 

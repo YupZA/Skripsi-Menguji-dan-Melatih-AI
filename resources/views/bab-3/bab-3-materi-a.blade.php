@@ -71,7 +71,8 @@
                         <li>Klik tombol “Webcam” pada kelas yang dipilih.</li>
                         <li>Izinkan <i>browser</i> mengakses kamera.</li>
                         <li>Arahkan objek (misalnya tanganmu) ke kamera.</li>
-                        <li>Tekan dan tahan tombol “<i>Hold to Record</i>” untuk merekam gambar dari berbagai posisi dan kondisi
+                        <li>Tekan dan tahan tombol “<i>Hold to Record</i>” untuk merekam gambar dari berbagai posisi dan
+                            kondisi
                             pencahayaan.</li>
                     </ul>
                     <li>Mengunggah Gambar dari Komputer</li>
@@ -118,6 +119,21 @@
             </ol>
         </div>
     </div>
+
+    @php use App\Models\UserProgress;
+    $isCompleted = UserProgress::where('user_id', auth()->id())->where('materi_id', 7)->where('status', 'completed')->exists(); @endphp
+
+    <div id="progress"></div>
+
+    <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4">
+        @csrf
+        <input type="hidden" name="materi_id" value="7">
+
+        <button type="submit" class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}" {{ $isCompleted ? 'disabled' : '' }}>
+            {{ $isCompleted ? 'Materi Sudah Selesai' : 'Tandai Materi Selesai' }}
+        </button>
+    </form>
+
 
     <section class="ai-debug">
         <h2>Aktivitas 3.1</h2>

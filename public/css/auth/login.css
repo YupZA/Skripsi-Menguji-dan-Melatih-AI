@@ -1,0 +1,128 @@
+/* ======================================
+   LOGIN PAGE — AI FUTURISTIC STYLE
+====================================== */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Inter', sans-serif;
+  background:
+    radial-gradient(circle at top left, #111b3c, transparent 40%),
+    radial-gradient(circle at bottom right, #2a104f, transparent 45%),
+    #0a0f1c;
+  color: #eaeaf0;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 32px 30px;
+  border-radius: 22px;
+
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  backdrop-filter: blur(14px);
+
+  box-shadow: 0 0 40px rgba(0,245,255,0.25);
+}
+
+.login-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+
+  background: linear-gradient(135deg, #00f5ff, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.login-subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #9aa4bf;
+  margin-bottom: 28px;
+}
+
+.login-field {
+  margin-bottom: 18px;
+}
+
+.login-field label {
+  display: block;
+  font-size: 0.8rem;
+  color: #9aa4bf;
+  margin-bottom: 6px;
+}
+
+.login-field input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(0,0,0,0.35);
+  color: #fff;
+
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.login-field input:focus {
+  border-color: #00f5ff;
+  box-shadow: 0 0 12px rgba(0,245,255,0.4);
+}
+
+.login-error {
+  background: rgba(255,80,80,0.15);
+  border: 1px solid rgba(255,80,80,0.4);
+  color: #ffb4b4;
+
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  margin-bottom: 18px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+
+  background: linear-gradient(135deg, #00f5ff, #8b5cf6);
+  color: #000;
+
+  box-shadow: 0 0 22px rgba(0,245,255,0.45);
+  transition: 0.35s ease;
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 30px rgba(0,245,255,0.6),
+    0 0 45px rgba(139,92,246,0.5);
+}
+
+.login-footer {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 0.85rem;
+  color: #9aa4bf;
+}
+
+.login-footer a {
+  color: #00f5ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}

@@ -73,6 +73,20 @@
         </div>
     </div>
 
+    @php use App\Models\UserProgress;
+    $isCompleted = UserProgress::where('user_id', auth()->id())->where('materi_id', 6)->where('status', 'completed')->exists(); @endphp
+
+    <div id="progress"></div>
+
+    <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4">
+        @csrf
+        <input type="hidden" name="materi_id" value="6">
+
+        <button type="submit" class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}" {{ $isCompleted ? 'disabled' : '' }}>
+            {{ $isCompleted ? 'Materi Sudah Selesai' : 'Tandai Materi Selesai' }}
+        </button>
+    </form>
+
     <section class="ai-dragdrop">
         <h2>Aktivitas 2.3</h2>
         <p>Seret setiap contoh ke jenis proyek yang sesuai.</p>
@@ -90,15 +104,15 @@
         <!-- DROP ZONES -->
         <div class="drop-zones">
             <div class="drop-zone" data-accept="image">
-                <h3>🖼️ Proyek Gambar</h3>
+                <h3>Proyek Gambar</h3>
             </div>
 
             <div class="drop-zone" data-accept="audio">
-                <h3>🔊 Proyek Suara</h3>
+                <h3>Proyek Suara</h3>
             </div>
 
             <div class="drop-zone" data-accept="pose">
-                <h3>🧍 Proyek Pose Tubuh</h3>
+                <h3>Proyek Pose Tubuh</h3>
             </div>
         </div>
     </section>

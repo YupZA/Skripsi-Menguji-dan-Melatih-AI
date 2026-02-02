@@ -1,8 +1,5 @@
 let model, webcam;
 
-/* =========================
-   ELEMENTS (SESUAI BLADE)
-========================= */
 const modelInput = document.getElementById("trainAiModelInput");
 const inputContainer = document.getElementById("trainAiPreviewArea");
 const labelContainer = document.getElementById("trainAiResultArea");
@@ -10,10 +7,16 @@ const labelContainer = document.getElementById("trainAiResultArea");
 document.getElementById("trainAiLoadModelBtn").onclick = loadModel;
 document.getElementById("trainAiCameraBtn").onclick = startWebcam;
 document.getElementById("trainAiUploadBtn").onclick = triggerUpload;
+document.getElementById("trainAiAudioBtn").onclick = triggerAudioUpload;
 
 document
   .getElementById("trainAiImageFile")
   .addEventListener("change", handleImage);
+
+document
+  .getElementById("trainAiAudioFile")
+  .addEventListener("change", handleAudio);
+
 
 /* =========================
    LOAD MODEL
@@ -34,7 +37,7 @@ async function loadModel() {
     );
 
     labelContainer.innerHTML = `
-      <p>✅ Model berhasil dimuat</p>
+      <p>Model berhasil dimuat</p>
       <small>Jumlah kelas: ${model.getTotalClasses()}</small>
     `;
   } catch (e) {
@@ -86,6 +89,55 @@ function handleImage(e) {
     inputContainer.appendChild(img);
     await predict(img);
   };
+}
+
+/* =========================
+UPLOAD AUDIO (AUDIO MODEL)
+========================= */
+function triggerAudioUpload() {
+  if (!model) return alert("Load model dulu!");
+  document.getElementById("trainAiAudioFile").click();
+}
+
+
+async function handleAudio(e) {
+  const file = e.target.files[0];
+  if (!file || !model) return;
+
+
+  // tampilkan audio player
+  const audio = document.createElement("audio");
+  audio.controls = true;
+  audio.src = URL.createObjectURL(file);
+
+
+  inputContainer.innerHTML = "";
+  inputContainer.appendChild(audio);
+
+
+  // decode audio
+  const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  const buffer = await file.arrayBuffer();
+  const audioBuffer = await audioCtx.decodeAudioData(buffer);
+
+
+  try {
+    const predictions = await model.predict(audioBuffer);
+
+
+    labelContainer.innerHTML = "<h4>Hasil Prediksi Audio</h4>";
+    predictions.forEach(p => {
+      const div = document.createElement("div");
+      div.innerHTML = `
+${p.className} :
+<strong>${(p.probability * 100).toFixed(1)}%</strong>
+`;
+      labelContainer.appendChild(div);
+    });
+  } catch (err) {
+    alert("Model ini bukan model Audio.");
+    console.error(err);
+  }
 }
 
 /* =========================

@@ -19,7 +19,7 @@
           <h1>Melatih dan Menguji AI</h1>
           <p>
             Platform pembelajaran cerdas untuk memahami, melatih, dan menguji
-            kecerdasan buatan secara interaktif dan futuristik.
+            kecerdasan buatan secara interaktif.
           </p>
         </div>
 
@@ -60,9 +60,9 @@
             </p>
 
             <div class="module-actions">
-              <button class="btn-primary">
-                Mulai Training
-              </button>
+              <a href="{{ url('/landing-page/latih-ai') }}" class="btn-primary">
+                Mulai Melatih
+              </a>
             </div>
           </article>
 

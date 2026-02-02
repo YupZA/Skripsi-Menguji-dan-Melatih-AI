@@ -8,17 +8,21 @@
         <div>
             <h2>2. Google Teachable Machine : Membuat AI Jadi Mudah</h2>
             <p>
-                <strong>Google Teachable Machine</strong> adalah platform berbasis web yang dikembangkan oleh Google untuk memudahkan siapa
+                <strong>Google Teachable Machine</strong> adalah platform berbasis web yang dikembangkan oleh Google untuk
+                memudahkan siapa
                 pun dalam membuat dan melatih model kecerdasan buatan (AI) tanpa perlu menulis satu baris kode pun.
-                <strong>Keunggulan utama Teachable Machine</strong> adalah sifatnya yang <i>user-friendly</i>. Pengguna dari berbagai latar belakang
-                baik pelajar, guru, maupun peneliti dapat memahami konsep dasar <i>machine learning</i> secara praktis dan cepat.
+                <strong>Keunggulan utama Teachable Machine</strong> adalah sifatnya yang <i>user-friendly</i>. Pengguna dari
+                berbagai latar belakang
+                baik pelajar, guru, maupun peneliti dapat memahami konsep dasar <i>machine learning</i> secara praktis dan
+                cepat.
                 Platform ini dirancang untuk memberikan pengalaman belajar yang menyenangkan sekaligus edukatif.
             </p>
             <ol type="a">
                 <li>Fungsi dan manfaat</li>
                 <p>
                     Google Teachable Machine memiliki fungsi utama sebagai media pembelajaran interaktif untuk mengenalkan
-                    konsep dasar <i>Machine Learning</i> dengan cara yang sederhana. Melalui alat ini, peserta didik dapat memahami
+                    konsep dasar <i>Machine Learning</i> dengan cara yang sederhana. Melalui alat ini, peserta didik dapat
+                    memahami
                     bagaimana komputer dapat belajar dari contoh data yang diberikan tanpa harus mempelajari bahasa
                     pemrograman yang kompleks.
                 </p>
@@ -88,6 +92,20 @@
             </ol>
         </div>
     </div>
+
+    @php use App\Models\UserProgress;
+    $isCompleted = UserProgress::where('user_id', auth()->id())->where('materi_id', 5)->where('status', 'completed')->exists(); @endphp
+
+    <div id="progress"></div>
+
+    <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4">
+        @csrf
+        <input type="hidden" name="materi_id" value="5">
+
+        <button type="submit" class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}" {{ $isCompleted ? 'disabled' : '' }}>
+            {{ $isCompleted ? 'Materi Sudah Selesai' : 'Tandai Materi Selesai' }}
+        </button>
+    </form>
 
     <section class="ai-classification">
         <h2>Aktivitas 2.2</h2>

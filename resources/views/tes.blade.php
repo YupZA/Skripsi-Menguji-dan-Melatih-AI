@@ -1,64 +1,39 @@
-@extends('layouts.navbar_dashboard')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ asset('css/tes.css') }}">
+</head>
+<body>
+    <div class="user">
 
-@section('title', 'Latih AI')
+        @auth
+            <div class="user-info">
+                <div class="avatar">👤</div>
 
-@section('content')
-    <div class="train-ai-page">
+                <div class="user-meta">
+                    <span class="user-name">
+                        {{ auth()->user()->name }}
+                    </span>
 
+                    <span class="user-role">
+                        {{ ucfirst(auth()->user()->role) }}
+                    </span>
+                </div>
 
-        <section class="train-ai-card">
-            <h1 class="train-ai-title">🤖 Latih AI</h1>
-
-
-            <p class="train-ai-desc">
-                Tempel link model dari <strong>Google Teachable Machine</strong>,
-                lalu coba dengan kamera atau upload gambar.
-            </p>
-
-
-            <input type="text" id="trainAiModelInput" class="train-ai-input"
-                placeholder="https://teachablemachine.withgoogle.com/models/XXXX/">
-
-
-            <div class="train-ai-actions">
-                <button id="trainAiLoadModelBtn" class="train-ai-btn train-ai-btn-primary">
-                    Load Model
-                </button>
-
-
-                <button id="trainAiCameraBtn" class="train-ai-btn train-ai-btn-secondary">
-                    📷 Kamera
-                </button>
-
-
-                <button id="trainAiUploadBtn" class="train-ai-btn train-ai-btn-secondary">
-                    🖼️ Upload Gambar
-                </button>
+                <form method="POST" action="/logout" class="logout-form">
+                    @csrf
+                    <button type="submit" class="logout-btn">Logout</button>
+                </form>
             </div>
+        @endauth
 
-
-            <input type="file" id="trainAiImageFile" accept="image/*" hidden>
-
-
-            <div class="train-ai-preview" id="trainAiPreviewArea"></div>
-            <div class="train-ai-result" id="trainAiResultArea"></div>
-
-
-            <p class="train-ai-note">
-                AI belajar dari contoh data yang kamu berikan
-            </p>
-        </section>
-
+        @guest
+            <a href="/login" class="login-link">Login</a>
+        @endguest
 
     </div>
-@endsection
-
-@push('styles')
-    <link rel="stylesheet" href="{{ asset('css/latih/latih-ai.css') }}">
-@endpush
-
-@push('scripts')
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
-    <script src="{{ asset('js/latih/latih-ai.js') }}"></script>
-@endpush
+</body>
+</html>

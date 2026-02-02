@@ -13,7 +13,7 @@
         <div class="sb-sidenav-menu-heading">Utama</div>
 
         <a class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}"
-           href="{{ url('/dashboard') }}">
+           href="{{ url('/dashboard/index') }}">
           <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
           Dashboard
         </a>
