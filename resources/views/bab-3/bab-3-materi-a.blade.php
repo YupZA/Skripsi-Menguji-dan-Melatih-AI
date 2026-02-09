@@ -230,6 +230,7 @@
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/interaktif/materi-3/materi-a.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/materi/style_materi.css') }}">
 @endpush
 
 @push('scripts')

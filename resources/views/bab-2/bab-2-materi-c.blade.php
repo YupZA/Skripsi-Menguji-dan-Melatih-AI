@@ -125,4 +125,5 @@
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/interaktif/materi-2/materi-c.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/materi/style_materi.css') }}">
 @endpush

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\UserProgress;
 use App\Models\Materi;
+use App\Models\User;
 
 class DashboardController extends Controller
 {
@@ -27,11 +28,14 @@ class DashboardController extends Controller
         ? round(($completed / $totalMateri) * 100)
         : 0;
 
+    $guru = User::where('role', 'guru')->first();
+
     return view('dashboard.index', compact(
         'progress',
         'totalMateri',
         'completed',
-        'percent'
+        'percent',
+        'guru'
     ));
 }
 }

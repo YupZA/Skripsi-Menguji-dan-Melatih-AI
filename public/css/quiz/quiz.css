@@ -1,6 +1,18 @@
 /* =========================
    QUIZ
 ========================= */
+
+body {
+  background: linear-gradient(180deg,
+      #0f172a 0%,
+      #0b1222 50%,
+      #0f172a 100%);
+  color: #eaeaf0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  letter-spacing: 0.1px;
+  min-height: 100vh;
+}
+
 .quiz-section {
   max-width: 1200px;
   /* ⬅️ diperlebar */
@@ -353,4 +365,110 @@ body.quiz-finished .quiz-layout form {
 
 .quiz-intro .btn-submit {
   margin-top: 28px;
+}
+
+/* ===============================
+   SLIDE SYSTEM
+================================ */
+
+.slide-wrapper {
+  position: relative;
+  min-height: 70vh;
+}
+
+.slide {
+  display: none;
+  animation: fadeSlide 0.4s ease;
+}
+
+.slide.active {
+  display: block;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* navigasi */
+.slide-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  color: #9aa4bf;
+  font-size: 0.85rem;
+}
+
+h1, h2, .quiz-title, .navbar-brand {
+font-family: 'Space Grotesk', sans-serif;
+letter-spacing: 0.5px;
+}
+
+
+.sb-topnav {
+  background: rgba(15, 23, 42, 0.75) !important;
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sb-topnav .navbar-brand {
+  font-weight: 800;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #00f5ff, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sb-sidenav {
+  background: linear-gradient(180deg,
+      rgba(15, 23, 42, 0.9),
+      rgba(10, 15, 28, 0.95)) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sb-sidenav .sb-sidenav-menu-heading {
+  color: #8b5cf6;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sb-sidenav .nav-link {
+  color: #9aa4bf !important;
+  border-radius: 10px;
+  margin: 4px 10px;
+  transition: 0.3s;
+}
+
+.sb-sidenav .nav-link:hover {
+  color: #fff !important;
+  background: rgba(0, 245, 255, 0.15);
+  box-shadow: inset 0 0 0 1px rgba(0, 245, 255, 0.3);
+}
+
+.sb-sidenav .nav-link.active {
+  background: rgba(0, 245, 255, 0.15);
+  color: #fff !important;
+  box-shadow: inset 0 0 0 1px rgba(0, 245, 255, 0.35);
+}
+
+.container-fluid h1 {
+  font-weight: 800;
+  background: linear-gradient(135deg, #00f5ff, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer {
+  background: rgba(15, 23, 42, 0.6) !important;
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }

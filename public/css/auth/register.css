@@ -2,6 +2,21 @@
    REGISTER PAGE — AI FUTURISTIC STYLE
 ====================================== */
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.register-page *,
+.register-page *::before,
+.register-page *::after {
+  box-sizing: border-box;
+}
+
+
 .register-page {
   min-height: 100vh;
   display: flex;
@@ -137,3 +152,67 @@
 .hidden {
   display: none;
 }
+
+
+.register-field select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* ===============================
+   REGISTER SELECT OPTION COLOR
+================================ */
+
+.register-field select option {
+  background-color: #0f172a;
+  color: #eaeaf0;
+}
+
+.register-field select option[value=""] {
+  color: #9aa4bf;
+}
+
+.register-field select option:checked {
+  background-color: #8b5cf6;
+  color: #ffffff;
+}
+
+/* ===============================
+   TOGGLE PASSWORD (EYE ICON)
+================================ */
+
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  padding-right: 42px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  cursor: pointer;
+  color: #9aa4bf;
+
+  /* PASTIKAN TIDAK ADA STYLE ANEH */
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.toggle-password svg {
+  display: block;
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+
+

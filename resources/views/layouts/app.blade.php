@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/sb_admin.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/materi/style_materi.css') }}">
+    <!-- <link rel="stylesheet" href="{{ asset('css/materi/style_materi.css') }}"> -->
     <link rel="stylesheet" href="{{ asset('css/tes.css') }}">
     <link rel="stylesheet" href="{{ asset('css/quiz/quiz.css') }}">
     <link rel="stylesheet" href="{{ asset('css/materi/materi-gambar.css') }}">

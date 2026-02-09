@@ -43,7 +43,7 @@
             </p>
 
             <div class="module-actions">
-              <a href="{{ url('/bab-1/bab-1-materi-a') }}" class="btn-primary">
+              <a href="{{ url('/dashboard/index') }}" class="btn-primary">
                 Akses Modul
               </a>
             </div>

@@ -440,3 +440,62 @@ body {
 }
 
 
+/* login button */
+
+.login-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 18px;
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+
+  color: #00f5ff;
+
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.8),
+    rgba(10, 15, 28, 0.9)
+  );
+
+  border: 1px solid rgba(0, 245, 255, 0.35);
+  box-shadow:
+    0 0 10px rgba(0, 245, 255, 0.25),
+    inset 0 0 0 1px rgba(255,255,255,0.05);
+
+  transition: all 0.25s ease;
+}
+
+/* hover effect */
+.login-link:hover {
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    #00f5ff,
+    #8b5cf6
+  );
+
+  box-shadow:
+    0 0 18px rgba(0, 245, 255, 0.6),
+    0 0 28px rgba(139, 92, 246, 0.4);
+}
+
+/* active / klik */
+.login-link:active {
+  transform: scale(0.96);
+}
+
+.login-link::before {
+  content: "⦿";
+  margin-right: 6px;
+  color: #00f5ff;
+}
+
+
+

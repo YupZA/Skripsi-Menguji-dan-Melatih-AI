@@ -63,8 +63,10 @@ letter-spacing: 0.5px;
 }
 
 
-#layoutSidenav_content {
-  background: transparent;
+#layoutSidenav_content > main {
+  padding: 32px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .container-fluid h1 {
@@ -173,3 +175,4 @@ footer {
   color: #9aa4bf;
   font-size: 0.85rem;
 }
+

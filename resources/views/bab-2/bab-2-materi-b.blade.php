@@ -114,35 +114,35 @@
 
         <div class="classify-item" data-answer="ai">
             <p>1. Google Assistant menjawab pertanyaan berdasarkan suara pengguna.</p>
-            <button onclick="classify(this, 'ai')">AI</button>
+            <button onclick="classify(this, 'ai')">Kecerdasan Buatan</button>
             <button onclick="classify(this, 'program')">Program Biasa</button>
             <div class="feedback"></div>
         </div>
 
         <div class="classify-item" data-answer="program">
             <p>2. Kalkulator menghitung berdasarkan rumus yang sudah ditentukan.</p>
-            <button onclick="classify(this, 'ai')">AI</button>
+            <button onclick="classify(this, 'ai')">Kecerdasan Buatan</button>
             <button onclick="classify(this, 'program')">Program Biasa</button>
             <div class="feedback"></div>
         </div>
 
         <div class="classify-item" data-answer="ai">
             <p>3. Sistem rekomendasi YouTube menyarankan video sesuai tontonanmu.</p>
-            <button onclick="classify(this, 'ai')">AI</button>
+            <button onclick="classify(this, 'ai')">Kecerdasan Buatan</button>
             <button onclick="classify(this, 'program')">Program Biasa</button>
             <div class="feedback"></div>
         </div>
 
         <div class="classify-item" data-answer="program">
             <p>4. Alarm berbunyi tepat pukul 05.00 setiap hari.</p>
-            <button onclick="classify(this, 'ai')">AI</button>
+            <button onclick="classify(this, 'ai')">Kecerdasan Buatan</button>
             <button onclick="classify(this, 'program')">Program Biasa</button>
             <div class="feedback"></div>
         </div>
 
         <div class="classify-item" data-answer="ai">
             <p>5. Google Teachable Machine mengenali ekspresi wajah dari kamera.</p>
-            <button onclick="classify(this, 'ai')">AI</button>
+            <button onclick="classify(this, 'ai')">Kecerdasan Buatan</button>
             <button onclick="classify(this, 'program')">Program Biasa</button>
             <div class="feedback"></div>
         </div>
@@ -156,4 +156,5 @@
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/interaktif/materi-2/materi-b.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/materi/style_materi.css') }}">
 @endpush

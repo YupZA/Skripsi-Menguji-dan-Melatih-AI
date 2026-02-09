@@ -3,7 +3,7 @@
 @section('title', 'Bab 1 - AI')
 
 @section('content')
-    <div>
+    <div class="materi-container">
         <h1 class="mt-4">Mengenal AI dan Dasar - Dasar Machine Learning</h1>
 
         <div class="row">
@@ -215,4 +215,5 @@
 
         @push('styles')
             <link rel="stylesheet" href="{{ asset('css/interaktif/materi-1/materi-a.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/materi/style_materi.css') }}">
         @endpush

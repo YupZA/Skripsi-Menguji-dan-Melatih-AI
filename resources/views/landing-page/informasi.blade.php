@@ -5,12 +5,12 @@
 @section('content')
     <div class="container-fluid px-4 ai-info-page">
 
-        <h1 class="ai-title">📘 Informasi Aplikasi</h1>
+        <h1 class="ai-title">Informasi Aplikasi</h1>
         
 
         <!-- ================= INFO PEMBUAT ================= -->
         <div class="ai-card">
-            <h2 class="ai-card-title">👤 Informasi Pembuat</h2>
+            <h2 class="ai-card-title">Informasi Pembuat</h2>
 
             <table class="ai-table">
                 <tr>
@@ -20,6 +20,14 @@
                 <tr>
                     <th>NIM</th>
                     <td>2210131210021</td>
+                </tr>
+                <tr>
+                    <th>Dosen Pembimbing 1</th>
+                    <td>Dr. Harja Santana Purba, M.Kom.</td>
+                </tr>
+                <tr>
+                    <th>Dosen Pembimbing 2</th>
+                    <td>Novan Alkaf Bahrain Saputra, S.Kom., M.T.</td>
                 </tr>
                 <tr>
                     <th>Jurusan</th>
@@ -46,14 +54,11 @@
 
         <!-- ================= DAFTAR PUSTAKA ================= -->
         <div class="ai-card">
-            <h2 class="ai-card-title">📚 Daftar Pustaka</h2>
+            <h2 class="ai-card-title">Daftar Pustaka</h2>
 
             <ol class="ai-list">
                 <li>Google. (2023). <em>Teachable Machine</em>. https://teachablemachine.withgoogle.com</li>
-                <li>Russell, S., & Norvig, P. (2021). <em>Artificial Intelligence: A Modern Approach</em>. Pearson.</li>
-                <li>Alpaydin, E. (2020). <em>Introduction to Machine Learning</em>. MIT Press.</li>
-                <li>Kemdikbud RI. (2021). <em>Panduan Pembelajaran Informatika</em>.</li>
-                <li>Goodfellow, I., Bengio, Y., & Courville, A. (2016). <em>Deep Learning</em>. MIT Press.</li>
+                
             </ol>
         </div>
 

@@ -19,7 +19,7 @@
     <div class="register-page">
 
         <div class="register-card">
-            <h1 class="register-title">🚀 Buat Akun</h1>
+            <h1 class="register-title">Buat Akun</h1>
             <p class="register-subtitle">
                 Daftar sebagai siswa atau guru di platform AI
             </p>
@@ -47,16 +47,38 @@
                     <input name="email" type="email" placeholder="email@contoh.com" required>
                 </div>
 
-                <div class="register-field">
+                <div class="register-field password-field">
                     <label>Password</label>
-                    <input name="password" type="password" placeholder="Minimal 6 karakter" required>
+
+                    <input type="password" name="password" id="passwordInput" placeholder="Minimal 6 karakter" required>
+
+                    <span class="toggle-password" id="togglePassword">
+                        <!-- eye open -->
+                        <svg id="eyeOpen" width="20" height="20" viewBox="0 0 24 24">
+                            <path d="M1 12C1 12 5 5 12 5C19 5 23 12 23 12C23 12 19 19 12 19C5 19 1 12 1 12Z" fill="none"
+                                stroke="currentColor" stroke-width="2" />
+                            <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2" />
+                        </svg>
+
+                        <!-- eye closed -->
+                        <svg id="eyeClosed" width="20" height="20" viewBox="0 0 24 24" class="hidden">
+                            <path d="M1 12C1 12 5 5 12 5C19 5 23 12 23 12C23 12 19 19 12 19C5 19 1 12 1 12Z" fill="none"
+                                stroke="currentColor" stroke-width="2" />
+                            <line x1="3" y1="21" x2="21" y2="3" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </span>
                 </div>
+
+
+
+
+
 
                 {{-- ROLE --}}
                 <div class="register-field">
                     <label>Role</label>
                     <select name="role" id="roleSelect" required>
-                        <option value="">-- Pilih Role --</option>
+                        <option value="">-- Pilih Peran --</option>
                         <option value="siswa">Siswa</option>
                         <option value="guru">Guru</option>
                     </select>
@@ -90,7 +112,7 @@
 
             <div class="register-footer">
                 Sudah punya akun?
-                <a href="/login">Login</a>
+                <a href="/login">Masuk</a>
             </div>
         </div>
 
@@ -120,6 +142,25 @@
         roleSelect.addEventListener('change', toggleRoleFields);
         toggleRoleFields(); // init saat load
     </script>
+
+    <script>
+        const passwordInput = document.getElementById('passwordInput');
+        const togglePassword = document.getElementById('togglePassword');
+        const eyeOpen = document.getElementById('eyeOpen');
+        const eyeClosed = document.getElementById('eyeClosed');
+
+        togglePassword.addEventListener('click', () => {
+            const isHidden = passwordInput.type === 'password';
+
+            passwordInput.type = isHidden ? 'text' : 'password';
+
+            eyeOpen.classList.toggle('hidden', isHidden);
+            eyeClosed.classList.toggle('hidden', !isHidden);
+        });
+    </script>
+
+
+
 
 </body>
 
