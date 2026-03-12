@@ -9,7 +9,6 @@
             Pilih satu jawaban yang paling benar pada setiap soal.
         </p>
 
-
         <!-- Timer -->
         <div class="quiz-timer">
             <span>Waktu tersisa:</span>
@@ -222,20 +221,18 @@
 
                     <!-- tombol navigasi quiz -->
                     <div class="quiz-navigation">
-                        <button type="button" id="prevBtn" onclick="prevQuestion()" disabled>
-                            Sebelumnya
-                        </button>
 
-                        <span id="questionIndicator">Soal 1 dari 10</span>
+                        <div class="nav-top">
+                            <button type="button" id="prevBtn" onclick="prevQuestion()">
+                                Sebelumnya
+                            </button>
 
-                        <button type="button" id="nextBtn" onclick="nextQuestion()">
-                            Selanjutnya
-                        </button>
+                            <span id="questionIndicator">Soal 1 dari 10</span>
 
-                        <!-- tombol submit -->
-                        <button type="button" class="btn-submit d-none" id="submitBtn" onclick="submitQuiz()">
-                            Selesai & Lihat Nilai
-                        </button>
+                            <button type="button" id="nextBtn" onclick="nextQuestion()">
+                                Selanjutnya
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div id="quizResult" class="quiz-result"></div>
@@ -265,11 +262,39 @@
                     <span class="legend doubt">Ragu-ragu</span>
                     <span class="legend empty">Belum dijawab</span>
                 </div>
+
+                <div class="nav-bottom">
+                    <button type="button" id="doubtBtn" onclick="markDoubt()">
+                        Ragu-ragu
+                    </button>
+
+                    <button type="button" class="btn-submit" id="submitBtn" onclick="validateBeforeSubmit()">
+                        Selesai
+                    </button>
+                </div>
             </aside>
         </div>
 
-    </section>
+        <!-- QUIZ ALERT MODAL -->
+        <div class="modal-overlay hidden" id="quizAlertModal">
+            <div class="modal-card glass alert-modal">
 
+                <div class="modal-header">
+                    <h3>Perhatian</h3>
+                    <span class="modal-close" onclick="closeQuizAlert()">×</span>
+                </div>
+
+                <p id="quizAlertMessage" class="alert-message"></p>
+
+                <div class="alert-actions">
+                    <button class="btn-submit" onclick="closeQuizAlert()">
+                        Mengerti
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 @endsection
 
@@ -287,6 +312,18 @@
 
             document.querySelector(".quiz-timer")?.classList.add("d-none");
             document.getElementById("quizContainer")?.classList.add("d-none");
+
+            document.querySelectorAll('input[type="radio"]').forEach(radio => {
+                radio.addEventListener("change", function () {
+
+                    const navBtn = document.querySelector(
+                        `.nav-item[data-index="${currentQuestion}"]`
+                    );
+
+                    navBtn.classList.remove("doubt");
+                    navBtn.classList.add("answered");
+                });
+            });
         });
     </script>
 

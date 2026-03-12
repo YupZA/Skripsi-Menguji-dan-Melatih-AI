@@ -56,9 +56,57 @@ body {
 
 .quiz-navigation {
   display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+/* BARIS ATAS */
+.nav-top {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+}
+
+/* BARIS BAWAH */
+.nav-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ===============================
+   SIDEBAR ACTION BUTTONS SMALL
+================================ */
+
+.quiz-nav .nav-bottom {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.quiz-nav .nav-bottom button {
+  flex: 1;
+  height: 36px;              /* kecil & proporsional */
+  padding: 0 10px;
+  font-size: 0.75rem;        /* lebih kecil */
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Ragu kecil subtle */
+#doubtBtn {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #fbbf24;
+}
+
+/* Submit kecil tapi tetap elegan */
+#submitBtn {
+  background: linear-gradient(135deg, #00f5ff, #8b5cf6);
+  color: #0f172a;
 }
 
 .quiz-navigation button {
@@ -472,3 +520,104 @@ footer {
   backdrop-filter: blur(10px);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+.quiz-card-clickable {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.quiz-card-clickable:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(0,245,255,0.4);
+}
+
+/* Modal animation */
+.modal-card {
+  animation: fadeScale 0.3s ease;
+}
+
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* =========================
+   QUIZ ALERT MODAL FIX
+========================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(6px);
+  display: none;                 /* ⬅️ default hidden */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-overlay.show {
+  display: flex;
+}
+
+/* Card */
+.alert-modal {
+  width: 100%;
+  max-width: 420px;
+  padding: 28px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  text-align: center;
+  animation: fadeScale 0.25s ease;
+}
+
+/* Header */
+/* Judul Perhatian jadi merah */
+.alert-modal h3 {
+  margin-bottom: 12px;
+  font-weight: 800;
+  color: #ef4444; /* merah tegas */
+  letter-spacing: 0.5px;
+}
+
+/* Optional: efek glow merah biar lebih hidup */
+.alert-modal h3 {
+  text-shadow: 0 0 8px rgba(239, 68, 68, 0.6);
+}
+
+
+
+/* Message */
+.alert-message {
+  margin: 18px 0;
+  color: #eaeaf0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Button center */
+.alert-actions {
+  margin-top: 10px;
+}
+
+/* Animation */
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+

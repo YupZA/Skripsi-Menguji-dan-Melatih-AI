@@ -1,0 +1,353 @@
+/* ===============================
+   DATA SISWA PAGE
+================================ */
+
+.data-siswa-page {
+  padding: 30px;
+  color: #eaeaf0;
+}
+
+/* ================= HEADER ================= */
+
+.page-header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00f5ff;
+}
+
+.page-header p {
+  margin-top: 6px;
+  color: #9aa4bf;
+}
+
+/* ================= STATS ================= */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 18px;
+  margin: 25px 0;
+}
+
+.stat-card {
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(0,245,255,0.25);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 18px rgba(0,245,255,0.35);
+}
+
+.stat-card h4 {
+  font-size: 0.8rem;
+  color: #9aa4bf;
+}
+
+.stat-card span {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00f5ff;
+}
+
+/* ================= SEARCH ================= */
+
+.search-box input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(15,23,42,0.85);
+  color: #fff;
+  outline: none;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.search-box input:focus {
+  border-color: #00f5ff;
+  box-shadow: 0 0 10px rgba(0,245,255,0.3);
+}
+
+/* ================= TABLE ================= */
+
+.table-wrapper {
+  overflow-x: auto;
+  background: rgba(255,255,255,0.03);
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.siswa-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.siswa-table thead {
+  background: rgba(0,245,255,0.08);
+}
+
+.siswa-table th {
+  text-align: left;
+  padding: 14px;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #9aa4bf;
+}
+
+.siswa-table td {
+  padding: 14px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.siswa-table tr {
+  transition: 0.3s;
+}
+
+.siswa-table tr:hover {
+  background: rgba(0,245,255,0.05);
+}
+
+/* ================= AVATAR ================= */
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(0,245,255,0.4);
+}
+
+/* ================= STATUS BADGE ================= */
+
+.status {
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+.status.aktif {
+  background: rgba(0,245,255,0.15);
+  color: #00f5ff;
+  border: 1px solid rgba(0,245,255,0.4);
+}
+
+.status.nonaktif {
+  background: rgba(255,80,80,0.15);
+  color: #ff6b6b;
+  border: 1px solid rgba(255,80,80,0.4);
+}
+
+/* ================= BUTTON ================= */
+
+.btn-detail {
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg,#00f5ff,#8b5cf6);
+  color: #000;
+  transition: 0.3s ease;
+}
+
+.btn-detail:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 12px rgba(0,245,255,0.5),
+    0 0 18px rgba(139,92,246,0.4);
+}
+
+/* ===============================
+   EDIT SISWA MODAL
+================================ */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 10, 25, 0.75);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.modal-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 28px;
+  border-radius: 18px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(15,23,42,0.95),
+    rgba(10,15,28,0.95)
+  );
+
+  border: 1px solid rgba(0,245,255,0.35);
+  box-shadow: 0 0 30px rgba(0,245,255,0.25);
+}
+
+/* HEADER */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.modal-header h3 {
+  font-size: 1.3rem;
+  color: #eaeaf0;
+}
+
+.modal-header span {
+  font-size: 1.4rem;
+  color: #9aa4bf;
+  transition: 0.2s;
+}
+
+.modal-header span:hover {
+  color: #fff;
+}
+
+/* FIELD */
+.modal-card .register-field {
+  margin-bottom: 14px;
+}
+
+.modal-card label {
+  display: block;
+  font-size: 0.8rem;
+  color: #9aa4bf;
+  margin-bottom: 6px;
+}
+
+/* INPUT & SELECT */
+.modal-card input,
+.modal-card select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #eaeaf0;
+
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.modal-card input:focus,
+.modal-card select:focus {
+  border-color: #00f5ff;
+  box-shadow: 0 0 10px rgba(0,245,255,0.35);
+}
+
+/* BUTTON */
+.modal-card .btn-detail {
+  background: linear-gradient(135deg,#00f5ff,#8b5cf6);
+  color: #0f172a;
+  font-weight: 700;
+  border-radius: 24px;
+  border: none;
+  transition: 0.3s;
+}
+
+.modal-card .btn-detail:hover {
+  box-shadow:
+    0 0 26px rgba(0,245,255,0.6),
+    0 0 36px rgba(139,92,246,0.5);
+}
+
+/* ================= FILTER & SHOW CONTROLS ================= */
+
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.table-controls select {
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: rgba(15,23,42,0.9);
+  border: 1px solid rgba(0,245,255,0.25);
+  color: #eaeaf0;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.table-controls select:focus {
+  border-color: #00f5ff;
+  box-shadow: 0 0 10px rgba(0,245,255,0.4);
+  outline: none;
+}
+
+.show-group label {
+  font-size: 0.75rem;
+  color: #9aa4bf;
+  margin-right: 6px;
+}
+
+/* ================= SEARCH ================= */
+
+.search-wrapper {
+  position: relative;   /* 🔥 WAJIB */
+  width: 100%;
+  
+}
+
+.search-wrapper input {
+  width: 100%;
+  padding: 12px 40px 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(15,23,42,0.85);
+  color: #fff;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-wrapper input:focus {
+  border-color: #00f5ff;
+  box-shadow: 0 0 10px rgba(0,245,255,0.3);
+}
+
+/* CLEAR BUTTON FIX */
+.clear-btn {
+  position: absolute;
+  right: 12px;
+  top: 35%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #9aa4bf;
+  font-size: 1rem;
+  cursor: pointer;
+  display: none;
+}
+
+.clear-btn:hover {
+  color: #ff6b6b;
+}

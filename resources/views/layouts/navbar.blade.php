@@ -1,4 +1,5 @@
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+    <link rel="stylesheet" href="{{ asset('css/landing-page/navbar_materi.css') }}">
 
     <a class="navbar-brand ps-3" href="{{ url('/landing-page/beranda') }}">AI</a>
 
@@ -10,20 +11,38 @@
     <div class="ms-auto"></div>
 
     <!-- User Dropdown (KANAN) -->
-    <ul class="navbar-nav me-3">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <i class="fas fa-user fa-fw"></i>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Activity Log</a></li>
-                <li>
-                    <hr class="dropdown-divider" />
-                </li>
-                <li><a class="dropdown-item" href="#">Logout</a></li>
-            </ul>
-        </li>
-    </ul>
+    <div class="user">
+
+            @auth
+                    <div class="user-info">
+                        <div class="avatar">
+                            <img src="{{ auth()->user()->profile_photo
+                ? asset('storage/' . auth()->user()->profile_photo)
+                : 'https://ui-avatars.com/api/?name=' . auth()->user()->name . '&background=0f172a&color=00f5ff' }}"
+                                alt="Avatar">
+                        </div>
+
+
+                        <div class="user-meta">
+                            <span class="user-name">
+                                {{ auth()->user()->name }}
+                            </span>
+
+                            <span class="user-role">
+                                {{ ucfirst(auth()->user()->role) }}
+                            </span>
+                        </div>
+
+                        <form method="POST" action="/logout" class="logout-form">
+                            @csrf
+                            <button type="submit" class="logout-btn">Logout</button>
+                        </form>
+                    </div>
+            @endauth
+
+            @guest
+                <a href="/login" class="login-link">Login</a>
+            @endguest
+
+        </div>
 </nav>

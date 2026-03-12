@@ -1,4 +1,4 @@
-let duration = 10 * 60; 
+let duration = 10 * 60;
 let endTime;
 let timerInterval;
 let quizSubmitted = false;
@@ -47,7 +47,6 @@ function startTimer() {
     }, 1000);
 }
 
-
 // submit quiz
 function submitQuiz(auto = false) {
     if (quizSubmitted) return;
@@ -65,7 +64,6 @@ function submitQuiz(auto = false) {
     document.querySelector(".quiz-nav")?.classList.add("d-none");
 
     document.body.classList.add("quiz-finished");
-
 
     // kunci jawaban
     const answers = {
@@ -93,6 +91,18 @@ function submitQuiz(auto = false) {
 
     const nilai = Math.round((score / total) * 100);
     const lulus = nilai >= 70;
+
+    fetch("/quiz/save-result", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "X-CSRF-TOKEN": document.querySelector('meta[name="csrf-token"]').content
+        },
+        body: JSON.stringify({
+            quiz_slug: "quiz-1",
+            score: nilai
+        })
+    });
 
     let html = `
         <h3>Hasil Kuis</h3>
@@ -138,7 +148,6 @@ function resetQuiz() {
     quizSubmitted = false;
 
     document.body.classList.remove("quiz-finished");
-
 
     // reset index soal
     currentQuestion = 0;
@@ -201,8 +210,6 @@ document.addEventListener("DOMContentLoaded", () => {
     initNavigatorClick();
 });
 
-
-
 let currentQuestion = 0;
 const questions = document.querySelectorAll(".quiz-question-item");
 const totalQuestions = questions.length;
@@ -211,38 +218,27 @@ function showQuestion(index) {
     questions.forEach(q => q.classList.remove("active"));
     questions[index].classList.add("active");
 
-    document.querySelectorAll('input[type="radio"]').forEach(radio => {
-        radio.addEventListener("change", () => {
-            const navBtn = document.querySelector(
-                `.nav-item[data-index="${currentQuestion}"]`
-            );
-
-            navBtn.classList.remove("doubt");
-            navBtn.classList.add("answered");
-        });
-    });
-
     document.querySelectorAll(".nav-item")
         .forEach(b => b.classList.remove("active"));
 
     document.querySelector(`.nav-item[data-index="${index}"]`)
         ?.classList.add("active");
 
-
     document.getElementById("questionIndicator").textContent =
         `Soal ${index + 1} dari ${totalQuestions}`;
 
-    document.getElementById("prevBtn").disabled = index === 0;
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
 
-    if (index === totalQuestions - 1) {
-        document.getElementById("nextBtn")?.classList.add("d-none");
-        document.getElementById("submitBtn").classList.remove("d-none");
-    } else {
-        document.getElementById("nextBtn")?.classList.remove("d-none");
-        document.getElementById("submitBtn").classList.add("d-none");
-    }
+    // disable prev kalau di soal pertama
+    prevBtn.disabled = index === 0;
+
+    // disable next kalau di soal terakhir
+    nextBtn.disabled = index === totalQuestions - 1;
+
+    // submit selalu tampil
+    document.getElementById("submitBtn")?.classList.remove("d-none");
 }
-
 
 // quiz selanjutnya
 function nextQuestion() {
@@ -254,8 +250,8 @@ function nextQuestion() {
         navBtn.classList.add("answered");
         navBtn.classList.remove("doubt");
     } else {
-        navBtn.classList.add("doubt");
         navBtn.classList.remove("answered");
+        navBtn.classList.remove("doubt");
     }
 
     if (currentQuestion < totalQuestions - 1) {
@@ -314,8 +310,61 @@ function startQuiz() {
     document.querySelector(".quiz-timer")?.classList.remove("d-none");
 
     quizSubmitted = false;
-    startTimer(); 
+    startTimer();
 }
 
+function markDoubt() {
 
+    if (quizSubmitted) return;
+
+    const navBtn = document.querySelector(
+        `.nav-item[data-index="${currentQuestion}"]`
+    );
+
+    // tandai sebagai ragu
+    navBtn.classList.remove("answered");
+    navBtn.classList.add("doubt");
+
+    // otomatis pindah ke soal berikutnya
+    if (currentQuestion < totalQuestions - 1) {
+        currentQuestion++;
+        showQuestion(currentQuestion);
+    }
+}
+
+function validateBeforeSubmit() {
+
+    let unanswered = [];
+
+    questions.forEach((question, index) => {
+        const radios = question.querySelectorAll('input[type="radio"]');
+        const isAnswered = Array.from(radios).some(r => r.checked);
+
+        if (!isAnswered) {
+            unanswered.push(index + 1);
+        }
+    });
+
+    if (unanswered.length > 0) {
+        showQuizAlert(
+            "Masih ada soal yang belum dijawab: " +
+            unanswered.join(", ") +
+            "<br><br>Silakan selesaikan terlebih dahulu."
+        );
+        return;
+    }
+
+    submitQuiz();
+}
+
+function showQuizAlert(message) {
+    document.getElementById("quizAlertMessage").innerHTML = message;
+    document.getElementById("quizAlertModal")
+        .classList.add("show");
+}
+
+function closeQuizAlert() {
+    document.getElementById("quizAlertModal")
+        .classList.remove("show");
+}
 

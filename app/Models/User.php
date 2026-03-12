@@ -22,6 +22,7 @@ class User extends Authenticatable
         'email',
         'password',
         'role',
+        'profile_photo',
         'nis',
         'kelas',
         'nip',
@@ -60,5 +61,20 @@ class User extends Authenticatable
     public function isGuru()
     {
         return $this->role === 'guru';
+    }
+
+    public function kelas()
+    {
+        return $this->belongsTo(Kelas::class);
+    }
+
+    public function kelasYangDiajar()
+    {
+        return $this->hasMany(Kelas::class, 'guru_id');
+    }
+
+    public function quizResults()
+    {
+        return $this->hasMany(QuizResult::class);
     }
 }

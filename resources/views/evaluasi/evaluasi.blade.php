@@ -9,7 +9,6 @@
             Pilih satu jawaban yang paling benar pada setiap soal.
         </p>
 
-
         <!-- Timer -->
         <div class="quiz-timer">
             <span>Waktu tersisa:</span>
@@ -424,134 +423,170 @@
                         <label><input type="radio" name="q26" value="d"> d. Combination Project</label>
                     </div>
 
-                <!-- soal 27 -->
-                <div class="quiz-card quiz-question-item active" data-index="26">
+                    <!-- soal 27 -->
+                    <div class="quiz-card quiz-question-item active" data-index="26">
 
-                    <p class="quiz-question">
-                        27. Seorang siswa membuat model gambar, tetapi hasil pengujiannya menunjukkan persentase yang sangat
-                        rendah pada semua kelas saat objek ditampilkan. Analisis paling logis adalah ....
-                    </p>
-                    <label><input type="radio" name="q27" value="a"> a. Siswa belum melakukan Train Model</label>
-                    <label><input type="radio" name="q27" value="b"> b. Siswa membuat terlalu banyak kelas</label>
-                    <label><input type="radio" name="q27" value="c"> c. Data untuk setiap kelas tidak seimbang atau kurang
-                        bervariasi</label>
-                    <label><input type="radio" name="q27" value="d"> d. Model tidak dapat digunakan tanpa mikrofon</label>
+                        <p class="quiz-question">
+                            27. Seorang siswa membuat model gambar, tetapi hasil pengujiannya menunjukkan persentase yang
+                            sangat
+                            rendah pada semua kelas saat objek ditampilkan. Analisis paling logis adalah ....
+                        </p>
+                        <label><input type="radio" name="q27" value="a"> a. Siswa belum melakukan Train Model</label>
+                        <label><input type="radio" name="q27" value="b"> b. Siswa membuat terlalu banyak kelas</label>
+                        <label><input type="radio" name="q27" value="c"> c. Data untuk setiap kelas tidak seimbang atau
+                            kurang
+                            bervariasi</label>
+                        <label><input type="radio" name="q27" value="d"> d. Model tidak dapat digunakan tanpa
+                            mikrofon</label>
+                    </div>
+
+                    <!-- soal 28 -->
+                    <div class="quiz-card quiz-question-item active" data-index="27">
+
+                        <p class="quiz-question">
+                            28. Seorang guru meminta siswa membuat model untuk mendeteksi apakah seseorang sedang berbicara
+                            atau
+                            diam. Setelah model dibuat, hasil prediksinya sering salah saat ruang kelas ramai. Analisis
+                            terbaik
+                            adalah ....
+                        </p>
+                        <label><input type="radio" name="q28" value="a"> a. Model gagal karena jenis proyek yang digunakan
+                            salah</label>
+                        <label><input type="radio" name="q28" value="b"> b. Data latih suara tidak mencakup variasi kondisi
+                            lingkungan</label>
+                        <label><input type="radio" name="q28" value="c"> c. Kamera tidak mampu mendeteksi suara dengan
+                            baik</label>
+                        <label><input type="radio" name="q28" value="d"> d. Label kelas terlalu banyak</label>
+                    </div>
+
+                    <!-- soal 29 -->
+                    <div class="quiz-card quiz-question-item active" data-index="28">
+
+                        <p class="quiz-question">
+                            29. Model pose yang dibuat siswa dapat mendeteksi jongkok dengan baik, tetapi sering salah
+                            mengenali
+                            gerakan berdiri sebagai lambaian tangan. Perbaikan yang paling tepat adalah ....
+                        </p>
+                        <label><input type="radio" name="q29" value="a"> a. Mengurangi jumlah kelas agar model tidak
+                            bingung</label>
+                        <label><input type="radio" name="q29" value="b"> b. Menambah variasi data pose berdiri dengan sudut
+                            kamera dan pencahayaan berbeda</label>
+                        <label><input type="radio" name="q29" value="c"> c. Mengganti proyek ke Audio Project</label>
+                        <label><input type="radio" name="q29" value="d"> d. Menambahkan data berupa suara saat
+                            berdiri</label>
+                    </div>
+
+                    <!-- soal 30 -->
+                    <div class="quiz-card quiz-question-item active" data-index="29">
+
+                        <p class="quiz-question">
+                            30. Seseorang ingin membuat sistem absensi otomatis berbasis wajah di kelas dengan Teachable
+                            Machine. Namun, kelas sering berpindah tempat sehingga background berubah. Agar sistem tetap
+                            akurat,
+                            strategi terbaik adalah ....
+                            <label><input type="radio" name="q30" value="a"> a. Mengunci model agar tidak bisa dilatih
+                                ulang</label>
+                            <label><input type="radio" name="q30" value="b"> b. Melatih model dengan latar belakang beragam
+                                sejak awal</label>
+                            <label><input type="radio" name="q30" value="c"> c. Menggunakan mikrofon sebagai input
+                                data</label>
+                            <label><input type="radio" name="q30" value="d"> d. Mengubah proyek menjadi Pose Project</label>
+                    </div>
+
+                    <!-- tombol navigasi quiz -->
+                    <div class="quiz-navigation">
+
+                        <div class="nav-top">
+                            <button type="button" id="prevBtn" onclick="prevQuestion()">
+                                Sebelumnya
+                            </button>
+
+                            <span id="questionIndicator">Soal 1 dari 10</span>
+
+                            <button type="button" id="nextBtn" onclick="nextQuestion()">
+                                Selanjutnya
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="quizResult" class="quiz-result"></div>
+
+            </form>
+
+            <!-- indikator soal -->
+            <aside class="quiz-nav">
+                <h4>Nomor Soal</h4>
+
+                <div class="quiz-nav-grid">
+
+                    <button class="nav-item" data-index="0">1</button>
+                    <button class="nav-item" data-index="1">2</button>
+                    <button class="nav-item" data-index="2">3</button>
+                    <button class="nav-item" data-index="3">4</button>
+                    <button class="nav-item" data-index="4">5</button>
+                    <button class="nav-item" data-index="5">6</button>
+                    <button class="nav-item" data-index="6">7</button>
+                    <button class="nav-item" data-index="7">8</button>
+                    <button class="nav-item" data-index="8">9</button>
+                    <button class="nav-item" data-index="9">10</button>
+                    <button class="nav-item" data-index="10">11</button>
+                    <button class="nav-item" data-index="11">12</button>
+                    <button class="nav-item" data-index="12">13</button>
+                    <button class="nav-item" data-index="13">14</button>
+                    <button class="nav-item" data-index="14">15</button>
+                    <button class="nav-item" data-index="15">16</button>
+                    <button class="nav-item" data-index="16">17</button>
+                    <button class="nav-item" data-index="17">18</button>
+                    <button class="nav-item" data-index="18">19</button>
+                    <button class="nav-item" data-index="19">20</button>
+                    <button class="nav-item" data-index="20">21</button>
+                    <button class="nav-item" data-index="21">22</button>
+                    <button class="nav-item" data-index="22">23</button>
+                    <button class="nav-item" data-index="23">24</button>
+                    <button class="nav-item" data-index="24">25</button>
+                    <button class="nav-item" data-index="25">26</button>
+                    <button class="nav-item" data-index="26">27</button>
+                    <button class="nav-item" data-index="27">28</button>
+                    <button class="nav-item" data-index="28">29</button>
+                    <button class="nav-item" data-index="29">30</button>
                 </div>
 
-                <!-- soal 28 -->
-                <div class="quiz-card quiz-question-item active" data-index="27">
-
-                    <p class="quiz-question">
-                        28. Seorang guru meminta siswa membuat model untuk mendeteksi apakah seseorang sedang berbicara atau
-                        diam. Setelah model dibuat, hasil prediksinya sering salah saat ruang kelas ramai. Analisis terbaik
-                        adalah ....
-                    </p>
-                    <label><input type="radio" name="q28" value="a"> a. Model gagal karena jenis proyek yang digunakan
-                        salah</label>
-                    <label><input type="radio" name="q28" value="b"> b. Data latih suara tidak mencakup variasi kondisi
-                        lingkungan</label>
-                    <label><input type="radio" name="q28" value="c"> c. Kamera tidak mampu mendeteksi suara dengan
-                        baik</label>
-                    <label><input type="radio" name="q28" value="d"> d. Label kelas terlalu banyak</label>
+                <div class="quiz-nav-legend">
+                    <span class="legend answered">Dijawab</span>
+                    <span class="legend doubt">Ragu-ragu</span>
+                    <span class="legend empty">Belum dijawab</span>
                 </div>
 
-                <!-- soal 29 -->
-                <div class="quiz-card quiz-question-item active" data-index="28">
-
-                    <p class="quiz-question">
-                        29. Model pose yang dibuat siswa dapat mendeteksi jongkok dengan baik, tetapi sering salah mengenali
-                        gerakan berdiri sebagai lambaian tangan. Perbaikan yang paling tepat adalah ....
-                    </p>
-                    <label><input type="radio" name="q29" value="a"> a. Mengurangi jumlah kelas agar model tidak
-                        bingung</label>
-                    <label><input type="radio" name="q29" value="b"> b. Menambah variasi data pose berdiri dengan sudut
-                        kamera dan pencahayaan berbeda</label>
-                    <label><input type="radio" name="q29" value="c"> c. Mengganti proyek ke Audio Project</label>
-                    <label><input type="radio" name="q29" value="d"> d. Menambahkan data berupa suara saat berdiri</label>
-                </div>
-
-                <!-- soal 30 -->
-                <div class="quiz-card quiz-question-item active" data-index="29">
-
-                    <p class="quiz-question">
-                        30. Seseorang ingin membuat sistem absensi otomatis berbasis wajah di kelas dengan Teachable
-                        Machine. Namun, kelas sering berpindah tempat sehingga background berubah. Agar sistem tetap akurat,
-                        strategi terbaik adalah ....
-                        <label><input type="radio" name="q30" value="a"> a. Mengunci model agar tidak bisa dilatih
-                            ulang</label>
-                        <label><input type="radio" name="q30" value="b"> b. Melatih model dengan latar belakang beragam
-                            sejak awal</label>
-                        <label><input type="radio" name="q30" value="c"> c. Menggunakan mikrofon sebagai input data</label>
-                        <label><input type="radio" name="q30" value="d"> d. Mengubah proyek menjadi Pose Project</label>
-                </div>
-
-                <!-- tombol navigasi quiz -->
-                <div class="quiz-navigation">
-                    <button type="button" id="prevBtn" onclick="prevQuestion()" disabled>
-                        Sebelumnya
+                <div class="nav-bottom">
+                    <button type="button" id="doubtBtn" onclick="markDoubt()">
+                        Ragu-ragu
                     </button>
 
-                    <span id="questionIndicator">Soal 1 dari 30</span>
-
-                    <button type="button" id="nextBtn" onclick="nextQuestion()">
-                        Selanjutnya
-                    </button>
-
-                    <!-- tombol submit -->
-                    <button type="button" class="btn-submit d-none" id="submitBtn" onclick="submitQuiz()">
-                        Selesai & Lihat Nilai
+                    <button type="button" class="btn-submit" id="submitBtn" onclick="validateBeforeSubmit()">
+                        Selesai
                     </button>
                 </div>
+            </aside>
         </div>
-        <div id="quizResult" class="quiz-result"></div>
 
-        </form>
+        <!-- QUIZ ALERT MODAL -->
+        <div class="modal-overlay hidden" id="quizAlertModal">
+            <div class="modal-card glass alert-modal">
 
-        <!-- indikator soal -->
-        <aside class="quiz-nav">
-            <h4>Nomor Soal</h4>
+                <div class="modal-header">
+                    <h3>Perhatian</h3>
+                    <span class="modal-close" onclick="closeQuizAlert()">×</span>
+                </div>
 
-            <div class="quiz-nav-grid">
+                <p id="quizAlertMessage" class="alert-message"></p>
 
-                <button class="nav-item" data-index="0">1</button>
-                <button class="nav-item" data-index="1">2</button>
-                <button class="nav-item" data-index="2">3</button>
-                <button class="nav-item" data-index="3">4</button>
-                <button class="nav-item" data-index="4">5</button>
-                <button class="nav-item" data-index="5">6</button>
-                <button class="nav-item" data-index="6">7</button>
-                <button class="nav-item" data-index="7">8</button>
-                <button class="nav-item" data-index="8">9</button>
-                <button class="nav-item" data-index="9">10</button>
-                <button class="nav-item" data-index="10">11</button>
-                <button class="nav-item" data-index="11">12</button>
-                <button class="nav-item" data-index="12">13</button>
-                <button class="nav-item" data-index="13">14</button>
-                <button class="nav-item" data-index="14">15</button>
-                <button class="nav-item" data-index="15">16</button>
-                <button class="nav-item" data-index="16">17</button>
-                <button class="nav-item" data-index="17">18</button>
-                <button class="nav-item" data-index="18">19</button>
-                <button class="nav-item" data-index="19">20</button>
-                <button class="nav-item" data-index="20">21</button>
-                <button class="nav-item" data-index="21">22</button>
-                <button class="nav-item" data-index="22">23</button>
-                <button class="nav-item" data-index="23">24</button>
-                <button class="nav-item" data-index="24">25</button>
-                <button class="nav-item" data-index="25">26</button>
-                <button class="nav-item" data-index="26">27</button>
-                <button class="nav-item" data-index="27">28</button>
-                <button class="nav-item" data-index="28">29</button>
-                <button class="nav-item" data-index="29">30</button>
+                <div class="alert-actions">
+                    <button class="btn-submit" onclick="closeQuizAlert()">
+                        Mengerti
+                    </button>
+                </div>
 
             </div>
-
-            <div class="quiz-nav-legend">
-                <span class="legend answered">Dijawab</span>
-                <span class="legend doubt">Ragu-ragu</span>
-                <span class="legend empty">Belum dijawab</span>
-            </div>
-        </aside>
         </div>
 
     </section>
@@ -572,6 +607,18 @@
 
             document.querySelector(".quiz-timer")?.classList.add("d-none");
             document.getElementById("quizContainer")?.classList.add("d-none");
+
+            document.querySelectorAll('input[type="radio"]').forEach(radio => {
+                radio.addEventListener("change", function () {
+
+                    const navBtn = document.querySelector(
+                        `.nav-item[data-index="${currentQuestion}"]`
+                    );
+
+                    navBtn.classList.remove("doubt");
+                    navBtn.classList.add("answered");
+                });
+            });
         });
     </script>
 

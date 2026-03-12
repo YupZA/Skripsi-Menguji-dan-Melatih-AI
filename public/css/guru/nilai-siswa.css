@@ -1,0 +1,215 @@
+/* ===============================
+   NILAI SISWA PAGE
+================================ */
+
+.nilai-page {
+  padding: 30px;
+  color: #eaeaf0;
+}
+
+/* HEADER */
+.page-header h1 {
+  font-size: 1.8rem;
+  color: #00f5ff;
+}
+
+.page-header p {
+  margin-top: 6px;
+  color: #9aa4bf;
+}
+
+/* ================= STATS ================= */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 18px;
+  margin: 25px 0;
+}
+
+.stat-card {
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(0,245,255,0.25);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 18px rgba(0,245,255,0.35);
+}
+
+.stat-card h4 {
+  font-size: 0.8rem;
+  color: #9aa4bf;
+}
+
+.stat-card span {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00f5ff;
+}
+
+/* ================= SEARCH ================= */
+
+.search-box input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(15,23,42,0.85);
+  color: #fff;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+/* ================= TABLE ================= */
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.03);
+}
+
+.nilai-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nilai-table thead {
+  background: rgba(0,245,255,0.08);
+}
+
+.nilai-table th {
+  padding: 14px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #9aa4bf;
+  text-align: left;
+}
+
+.nilai-table td {
+  padding: 14px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.nilai-table tr:hover {
+  background: rgba(0,245,255,0.05);
+}
+
+/* ================= AVATAR ================= */
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(0,245,255,0.4);
+}
+
+/* ================= BADGE STATUS ================= */
+
+.badge-nilai {
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.badge-nilai.lulus {
+  background: rgba(0,245,255,0.15);
+  color: #00f5ff;
+  border: 1px solid rgba(0,245,255,0.4);
+}
+
+.badge-nilai.remedial {
+  background: rgba(255,80,80,0.15);
+  color: #ff6b6b;
+  border: 1px solid rgba(255,80,80,0.4);
+}
+
+/* ================= TABLE GRID LINES ================= */
+
+.nilai-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nilai-table th,
+.nilai-table td {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.nilai-table th:not(:last-child),
+.nilai-table td:not(:last-child) {
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ================= SEARCH MODERN ================= */
+
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-wrapper input {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,245,255,0.2);
+  background: rgba(15,23,42,0.9);
+  color: #fff;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.search-wrapper input:focus {
+  border-color: #00f5ff;
+  box-shadow: 0 0 12px rgba(0,245,255,0.3);
+}
+
+.clear-btn {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #9aa4bf;
+  font-size: 1rem;
+  cursor: pointer;
+  display: none;
+}
+
+.clear-btn:hover {
+  color: #ff6b6b;
+}
+
+/* ================= TABLE CONTROLS ================= */
+
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.table-controls select {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,245,255,0.2);
+  background: rgba(15,23,42,0.9);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.table-controls select:focus {
+  border-color: #00f5ff;
+  box-shadow: 0 0 10px rgba(0,245,255,0.3);
+}

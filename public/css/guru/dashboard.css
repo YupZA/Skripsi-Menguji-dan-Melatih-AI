@@ -417,74 +417,87 @@ footer {
   transform: scale(0.95);
 }
 
-.dashboard-block {
-  padding: 26px;
+
+/* ===============================
+   CREATE CLASS CARD
+================================ */
+
+.create-class-card {
+  max-width: 480px;
+  margin-bottom: 30px;
+}
+
+.card-title {
+  font-size: 1rem;
+  margin-bottom: 18px;
+  color: #00f5ff;
+  font-weight: 700;
+}
+
+/* FORM */
+.create-class-form {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.block-title {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #00f5ff;
-  margin-bottom: 8px;
-}
-
-.block-content {
+/* FIELD */
+.create-class-form .form-group {
   display: flex;
   flex-direction: column;
-  gap: 12px;
 }
 
-.mini-stat {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9rem;
+.create-class-form label {
+  font-size: 0.8rem;
   color: #9aa4bf;
+  margin-bottom: 6px;
 }
 
-.mini-stat strong {
-  font-size: 1.1rem;
+.create-class-form input {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(15,23,42,0.9);
+  color: #fff;
+  font-size: 0.9rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.create-class-form input::placeholder {
+  color: #7c88a6;
+}
+
+.create-class-form input:focus {
+  border-color: #00f5ff;
+  box-shadow: 0 0 12px rgba(0,245,255,0.4);
+}
+
+/* BUTTON */
+.btn-generate {
+  margin-top: 6px;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+
   font-weight: 700;
-  color: #eaeaf0;
-}
-
-.progress-text {
   font-size: 0.85rem;
-  color: #9aa4bf;
+
+  background: linear-gradient(135deg, #00f5ff, #8b5cf6);
+  color: #0f172a;
+
+  transition: 0.3s;
+  box-shadow: 0 0 16px rgba(0,245,255,0.4);
 }
 
-.quiz-table-wrapper {
-  margin-top: 15px;
-  overflow-x: auto;
+.btn-generate:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 24px rgba(0,245,255,0.6),
+    0 0 32px rgba(139,92,246,0.4);
 }
 
-.quiz-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.9rem;
-}
-
-.quiz-table th {
-  text-align: left;
-  padding: 10px;
-  font-weight: 600;
-  color: #00f5ff;
-  border-bottom: 1px solid rgba(255,255,255,0.15);
-}
-
-.quiz-table td {
-  padding: 10px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  color: #eaeaf0;
-}
-
-.quiz-table tbody tr:hover {
-  background: rgba(0,245,255,0.05);
-}
-
-.quiz-table tfoot td {
-  border-top: 1px solid rgba(255,255,255,0.2);
-  padding-top: 12px;
+.btn-generate:active {
+  transform: scale(0.96);
 }

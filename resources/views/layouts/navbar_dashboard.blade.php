@@ -39,24 +39,30 @@
         <div class="user">
 
             @auth
-                <div class="user-info">
-                    <div class="avatar">👤</div>
+                    <div class="user-info">
+                        <div class="avatar">
+                            <img src="{{ auth()->user()->profile_photo
+                ? asset('storage/' . auth()->user()->profile_photo)
+                : 'https://ui-avatars.com/api/?name=' . auth()->user()->name . '&background=0f172a&color=00f5ff' }}"
+                                alt="Avatar">
+                        </div>
 
-                    <div class="user-meta">
-                        <span class="user-name">
-                            {{ auth()->user()->name }}
-                        </span>
 
-                        <span class="user-role">
-                            {{ ucfirst(auth()->user()->role) }}
-                        </span>
+                        <div class="user-meta">
+                            <span class="user-name">
+                                {{ auth()->user()->name }}
+                            </span>
+
+                            <span class="user-role">
+                                {{ ucfirst(auth()->user()->role) }}
+                            </span>
+                        </div>
+
+                        <form method="POST" action="/logout" class="logout-form">
+                            @csrf
+                            <button type="submit" class="logout-btn">Logout</button>
+                        </form>
                     </div>
-
-                    <form method="POST" action="/logout" class="logout-form">
-                        @csrf
-                        <button type="submit" class="logout-btn">Logout</button>
-                    </form>
-                </div>
             @endauth
 
             @guest

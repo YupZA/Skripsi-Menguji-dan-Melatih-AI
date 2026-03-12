@@ -1,0 +1,119 @@
+/* ==============================
+   TOP NAV FIX
+============================== */
+
+.sb-topnav {
+  height: 64px;
+  padding: 30px 28px;   /* ⬅️ tambah kanan kiri */
+  display: flex;
+  align-items: center;
+}
+
+/* Brand */
+.navbar-brand {
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+  background: linear-gradient(135deg, #00f5ff, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Sidebar button */
+#sidebarToggle {
+  color: #9aa4bf;
+}
+
+#sidebarToggle:hover {
+  color: #00f5ff;
+}
+
+/* Push right content */
+.ms-auto {
+  flex: 1;
+}
+
+/* ==============================
+   USER SECTION
+============================== */
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 6px 12px;  /* kecilkan padding */
+  border-radius: 16px;
+}
+
+/* Avatar */
+.user .avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.user .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Meta */
+.user-meta {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.user-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #eaeaf0;
+}
+
+.user-role {
+  font-size: 0.6rem;
+  color: #9aa4bf;
+}
+
+/* Logout */
+.logout-btn {
+  padding: 4px 12px;
+  font-size: 0.7rem;
+  border-radius: 999px;
+  border: none;
+  background: #ef4444;
+  color: white;
+  font-weight: 100;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+}
+
+/* Login */
+.login-link {
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: linear-gradient(135deg, #00f5ff, #8b5cf6);
+  color: #0f172a;
+  transition: 0.25s ease;
+}
+
+.login-link:hover {
+  transform: scale(1.05);
+}
+

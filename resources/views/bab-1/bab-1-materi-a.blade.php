@@ -43,7 +43,7 @@
 
                 <div class="materi-image">
                     <img src="{{ asset('images/bab-1/materi-a/gambar-1.webp') }}" alt="Ilustrasi AI">
-                    <span>Ilustrasi Kecerdasan Buatan</span>
+                    <span>Gambar 1.1 Mesin Enigma dan Alan Turing</span>
                 </div>
 
                 <p>
@@ -65,7 +65,7 @@
 
                 <div class="materi-image">
                     <img src="{{ asset('images/bab-1/materi-a/gambar-2.jpg') }}" alt="Ilustrasi AI">
-                    <span>Ilustrasi Kecerdasan Buatan</span>
+                    <span>Gambar 1.2 Automata mekanik dan baju zirah abad pertengahan</span>
                 </div>
 
 
