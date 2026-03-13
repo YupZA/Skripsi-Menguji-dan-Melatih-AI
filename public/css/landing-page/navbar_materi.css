@@ -42,12 +42,20 @@
   align-items: center;
 }
 
+/* CARD WRAPPER */
 .user-info {
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 6px 12px;  /* kecilkan padding */
-  border-radius: 16px;
+  padding: 6px 14px;
+
+  /* glass card */
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 20px;
+
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 12px rgba(0,245,255,0.15);
 }
 
 /* Avatar */
@@ -91,7 +99,7 @@
   border: none;
   background: #ef4444;
   color: white;
-  font-weight: 100;
+  font-weight: 500;
   cursor: pointer;
   transition: 0.25s ease;
 }
@@ -116,4 +124,3 @@
 .login-link:hover {
   transform: scale(1.05);
 }
-

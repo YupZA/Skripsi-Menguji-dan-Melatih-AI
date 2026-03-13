@@ -1,153 +1,414 @@
-/* =====================================================
-   TRAIN AI — FULLY SCOPED (NO CONFLICT)
-===================================================== */
+/* =================================
+   AI CONTAINER
+================================= */
+.ai-container {
+    max-width: 1500px;
+    width: 95%;
+    margin: 40px auto;
+    padding: 40px;
 
-/* PAGE WRAPPER */
-.train-ai-page {
-  padding: 64px 24px;
-  display: flex;
-  justify-content: center;
+    background: linear-gradient(145deg, #0f172a, #111827);
+    border-radius: 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.7),
+        inset 0 0 30px rgba(0, 255, 255, 0.03);
+
+    backdrop-filter: blur(6px);
+
+    color: #e6edf3;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* CARD */
-.train-ai-card {
-  width: 100%;
-  max-width: 900px;
-  padding: 34px 38px 40px;
-  border-radius: 22px;
+/* =================================
+   TITLE
+================================= */
 
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.10),
-    rgba(255, 255, 255, 0.04)
-  );
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(14px);
-  box-shadow: 0 0 36px rgba(0, 245, 255, 0.15);
+.ai-container h1 {
+    font-size: 34px;
+    font-weight: 700;
+
+    background: linear-gradient(90deg, #22d3ee, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 8px;
 }
 
-/* TITLE */
-.train-ai-title {
-  margin: 0 0 12px;
-  font-size: 1.9rem;
-  font-weight: 800;
-  letter-spacing: 0.3px;
-
-  background: linear-gradient(135deg, #00f5ff, #8b5cf6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.ai-container p {
+    color: #9ca3af;
+    margin-bottom: 25px;
 }
 
-/* DESCRIPTION */
-.train-ai-desc {
-  margin-bottom: 18px;
-  max-width: 720px;
-  line-height: 1.6;
-  color: #9aa4bf;
+/* =================================
+   DATASET GRID
+================================= */
+
+.ai-container .dataset-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
 }
 
-/* INPUT TEXT */
-.train-ai-input {
-  width: 100%;
-  padding: 14px 16px;
-  border-radius: 14px;
-  margin-bottom: 20px;
+/* =================================
+   CLASS CARD
+================================= */
 
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  background: rgba(0, 0, 0, 0.35);
-  color: #ffffff;
+.ai-container .upload-box {
 
-  outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background: linear-gradient(145deg, #020617, #020617);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    padding: 26px;
+
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    transition: 0.3s ease;
+
+    position: relative;
 }
 
-.train-ai-input:focus {
-  border-color: #00f5ff;
-  box-shadow: 0 0 0 2px rgba(0, 245, 255, 0.25);
+/* glow border effect */
+
+.ai-container .upload-box::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 16px;
+
+    padding: 1px;
+
+    background: linear-gradient(45deg,
+            transparent,
+            rgba(56, 189, 248, 0.5),
+            transparent);
+
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+
+    mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    opacity: 0;
+    transition: 0.3s;
+
+    pointer-events: none;
+
 }
 
-/* ACTION BUTTONS */
-.train-ai-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-bottom: 26px;
+.ai-container .upload-box:hover::before {
+    opacity: 1;
 }
 
-/* BUTTON BASE */
-.train-ai-btn {
-  padding: 12px 28px;
-  border-radius: 30px;
-  font-weight: 700;
-  cursor: pointer;
-  border: none;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+.ai-container .upload-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
 }
 
-/* PRIMARY BUTTON */
-.train-ai-btn-primary {
-  background: linear-gradient(135deg, #00f5ff, #8b5cf6);
-  color: #000;
-  box-shadow: 0 0 20px rgba(0, 245, 255, 0.35);
+/* =================================
+   LABEL
+================================= */
+
+.ai-container label {
+    font-size: 14px;
+    color: #9ca3af;
 }
 
-.train-ai-btn-primary:hover {
-  transform: scale(1.06);
-  box-shadow: 0 0 30px rgba(0, 245, 255, 0.55);
+/* =================================
+   INPUT CLASS NAME
+================================= */
+
+.ai-container .class-name {
+
+    padding: 10px 12px;
+
+    border-radius: 8px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    background: #020617;
+
+    color: white;
+
+    transition: 0.2s;
+
 }
 
-/* SECONDARY BUTTON */
-.train-ai-btn-secondary {
-  background: rgba(255, 255, 255, 0.18);
-  color: #ffffff;
+.ai-container .class-name:focus {
+
+    border-color: #22d3ee;
+
+    box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.4);
+
+    outline: none;
+
 }
 
-.train-ai-btn-secondary:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 18px rgba(255, 255, 255, 0.25);
+.ai-container .delete-class-btn {
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 28px;
+    height: 28px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #ef4444;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s;
+
 }
 
-/* PREVIEW AREA */
-.train-ai-preview {
-  display: flex;
-  justify-content: center;
-  margin-top: 28px;
+.ai-container .delete-class-btn:hover {
+    background: #dc2626;
+    transform: scale(1.1);
 }
 
-/* IMAGE / CANVAS */
-.train-ai-preview img,
-.train-ai-preview canvas {
-  max-width: 360px;
-  border-radius: 18px;
-  box-shadow: 0 0 22px rgba(0, 245, 255, 0.35);
+/* =================================
+   FILE INPUT
+================================= */
+
+.ai-container .class-images {
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    border: 1px dashed rgba(255, 255, 255, 0.15);
+
+    background: #020617;
+
 }
 
-/* RESULT */
-.train-ai-result {
-  margin-top: 22px;
-  font-weight: 700;
+/* =================================
+   IMAGE COUNT
+================================= */
+
+.ai-container .image-count {
+
+    font-size: 13px;
+
+    color: #9ca3af;
+
 }
 
-.train-ai-result div {
-  margin-bottom: 6px;
-  color: #00f5ff;
+/* =================================
+   BUTTONS
+================================= */
+
+.ai-container .control-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 25px;
+
 }
 
-/* FOOTER NOTE */
-.train-ai-note {
-  margin-top: 28px;
-  text-align: center;
-  font-size: 0.85rem;
-  color: #9aa4bf;
+/* add class */
+
+.ai-container .add-class-btn {
+
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+
+    border: none;
+
+    padding: 11px 22px;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .train-ai-card {
-    padding: 28px 24px 32px;
-  }
+.ai-container .add-class-btn:hover {
 
-  .train-ai-title {
-    font-size: 1.6rem;
-  }
+    transform: translateY(-2px);
+
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+
+}
+
+/* train button */
+
+.ai-container .train-btn {
+
+    background: linear-gradient(90deg, #22c55e, #4ade80);
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+}
+
+.ai-container .train-btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 0 15px rgba(34, 197, 94, 0.6);
+
+}
+
+/* =================================
+   PROGRESS
+================================= */
+
+.ai-container .progress-box {
+
+    margin-top: 20px;
+
+    padding: 18px;
+
+    background: #020617;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    color: #9ca3af;
+
+}
+
+/* =================================
+   TEST SECTION
+================================= */
+
+.ai-container .test-section {
+
+    margin-top: 30px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+}
+
+.ai-container .test-box {
+
+    display: flex;
+
+    gap: 12px;
+
+    align-items: center;
+
+}
+
+.ai-container #testImage {
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    border: 1px dashed rgba(255, 255, 255, 0.15);
+
+    background: #020617;
+
+}
+
+/* predict */
+
+.ai-container .predict-btn {
+
+    background: linear-gradient(90deg, #22d3ee, #3b82f6);
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+}
+
+.ai-container .predict-btn:hover {
+
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.7);
+
+    transform: translateY(-2px);
+
+}
+
+/* =================================
+   RESULT
+================================= */
+
+.ai-container #result {
+
+    margin-top: 15px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #22d3ee;
+
+}
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width:900px) {
+
+    .ai-container {
+        padding: 25px;
+    }
+
+    .ai-container .dataset-box {
+        grid-template-columns: 1fr;
+    }
+
 }

@@ -1,158 +1,206 @@
-let model, webcam;
+console.log("TensorFlow:", typeof tf);
 
-const modelInput = document.getElementById("trainAiModelInput");
-const inputContainer = document.getElementById("trainAiPreviewArea");
-const labelContainer = document.getElementById("trainAiResultArea");
+let model;
 
-document.getElementById("trainAiLoadModelBtn").onclick = loadModel;
-document.getElementById("trainAiCameraBtn").onclick = startWebcam;
-document.getElementById("trainAiUploadBtn").onclick = triggerUpload;
-document.getElementById("trainAiAudioBtn").onclick = triggerAudioUpload;
+let catImages = [];
+let notCatImages = [];
 
-document
-  .getElementById("trainAiImageFile")
-  .addEventListener("change", handleImage);
+document.addEventListener("change", function (e) {
 
-document
-  .getElementById("trainAiAudioFile")
-  .addEventListener("change", handleAudio);
+    if (e.target.classList.contains("class-images")) {
 
+        let count = e.target.files.length;
 
-/* =========================
-   LOAD MODEL
-========================= */
-async function loadModel() {
-  let base = modelInput.value.trim();
-  if (!base.endsWith("/")) base += "/";
+        e.target.parentElement.querySelector(".image-count").innerText =
+            count + " gambar";
 
-  if (!base.includes("teachablemachine.withgoogle.com/models/")) {
-    alert("Gunakan link dari Google Teachable Machine!");
-    return;
-  }
+    }
 
-  try {
-    model = await tmImage.load(
-      base + "model.json",
-      base + "metadata.json"
-    );
+});
 
-    labelContainer.innerHTML = `
-      <p>Model berhasil dimuat</p>
-      <small>Jumlah kelas: ${model.getTotalClasses()}</small>
-    `;
-  } catch (e) {
-    alert("Link model tidak valid atau belum di-export (TensorFlow.js)");
-    console.error(e);
-  }
-}
+async function loadImage(file) {
 
-/* =========================
-   CAMERA
-========================= */
-async function startWebcam() {
-  if (!model) return alert("Load model dulu!");
-
-  webcam = new tmImage.Webcam(240, 240, true);
-  await webcam.setup();
-  await webcam.play();
-
-  inputContainer.innerHTML = "";
-  inputContainer.appendChild(webcam.canvas);
-
-  window.requestAnimationFrame(loop);
-}
-
-async function loop() {
-  webcam.update();
-  await predict(webcam.canvas);
-  window.requestAnimationFrame(loop);
-}
-
-/* =========================
-   UPLOAD IMAGE
-========================= */
-function triggerUpload() {
-  if (!model) return alert("Load model dulu!");
-  document.getElementById("trainAiImageFile").click();
-}
-
-function handleImage(e) {
-  const file = e.target.files[0];
-  if (!file || !model) return;
-
-  const img = document.createElement("img");
-  img.src = URL.createObjectURL(file);
-  img.style.maxWidth = "240px";
-
-  img.onload = async () => {
-    inputContainer.innerHTML = "";
-    inputContainer.appendChild(img);
-    await predict(img);
-  };
-}
-
-/* =========================
-UPLOAD AUDIO (AUDIO MODEL)
-========================= */
-function triggerAudioUpload() {
-  if (!model) return alert("Load model dulu!");
-  document.getElementById("trainAiAudioFile").click();
-}
-
-
-async function handleAudio(e) {
-  const file = e.target.files[0];
-  if (!file || !model) return;
-
-
-  // tampilkan audio player
-  const audio = document.createElement("audio");
-  audio.controls = true;
-  audio.src = URL.createObjectURL(file);
-
-
-  inputContainer.innerHTML = "";
-  inputContainer.appendChild(audio);
-
-
-  // decode audio
-  const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-  const buffer = await file.arrayBuffer();
-  const audioBuffer = await audioCtx.decodeAudioData(buffer);
-
-
-  try {
-    const predictions = await model.predict(audioBuffer);
-
-
-    labelContainer.innerHTML = "<h4>Hasil Prediksi Audio</h4>";
-    predictions.forEach(p => {
-      const div = document.createElement("div");
-      div.innerHTML = `
-${p.className} :
-<strong>${(p.probability * 100).toFixed(1)}%</strong>
-`;
-      labelContainer.appendChild(div);
+    return new Promise(resolve => {
+        let img = new Image();
+        img.src = URL.createObjectURL(file);
+        img.onload = () => resolve(img);
     });
-  } catch (err) {
-    alert("Model ini bukan model Audio.");
-    console.error(err);
-  }
+
 }
 
-/* =========================
-   PREDICTION
-========================= */
-async function predict(input) {
-  const predictions = await model.predict(input);
-  labelContainer.innerHTML = "<h4>Hasil Prediksi</h4>";
+function imageToTensor(img) {
 
-  predictions.forEach(p => {
-    const div = document.createElement("div");
-    div.innerHTML = `
-      ${p.className} :
-      <strong>${(p.probability * 100).toFixed(1)}%</strong>
-    `;
-    labelContainer.appendChild(div);
-  });
+    return tf.browser.fromPixels(img)
+        .resizeNearestNeighbor([64, 64])
+        .toFloat()
+        .div(255)
+        .expandDims();
+
+}
+
+async function trainModel() {
+
+    let classes = document.querySelectorAll(".upload-box");
+
+    let xs = [];
+    let ys = [];
+
+    document.getElementById("trainingStatus").innerText = "Menyiapkan dataset...";
+
+    for (let i = 0; i < classes.length; i++) {
+
+        let files = classes[i].querySelector(".class-images").files;
+
+        for (let file of files) {
+
+            let img = await loadImage(file);
+
+            xs.push(imageToTensor(img));
+
+            let label = new Array(classes.length).fill(0);
+            label[i] = 1;
+
+            ys.push(label);
+
+        }
+
+    }
+
+    if (xs.length === 0) {
+        alert("Masukkan dataset gambar terlebih dahulu!");
+        return;
+    }
+
+    let xTensor = tf.concat(xs);
+    let yTensor = tf.tensor(ys);
+
+    model = tf.sequential();
+
+    model.add(tf.layers.conv2d({
+        filters: 16,
+        kernelSize: 3,
+        activation: 'relu',
+        inputShape: [64, 64, 3]
+    }));
+
+    model.add(tf.layers.maxPooling2d({ poolSize: 2 }));
+
+    model.add(tf.layers.flatten());
+
+    model.add(tf.layers.dense({
+        units: 64,
+        activation: 'relu'
+    }));
+
+    model.add(tf.layers.dense({
+        units: classes.length,
+        activation: 'softmax'
+    }));
+
+    model.compile({
+        optimizer: 'adam',
+        loss: 'categoricalCrossentropy',
+        metrics: ['accuracy']
+    });
+
+    document.getElementById("trainingStatus").innerText = "Training dimulai...";
+
+    await model.fit(xTensor, yTensor, {
+        epochs: 5,
+        callbacks: {
+            onEpochEnd: (epoch, logs) => {
+                document.getElementById("trainingStatus").innerText =
+                    "Epoch " + (epoch + 1) + " Loss:" + logs.loss.toFixed(4);
+            }
+        }
+    });
+
+    document.getElementById("trainingStatus").innerText = "Training selesai!";
+}
+
+
+async function predict() {
+
+    if (!model) {
+        alert("Model belum dilatih!");
+        return;
+    }
+
+    let file = document.getElementById("testImage").files[0];
+
+    if (!file) {
+        alert("Masukkan gambar terlebih dahulu");
+        return;
+    }
+
+    let img = await loadImage(file);
+
+    let tensor = imageToTensor(img);
+
+    let prediction = model.predict(tensor);
+
+    let values = prediction.dataSync();
+
+    let classes = document.querySelectorAll(".class-name");
+
+    let maxIndex = values.indexOf(Math.max(...values));
+
+    let className = classes[maxIndex].value;
+
+    document.getElementById("result").innerText =
+        "Prediksi: " + className + " (" + (values[maxIndex] * 100).toFixed(2) + "%)";
+}
+
+
+function addClass() {
+
+    let container = document.getElementById("classContainer");
+
+    let classCount = container.children.length + 1;
+
+    let box = document.createElement("div");
+
+    box.className = "upload-box";
+
+    box.innerHTML = `
+<button class="delete-class-btn" onclick="removeClass(this)">×</button>
+
+<label>Class ${classCount}</label>
+
+<input type="text" class="class-name" placeholder="Nama class">
+
+<input type="file" class="class-images" multiple accept="image/*">
+
+<p class="image-count">0 gambar</p>
+`;
+
+    container.appendChild(box);
+
+}
+
+
+function removeClass(button) {
+
+    let card = button.closest(".upload-box");
+
+    card.remove();
+
+    updateClassNumbers();
+
+}
+
+function updateClassNumbers() {
+
+    let classes = document.querySelectorAll("#classContainer .upload-box");
+
+    classes.forEach((card, index) => {
+
+        let label = card.querySelector("label");
+
+        if (label) {
+            label.innerText = "Class " + (index + 1);
+        }
+
+    });
+
 }
