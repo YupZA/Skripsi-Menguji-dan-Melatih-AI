@@ -11,17 +11,17 @@ class NilaiController extends Controller
 {
     public function index(Request $request)
     {
-        // 🔥 Ambil semua kelas dulu (tidak terpengaruh filter)
-        $kelasList = User::where('role', 'siswa')
-            ->select('kelas')
-            ->distinct()
-            ->pluck('kelas');
+        // 🔥 ambil daftar kelas dari tabel kelas
+        $kelasList = \App\Models\Kelas::pluck('nama_kelas');
 
-        $query = User::where('role', 'siswa')
-            ->with('quizResults');
+        $query = User::with(['kelas', 'quizResults'])
+            ->where('role', 'siswa');
 
+        // 🔥 filter berdasarkan nama kelas (relasi)
         if ($request->kelas && $request->kelas !== '') {
-            $query->where('kelas', $request->kelas);
+            $query->whereHas('kelas', function ($q) use ($request) {
+                $q->where('nama_kelas', $request->kelas);
+            });
         }
 
         $siswa = $query->get();
@@ -62,7 +62,7 @@ class NilaiController extends Controller
             'rataRata',
             'lulus',
             'remedial',
-            'kelasList'   // 🔥 kirim ke view
+            'kelasList'
         ));
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Kelas;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -29,23 +30,36 @@ class AuthController extends Controller
 
         if ($request->role === 'siswa') {
             $rules['nis'] = 'required|unique:users,nis';
-            $rules['kelas'] = 'required';
+            $rules['token_kelas'] = 'required';
         }
 
         if ($request->role === 'guru') {
             $rules['nip'] = 'required|unique:users,nip';
-            // $rules['bidang'] = 'required';
         }
 
         $request->validate($rules);
 
-        User::create([
+        $kelasId = null;
+
+        if ($request->role === 'siswa') {
+            $kelas = Kelas::where('token', $request->token_kelas)->first();
+
+            if (!$kelas) {
+                return back()->withErrors([
+                    'token_kelas' => 'Token kelas tidak ditemukan'
+                ])->withInput();
+            }
+
+            $kelasId = $kelas->id;
+        }
+
+        $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => bcrypt($request->password),
             'role' => $request->role,
             'nis' => $request->nis,
-            'kelas' => $request->kelas,
+            'kelas_id' => $kelasId,
             'nip' => $request->nip,
         ]);
 

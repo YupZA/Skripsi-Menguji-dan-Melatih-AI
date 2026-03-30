@@ -21,7 +21,7 @@ return new class extends Migration {
 
             // khusus siswa
             $table->string('nis')->nullable()->unique();
-            $table->string('kelas')->nullable();
+            $table->foreignId('kelas_id')->nullable()->constrained()->nullOnDelete();
 
 
             // khusus guru

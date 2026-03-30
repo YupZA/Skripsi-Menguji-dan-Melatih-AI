@@ -24,9 +24,11 @@ class User extends Authenticatable
         'role',
         'profile_photo',
         'nis',
-        'kelas',
         'nip',
+        'kelas_id'
     ];
+
+    
 
     /**
      * The attributes that should be hidden for serialization.
@@ -65,7 +67,7 @@ class User extends Authenticatable
 
     public function kelas()
     {
-        return $this->belongsTo(Kelas::class);
+        return $this->belongsTo(Kelas::class, 'kelas_id');
     }
 
     public function kelasYangDiajar()

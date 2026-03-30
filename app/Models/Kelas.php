@@ -13,6 +13,8 @@ class Kelas extends Model
         'status'
     ];
 
+    protected $table = 'kelas';
+
     public function guru()
     {
         return $this->belongsTo(User::class, 'guru_id');
@@ -20,6 +22,6 @@ class Kelas extends Model
 
     public function siswa()
     {
-        return $this->hasMany(User::class);
+        return $this->hasMany(User::class, 'kelas_id');
     }
 }

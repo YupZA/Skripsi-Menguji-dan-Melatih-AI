@@ -44,7 +44,7 @@
                 <select id="kelasFilter">
                     <option value="">Semua Kelas</option>
                     @php
-                        $kelasList = collect($siswa)->pluck('kelas')->unique();
+                        $kelasList = collect($siswa)->pluck('kelas.nama_kelas')->filter()->unique();
                     @endphp
                     @foreach($kelasList as $kelas)
                         <option value="{{ $kelas }}">{{ $kelas }}</option>
@@ -85,7 +85,7 @@
                         : 'https://ui-avatars.com/api/?name=' . $item->name }}" class="avatar">
                                     </td>
                                     <td>{{ $item->name }}</td>
-                                    <td>{{ $item->kelas ?? '-' }}</td>
+                                    <td>{{ $item->kelas->nama_kelas ?? '-' }}</td>
                                     <td>
                                         <div class="mini-progress">
                                             <div class="mini-fill" style="width: {{ $item->progress }}%"></div>

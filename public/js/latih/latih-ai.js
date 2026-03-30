@@ -167,7 +167,7 @@ function addClass() {
 
 <label>Class ${classCount}</label>
 
-<input type="text" class="class-name" placeholder="Nama class">
+<input type="text" class="class-name" placeholder="Nama kelas">
 
 <input type="file" class="class-images" multiple accept="image/*">
 

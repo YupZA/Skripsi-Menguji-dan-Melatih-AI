@@ -12,7 +12,9 @@ class ProgresSiswaController extends Controller
 {
     public function index()
     {
-        $siswa = User::where('role', 'siswa')->get();
+        $siswa = User::with('kelas')
+            ->where('role', 'siswa')
+            ->get();
 
         $totalProgress = 0;
         $jumlahSiswa = $siswa->count();

@@ -87,7 +87,7 @@
                             </td>
 
                             <td>{{ $item['user']->name }}</td>
-                            <td>{{ $item['user']->kelas }}</td>
+                            <td>{{ optional($item['user']->kelas)->nama_kelas ?? '-' }}</td>
 
                             <td>{{ $item['quiz1'] }}</td>
                             <td>{{ $item['quiz2'] }}</td>

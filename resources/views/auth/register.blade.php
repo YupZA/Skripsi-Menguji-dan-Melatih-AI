@@ -69,11 +69,6 @@
                     </span>
                 </div>
 
-
-
-
-
-
                 {{-- ROLE --}}
                 <div class="register-field">
                     <label>Role</label>
@@ -92,8 +87,8 @@
                     </div>
 
                     <div class="register-field">
-                        <label>Kelas (Siswa)</label>
-                        <input name="kelas" placeholder="Contoh: VIII A">
+                        <label>Token Kelas</label>
+                        <input name="token_kelas" placeholder="Masukkan token dari guru">
                     </div>
                 </div>
 

@@ -6,6 +6,8 @@
 
     <div class="data-siswa-page">
 
+    
+
         <div class="page-header">
             <h1>Data Siswa</h1>
             <p>Daftar siswa yang terdaftar dalam kelas</p>
@@ -53,7 +55,7 @@
                 <select id="kelasFilter">
                     <option value="">Semua Kelas</option>
                     @php
-                        $kelasList = collect($siswa)->pluck('kelas')->unique();
+                        $kelasList = collect($siswa)->pluck('kelas.nama_kelas')->unique();
                     @endphp
                     @foreach($kelasList as $kelas)
                         @if($kelas)
@@ -99,7 +101,7 @@
                                     </td>
                                     <td>{{ $item->name }}</td>
                                     <td>{{ $item->nis }}</td>
-                                    <td>{{ $item->kelas ?? '-' }}</td>
+                                    <td>{{ $item->kelas->nama_kelas ?? '-' }}</td>
                                     <td>
                                         <span class="status {{ $item->status }}">
                                             {{ ucfirst($item->status) }}
@@ -107,12 +109,12 @@
                                     </td>
                                     <td>
                                         <button class="btn-detail" onclick="openEditModal(
-                                                                                                            '{{ $item->id }}',
-                                                                                                            '{{ $item->name }}',
-                                                                                                            '{{ $item->nis }}',
-                                                                                                            '{{ $item->kelas }}',
-                                                                                                            '{{ $item->status }}'
-                                                                                                            )">Edit
+                                                                                                                            '{{ $item->id }}',
+                                                                                                                            '{{ $item->name }}',
+                                                                                                                            '{{ $item->nis }}',
+                                                                                                                            '{{ $item->kelas_id }}',
+                                                                                                                            '{{ $item->status }}'
+                                                                                                                            )">Edit
                                         </button>
                                     </td>
                                 </tr>
@@ -147,7 +149,12 @@
 
                     <div class="register-field">
                         <label>Kelas</label>
-                        <input type="text" name="kelas" id="editKelas">
+                        <select name="kelas_id" id="editKelas">
+                            <option value="">-- Pilih Kelas --</option>
+                            @foreach(\App\Models\Kelas::all() as $k)
+                                <option value="{{ $k->id }}">{{ $k->nama_kelas }}</option>
+                            @endforeach
+                        </select>
                     </div>
 
                     <div class="register-field">
@@ -172,12 +179,12 @@
 
 @push('scripts')
     <script>
-        function openEditModal(id, name, nis, kelas, status) {
+        function openEditModal(id, name, nis, kelas_id, status) {
             document.getElementById('editModal').classList.remove('hidden');
 
             document.getElementById('editName').value = name;
             document.getElementById('editNis').value = nis;
-            document.getElementById('editKelas').value = kelas;
+            document.getElementById('editKelas').value = kelas_id;
             document.getElementById('editStatus').value = status;
 
             document.getElementById('editForm').action =

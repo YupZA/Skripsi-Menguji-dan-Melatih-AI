@@ -14,9 +14,9 @@
             <!-- Class 1 -->
             <div class="upload-box">
 
-                <label>Class 1</label>
+                <label>Kelas 1</label>
 
-                <input type="text" class="class-name" placeholder="Nama class">
+                <input type="text" class="class-name" placeholder="Nama kelas">
 
                 <input type="file" class="class-images" multiple accept="image/*">
 
@@ -27,9 +27,9 @@
             <!-- Class 2 -->
             <div class="upload-box">
 
-                <label>Class 2</label>
+                <label>Kelas 2</label>
 
-                <input type="text" class="class-name" placeholder="Nama class">
+                <input type="text" class="class-name" placeholder="Nama kelas">
 
                 <input type="file" class="class-images" multiple accept="image/*">
 
@@ -42,7 +42,7 @@
         <div class="ai-controls">
 
             <div class="control-buttons">
-                <button class="add-class-btn" onclick="addClass()">+ Tambah Class</button>
+                <button class="add-class-btn" onclick="addClass()">+ Tambah kelas</button>
                 <button class="train-btn" onclick="trainModel()">Latih AI</button>
             </div>
 
@@ -54,7 +54,7 @@
 
         <div class="test-section">
 
-            <h3>Test Gambar</h3>
+            <h3>Tes Gambar</h3>
 
             <div class="test-box">
                 <input type="file" id="testImage" accept="image/*">

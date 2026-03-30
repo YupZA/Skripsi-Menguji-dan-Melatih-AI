@@ -264,17 +264,12 @@ footer {
 
 .dashboard .student-info span {
   color: #9aa4bf;
-  min-width: 52px;
+  min-width: unset;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-/* ===============================
-   EDIT PROFIL MODAL — FIX UI
-================================ */
-
-/* modal card padding lebih rapi */
 .modal-card {
   padding: 26px 28px;
 }
@@ -500,4 +495,30 @@ footer {
 
 .btn-generate:active {
   transform: scale(0.96);
+}
+
+@media (max-width: 768px) {
+  .dashboard .student-profile-future {
+    flex-direction: column; /* 🔥 ubah jadi vertikal */
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .dashboard .student-info {
+    width: 100%;
+  }
+
+  .dashboard .student-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .dashboard .student-info p {
+    font-size: 0.8rem;
+    flex-wrap: wrap; /* 🔥 biar teks gak tabrakan */
+  }
+
+  .edit-profile-btn {
+    position: static; /* 🔥 jangan absolute di mobile */
+    margin-top: 10px;
+  }
 }
