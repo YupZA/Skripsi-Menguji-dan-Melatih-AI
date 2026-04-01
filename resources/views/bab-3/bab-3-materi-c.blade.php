@@ -53,8 +53,19 @@
         </div>
     </div>
 
-    @php use App\Models\UserProgress;
-    $isCompleted = UserProgress::where('user_id', auth()->id())->where('materi_id', 9)->where('status', 'completed')->exists(); @endphp
+    @php
+            use App\Models\Materi;
+            use App\Models\UserProgress;
+
+            // ambil materi (karena kamu tidak pakai controller)
+            $materi = Materi::where('slug', 'bab-3-materi-c')->first();
+
+            // cek progress
+            $isCompleted = UserProgress::where('user_id', auth()->id())
+                ->where('materi_id', $materi->id ?? 0)
+                ->where('status', 'completed')
+                ->exists();
+        @endphp
 
     <div id="progress"></div>
 

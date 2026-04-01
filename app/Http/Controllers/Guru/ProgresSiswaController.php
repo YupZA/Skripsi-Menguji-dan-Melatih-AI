@@ -23,13 +23,12 @@ class ProgresSiswaController extends Controller
 
         foreach ($siswa as $item) {
 
-            $totalMateri = UserProgress::where('user_id', $item->id)
-                ->distinct('materi_id')
-                ->count('materi_id');
+            $totalMateri = Materi::count(); // ✅ total semua materi
 
             $completed = UserProgress::where('user_id', $item->id)
                 ->where('status', 'completed')
-                ->count();
+                ->distinct('materi_id')
+                ->count('materi_id');
 
             $item->progress = $totalMateri > 0
                 ? round(($completed / $totalMateri) * 100)

@@ -100,11 +100,13 @@ Route::get('/guru/beranda', function () {
     return view('guru/beranda');
 });
 
-Route::get('/guru/data-kelas',
+Route::get(
+    '/guru/data-kelas',
     [App\Http\Controllers\Guru\DataKelasController::class, 'index']
 )->middleware('auth');
 
-Route::put('/guru/kelas/{id}',
+Route::put(
+    '/guru/kelas/{id}',
     [App\Http\Controllers\Guru\DataKelasController::class, 'update']
 )->name('guru.kelas.update');
 
@@ -155,11 +157,13 @@ Route::middleware(['auth'])->group(function () {
         ->name('guru.data-siswa');
 });
 
-Route::put('/guru/siswa/{id}', 
+Route::put(
+    '/guru/siswa/{id}',
     [App\Http\Controllers\Guru\DataSiswaController::class, 'update']
 )->name('guru.siswa.update');
 
-Route::get('/guru/dashboard', 
+Route::get(
+    '/guru/dashboard',
     [App\Http\Controllers\Guru\DashboardController::class, 'index']
 )->middleware('auth');
 
@@ -174,3 +178,7 @@ use App\Http\Controllers\QuizController;
 Route::post('/quiz/save-result', [QuizController::class, 'saveResult'])
     ->middleware('auth')
     ->name('quiz.save');
+
+
+use App\Http\Controllers\MateriController;
+Route::get('/materi/{slug}', [MateriController::class, 'show']);
