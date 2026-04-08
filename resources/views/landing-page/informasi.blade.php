@@ -64,3 +64,7 @@
 
     </div>
 @endsection
+
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/landing-page/informasi.css') }}">
+@endpush

@@ -1,0 +1,33 @@
+.ai-container {
+    text-align: center;
+    padding: 40px;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.ai-card {
+    width: 250px;
+    padding: 30px;
+    border-radius: 16px;
+    text-decoration: none;
+    background: #1e293b;
+    color: white;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.ai-card:hover {
+    transform: translateY(-8px);
+    background: #334155;
+}
+
+.card-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,200 @@
+/* =============================
+   GLOBAL
+============================= */
+body {
+    background: radial-gradient(circle at top, #0a1f3c, #020b1a);
+    font-family: 'Segoe UI', sans-serif;
+    color: #e6f1ff;
+}
+
+/* =============================
+   CONTAINER
+============================= */
+.ai-container {
+    padding: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* =============================
+   MAIN LAYOUT
+============================= */
+.ai-main {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* =============================
+   CAMERA
+============================= */
+.camera-section {
+    text-align: center;
+}
+
+.camera-wrapper {
+    position: relative;
+    display: inline-block;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(0, 180, 255, 0.15);
+}
+
+#webcam {
+    width: 420px;
+    border-radius: 16px;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+/* =============================
+   DATASET
+============================= */
+.dataset-section {
+    width: 100%;
+    max-width: 420px;
+}
+
+/* header */
+.dataset-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* grid */
+.dataset-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+/* card */
+.upload-box {
+    background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+    padding: 16px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.06);
+    backdrop-filter: blur(8px);
+    transition: all 0.25s ease;
+}
+
+.upload-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.2);
+}
+
+/* label */
+.upload-box label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* input */
+.upload-box input {
+    width: 100%;
+    margin-top: 8px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    font-size: 13px;
+}
+
+.upload-box input::placeholder {
+    color: #aaa;
+}
+
+/* counter */
+.data-count {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #00d4ff;
+}
+
+/* =============================
+   BUTTONS
+============================= */
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+/* tombol umum */
+button {
+    background: linear-gradient(135deg, #4e73df, #36b9cc);
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 150, 255, 0.2);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 200, 255, 0.4);
+}
+
+/* tombol dalam card */
+.upload-box button {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 8px;
+}
+
+/* tombol train */
+.train-area {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.train-btn {
+    width: 100%;
+    padding: 12px;
+    font-weight: 600;
+}
+
+/* =============================
+   STATUS & RESULT
+============================= */
+.progress-box {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #9fb3c8;
+}
+
+.test-section {
+    margin-top: 25px;
+}
+
+#result {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00e0ff;
+}
+
+/* =============================
+   RESPONSIVE
+============================= */
+@media (max-width: 768px) {
+    #webcam {
+        width: 100%;
+    }
+
+    .ai-main {
+        flex-direction: column;
+        align-items: center;
+    }
+}

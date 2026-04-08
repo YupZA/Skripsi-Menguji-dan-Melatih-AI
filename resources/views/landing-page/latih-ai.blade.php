@@ -1,79 +1,34 @@
 @extends('layouts.navbar_dashboard')
 
-@section('title', 'Latih AI')
+@section('title', 'Pilih Latih AI')
 
 @section('content')
-
     <div class="ai-container">
 
-        <h1>Latih Gambar</h1>
-        <p>Melatih AI untuk membedakan berbagai gambar</p>
+        <h1>Pilih Mode Latih AI</h1>
+        <p>Pilih jenis AI yang ingin kamu latih</p>
 
-        <div id="classContainer" class="dataset-box">
+        <div class="card-wrapper">
 
-            <!-- Class 1 -->
-            <div class="upload-box">
+            <!-- Card Latih Gambar -->
+            <a href="{{ route('latih.gambar') }}" class="ai-card">
+                <div class="card-icon">🖼️</div>
+                <h3>Latih Gambar</h3>
+                <p>Latih AI mengenali objek dari gambar</p>
+            </a>
 
-                <label>Kelas 1</label>
-
-                <input type="text" class="class-name" placeholder="Nama kelas">
-
-                <input type="file" class="class-images" multiple accept="image/*">
-
-                <p class="image-count">0 gambar</p>
-
-            </div>
-
-            <!-- Class 2 -->
-            <div class="upload-box">
-
-                <label>Kelas 2</label>
-
-                <input type="text" class="class-name" placeholder="Nama kelas">
-
-                <input type="file" class="class-images" multiple accept="image/*">
-
-                <p class="image-count">0 gambar</p>
-
-            </div>
+            <!-- Card Latih Pose -->
+            <a href="{{ route('latih.pose') }}" class="ai-card">
+                <div class="card-icon">🧍</div>
+                <h3>Latih Pose Tubuh</h3>
+                <p>Latih AI mengenali pose tubuh dari webcam</p>
+            </a>
 
         </div>
 
-        <div class="ai-controls">
-
-            <div class="control-buttons">
-                <button class="add-class-btn" onclick="addClass()">+ Tambah kelas</button>
-                <button class="train-btn" onclick="trainModel()">Latih AI</button>
-            </div>
-
-            <div class="progress-box">
-                <p id="trainingStatus">Belum dilatih</p>
-            </div>
-
-        </div>
-
-        <div class="test-section">
-
-            <h3>Tes Gambar</h3>
-
-            <div class="test-box">
-                <input type="file" id="testImage" accept="image/*">
-                <button class="predict-btn" onclick="predict()">Prediksi</button>
-            </div>
-
-            <p id="result"></p>
-
-        </div>
-
+    </div>
 @endsection
 
-    @push('styles')
-        <link rel="stylesheet" href="{{ asset('css/latih/latih-ai.css') }}">
-    @endpush
-
-    @push('scripts')
-        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
-        <script src="{{ asset('js/latih/latih-ai.js') }}"></script>
-    @endpush
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/landing-page/latih-ai.css') }}">
+@endpush

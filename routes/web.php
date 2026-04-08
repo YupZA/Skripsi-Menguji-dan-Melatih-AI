@@ -182,3 +182,16 @@ Route::post('/quiz/save-result', [QuizController::class, 'saveResult'])
 
 use App\Http\Controllers\MateriController;
 Route::get('/materi/{slug}', [MateriController::class, 'show']);
+
+// Route::get('/latih-ai', function () {
+//     return view('latih-ai.pilih-latih-ai');
+// })->name('latih-ai.pilih');
+
+Route::get('/latih-ai/gambar', function () {
+    return view('latih-ai.latih-gambar');
+})->name('latih.gambar');
+
+Route::get('/latih-ai/pose', function () {
+    return view('latih-ai.latih-pose');
+})->name('latih.pose');
+

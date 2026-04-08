@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="{{ asset('css/landing-page/style_dashboard.css') }}">
     <link rel="stylesheet" href="{{ asset('css/landing-page/materi.css') }}">
     <link rel="stylesheet" href="{{ asset('css/landing-page/informasi.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/latih/latih-ai.css') }}">
     <link rel="stylesheet" href="{{ asset('css/landing-page/beranda.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/tes.css') }}">
+    <!-- <link rel="stylesheet" href="{{ asset('css/tes.css') }}"> -->
+
+    @stack('styles')
 
 </head>
 
