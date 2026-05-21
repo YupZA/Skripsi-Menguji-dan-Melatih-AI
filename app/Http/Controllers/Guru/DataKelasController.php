@@ -11,7 +11,12 @@ class DataKelasController extends Controller
 {
     public function index()
     {
-        $kelas = auth()->user()->kelasYangDiajar;
+        $perPage = request('per_page', 10);
+
+        $kelas = auth()->user()
+            ->kelasYangDiajar()
+            ->paginate($perPage)
+            ->withQueryString();
 
         $totalKelas = $kelas->count();
         $totalSiswa = 0;
@@ -57,12 +62,10 @@ class DataKelasController extends Controller
 
         $request->validate([
             'nama_kelas' => 'required|string|max:255',
-            'status' => 'required|in:aktif,nonaktif'
         ]);
 
         $kelas->update([
             'nama_kelas' => $request->nama_kelas,
-            'status' => $request->status
         ]);
 
         return back()->with('success', 'Kelas berhasil diperbarui');

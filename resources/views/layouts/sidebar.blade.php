@@ -27,7 +27,7 @@
            data-bs-toggle="collapse"
            data-bs-target="#collapseBab1"
            aria-expanded="{{ $isBab1 ? 'true' : 'false' }}">
-          <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+          <div class="sb-nav-link-icon"><i class="fas fa-brain"></i></div>
           Bab 1
           <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
         </a>
@@ -66,7 +66,7 @@
            data-bs-toggle="collapse"
            data-bs-target="#collapseBab2"
            aria-expanded="{{ $isBab2 ? 'true' : 'false' }}">
-          <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+          <div class="sb-nav-link-icon"><i class="fas fa-robot"></i></div>
           Bab 2
           <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
         </a>
@@ -105,7 +105,7 @@
            data-bs-toggle="collapse"
            data-bs-target="#collapseBab3"
            aria-expanded="{{ $isBab3 ? 'true' : 'false' }}">
-          <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+          <div class="sb-nav-link-icon"><i class="fas fa-cogs"></i></div>
           Bab 3
           <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
         </a>

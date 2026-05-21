@@ -17,6 +17,13 @@
                 <p>Latih AI mengenali objek dari gambar</p>
             </a>
 
+            <!-- Card Latih Suara -->
+            <a href="{{ route('latih.suara') }}" class="ai-card">
+                <div class="card-icon">🎤</div>
+                <h3>Latih Suara</h3>
+                <p>Latih AI mengenali berbagai jenis suara dari mikrofon</p>
+            </a>
+
             <!-- Card Latih Pose -->
             <a href="{{ route('latih.pose') }}" class="ai-card">
                 <div class="card-icon">🧍</div>

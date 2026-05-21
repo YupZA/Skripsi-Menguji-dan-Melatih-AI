@@ -5,12 +5,6 @@
 @section('content')
   <div class="beranda">
     <main class="dashboard container">
-      <!-- DECORATIVE ICONS -->
-      <div class="hero-decor">
-        <i class="fas fa-brain decor decor-1"></i>
-        <i class="fas fa-microchip decor decor-2"></i>
-        <i class="fas fa-robot decor decor-3"></i>
-      </div>
 
       <!-- ===== HERO ===== -->
       <section class="hero">

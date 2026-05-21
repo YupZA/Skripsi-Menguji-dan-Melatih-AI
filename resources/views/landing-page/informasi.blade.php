@@ -6,7 +6,7 @@
     <div class="container-fluid px-4 ai-info-page">
 
         <h1 class="ai-title">Informasi Aplikasi</h1>
-        
+
 
         <!-- ================= INFO PEMBUAT ================= -->
         <div class="ai-card">
@@ -23,7 +23,7 @@
                 </tr>
                 <tr>
                     <th>Dosen Pembimbing 1</th>
-                    <td>Dr. Harja Santana Purba, M.Kom.</td>
+                    <td>Drs. Harja Santana Purba, M.Kom., Ph.D.</td>
                 </tr>
                 <tr>
                     <th>Dosen Pembimbing 2</th>
@@ -43,7 +43,8 @@
                 </tr>
                 <tr>
                     <th>Judul Media</th>
-                    <td>Pengembangan Media Pembelajaran Interaktif Berbasis Web Materi Melatih dan Menguji AI dengan Model Tutorial</td>
+                    <td>Pengembangan Media Pembelajaran Interaktif Berbasis Web Materi Melatih dan Menguji AI dengan Model
+                        Tutorial</td>
                 </tr>
                 <tr>
                     <th>Tahun</th>
@@ -57,8 +58,24 @@
             <h2 class="ai-card-title">Daftar Pustaka</h2>
 
             <ol class="ai-list">
-                <li>Google. (2023). <em>Teachable Machine</em>. https://teachablemachine.withgoogle.com</li>
-                
+                <li>
+                    Google. (2023).
+                    <em>Teachable Machine</em>.
+                    <a href="https://teachablemachine.withgoogle.com" target="_blank">
+                        https://teachablemachine.withgoogle.com
+                    </a>
+                </li>
+            </ol>
+        </div>
+
+        <!-- ================= Atribusi ================= -->
+        <div class="ai-card">
+            <h2 class="ai-card-title">Atribusi</h2>
+
+            <ol class="ai-list">
+                <li>
+                    pinterest
+                </li>
             </ol>
         </div>
 

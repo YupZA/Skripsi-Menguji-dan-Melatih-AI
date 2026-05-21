@@ -30,55 +30,55 @@ Route::get('/bab-1/bab-1-materi-a', function () {
 
 Route::get('/bab-1/bab-1-materi-b', function () {
     return view('bab-1/bab-1-materi-b');
-});
+})->middleware('auth');
 
 Route::get('/bab-1/bab-1-materi-c', function () {
     return view('bab-1/bab-1-materi-c');
-});
+})->middleware('auth');
 
 Route::get('/bab-1/kuis-1', function () {
     return view('bab-1/kuis-1');
-});
+})->middleware('auth');
 
 Route::get('/bab-2/bab-2-materi-a', function () {
     return view('bab-2/bab-2-materi-a');
-});
+})->middleware('auth');
 
 Route::get('/bab-2/bab-2-materi-b', function () {
     return view('bab-2/bab-2-materi-b');
-});
+})->middleware('auth');
 
 Route::get('/bab-2/bab-2-materi-c', function () {
     return view('bab-2/bab-2-materi-c');
-});
+})->middleware('auth');
 
 Route::get('/bab-2/kuis-2', function () {
     return view('bab-2/kuis-2');
-});
+})->middleware('auth');
 
 Route::get('/bab-3/bab-3-materi-a', function () {
     return view('bab-3/bab-3-materi-a');
-});
+})->middleware('auth');
 
 Route::get('/bab-3/bab-3-materi-b', function () {
     return view('bab-3/bab-3-materi-b');
-});
+})->middleware('auth');
 
 Route::get('/bab-3/bab-3-materi-c', function () {
     return view('bab-3/bab-3-materi-c');
-});
+})->middleware('auth');
 
 Route::get('/bab-3/bab-3-materi-d', function () {
     return view('bab-3/bab-3-materi-d');
-});
+})->middleware('auth');
 
 Route::get('/bab-3/kuis-3', function () {
     return view('bab-3/kuis-3');
-});
+})->middleware('auth');
 
 Route::get('/evaluasi/evaluasi', function () {
     return view('evaluasi/evaluasi');
-});
+})->middleware('auth');
 
 // Route::get('/dashboard/dashboard', function () {
 //     return view('dashboard/dashboard');
@@ -94,6 +94,10 @@ Route::get('/landing-page/materi', function () {
 
 Route::get('/landing-page/latih-ai', function () {
     return view('landing-page/latih-ai');
+});
+
+Route::get('/landing-page/petunjuk', function () {
+    return view('landing-page/petunjuk');
 });
 
 Route::get('/guru/beranda', function () {
@@ -194,4 +198,8 @@ Route::get('/latih-ai/gambar', function () {
 Route::get('/latih-ai/pose', function () {
     return view('latih-ai.latih-pose');
 })->name('latih.pose');
+
+Route::get('/latih-ai/suara', function () {
+    return view('latih-ai.latih-suara');
+})->name('latih.suara');
 

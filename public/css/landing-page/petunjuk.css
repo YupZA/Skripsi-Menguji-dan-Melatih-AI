@@ -1,0 +1,245 @@
+/* =========================
+   WRAPPER
+========================= */
+
+.petunjuk-wrapper {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 30px 18px;
+
+    background:
+        radial-gradient(circle at top right,
+        rgba(59,130,246,0.12),
+        transparent 25%),
+
+        radial-gradient(circle at bottom left,
+        rgba(168,85,247,0.12),
+        transparent 25%),
+
+        #0f172a;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.petunjuk-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.petunjuk-header h1 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 800;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 1px;
+
+    background: linear-gradient(
+        to right,
+        #60a5fa,
+        #c084fc
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.petunjuk-line {
+    width: 55px;
+    height: 3px;
+
+    margin: auto;
+    margin-bottom: 14px;
+
+    border-radius: 999px;
+
+    background: linear-gradient(
+        to right,
+        #60a5fa,
+        #8b5cf6
+    );
+}
+
+.petunjuk-header p {
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+/* =========================
+   ACCORDION
+========================= */
+
+.petunjuk-accordion {
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* =========================
+   ITEM
+========================= */
+
+.petunjuk-item {
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s ease;
+}
+
+.petunjuk-item:hover {
+    border-color: rgba(96,165,250,0.3);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.petunjuk-btn {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 14px 18px;
+
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+
+    background: transparent;
+    color: white;
+}
+
+.petunjuk-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.petunjuk-icon {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #3b82f6,
+            #8b5cf6
+        );
+
+    font-size: 13px;
+
+    flex-shrink: 0;
+}
+
+.petunjuk-left span {
+    font-size: 14px;
+    font-weight: 600;
+
+    color: white;
+}
+
+.petunjuk-arrow {
+    font-size: 12px;
+    color: #cbd5e1;
+
+    transition: 0.3s ease;
+}
+
+.petunjuk-item.active .petunjuk-arrow {
+    transform: rotate(180deg);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.petunjuk-content {
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 0.35s ease;
+}
+
+.petunjuk-content-inner {
+    padding:
+        0 18px 16px 64px;
+}
+
+.petunjuk-content-inner p {
+    margin: 0;
+
+    color: #cbd5e1;
+
+    line-height: 1.7;
+    font-size: 12px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .petunjuk-wrapper {
+        padding: 24px 10px;
+    }
+
+    .petunjuk-header {
+        margin-bottom: 22px;
+    }
+
+    .petunjuk-header p {
+        font-size: 12px;
+    }
+
+    .petunjuk-btn {
+        padding: 12px 14px;
+    }
+
+    .petunjuk-left {
+        gap: 10px;
+    }
+
+    .petunjuk-icon {
+        width: 30px;
+        height: 30px;
+
+        font-size: 11px;
+    }
+
+    .petunjuk-left span {
+        font-size: 13px;
+    }
+
+    .petunjuk-content-inner {
+        padding:
+            0 14px 14px 14px;
+    }
+
+    .petunjuk-content-inner p {
+        font-size: 11px;
+    }
+
+}

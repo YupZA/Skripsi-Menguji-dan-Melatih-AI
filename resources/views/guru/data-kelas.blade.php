@@ -7,8 +7,15 @@
     <div class="data-kelas-page">
 
         <div class="page-header">
-            <h1>Data Kelas</h1>
-            <p>Daftar kelas yang kamu ampu</p>
+            <div class="header-flex">
+                <div>
+                    <h1>Data Kelas</h1>
+                </div>
+
+                <button class="info-btn" onclick="openInfoModal()">
+                    <i class="fas fa-circle-info"></i>
+                </button>
+            </div>
         </div>
 
         <!-- STATS -->
@@ -35,6 +42,39 @@
             <input type="text" placeholder="Cari kelas...">
         </div>
 
+        <div class="table-toolbar">
+
+            <div class="show-entry">
+                Tampilkan
+
+                <form method="GET">
+
+                    <select name="per_page" onchange="this.form.submit()">
+
+                        <option value="5" {{ request('per_page') == 5 ? 'selected' : '' }}>
+                            5
+                        </option>
+
+                        <option value="10" {{ request('per_page', 10) == 10 ? 'selected' : '' }}>
+                            10
+                        </option>
+
+                        <option value="25" {{ request('per_page') == 25 ? 'selected' : '' }}>
+                            25
+                        </option>
+
+                        <option value="50" {{ request('per_page') == 50 ? 'selected' : '' }}>
+                            50
+                        </option>
+
+                    </select>
+
+                </form>
+
+                data
+            </div>
+
+        </div>
         <!-- TABLE -->
         <div class="table-wrapper">
             <table class="kelas-table">
@@ -43,7 +83,6 @@
                         <th>Nama Kelas</th>
                         <th>Jumlah Siswa</th>
                         <th>Progress Rata-rata</th>
-                        <th>Status</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
@@ -69,21 +108,14 @@
                                 <small>{{ $item->rata_progress }}%</small>
                             </td>
 
-                            <td>
-                                <span class="badge-status {{ $item->status }}">
-                                    {{ ucfirst($item->status) }}
-                                </span>
 
-
-                                </span>
-                            </td>
 
                             <td>
-                                <button class="btn-detail" onclick="openEditKelasModal(
-                                                                    '{{ $item->id }}',
-                                                                    '{{ $item->nama_kelas }}',
-                                                                    '{{ $item->status }}'
-                                                                )">
+                                <button class="btn-detail"
+                                    onclick="openEditKelasModal(
+                                                                                                                                            '{{ $item->id }}',
+                                                                                                                                            '{{ $item->nama_kelas }}',
+                                                                                                                                        )">
                                     Kelola
                                 </button>
 
@@ -95,8 +127,35 @@
 
             </table>
 
-            <!-- EDIT KELAS MODAL -->
+        </div>
 
+        <div class="table-info">
+            Menampilkan
+            {{ $kelas->firstItem() ?? 0 }}
+            -
+            {{ $kelas->lastItem() ?? 0 }}
+            dari
+            {{ $kelas->total() }}
+            kelas
+        </div>
+
+        <div class="pagination-custom">
+
+            @if($kelas->onFirstPage())
+                <button disabled>Previous</button>
+            @else
+                <a href="{{ $kelas->previousPageUrl() }}">
+                    Previous
+                </a>
+            @endif
+
+            @if($kelas->hasMorePages())
+                <a href="{{ $kelas->nextPageUrl() }}">
+                    Next
+                </a>
+            @else
+                <button disabled>Next</button>
+            @endif
 
         </div>
 
@@ -120,14 +179,6 @@
                     <input type="text" name="nama_kelas" id="editNamaKelas" required>
                 </div>
 
-                <div class="register-field">
-                    <label>Status</label>
-                    <select name="status" id="editStatusKelas">
-                        <option value="aktif">Aktif</option>
-                        <option value="nonaktif">Nonaktif</option>
-                    </select>
-                </div>
-
                 <button class="register-btn">
                     Simpan Perubahan
                 </button>
@@ -135,6 +186,39 @@
             </form>
 
         </div>
+    </div>
+
+    <div class="modal-overlay" id="infoModal">
+
+        <div class="modal-card glass">
+
+            <div class="modal-header">
+                <h3>Informasi Halaman</h3>
+
+                <span class="modal-close" onclick="closeInfoModal()">
+                    ×
+                </span>
+            </div>
+
+            <div class="modal-body">
+
+                <p>
+                    Halaman ini digunakan untuk melihat dan
+                    mengelola seluruh kelas yang Anda ampu.
+                </p>
+
+                <ul>
+                    <li>Melihat daftar kelas.</li>
+                    <li>Melihat jumlah siswa.</li>
+                    <li>Melihat rata-rata progress belajar.</li>
+                    <li>Mengubah nama kelas.</li>
+                    <li>Mengakses informasi token kelas.</li>
+                </ul>
+
+            </div>
+
+        </div>
+
     </div>
 
 @endsection
@@ -151,7 +235,6 @@
             modal.classList.add('active');   // ⬅️ pakai active
 
             document.getElementById('editNamaKelas').value = nama;
-            document.getElementById('editStatusKelas').value = status;
 
             document.getElementById('editKelasForm').action =
                 "/guru/kelas/" + id;
@@ -160,6 +243,18 @@
         function closeEditKelas() {
             document.getElementById('editKelasModal')
                 .classList.remove('active');   // ⬅️ pakai active
+        }
+
+        function openInfoModal() {
+            document
+                .getElementById('infoModal')
+                .classList.add('active');
+        }
+
+        function closeInfoModal() {
+            document
+                .getElementById('infoModal')
+                .classList.remove('active');
         }
 
 

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ asset('css/landing-page/materi.css') }}">
     <link rel="stylesheet" href="{{ asset('css/landing-page/informasi.css') }}">
     <link rel="stylesheet" href="{{ asset('css/landing-page/beranda.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- <link rel="stylesheet" href="{{ asset('css/tes.css') }}"> -->
 
     @stack('styles')
@@ -35,6 +36,7 @@
             <a href="{{ url(path: '/landing-page/materi') }}">Materi</a>
             <a href="{{ url(path: '/landing-page/latih-ai') }}">Latih AI</a>
             <a href="{{ url(path: '/landing-page/informasi') }}">Informasi</a>
+            <a href="{{ url(path: '/landing-page/petunjuk') }}">Petunjuk Penggunaan</a>
         </nav>
 
         <div class="user">

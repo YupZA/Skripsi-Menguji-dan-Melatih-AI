@@ -1,38 +1,17 @@
 @extends('layouts.navbar_dashboard')
 
-@section('title', 'Pilih Latih AI')
+@section('title', 'Latih AI Pose')
 
 @section('content')
-    <div class="ai-container">
-
-        <h1>Pilih Mode Latih AI</h1>
-        <p>Pilih jenis AI yang ingin kamu latih</p>
-
-        <div class="card-wrapper">
-
-            <!-- Card Latih Gambar -->
-            <a href="{{ route('latih.gambar') }}" class="ai-card">
-                <div class="card-icon">🖼️</div>
-                <h3>Latih Gambar</h3>
-                <p>Latih AI mengenali objek dari gambar</p>
-            </a>
-
-            <!-- Card Latih Pose -->
-            <a href="{{ route('latih.pose') }}" class="ai-card">
-                <div class="card-icon">🧍</div>
-                <h3>Latih Pose Tubuh</h3>
-                <p>Latih AI mengenali pose tubuh dari webcam</p>
-            </a>
-
-        </div>
-
-    </div>
+    
 @endsection
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/tes.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/latih-ai/latih-pose.css') }}">
 @endpush
 
 @push('scripts')
-    <script src="{{ asset('js/tes.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+    <script src="{{ asset('js/latih-ai/latih-pose.js') }}"></script>
 @endpush

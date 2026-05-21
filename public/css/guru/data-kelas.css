@@ -293,3 +293,65 @@
 .hidden {
   display: none !important;
 }
+
+.header-flex{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.info-btn{
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    background:rgba(255,255,255,.08);
+    color:#fff;
+    font-size:18px;
+}
+
+.table-toolbar{
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom:15px;
+}
+
+.show-entry{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.show-entry select{
+    padding:6px 10px;
+    border-radius:8px;
+}
+
+.table-footer{
+    margin-top:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.pagination-custom{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.pagination-custom a,
+.pagination-custom button{
+    padding:8px 14px;
+    border:none;
+    border-radius:10px;
+    background:#2d7ef7;
+    color:white;
+    cursor:pointer;
+}
+
+.pagination-custom button:disabled{
+    opacity:.4;
+    cursor:not-allowed;
+}

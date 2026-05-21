@@ -12,53 +12,79 @@
 
         <section class="materi-grid">
 
-            <article class="materi-card">
-                <div class="card-header">
-                    <span class="card-status active"></span>
-                    <span class="card-tag">Bab 1</span>
-                </div>
+            <!-- BAB 1 -->
+            <a href="{{ url('/bab-1/bab-1-materi-a') }}" class="materi-link">
 
-                <h3>MENGENAL AI DAN DASAR - DASAR MACHINE LEARNING</h3>
+                <article class="materi-card">
 
-                <ul>
-                    <li>Apa Itu Kecerdasan Buatan</li>
-                    <li>Apa Itu Machine Learning</li>
-                    <li>Langkah-Langkah Proses Machine Learning</li>
-                </ul>
+                    <div class="card-header">
+                        <span class="card-status active"></span>
+                        <span class="card-tag">Bab 1</span>
+                    </div>
 
-                
-            </article>
+                    <h3>
+                        MENGENAL AI DAN DASAR - DASAR MACHINE LEARNING
+                    </h3>
 
-            <article class="materi-card">
-                <div class="card-header">
-                    <span class="card-status active"></span>
-                    <span class="card-tag">Bab 2</span>
-                </div>
+                    <ul>
+                        <li>Apa Itu Kecerdasan Buatan</li>
+                        <li>Apa Itu Machine Learning</li>
+                        <li>Langkah-Langkah Proses Machine Learning</li>
+                    </ul>
 
-                <h3>PENGENALAN GOOGLE TEACHABLE LEARNING MACHINE</h3>
+                </article>
 
-                <ul>
-                    <li>Apa Itu Google Teachable Machine</li>
-                    <li>Google Teachable Machine : Membuat AI Jadi Mudah</li>
-                    <li>Jenis Proyek di Google Teachable Machine</li>
-                </ul>
-            </article>
+            </a>
 
-            <article class="materi-card">
-                <div class="card-header">
-                    <span class="card-status active"></span>
-                    <span class="card-tag">Bab 3</span>
-                </div>
+            <!-- BAB 2 -->
+            <a href="{{ url('/bab-2/bab-2-materi-a') }}" class="materi-link">
 
-                <h3>PRAKTIK MEMBUAT MODEL AI SEDERHANA</h3>
+                <article class="materi-card">
 
-                <ul>
-                    <li>Membuat Model Gambar</li>
-                    <li>Membuat Model Deteksi Suara</li>
-                    <li>Membuat Model Deteksi Pose Tubuh</li>
-                    <li>Perbandingan Model Suara, Gambar, dan Pose</li>
-                </ul>
-            </article>
+                    <div class="card-header">
+                        <span class="card-status active"></span>
+                        <span class="card-tag">Bab 2</span>
+                    </div>
+
+                    <h3>
+                        PENGENALAN GOOGLE TEACHABLE
+                        LEARNING MACHINE
+                    </h3>
+
+                    <ul>
+                        <li>Apa Itu Google Teachable Machine</li>
+                        <li>Google Teachable Machine : Membuat AI Jadi Mudah</li>
+                        <li>Jenis Proyek di Google Teachable Machine</li>
+                    </ul>
+
+                </article>
+
+            </a>
+
+            <!-- BAB 3 -->
+            <a href="{{ url('/bab-3/bab-3-materi-a') }}" class="materi-link">
+
+                <article class="materi-card">
+
+                    <div class="card-header">
+                        <span class="card-status active"></span>
+                        <span class="card-tag">Bab 3</span>
+                    </div>
+
+                    <h3>
+                        PRAKTIK MEMBUAT MODEL AI SEDERHANA
+                    </h3>
+
+                    <ul>
+                        <li>Membuat Model Gambar</li>
+                        <li>Membuat Model Deteksi Suara</li>
+                        <li>Membuat Model Deteksi Pose Tubuh</li>
+                        <li>Perbandingan Model Suara, Gambar, dan Pose</li>
+                    </ul>
+
+                </article>
+
+            </a>
 
         </section>
 

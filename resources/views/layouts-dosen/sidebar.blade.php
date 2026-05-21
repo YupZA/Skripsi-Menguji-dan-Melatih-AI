@@ -14,31 +14,31 @@
 
         <a class="nav-link {{ request()->is('guru/dashboard') ? 'active' : '' }}"
            href="{{ url('/guru/dashboard') }}">
-          <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+          <div class="sb-nav-link-icon"><i class="fas fa-chart-pie"></i></div>
           Dashboard Guru
         </a>
         
         <a class="nav-link {{ request()->is('guru/data-kelas') ? 'active' : '' }}"
            href="{{ url('/guru/data-kelas') }}">
-          <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+          <div class="sb-nav-link-icon"><i class="fas fa-chalkboard"></i></div>
           Data Kelas
         </a>
 
         <a class="nav-link {{ request()->is('guru/data-siswa') ? 'active' : '' }}"
            href="{{ url('/guru/data-siswa') }}">
-          <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+          <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
           Data Siswa
         </a>
 
         <a class="nav-link {{ request()->is('guru/progres-siswa') ? 'active' : '' }}"
            href="{{ url('/guru/progres-siswa') }}">
-          <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+          <div class="sb-nav-link-icon"><i class="fas fa-chart-line"></i></div>
           Progress Siswa
         </a>
 
         <a class="nav-link {{ request()->is('guru/nilai-siswa') ? 'active' : '' }}"
            href="{{ url('/guru/nilai-siswa') }}">
-          <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+          <div class="sb-nav-link-icon"><i class="fas fa-medal"></i></div>
           Nilai Siswa
         </a>
 
