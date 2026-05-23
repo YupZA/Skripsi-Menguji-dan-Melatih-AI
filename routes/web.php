@@ -203,3 +203,7 @@ Route::get('/latih-ai/suara', function () {
     return view('latih-ai.latih-suara');
 })->name('latih.suara');
 
+use App\Http\Controllers\Guru\DataSiswaController;
+Route::put('/guru/data-siswa/{id}', [DataSiswaController::class, 'update'])
+    ->name('guru.data-siswa.update');
+

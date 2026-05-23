@@ -34,9 +34,10 @@ class DataSiswaController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
             'nis' => 'required|string|max:255',
             'token_kelas' => 'nullable|string',
-            'status' => 'required|in:aktif,nonaktif'
+            
         ]);
 
         $siswa = User::findOrFail($id);
@@ -59,8 +60,9 @@ class DataSiswaController extends Controller
         $siswa->update([
             'name' => $request->name,
             'nis' => $request->nis,
+            'email' => $request->email,
             'kelas_id' => $kelasId,
-            'status' => $request->status,
+            
         ]);
 
         return back()->with('success', 'Data siswa berhasil diperbarui');

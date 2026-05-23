@@ -12,21 +12,27 @@
 
             <!-- Card Latih Gambar -->
             <a href="{{ route('latih.gambar') }}" class="ai-card">
-                <div class="card-icon">🖼️</div>
+                <div class="card-icon">
+                    <i class="fas fa-image"></i>
+                </div>
                 <h3>Latih Gambar</h3>
                 <p>Latih AI mengenali objek dari gambar</p>
             </a>
 
             <!-- Card Latih Suara -->
             <a href="{{ route('latih.suara') }}" class="ai-card">
-                <div class="card-icon">🎤</div>
+                <div class="card-icon">
+                    <i class="fas fa-microphone"></i>
+                </div>
                 <h3>Latih Suara</h3>
                 <p>Latih AI mengenali berbagai jenis suara dari mikrofon</p>
             </a>
 
             <!-- Card Latih Pose -->
             <a href="{{ route('latih.pose') }}" class="ai-card">
-                <div class="card-icon">🧍</div>
+                <div class="card-icon">
+                    <i class="fas fa-person"></i>
+                </div>
                 <h3>Latih Pose Tubuh</h3>
                 <p>Latih AI mengenali pose tubuh dari webcam</p>
             </a>

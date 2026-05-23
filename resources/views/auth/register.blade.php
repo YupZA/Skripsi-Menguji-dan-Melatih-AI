@@ -21,7 +21,7 @@
         <div class="register-card">
             <h1 class="register-title">Buat Akun</h1>
             <p class="register-subtitle">
-                Daftar sebagai siswa atau guru di platform AI
+                Daftar sebagai siswa di platform AI
             </p>
 
             @if ($errors->any())
@@ -69,18 +69,9 @@
                     </span>
                 </div>
 
-                {{-- ROLE --}}
-                <div class="register-field">
-                    <label>Role</label>
-                    <select name="role" id="roleSelect" required>
-                        <option value="">-- Pilih Peran --</option>
-                        <option value="siswa">Siswa</option>
-                        <option value="guru">Guru</option>
-                    </select>
-                </div>
 
                 {{-- FIELD SISWA --}}
-                <div class="role-siswa hidden">
+                <div class="role-siswa">
                     <div class="register-field">
                         <label>NIS (Siswa)</label>
                         <input name="nis" placeholder="Contoh: S123">
@@ -92,13 +83,7 @@
                     </div>
                 </div>
 
-                {{-- FIELD GURU --}}
-                <div class="role-guru hidden">
-                    <div class="register-field">
-                        <label>NIP (Guru)</label>
-                        <input name="nip" placeholder="Contoh: 1987xxxx">
-                    </div>
-                </div>
+                <input type="hidden" name="role" value="siswa">
 
                 <button type="submit" class="register-btn">
                     Daftar
@@ -113,30 +98,6 @@
 
     </div>
 
-    {{-- JS ROLE TOGGLE --}}
-    <script>
-        const roleSelect = document.getElementById('roleSelect');
-        const siswaFields = document.querySelector('.role-siswa');
-        const guruFields = document.querySelector('.role-guru');
-
-        function toggleRoleFields() {
-            const role = roleSelect.value;
-
-            siswaFields.classList.add('hidden');
-            guruFields.classList.add('hidden');
-
-            if (role === 'siswa') {
-                siswaFields.classList.remove('hidden');
-            }
-
-            if (role === 'guru') {
-                guruFields.classList.remove('hidden');
-            }
-        }
-
-        roleSelect.addEventListener('change', toggleRoleFields);
-        toggleRoleFields(); // init saat load
-    </script>
 
     <script>
         const passwordInput = document.getElementById('passwordInput');

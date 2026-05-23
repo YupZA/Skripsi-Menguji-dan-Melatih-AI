@@ -6,7 +6,7 @@
 
     <div class="data-siswa-page">
 
-    
+
 
         <div class="page-header">
             <h1>Data Siswa</h1>
@@ -86,7 +86,7 @@
                         <th>Nama</th>
                         <th>NIS</th>
                         <th>Kelas</th>
-                        <th>Status</th>
+                        <th>Email</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
@@ -102,19 +102,15 @@
                                     <td>{{ $item->name }}</td>
                                     <td>{{ $item->nis }}</td>
                                     <td>{{ $item->kelas->nama_kelas ?? '-' }}</td>
-                                    <td>
-                                        <span class="status {{ $item->status }}">
-                                            {{ ucfirst($item->status) }}
-                                        </span>
-                                    </td>
+                                    <td>{{ $item->email }}</td>
                                     <td>
                                         <button class="btn-detail" onclick="openEditModal(
-                                                                                                                            '{{ $item->id }}',
-                                                                                                                            '{{ $item->name }}',
-                                                                                                                            '{{ $item->nis }}',
-                                                                                                                            '{{ $item->kelas_id }}',
-                                                                                                                            '{{ $item->status }}'
-                                                                                                                            )">Edit
+                                        '{{ $item->id }}',
+                                        '{{ $item->name }}',
+                                        '{{ $item->email }}',
+                                        '{{ $item->nis }}',
+                                        '{{ $item->kelas_id }}'
+                                        )">Edit
                                         </button>
                                     </td>
                                 </tr>
@@ -139,12 +135,17 @@
 
                     <div class="register-field">
                         <label>Nama</label>
-                        <input type="text" name="name" id="editName" required>
+                        <input type="text" id="editName" name="name" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="editEmail" name="email" class="form-control" required>
                     </div>
 
                     <div class="register-field">
                         <label>NIS</label>
-                        <input type="text" name="nis" id="editNis" required>
+                        <input type="text" id="editNis" name="nis" class="form-control">
                     </div>
 
                     <div class="register-field">
@@ -157,13 +158,6 @@
                         </select>
                     </div>
 
-                    <div class="register-field">
-                        <label>Status</label>
-                        <select name="status" id="editStatus">
-                            <option value="aktif">Aktif</option>
-                            <option value="nonaktif">Nonaktif</option>
-                        </select>
-                    </div>
 
                     <button class="btn-detail" style="margin-top:15px;width:100%;">
                         Simpan Perubahan
@@ -179,13 +173,14 @@
 
 @push('scripts')
     <script>
-        function openEditModal(id, name, nis, kelas_id, status) {
-            document.getElementById('editModal').classList.remove('hidden');
+        function openEditModal(id, name, email, nis, kelas_id) {
+            document.getElementById('editModal')
+                .classList.remove('hidden');
 
             document.getElementById('editName').value = name;
+            document.getElementById('editEmail').value = email;
             document.getElementById('editNis').value = nis;
             document.getElementById('editKelas').value = kelas_id;
-            document.getElementById('editStatus').value = status;
 
             document.getElementById('editForm').action =
                 "/guru/siswa/" + id;
