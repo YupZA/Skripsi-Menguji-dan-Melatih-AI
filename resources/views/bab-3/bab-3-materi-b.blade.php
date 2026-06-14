@@ -13,56 +13,93 @@
                 berikut:
             </p>
             <ol type="a">
-                <li>
-                    Memulai Proyek Baru
-                    <ul>
-                        <li>Buka situs https://teachablemachine.withgoogle.com.</li>
-                        <li>Klik “<i>Get Started</i>”, lalu pilih “<i>Audio Project</i>”.</li>
-                    </ul>
+                <p>
+                    Proyek suara digunakan untuk melatih kecerdasan buatan agar dapat mengenali berbagai jenis suara, seperti tepuk tangan, siulan, atau suara hewan. Langkah-langkahnya hampir sama dengan proyek gambar, dengan beberapa penyesuaian berikut:
+                </p>
+
+                <li>Langkah 1: Membuka Halaman AI
+                    <p>Buka website pembelajaran AI melalui browser, kemudian masuk ke halaman utama aplikasi.</p>
+                    
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-a/gambar-1.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.11 Tampilan halaman utama website pembelajaran AI</span>
+                    </div>
                 </li>
-                <li>Mengatur Kelas
-                    <ul>
-                        <li>Ganti nama <i>Class</i> 1 dan <i>Class</i> 2 menjadi suara yang akan dikenali,
-                            <br>misalnya:
-                            <ol>
-                                <li><i>Class 1</i> → Tepuk Tangan</li>
-                                <li><i>Class 2</i> → Siulan</li>
-                            </ol>
-                        </li>
-                        <li>Tambahkan kelas baru jika ingin mengenali lebih banyak suara.</li>
-                    </ul>
+
+                <li>Langkah 2: Memilih Menu Latih AI
+                    <p>Klik menu Latih AI pada navigasi atau tombol Mulai Melatih yang tersedia pada halaman beranda.</p>
+                    
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-a/gambar-2.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.12 Pengguna memilih menu Latih AI atau tombol Mulai Melatih untuk masuk ke halaman pelatihan AI</span>
+                    </div>
                 </li>
-                <li>
-                    Mengumpulkan Data Suara
-                    <br>Ada dua cara untuk menambahkan data suara:
-                    <ol>
-                        <li>Rekam Langsung Menggunakan Mikrofon
-                            <ul>
-                                <li>Klik tombol “<i>Record</i>” untuk merekam suara langsung dari mikrofon laptop atau komputer.
-                                </li>
-                                <li>Pastikan lingkungan sekitar tidak terlalu bising agar hasil rekaman bersih.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Unggah <i>File Audio</i>
-                            <br>Klik “<i>Upload</i>” untuk menambahkan file suara dari komputer (format WAV atau MP3).
-                        </li>
-                        Catatan Penting:
-                        <ul>
-                            <li>Rekam beberapa kali agar AI mendapatkan variasi suara.</li>
-                            <li>Gunakan suara dari beberapa orang atau situasi berbeda untuk hasil yang lebih akurat.</li>
-                        </ul>
-                        <li>
-                            Melatih dan Menguji Model
-                            <ul>
-                                <li>Klik “<i>Train Model</i>” dan tunggu prosesnya selesai.</li>
-                                <li>Gunakan fitur “<i>Preview</i>” untuk menguji hasilnya dengan merekam suara baru.</li>
-                                <li>Lihat hasil dalam bentuk persentase keyakinan AI terhadap kelas yang dikenali.</li>
-                            </ul>
-                        </li>
-                    </ol>
+
+                <li>Langkah 3: Memilih Mode Latih Suara
+                    <p>Pada halaman pilihan mode, pilih Latih Suara untuk melatih AI menggunakan data berupa rekaman suara.</p>
+                    
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-a/gambar-3.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.13 Memilih menu Latih Suara agar AI dapat belajar mengenali suara yang direkam melalui mikrofon</span>
+                    </div>
                 </li>
+
+                <li>Langkah 4: Membuat Kelas Suara
+                    <p>Masukkan nama kelas pada kolom yang tersedia sesuai dengan jenis suara yang akan direkam. Jika ingin menambahkan kategori suara lainnya, klik tombol Tambah Kelas.</p>
+                    
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-a/gambar-4.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.14 Menuliskan nama kelas sebagai kategori suara yang akan dipelajari oleh AI. Jika diperlukan kategori tambahan, pengguna dapat menekan tombol Tambah Kelas</span>
+                    </div>
+                </li>
+
+                <li>Langkah 5: Merekam Suara
+                    <p>Tekan tombol rekam, kemudian ucapkan atau bunyikan suara yang sesuai dengan nama kelas selama kurang lebih 3 detik. Lakukan perekaman untuk setiap kelas yang telah dibuat agar AI memiliki data untuk dipelajari.</p>
+                    
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-a/gambar-5.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.15 Pengguna merekam suara selama 3 detik pada setiap kelas agar AI memperoleh contoh suara yang dapat dipelajari dan dibedakan</span>
+                    </div>
+                </li>
+
+                <li>Langkah 6: Melatih AI
+                    <p>Setelah seluruh rekaman suara selesai dibuat, klik tombol Latih AI untuk memulai proses pelatihan.</p>
+                    
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-a/gambar-6.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.16 Menekan tombol Latih AI untuk memulai proses pembelajaran AI berdasarkan rekaman suara yang telah dikumpulkan.</span>
+                    </div>
+                </li>
+
+                <li>Langkah 7: Menunggu Proses Pelatihan
+                    <p>Tunggu hingga proses pelatihan selesai. Pada tahap ini, AI akan mempelajari pola dari setiap rekaman suara yang telah diberikan.</p>
+                    
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-a/gambar-7.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.17 Tampilan pemberitahuan bahwa proses pelatihan AI telah selesai dan model siap digunakan untuk mengenali suara.</span>
+                    </div>
+                </li>
+
+                <li>Langkah 8: Menguji AI
+                    <p>Setelah pelatihan selesai, klik tombol Mulai Mendengar. Ucapkan suara yang ingin diuji, kemudian AI akan mencoba mengenali dan menampilkan kategori suara yang paling sesuai berdasarkan hasil pelatihan sebelumnya.</p>
+                    
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-a/gambar-8.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.18 Menekan tombol Mulai Mendengar untuk menguji kemampuan AI dalam mengenali suara dan menampilkan hasil prediksinya.</span>
+                    </div>
+                </li>
+
+                
             </ol>
+            <p>
+                <strong>Catatan Penting</strong>
+                <ul>
+                    <li>Rekam suara di tempat yang cukup tenang agar hasil pelatihan lebih baik.</li>
+                    <li>Gunakan suara yang jelas dan sesuai dengan nama kelas yang dibuat.</li>
+                    <li>Semakin banyak contoh rekaman yang diberikan, semakin baik kemampuan AI dalam mengenali suara.</li>
+                    <li>•	Hindari suara yang terlalu pelan atau terlalu banyak gangguan (<i>noise</i>) agar hasil prediksi lebih akurat.</li>
+                </ul>
+            </p>
         </div>
     </div>
 
@@ -98,7 +135,7 @@
     @php
     $questions = [
         ['text' => 'Audio Project digunakan untuk melatih AI mengenali suara.', 'answer' => 'benar'],
-        ['text' => 'Untuk suara, kita memilih Image Project.', 'answer' => 'salah'],
+        ['text' => 'Untuk melatih AI mengenali suara, proyek yang dipilih adalah Audio Project.', 'answer' => 'salah'],
         ['text' => 'Kelas dapat dinamai Tepuk Tangan dan Siulan.', 'answer' => 'benar'],
         ['text' => 'Lingkungan bising membuat hasil AI lebih akurat.', 'answer' => 'salah'],
         ['text' => 'Variasi suara membantu AI mengenali pola.', 'answer' => 'benar'],

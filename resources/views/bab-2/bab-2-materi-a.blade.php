@@ -15,7 +15,8 @@
 
                         <div>Setelah mempelajari materi ini, siswa diharapkan :
                             <ul>
-                                <li>Memahami fungsi dan fitur Google Teachable Machine sebagai platform pembelajaran AI
+                                <li>Memahami fungsi dan fitur Google Teachable Machine sebagai platform pembelajaran
+                                    kecerdasan buatan
                                     tanpa kode.</li>
                                 <li>Menjelaskan jenis proyek yang tersedia dan cara kerja dasarnya.</li>
                             </ul>
@@ -25,39 +26,42 @@
                 </div>
             </div>
         </div>
+
         <div>
             <h2>1. Apa Itu Google Teachable Machine</h2>
             <p>
-                <strong>Google Teachable Machine</strong> adalah alat berbasis web yang dikembangkan oleh Google untuk
-                membantu siapa saja
-                belajar tentang pembelajaran mesin (<i>Machine Learning</i>) dengan cara yang mudah dan menyenangkan.
-                Melalui
-                Teachable Machine, kita tidak perlu menjadi ahli pemrograman atau menulis kode rumit untuk membuat model
-                kecerdasan buatan (<i>Artificial Intelligence</i> atau AI).
+                <strong><i>Google Teachable Machine</i></strong> merupakan alat berbasis web yang dikembangkan oleh Google
+                untuk membantu pengguna
+                mempelajari pembelajaran mesin <i>(machine learning)</i> secara mudah dan menarik. Pengguna dapat membuat
+                model
+                kecerdasan buatan (<i>artificial intelligence</i>) melalui Teachable Machine tanpa harus menguasai
+                pemrograman atau
+                menulis kode yang rumit.
             </p>
             <p>
-                Dengan Teachable Machine, kamu bisa melatih komputer agar mampu mengenali gambar, suara, atau pose tubuh
-                manusia hanya dengan beberapa langkah sederhana. Misalnya, kamu bisa melatih komputer untuk membedakan
-                antara foto kucing dan anjing, mengenali suara tepuk tangan, atau mendeteksi gerakan tertentu menggunakan
-                kamera.
+                Teachable Machine dapat digunakan untuk melatih komputer agar mampu mengenali gambar, suara, atau pose tubuh
+                manusia melalui beberapa langkah sederhana. Misalnya, komputer dapat dilatih untuk membedakan foto bekantan
+                dan monyet, mengenali suara tepuk tangan, atau mendeteksi gerakan tertentu menggunakan kamera.
             </p>
             <p>
-                Alat ini sangat cocok digunakan untuk pelajar, termasuk siswa SMP, karena tampilannya sederhana dan
-                prosesnya cepat. Kamu hanya perlu menyiapkan contoh data (misalnya beberapa gambar atau suara), lalu
-                Teachable Machine akan mempelajari pola dari data tersebut dan membuat model yang bisa digunakan untuk
-                pengenalan otomatis. Dengan Teachable Machine, belajar tentang AI dan <i>Machine Learning</i> jadi lebih
-                seru dan
-                mudah dipahami
+                Alat ini sangat cocok digunakan oleh pelajar, termasuk siswa SMP, karena memiliki tampilan yang sederhana
+                dan proses penggunaan yang cepat. Pengguna hanya perlu menyiapkan contoh data, seperti beberapa gambar atau
+                suara. Selanjutnya, <i>Teachable Machine</i> akan mempelajari pola dari data tersebut dan membuat model yang
+                dapat
+                digunakan untuk pengenalan secara otomatis. Melalui <i>Teachable Machine</i>, pembelajaran tentang
+                kecerdasan
+                buatan dan <i>machine learning</i> menjadi lebih menarik dan mudah dipahami.
+
             </p>
             <p>
-                Untuk memahami hubungan antara Teachable Machine dan konsep <i>Machine Learning</i>, kita perlu mengenal
-                tiga
-                konsep penting di dalamnya, yaitu <i>supervised learning</i>, <i>input-output</i>, dan <i>training model</i>
-                secara visual.
+                Hubungan antara <i>Teachable Machine</i> dan konsep <i>machine learning</i> dapat dipahami melalui tiga
+                konsep penting,
+                yaitu <i>supervised learning</i>, <i>input-output</i>, dan pelatihan model secara <i>visual</i>.
+
             </p>
             <ol type="a">
                 <li>
-                    <i>Supervised Learning</i> (Pembelajaran Terbimbing)
+                    Pembelajaran Terbimbing (<i>Supervised Learning</i>)
                 </li>
                 <p>
                     Teachable Machine menggunakan pendekatan yang disebut <i>supervised learning</i> atau pembelajaran
@@ -68,17 +72,31 @@
                     Contohnya:
                 </p>
                 <ul>
-                    <li>Gambar kucing diberi label kucing</li>
-                    <li>Gambar anjing diberi label anjing</li>
+                    <li>Gambar ikan gabus diberi label Ikan Gabus</li>
+                    <li>Gambar ikan papuyu diberi label Ikan Papuyu</li>
                 </ul>
                 <div class="materi-image">
                     <img src="{{ asset('images/bab-2/materi-a/gambar-1.png') }}" alt="Ilustrasi AI">
-                    <span>Ilustrasi Kecerdasan Buatan</span>
+                    <span>Gambar B.1 Contoh proses <i>Supervised Learning</i>, di mana <i>AI</i> belajar mengenali perbedaan
+                        antara Ikan
+                        Gabus dan Ikan Papuyu berdasarkan data yang telah diberi label</span>
                 </div>
+
+                <div class="fun-fact">
+                    <p>
+                        <strong>Gambar B.1</strong> menunjukkan konsep <i>Supervised Learning</i> (Pembelajaran Terbimbing),
+                        di mana komputer
+                        belajar dari data yang telah diberi label oleh manusia. Pada gambar ini, data berupa gambar Ikan
+                        Gabus dan Ikan Papuyu digunakan sebagai contoh pelatihan. Melalui data berlabel tersebut, model AI
+                        mempelajari ciri-ciri masing-masing ikan sehingga dapat membedakan dan mengenali keduanya dengan
+                        lebih akurat.
+                    </p>
+                </div>
+
                 <p>
                     Dengan banyak contoh seperti ini, komputer dapat belajar mengenali ciri khas dari setiap kelas data.
-                    Setelah proses pelatihan selesai, komputer dapat menebak apakah gambar baru termasuk “kucing” atau
-                    “anjing”.
+                    Setelah proses pelatihan selesai, komputer dapat menebak apakah gambar baru termasuk “ikan gabus” atau
+                    “ikan papuyu”.
                 </p>
                 <li>
                     Konsep <i>Input</i> dan <i>Output</i>
@@ -91,28 +109,40 @@
                         atau pose tubuh.</li>
                     <li><i><strong>Output</strong></i> adalah hasil yang diberikan oleh model setelah memproses data
                         tersebut, seperti label
-                        “kucing”, “anjing”, “tepuk tangan”, atau “senyum”.</li>
+                        “ikan gabus”, “ikan papuyu”, “tepuk tangan”, atau “senyum”.</li>
                 </ol>
                 <p>
-                    <br>Di Teachable Machine, hubungan <i>input-output</i> ini dapat dilihat secara langsung, saat kita
+                    Teachable Machine memperlihatkan hubungan <i>input-output</i> secara langsung ketika pengguna
                     menunjukkan
-                    gambar melalui kamera (<i>input</i>), komputer akan menampilkan hasil prediksi berupa label yang sesuai
-                    (<i>output</i>).
+                    gambar melalui kamera sebagai <i>input</i>, kemudian komputer menampilkan hasil prediksi berupa label
+                    yang
+                    sesuai sebagai <i>output</i>.
                 </p>
                 <div class="materi-image">
                     <img src="{{ asset('images/bab-2/materi-a/gambar-2.png') }}" alt="Ilustrasi AI">
-                    <span>Ilustrasi Kecerdasan Buatan</span>
+                    <span>Gambar B.2 Alur input, model AI, dan output</span>
                 </div>
+
+                <div class="fun-fact">
+                    <p>
+                        <strong>Gambar B.2</strong> menunjukkan alur kerja kecerdasan buatan, dimulai dari data <i>input</i>
+                        berupa gambar, kemudian
+                        diproses oleh model <i>AI</i>, hingga menghasilkan <i>output</i> berupa pengenalan ekspresi, seperti
+                        “senyum”.
+                    </p>
+                </div>
+
                 <p>
                     Contoh: <br>
-                    Jika kamu melatih model untuk membedakan ekspresi wajah, maka ketika kamu tersenyum di depan kamera,
-                    <i>output-nya</i> bisa berupa tulisan “senyum”.
+                    Apabila model dilatih untuk membedakan ekspresi wajah, ketika seseorang tersenyum di depan kamera,
+                    <i>output</i> yang dihasilkan dapat berupa label “senyum”.
                 </p>
                 <li>
                     <i>Training Model</i> secara Visual
                 </li>
                 <p>
-                    Salah satu keunggulan Teachable Machine adalah proses <i>training model</i> secara visual, yang membuat
+                    <strong>Salah satu keunggulan Teachable Machine</strong> adalah proses <i>training model</i> secara
+                    visual, yang membuat
                     pembelajaran menjadi lebih mudah dipahami.
                 </p>
                 <p>
@@ -126,14 +156,23 @@
                 </p>
                 <ol>
                     <li>Mengunggah atau mengambil data secara langsung (misalnya gambar atau suara).</li>
-                    <li>Memberi label pada setiap kelas (misalnya “kucing”, “anjing”, atau “burung”).</li>
+                    <li>Memberi label pada setiap kelas (misalnya “ikan gabus” dan “ikan papuyu”).</li>
                     <li>Menekan tombol <i>Train Model</i> untuk memulai proses pembelajaran.</li>
                     <li>Setelah selesai, model siap diuji dan digunakan untuk mengenali data baru.</li>
                 </ol>
                 <div class="materi-image">
                     <img src="{{ asset('images/bab-2/materi-a/gambar-3.png') }}" alt="Ilustrasi AI">
-                    <span>Ilustrasi Kecerdasan Buatan</span>
+                    <span>Gambar B.3 Tahapan pelatihan dan prediksi model AI</span>
                 </div>
+
+                <div class="fun-fact">
+                    <p>
+                        <strong>Gambar B.3</strong> menunjukkan tahapan dalam kecerdasan buatan, dimulai dari mengunggah
+                        data gambar,
+                        memberikan label (ikan gabus dan ikan papuyu), melatih model, hingga menghasilkan prediksi akhir.
+                    </p>
+                </div>
+
                 <p>Dengan tampilan visual ini, siswa bisa melihat bagaimana model belajar dan bagaimana hasilnya berubah
                     ketika data yang diberikan berbeda.
                 </p>
@@ -142,18 +181,18 @@
     </div>
 
     @php
-            use App\Models\Materi;
-            use App\Models\UserProgress;
+        use App\Models\Materi;
+        use App\Models\UserProgress;
 
-            // ambil materi (karena kamu tidak pakai controller)
-            $materi = Materi::where('slug', 'bab-2-materi-a')->first();
+        // ambil materi (karena kamu tidak pakai controller)
+        $materi = Materi::where('slug', 'bab-2-materi-a')->first();
 
-            // cek progress
-            $isCompleted = UserProgress::where('user_id', auth()->id())
-                ->where('materi_id', $materi->id ?? 0)
-                ->where('status', 'completed')
-                ->exists();
-        @endphp
+        // cek progress
+        $isCompleted = UserProgress::where('user_id', auth()->id())
+            ->where('materi_id', $materi->id ?? 0)
+            ->where('status', 'completed')
+            ->exists();
+    @endphp
 
     <div id="progress"></div>
 

@@ -25,55 +25,25 @@
             <div>
                 <h2>1. Apa Itu Kecerdasan Buatan</h2>
                 <p>
-                    <i><strong>(Artificial Intelligence)</strong></i> atau dalam Bahasa Indonesia disebut <strong>Kecerdasan
-                        Buatan</strong>, adalah
-                    sebuah teknologi yang memungkinkan mesin atau komputer untuk meniru kemampuan otak
-                    manusia. Artinya, mesin bisa belajar, berpikir, mengenali pola, memecahkan masalah, dan
-                    bahkan memahami bahasa, hampir seperti manusia.
-                </p>
-                <p>
-                    Gagasan tentang kecerdasan buatan (<i>Artificial Intelligence</i>) telah ada jauh sebelum
-                    istilah “AI” digunakan secara resmi. Salah satu tokoh penting dalam sejarah ini adalah
-                    <strong>Alan Turing</strong>, seorang ilmuwan matematika dan komputer asal Inggris. Pada tahun 1950,
-                    Turing mengajukan pertanyaan terkenal: “Bisakah mesin berpikir?” Pertanyaan ini menjadi
-                    titik awal lahirnya <strong>konsep dasar kecerdasan buatan</strong>, yaitu upaya untuk membuat mesin
-                    mampu meniru cara berpikir manusia. Ia juga memperkenalkan Tes Turing, sebuah cara untuk
-                    menilai apakah mesin dapat menampilkan perilaku yang tidak dapat dibedakan dari manusia.
+                    <i><b>Artificial Intelligence</b></i> atau dalam Bahasa Indonesia disebut <b>Kecerdasan Buatan</b>,
+                    adalah sebuah teknologi
+                    yang memungkinkan mesin atau komputer untuk meniru kemampuan otak manusia. Artinya, mesin bisa belajar,
+                    mengenali pola, memecahkan masalah, dan bahkan memahami bahasa, hampir seperti manusia.
                 </p>
 
-                <div class="materi-image">
-                    <img src="{{ asset('images/bab-1/materi-a/gambar-1.webp') }}" alt="Ilustrasi AI">
-                    <span>Gambar 1.1 Mesin Enigma dan Alan Turing</span>
-                </div>
 
                 <p>
-                    Selanjutnya, pada tahun 1956, istilah “<i>Artificial Intelligence</i>” atau kecerdasan buatan
-                    pertama kali digunakan dalam sebuah konferensi ilmiah di Dartmouth College, Amerika
-                    Serikat.
-                    Pertemuan ini dianggap sebagai momen resmi lahirnya bidang studi AI. Para ilmuwan pada
-                    saat itu mulai berusaha merancang program komputer yang dapat belajar, bernalar, dan
-                    memecahkan masalah secara otomatis.
+                    Kecerdasan buatan dapat mengenali suara, gambar, memahami perintah, dan membuat keputusan sendiri
+                    berdasarkan data yang diterima. Kemampuan ini membuat kecerdasan buatan banyak digunakan dalam kehidupan
+                    sehari-hari, terutama pada teknologi yang membutuhkan pengenalan pola.
                 </p>
-                <p>
-                    Menariknya, gagasan tentang mesin yang dapat bergerak dan berperilaku seperti manusia
-                    sebenarnya telah muncul jauh lebih awal. Pada tahun 1495, Leonardo da Vinci merancang
-                    robot mekanik pertama yang menyerupai manusia. Robot tersebut mampu duduk, berdiri, dan
-                    menggerakkan tangan menggunakan sistem katrol dan roda gigi. Meskipun belum didukung
-                    teknologi digital seperti saat ini, karya da Vinci menunjukkan bahwa keinginan manusia
-                    untuk menciptakan “mesin cerdas” sudah ada sejak berabad-abad lalu.
-                </p>
-
-                <div class="materi-image">
-                    <img src="{{ asset('images/bab-1/materi-a/gambar-2.jpg') }}" alt="Ilustrasi AI">
-                    <span>Gambar 1.2 Automata mekanik dan baju zirah abad pertengahan</span>
-                </div>
-
 
                 <p>
                     Perbedaan kecerdasan buatan dan program biasa :
                 </p>
 
                 <table class="table table-sm">
+                    <caption>Tabel A.1 Perbedaan kecerdasan buatan dengan program biasa</caption>
                     <thead>
                         <tr>
                             <th>Program Biasa</th>
@@ -119,26 +89,58 @@
                         suara.
                     </li>
                     <div class="materi-image inline">
-                        <img src="{{ asset('images/bab-1/materi-a/gambar-3.png') }}">
-                        <img src="{{ asset('images/bab-1/materi-a/gambar-4.png') }}">
+                        <figure>
+                            <img src="{{ asset('images/bab-1/materi-a/gambar-1.png') }}">
+                            <figcaption>Gambar A.1 Logo Siri</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="{{ asset('images/bab-1/materi-a/gambar-2.png') }}">
+                            <figcaption>Gambar A.2 Ilustrasi Kecerdasan Buatan</figcaption>
+                        </figure>
                     </div>
 
                     <li>ChatGPT – Kecerdasan buatan yang bisa menjawab pertanyaan dan ngobrol seperti
                         manusia.
                     </li>
                     <div class="materi-image">
-                        <img src="{{ asset('images/bab-1/materi-a/gambar-5.png') }}" alt="Ilustrasi AI">
-                        <span>Ilustrasi Kecerdasan Buatan</span>
+                        <img src="{{ asset('images/bab-1/materi-a/gambar-3.png') }}" alt="Ilustrasi AI">
+                        <span>Gambar A.3 Logo OpenAI</span>
                     </div>
 
                     <li>Deep Blue – Komputer kecerdasan buatan yang pernah mengalahkan juara dunia catur.
                     </li>
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-1/materi-a/gambar-4.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar A.4 Superkomputer IBM Deep Blue</span>
+                    </div>
+
+                    <div class="fun-fact">
+                        <strong>💡 Info Menarik</strong>
+                        <p>
+                            Gambar A.4 menunjukkan komputer mainframe dari IBM yang digunakan untuk mengolah data dalam
+                            jumlah
+                            besar. Komputer jenis ini banyak dimanfaatkan oleh perusahaan dan instansi besar pada masanya.
+                        </p>
+                    </div>
+
                     <li>Sophia – Robot kecerdasan buatan yang bisa berbicara dan punya wajah seperti
                         manusia.
                     </li>
+
                     <div class="materi-image">
-                        <img src="{{ asset('images/bab-1/materi-a/gambar-6.jpg') }}" alt="Ilustrasi AI">
-                        <span>Ilustrasi Kecerdasan Buatan</span>
+                        <img src="{{ asset('images/bab-1/materi-a/gambar-5.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar A.5 Robot Humanoid Sophia</span>
+                    </div>
+
+                    <div class="fun-fact">
+                        <strong>💡 Info Menarik</strong>
+                        <p>
+                            Gambar A.5 menunjukkan robot humanoid bernama Sophia yang dirancang untuk meniru ekspresi dan
+                            interaksi manusia. Robot ini menjadi salah satu contoh perkembangan teknologi kecerdasan buatan
+                            (AI)
+                            di era modern.
+                        </p>
                     </div>
 
                     <li>Rekomendasi film atau musik di YouTube, Netflix, atau Spotify yang pas banget dengan
@@ -204,7 +206,7 @@
             'answer' => 'program'
         ],
     ];
-                            ?>
+                                                                ?>
 
             <?php foreach ($questions as $index => $q): ?>
             <div class="ai-question" data-answer="<?= $q['answer']; ?>">

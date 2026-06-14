@@ -15,7 +15,7 @@
 
                         <div>Setelah mempelajari materi ini, siswa diharapkan :
                             <ul>
-                                <li>Mampu secara mandiri membuat model AI sederhana menggunakan Teachable Machine.</li>
+                                <li>Mampu secara mandiri membuat model <i>AI</i> sederhana.</li>
                                 <li>Mampu mengumpulkan data, melatih model, dan menguji akurasi hasilnya.</li>
                             </ul>
                         </div>
@@ -27,112 +27,135 @@
         <div>
             <h2>1. Membuat Model Gambar</h2>
             <p>
-                Proyek gambar digunakan untuk melatih AI agar dapat mengenali dan membedakan berbagai jenis gambar, seperti
-                bentuk tangan, ekspresi wajah, atau benda di sekitar. Berikut langkah-langkah yang dapat dilakukan:
+                Proyek Gambar digunakan untuk melatih model kecerdasan buatan agar dapat mengenali dan membedakan objek pada
+                gambar, seperti bekantan, monyet, bentuk tangan, ekspresi wajah, atau benda-benda di sekitar.
+
             </p>
+            <p>
+                Berikut langkah-langkah yang dapat dilakukan:
+            </p>
+
             <ol type="a">
-                <li>Memulai Proyek Baru</li>
-                <ul>
-                    <li>Buka peramban (<i>browser</i>) seperti Google Chrome atau Mozilla Firefox.</li>
-                    <li>Ketik alamat: https://teachablemachine.withgoogle.com.</li>
-                    <li>Klik tombol “<i>Get Started</i>” untuk memulai.</li>
-                    <li>Pilih jenis proyek “<i>Image Project</i>”.</li>
-                    <li>Akan muncul dua pilihan:</li>
-                    <ol>
-                        <li><i>Standard Image Model</i> – untuk penggunaan umum (pilihan ini yang digunakan).</li>
-                        <li><i>Embedded Image Model</i> – untuk perangkat kecil seperti Arduino.</li>
-                    </ol>
-                    <li>Pilih “<i>Standard Image Model</i>”.</li>
-                </ul>
-                <li>Menambahkan dan Mengatur Kelas (<i>Class</i>)
-                    <br>Setiap model AI harus mengenali beberapa kategori yang disebut kelas (<i>class</i>).
-                    <ul>
-                        <li>Secara <i>default</i>, terdapat dua kelas bernama <i>Class</i> 1 dan <i>Class</i> 2.</li>
-                        <li>Klik ikon pensil untuk mengganti nama kelas sesuai objek yang akan dilatih,
-                            <br>Misalnya:
-                            <ul>
-                                <li><i>Class</i> 1 → Tangan Terbuka</li>
-                                <li><i>Class</i> 2 → Tangan Tertutup</li>
-                            </ul>
-                        </li>
+                <li>Langkah 1 : Membuka Halaman <i>AI</i>
+                    <p>
+                        Buka <i>website</i> pembelajaran <i>AI</i> melalui <i>browser</i>, kemudian masuk ke halaman utama
+                        aplikasi.
+                    </p>
 
-                        <li>Jika diperlukan, tambahkan kelas baru, seperti tangan membentuk huruf L.</li>
-                    </ul>
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-a/gambar-1.png') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.1 Tampilan halaman utama <i>website</i> pembelajaran <i>AI</i></span>
+                    </div>
                 </li>
 
 
-                <li>Mengumpulkan Data Latih (<i>Training Data</i>)</li>
-                <p>
-                    Langkah ini bertujuan memberikan contoh kepada AI agar dapat belajar. Ada dua cara untuk menambahkan
-                    gambar ke setiap kelas:
-                <ol>
-                    <li>Menggunakan Webcam</li>
-                    <ul>
-                        <li>Klik tombol “Webcam” pada kelas yang dipilih.</li>
-                        <li>Izinkan <i>browser</i> mengakses kamera.</li>
-                        <li>Arahkan objek (misalnya tanganmu) ke kamera.</li>
-                        <li>Tekan dan tahan tombol “<i>Hold to Record</i>” untuk merekam gambar dari berbagai posisi dan
-                            kondisi
-                            pencahayaan.</li>
-                    </ul>
-                    <li>Mengunggah Gambar dari Komputer</li>
-                    <br>Klik tombol “<i>Upload</i>”, lalu pilih gambar yang tersimpan di perangkatmu.
-                    <br>Catatan Penting:
-                    <ul>
-                        <li>Pastikan jumlah gambar di setiap kelas seimbang.</li>
-                        <li>Gunakan variasi posisi, latar belakang, dan pencahayaan agar model lebih akurat.</li>
-                        <li>Semakin banyak contoh yang diberikan, semakin baik kemampuan AI dalam mengenali objek.</li>
-                    </ul>
 
-                </ol>
-                </p>
-                <li>
-                    Melatih Model (<i>Training</i>)
+                <li>Langkah 2 : Memilih Menu Latih <i>AI</i>
+                    <p>Klik menu Latih <i>AI</i> pada navigasi atau tombol Mulai Melatih yang terdapat pada halaman beranda.
+                    </p>
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-a/gambar-2.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.2 Pengguna memilih menu Latih <i>AI</i> atau tombol Mulai Melatih untuk masuk ke
+                            halaman pelatihan <i>AI</i></span>
+                    </div>
                 </li>
-                <ol>
-                    <li>Setelah seluruh kelas memiliki data gambar, klik tombol “<i>Train Model</i>”.</li>
-                    <li>Tunggu proses pelatihan selesai (beberapa detik atau menit).</li>
-                    <li>Status akan muncul seperti:</li>
-                    <ul>
-                        <li>“ <i>Preparing training data…</i>”</li>
-                        <li>“ <i>Training model…</i>”</li>
-                        <li>“ <i>Model trained!</i>” berarti model telah siap digunakan.</li>
-                    </ul>
-                    <li>Jangan menutup tab saat proses ini berlangsung.</li>
-                </ol>
-                <br>Pada tahap ini, sistem mulai “belajar” dari data yang telah diberikan untuk mengenali pola pada gambar.
-                <li>Menguji Model (<i>Testing / Preview</i>)</li>
-                <ol>
-                    <li>Lihat panel di sisi kanan berjudul “<i>Preview</i>”.</li>
-                    <li>Pilih sumber <i>input</i>: Webcam atau <i>Upload File</i>.</li>
-                    <li>Arahkan objek ke kamera, misalnya tangan terbuka.</li>
-                    <li>Hasil akan muncul dalam bentuk persentase keyakinan AI terhadap setiap kelas,
-                        <br>Misalnya:
-                        <ul>
-                            <li>“Tangan Terbuka: 95%”</li>
-                            <li>“Tangan Tertutup: 5%”</li>
-                        </ul>
-                    </li>
-                    <li>Jika hasilnya belum akurat, tambahkan lebih banyak gambar dan lakukan pelatihan ulang.</li>
 
-                </ol>
+                <li>Langkah 3: Memilih Mode Gambar
+                    <p>Langkah Pada halaman pilihan mode, pilih Latih Gambar. Mode ini digunakan untuk melatih <i>AI</i>
+                        menggunakan data berupa gambar.
+                    </p>
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-a/gambar-3.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.3 Tampilan halaman pemilihan mode pelatihan AI dengan opsi Latih Gambar yang
+                            dipilih</span>
+                    </div>
+                </li>
+
+                <li>Langkah 4: Membuat Kelas Gambar
+                    <p>Masukkan nama kelas pada kolom yang tersedia, misalnya bekantan, monyet, atau ikan gabus. Jika ingin
+                        menambahkan kategori lain, klik tombol Tambah Kelas menguji model.
+                    </p>
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-a/gambar-4.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.4 Menuliskan nama kelas pada kolom yang tersedia sebagai kategori gambar yang akan
+                            digunakan untuk melatih AI</span>
+                    </div>
+                </li>
+
+                <li>Langkah 5: Mengunggah Gambar
+                    <p>Pilih beberapa gambar dari galeri perangkat yang sesuai dengan nama kelas yang telah dibuat.
+                        Gambar-gambar ini akan menjadi contoh yang digunakan kecerdasan buatan untuk belajar mengenali
+                        objek.
+                    </p>
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-a/gambar-5.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.5 Setiap kelas diisi dengan beberapa gambar contoh</span>
+                    </div>
+                </li>
+
+                <li>Langkah 6: Melatih AI
+                    <p>Setelah semua gambar berhasil dipilih, klik tombol Latih AI. Sistem akan mempelajari gambar-gambar
+                        yang telah diunggah untuk membuat model AI.
+                    </p>
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-a/gambar-6.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.6 Menekan tombol Latih AI untuk memulai proses pembelajaran AI berdasarkan gambar-gambar yang telah diunggah</span>
+                    </div>
+                </li>
+
+                <li>Langkah 7: Menunggu Proses Pelatihan
+                    <p>Tunggu hingga proses pelatihan selesai. Lama proses bergantung pada jumlah gambar yang digunakan. Setelah selesai, AI siap digunakan untuk melakukan prediksi.                    </p>
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-a/gambar-7.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.7 Tampilan pemberitahuan bahwa proses pelatihan AI telah selesai dan model siap digunakan untuk melakukan pengujian</span>
+                    </div>
+                </li>
+
+                <li>Langkah 8: Menguji AI
+                    <p>Pada bagian Tes Gambar, pilih gambar yang ingin diuji. Sebaiknya gunakan gambar yang berbeda dari gambar yang digunakan saat pelatihan.</p>
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-a/gambar-8.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.8 Memilih gambar uji pada bagian Tes Gambar untuk menguji kemampuan AI dalam mengenali objek yang terdapat pada gambar</span>
+                    </div>
+                </li>
+
+                <li>Langkah 9: Melihat Hasil Prediksi
+                    <p>Klik tombol Prediksi untuk melihat hasil pengenalan gambar oleh AI. Sistem akan menampilkan kelas yang menurut AI paling sesuai dengan gambar yang diuji.</p>
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-a/gambar-9.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.9 Menekan tombol Prediksi untuk melihat hasil pengenalan objek berdasarkan model AI yang telah dilatih sebelumnya</span>
+                    </div>
+
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-a/gambar-10.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.10 Sistem menampilkan hasil prediksi berupa nama kelas yang dikenali beserta persentase tingkat keyakinan AI terhadap hasil tersebut</span>
+                    </div>
+                </li>
             </ol>
+
+            <ul>
+                <strong>Catatan Penting</strong>
+                <li>Gunakan gambar yang jelas agar kecerdasan buatan lebih mudah mengenali objek.</li>
+                <li>Setiap kelas sebaiknya memiliki beberapa gambar sebagai contoh.</li>
+                <li>Semakin banyak dan beragam gambar yang digunakan, semakin baik kemampuan kecerdasan buatan dalam melakukan prediksi.</li>
+            </ul>
+
         </div>
     </div>
 
     @php
-            use App\Models\Materi;
-            use App\Models\UserProgress;
+        use App\Models\Materi;
+        use App\Models\UserProgress;
 
-            // ambil materi (karena kamu tidak pakai controller)
-            $materi = Materi::where('slug', 'bab-3-materi-a')->first();
+        // ambil materi 
+        $materi = Materi::where('slug', 'bab-3-materi-a')->first();
 
-            // cek progress
-            $isCompleted = UserProgress::where('user_id', auth()->id())
-                ->where('materi_id', $materi->id ?? 0)
-                ->where('status', 'completed')
-                ->exists();
-        @endphp
+        // cek progress
+        $isCompleted = UserProgress::where('user_id', auth()->id())
+            ->where('materi_id', $materi->id ?? 0)
+            ->where('status', 'completed')
+            ->exists();
+    @endphp
 
     <div id="progress"></div>
 

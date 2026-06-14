@@ -6,22 +6,22 @@
     <div>
         <h1 class="mt-4">PENGENALAN GOOGLE TEACHABLE LEARNING MACHINE</h1>
         <div>
-            <h2>2. Google Teachable Machine : Membuat AI Jadi Mudah</h2>
+            <h2>2. <i>Google Teachable Machine</i> : Membuat <i>AI</i> Jadi Mudah</h2>
             <p>
                 <strong>Google Teachable Machine</strong> adalah platform berbasis web yang dikembangkan oleh Google untuk
                 memudahkan siapa
-                pun dalam membuat dan melatih model kecerdasan buatan (AI) tanpa perlu menulis satu baris kode pun.
-                <strong>Keunggulan utama Teachable Machine</strong> adalah sifatnya yang <i>user-friendly</i>. Pengguna dari
-                berbagai latar belakang
-                baik pelajar, guru, maupun peneliti dapat memahami konsep dasar <i>machine learning</i> secara praktis dan
-                cepat.
-                Platform ini dirancang untuk memberikan pengalaman belajar yang menyenangkan sekaligus edukatif.
+                pun dalam membuat dan melatih model kecerdasan buatan tanpa perlu menulis satu baris kode pun. Keunggulan
+                utama <i>Teachable Machine</i> adalah sifatnya yang <i>user-friendly</i>. Pengguna dari berbagai latar
+                belakang baik
+                pelajar, guru, maupun peneliti dapat memahami konsep dasar <i>machine learning</i> secara praktis dan cepat.
+                <i>Platform</i> ini dirancang untuk memberikan pengalaman belajar yang menyenangkan sekaligus edukatif.
             </p>
             <ol type="a">
                 <li>Fungsi dan manfaat</li>
                 <p>
-                    Google Teachable Machine memiliki fungsi utama sebagai media pembelajaran interaktif untuk mengenalkan
-                    konsep dasar <i>Machine Learning</i> dengan cara yang sederhana. Melalui alat ini, peserta didik dapat
+                    <i>Google Teachable Machine</i> memiliki fungsi utama sebagai media pembelajaran interaktif untuk
+                    mengenalkan
+                    konsep dasar <i>machine learning</i> dengan cara yang sederhana. Melalui alat ini, peserta didik dapat
                     memahami
                     bagaimana komputer dapat belajar dari contoh data yang diberikan tanpa harus mempelajari bahasa
                     pemrograman yang kompleks.
@@ -35,42 +35,56 @@
                         tubuh.
                     </li>
                     <li>Mendukung pembelajaran yang lebih menarik.
-                        <br>Siswa dapat belajar menggunakan aplikasi berbasis AI yang interaktif dan menyesuaikan dengan
+                        <br>Siswa dapat belajar menggunakan aplikasi berbasis kecerdasan buatan yang interaktif dan
+                        menyesuaikan dengan
                         gaya belajar mereka.
                     </li>
                     <li>
-                        Menumbuhkan pemahaman tentang etika dan tanggung jawab penggunaan AI.
+                        Menumbuhkan pemahaman tentang etika dan tanggung jawab penggunaan kecerdasan buatan.
                         <br>Siswa belajar bahwa data harus dikumpulkan secara aman dan digunakan dengan bijak.
                     </li>
                     <li>
-                        Mempermudah pekerjaan manusia.
-                        <br>AI dapat membantu melakukan tugas berulang dengan cepat dan akurat.
+                        Mempermudah pekerjaan manusia
+                        <br>Kecerdasan buatan dapat membantu melakukan tugas berulang dengan cepat dan akurat.
                     </li>
                     <li>
-                        Meningkatkan efisiensi dan kenyamanan.
+                        Meningkatkan efisiensi dan kenyamanan
                         <br>Misalnya, sistem otomatis yang menyalakan lampu atau AC berdasarkan suhu ruangan.
                     </li>
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-2/materi-b/gambar-1.png') }}" alt="Ilustrasi AI">
-                        <span>Ilustrasi Kecerdasan Buatan</span>
+                        <span>Gambar B.4 Manfaat dan konsep pembelajaran kecerdasan buatan</span>
                     </div>
+
+                    <div class="fun-fact">
+                        <p>
+                            <strong>Gambar B.4</strong> menunjukkan berbagai manfaat dan konsep dalam pembelajaran berbasis
+                            kecerdasan buatan, seperti literasi teknologi, etika <i>AI</i>, berpikir komputasional,
+                            efisiensi,
+                            pembelajaran yang menarik, serta <i>project based learning</i>.
+                        </p>
+                    </div>
+
                 </ol>
-                <li>Penerapan AI di Sekitar Kita</li>
-                <p>AI bekerja di balik layar untuk membantu kita dalam banyak hal. Berikut beberapa contoh penerapan AI yang
-                    mudah dijumpai:</p>
+
+                <li>Penerapan Kecerdasan Buatan dalam Kehidupan Sehari-hari</li>
+                <p>Kecerdasan buatan bekerja di balik layar untuk membantu manusia dalam berbagai aktivitas. Berikut
+                    beberapa contoh penerapan kecerdasan buatan yang mudah dijumpai dalam kehidupan sehari-hari:
+                </p>
                 <ol>
-                    <li>Asisten Digital
+                    <li><strong>Asisten Digital</strong>
                         <br>Contoh: Google Assistant, Siri, atau Alexa. AI membantu menjawab pertanyaan, memberikan
                         rekomendasi, bahkan mengatur jadwal atau alarm hanya melalui perintah suara.
                     </li>
                     <li>
-                        Rekomendasi di Media Sosial dan Aplikasi
-                        <br>Saat kamu menonton video di YouTube atau mendengarkan musik di Spotify, sistem AI akan
-                        mempelajari apa yang kamu sukai dan memberikan rekomendasi konten serupa.
+                        <strong>Rekomendasi di Media Sosial dan Aplikasi</strong>
+                        <br>Saat pengguna menonton video di YouTube atau mendengarkan musik di Spotify, sistem kecerdasan
+                        buatan akan mempelajari preferensi pengguna dan memberikan rekomendasi konten yang serupa.
                     </li>
                     <li>
-                        Pengenalan Wajah (<i>Face Recognition</i>)
-                        <br>AI digunakan untuk membuka kunci ponsel dengan wajah atau untuk keamanan di tempat tertentu.
+                        <strong>Pengenalan Wajah (<i>Face Recognition</i>)</strong>
+                        <br>Kecerdasan buatan digunakan untuk membuka kunci ponsel dengan wajah atau untuk keamanan di
+                        tempat tertentu.
                         Sistem ini bekerja dengan mengenali pola unik pada wajah seseorang.
                     </li>
                     <li>
@@ -80,13 +94,22 @@
                     </li>
                     <li>
                         Pendidikan dan Pembelajaran
-                        <br>AI juga banyak digunakan dalam dunia pendidikan. Misalnya, aplikasi belajar yang menyesuaikan
+                        <br>Kecerdasan buatan juga banyak digunakan dalam dunia pendidikan. Misalnya, aplikasi belajar yang
+                        menyesuaikan
                         kesulitan soal dengan kemampuan pengguna, atau platform seperti Duolingo yang mengenali kesalahan
                         umum siswa dan memberikan latihan tambahan.
                     </li>
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-2/materi-b/gambar-2.png') }}" alt="Ilustrasi AI">
-                        <span>Ilustrasi Kecerdasan Buatan</span>
+                        <span>Gambar B.5 Contoh penerapan kecerdasan buatan</span>
+                    </div>
+
+                    <div class="fun-fact">
+                        <p>
+                            <strong>Gambar B.5</strong> menunjukkan berbagai penerapan kecerdasan buatan, seperti asisten
+                            suara, rekomendasi
+                            media, pengenalan wajah, dan navigasi peta digital yang membantu aktivitas manusia.
+                        </p>
                     </div>
                 </ol>
             </ol>
@@ -94,18 +117,18 @@
     </div>
 
     @php
-            use App\Models\Materi;
-            use App\Models\UserProgress;
+        use App\Models\Materi;
+        use App\Models\UserProgress;
 
-            // ambil materi (karena kamu tidak pakai controller)
-            $materi = Materi::where('slug', 'bab-2-materi-b')->first();
+        // ambil materi (karena kamu tidak pakai controller)
+        $materi = Materi::where('slug', 'bab-2-materi-b')->first();
 
-            // cek progress
-            $isCompleted = UserProgress::where('user_id', auth()->id())
-                ->where('materi_id', $materi->id ?? 0)
-                ->where('status', 'completed')
-                ->exists();
-        @endphp
+        // cek progress
+        $isCompleted = UserProgress::where('user_id', auth()->id())
+            ->where('materi_id', $materi->id ?? 0)
+            ->where('status', 'completed')
+            ->exists();
+    @endphp
 
     <div id="progress"></div>
 
