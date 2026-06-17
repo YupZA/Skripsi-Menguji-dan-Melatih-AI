@@ -272,14 +272,7 @@
 
     <div id="progress"></div>
 
-    <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4">
-        @csrf
-        <input type="hidden" name="materi_id" value="3">
-
-        <button type="submit" class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}" {{ $isCompleted ? 'disabled' : '' }}>
-            {{ $isCompleted ? 'Materi Sudah Selesai' : 'Tandai Materi Selesai' }}
-        </button>
-    </form>
+    
 
     <section class="ai-flow">
         <h2>Aktivitas 1.3</h2>
@@ -305,6 +298,23 @@
         </button>
 
         <div id="flowResult" class="flow-result"></div>
+
+        <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4" id="formSelesai">
+            @csrf
+            <input type="hidden" name="materi_id" value="{{ $materi->id }}">
+
+            <button
+                type="submit"
+                id="btnSelesai"
+                class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}"
+                {{ $isCompleted ? 'disabled' : 'disabled' }}>
+
+                {{ $isCompleted ? 'Aktivitas Selesai' : 'Submit Aktivitas' }}
+
+            </button>
+
+            <div id="scoreInfo" class="mt-2"></div>
+        </form>
     </section>
 
 

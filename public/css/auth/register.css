@@ -178,40 +178,7 @@ html, body {
   color: #ffffff;
 }
 
-/* ===============================
-   TOGGLE PASSWORD (EYE ICON)
-================================ */
 
-.password-field {
-  position: relative;
-}
-
-.password-field input {
-  padding-right: 42px;
-}
-
-.toggle-password {
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-
-  cursor: pointer;
-  color: #9aa4bf;
-
-  /* PASTIKAN TIDAK ADA STYLE ANEH */
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-.toggle-password svg {
-  display: block;
-}
-
-.hidden {
-  display: none !important;
-}
 
 
 

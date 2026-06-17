@@ -1,13 +1,19 @@
 let draggedFlowItem = null;
+let flowBenar = false;
 
 document.querySelectorAll(".flow-item").forEach(item => {
     item.addEventListener("dragstart", () => {
+        if (item.getAttribute("draggable") === "false") return;
+
         draggedFlowItem = item;
         item.style.opacity = "0.5";
     });
 
     item.addEventListener("dragend", () => {
-        draggedFlowItem.style.opacity = "1";
+        if (draggedFlowItem) {
+            draggedFlowItem.style.opacity = "1";
+        }
+
         draggedFlowItem = null;
     });
 
@@ -25,6 +31,13 @@ document.querySelectorAll(".flow-item").forEach(item => {
                 container.insertBefore(draggedFlowItem, item.nextSibling);
             } else {
                 container.insertBefore(draggedFlowItem, item);
+            }
+
+            flowBenar = false;
+
+            const btnSelesai = document.getElementById("btnSelesai");
+            if (btnSelesai && btnSelesai.innerText.trim() !== "Aktivitas Selesai") {
+                btnSelesai.disabled = true;
             }
         }
     });
@@ -49,12 +62,57 @@ function checkFlow() {
     });
 
     const result = document.getElementById("flowResult");
+    const btnSelesai = document.getElementById("btnSelesai");
 
     if (correct) {
-        result.textContent = "✅ Alur AI sudah benar! Kamu paham prosesnya.";
+        flowBenar = true;
+
+        result.textContent = "✅ Alur AI sudah benar! Kamu bisa submit aktivitas.";
         result.style.color = "#22c55e";
+
+        if (btnSelesai && btnSelesai.innerText.trim() !== "Aktivitas Selesai") {
+            btnSelesai.disabled = false;
+        }
     } else {
+        flowBenar = false;
+
         result.textContent = "❌ Masih ada urutan yang salah. Coba perhatikan kembali alurnya.";
         result.style.color = "#ef4444";
+
+        if (btnSelesai) {
+            btnSelesai.disabled = true;
+        }
     }
 }
+
+document.getElementById("formSelesai").addEventListener("submit", function(e) {
+    const scoreInfo = document.getElementById("scoreInfo");
+
+    if (!flowBenar) {
+        e.preventDefault();
+        scoreInfo.innerHTML = "❌ Urutan belum benar. Silakan cek urutan terlebih dahulu.";
+        scoreInfo.style.color = "#ef4444";
+        return;
+    }
+
+    scoreInfo.innerHTML = "✅ Aktivitas selesai.";
+    scoreInfo.style.color = "#22c55e";
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const btnSelesai = document.getElementById("btnSelesai");
+
+    if (btnSelesai && btnSelesai.innerText.trim() === "Aktivitas Selesai") {
+        document.querySelectorAll(".flow-item").forEach(item => {
+            item.setAttribute("draggable", "false");
+            item.style.opacity = "0.6";
+            item.style.pointerEvents = "none";
+        });
+
+        const btnCheck = document.querySelector(".btn-flow-check");
+        if (btnCheck) {
+            btnCheck.disabled = true;
+            btnCheck.style.opacity = "0.6";
+        }
+    }
+});

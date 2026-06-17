@@ -132,15 +132,6 @@
 
     <div id="progress"></div>
 
-    <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4">
-        @csrf
-        <input type="hidden" name="materi_id" value="5">
-
-        <button type="submit" class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}" {{ $isCompleted ? 'disabled' : '' }}>
-            {{ $isCompleted ? 'Materi Sudah Selesai' : 'Tandai Materi Selesai' }}
-        </button>
-    </form>
-
     <section class="ai-classification">
         <h2>Aktivitas 2.2</h2>
         <p>Tentukan apakah contoh berikut termasuk <strong>Kecerdasan Buatan (AI)</strong> atau <strong>Program
@@ -180,6 +171,23 @@
             <button onclick="classify(this, 'program')">Program Biasa</button>
             <div class="feedback"></div>
         </div>
+
+        <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4" id="formSelesai">
+            @csrf
+            <input type="hidden" name="materi_id" value="{{ $materi->id }}">
+
+            <button
+                type="submit"
+                id="btnSelesai"
+                class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}"
+                {{ $isCompleted ? 'disabled' : '' }}>
+
+                {{ $isCompleted ? 'Aktivitas Selesai' : 'Submit Aktivitas' }}
+
+            </button>
+
+            <div id="scoreInfo" class="mt-2"></div>
+        </form>
     </section>
 
 @endsection

@@ -88,7 +88,7 @@
                         objek.
                     </p>
                     <div class="materi-image">
-                        <img src="{{ asset('images/bab-3/materi-a/gambar-5.jpg') }}" alt="Ilustrasi AI">
+                        <img src="{{ asset('images/bab-3/materi-a/gambar-5.png') }}" alt="Ilustrasi AI">
                         <span>Gambar C.5 Setiap kelas diisi dengan beberapa gambar contoh</span>
                     </div>
                 </li>
@@ -133,8 +133,9 @@
                 </li>
             </ol>
 
+            <strong>Catatan Penting</strong>
             <ul>
-                <strong>Catatan Penting</strong>
+                
                 <li>Gunakan gambar yang jelas agar kecerdasan buatan lebih mudah mengenali objek.</li>
                 <li>Setiap kelas sebaiknya memiliki beberapa gambar sebagai contoh.</li>
                 <li>Semakin banyak dan beragam gambar yang digunakan, semakin baik kemampuan kecerdasan buatan dalam melakukan prediksi.</li>
@@ -159,14 +160,7 @@
 
     <div id="progress"></div>
 
-    <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4">
-        @csrf
-        <input type="hidden" name="materi_id" value="7">
-
-        <button type="submit" class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}" {{ $isCompleted ? 'disabled' : '' }}>
-            {{ $isCompleted ? 'Materi Sudah Selesai' : 'Tandai Materi Selesai' }}
-        </button>
-    </form>
+    
 
 
     <section class="ai-debug">
@@ -258,6 +252,23 @@
 
             <div class="debug-feedback"></div>
         </div>
+
+        <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4" id="formSelesai">
+            @csrf
+            <input type="hidden" name="materi_id" value="{{ $materi->id }}">
+
+            <button
+                type="submit"
+                id="btnSelesai"
+                class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}"
+                {{ $isCompleted ? 'disabled' : '' }}>
+
+                {{ $isCompleted ? 'Aktivitas Selesai' : 'Submit Aktivitas' }}
+
+            </button>
+
+            <div id="scoreInfo" class="mt-2"></div>
+        </form>
     </section>
 
 @endsection

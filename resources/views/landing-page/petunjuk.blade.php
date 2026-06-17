@@ -12,11 +12,6 @@
 
             <div class="petunjuk-line"></div>
 
-            <p>
-                Pilih salah satu daftar di bawah untuk melihat
-                petunjuk penggunaan media pembelajaran.
-            </p>
-
         </div>
 
         <!-- ACCORDION -->
@@ -47,10 +42,51 @@
 
                     <div class="petunjuk-content-inner">
 
-                        <p>
-                            Halaman beranda menampilkan informasi umum,
-                            navigasi utama, dan akses menuju materi pembelajaran.
-                        </p>
+
+                        <img src="{{ asset('images/petunjuk/beranda.jpg') }}" alt="Tampilan Halaman Beranda"
+                            class="petunjuk-img">
+
+                        <div class="petunjuk-list">
+
+                            <div class="petunjuk-step">
+                                <div class="step-number">1</div>
+
+                                <div class="step-text">
+                                    <strong>Navigasi Atas</strong>
+                                    <p>
+                                        Digunakan untuk berpindah dan mengakses halaman utama, seperti Beranda, Materi,
+                                        Latih AI, Informasi, dan Petunjuk Penggunaan.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="petunjuk-step">
+                                <div class="step-number">2</div>
+
+                                <div class="step-text">
+                                    <strong>Tombol Akses Modul</strong>
+                                    <p>
+                                        Digunakan untuk membuka dan mempelajari materi pembelajaran yang tersedia pada media
+                                        pembelajaran.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="petunjuk-step">
+                                <div class="step-number">3</div>
+
+                                <div class="step-text">
+                                    <strong>Tombol Mulai Melatih</strong>
+                                    <p>
+                                        Digunakan untuk mengakses fitur pelatihan AI dan mencoba simulasi pelatihan model
+                                        kecerdasan buatan secara interaktif.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
 
                     </div>
 
@@ -74,8 +110,8 @@
                     </div>
 
                     <div class="petunjuk-arrow">
-    <i class="fas fa-chevron-down"></i>
-</div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
 
                 </button>
 
@@ -110,8 +146,8 @@
                     </div>
 
                     <div class="petunjuk-arrow">
-    <i class="fas fa-chevron-down"></i>
-</div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
                 </button>
 
                 <div class="petunjuk-content">
@@ -145,8 +181,8 @@
                     </div>
 
                     <div class="petunjuk-arrow">
-    <i class="fas fa-chevron-down"></i>
-</div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
 
                 </button>
 
@@ -157,6 +193,41 @@
                         <p>
                             Pengguna harus menyelesaikan kuis dan
                             mencapai nilai minimum untuk melanjutkan materi.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ITEM -->
+            <div class="petunjuk-item">
+
+                <button class="petunjuk-btn">
+
+                    <div class="petunjuk-left">
+
+                        <div class="petunjuk-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <span>Hubungi Kami</span>
+
+                    </div>
+
+                    <div class="petunjuk-arrow">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </button>
+
+                <div class="petunjuk-content">
+
+                    <div class="petunjuk-content-inner">
+
+                        <p>
+                            Materi pembelajaran tersedia secara bertahap
+                            sesuai progres belajar pengguna.
                         </p>
 
                     </div>

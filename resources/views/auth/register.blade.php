@@ -52,21 +52,7 @@
 
                     <input type="password" name="password" id="passwordInput" placeholder="Minimal 6 karakter" required>
 
-                    <span class="toggle-password" id="togglePassword">
-                        <!-- eye open -->
-                        <svg id="eyeOpen" width="20" height="20" viewBox="0 0 24 24">
-                            <path d="M1 12C1 12 5 5 12 5C19 5 23 12 23 12C23 12 19 19 12 19C5 19 1 12 1 12Z" fill="none"
-                                stroke="currentColor" stroke-width="2" />
-                            <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2" />
-                        </svg>
-
-                        <!-- eye closed -->
-                        <svg id="eyeClosed" width="20" height="20" viewBox="0 0 24 24" class="hidden">
-                            <path d="M1 12C1 12 5 5 12 5C19 5 23 12 23 12C23 12 19 19 12 19C5 19 1 12 1 12Z" fill="none"
-                                stroke="currentColor" stroke-width="2" />
-                            <line x1="3" y1="21" x2="21" y2="3" stroke="currentColor" stroke-width="2" />
-                        </svg>
-                    </span>
+                    
                 </div>
 
 

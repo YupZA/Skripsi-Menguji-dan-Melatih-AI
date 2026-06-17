@@ -12,71 +12,109 @@
                 pengenalan gerakan olahraga, tarian, atau isyarat tangan.
             </p>
             <ol type="a">
-                <li>Memulai Proyek Baru
-                    <ul>
-                        <li>Buka situs Teachable Machine.</li>
-                        <li>Pilih “<i>Pose Project</i>”, lalu klik “<i>Get Started</i>”.</li>
-                    </ul>
+                <li>Langkah 1: Membuka Halaman <i>AI</i>
+                    <p>Buka website pembelajaran AI melalui browser, kemudian masuk ke halaman utama aplikasi.</p>
+
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-c/gambar-1.png') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.19 Tampilan halaman utama website pembelajaran <i>AI</i>.</span>
+                    </div>
                 </li>
-                <li>
-                    Mengatur Kelas
-                    <br>Beri nama kelas sesuai posisi tubuh yang ingin dikenali, misalnya:
-                    <ul>
-                        <li><i>Class 1</i> → Berdiri</li>
-                        <li><i>Class 2</i> → Jongkok</li>
-                        <li><i>Class 3</i> → Lambaikan Tangan</li>
-                    </ul>
+
+                <li>Langkah 2: Memilih Menu Latih AI</i>
+                    <p>Klik menu Latih AI pada navigasi atau tombol Mulai Melatih yang tersedia pada halaman beranda.</p>
+
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-c/gambar-2.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.20 Pengguna memilih menu Latih AI atau tombol Mulai Melatih untuk masuk ke halaman
+                            pelatihan <i>AI</i></span>
+                    </div>
                 </li>
-                <li>
-                    Mengumpulkan Data Pose
-                    <ul>
-                        <li>Klik “Webcam”, kemudian izinkan akses kamera.</li>
-                        <li>Lakukan gerakan yang sesuai dengan setiap kelas, misalnya berdiri, jongkok, atau melambaikan
-                            tangan.</li>
-                        <li>Tekan “<i>Hold to Record</i>” untuk merekam pose dari berbagai sudut pandang.</li>
-                    </ul>
-                    Tips
-                    <ul>
-                        <li>Gunakan pencahayaan yang cukup agar kamera bisa mengenali posisi tubuh dengan jelas.</li>
-                        <li>Tambahkan beberapa variasi agar model tidak mudah keliru.</li>
-                    </ul>
+
+                <li>Langkah 3: Memilih Mode Latih Pose Tubuh</i>
+                    <p>Pada halaman pilihan mode, pilih Latih Pose Tubuh untuk melatih AI menggunakan data berupa pose atau
+                        gerakan tubuh yang ditangkap oleh kamera.</p>
+
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-c/gambar-3.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.21 Memilih menu Latih Pose Tubuh untuk melatih <i>AI</i> mengenali berbagai pose atau
+                            posisi tubuh melalui kamera</span>
+                    </div>
                 </li>
-                <li>
-                    Melatih dan Menguji Model
-                    <ul>
-                        <li>Klik “<i>Train Model</i>” untuk memulai proses pelatihan.</li>
-                        <li>Setelah selesai, uji model pada panel “<i>Preview</i>” dengan melakukan gerakan baru.</li>
-                        <li>AI akan menunjukkan hasil prediksi berupa persentase keyakinan terhadap kelas tertentu.</li>
-                    </ul>
+
+                <li>Langkah 4: Membuat Kelas Pose</i>
+                    <p>Masukkan nama kelas pada kolom yang tersedia sesuai dengan pose yang akan dilatih, misalnya Berdiri,
+                        Duduk, atau Jongkok. Jika ingin menambahkan kategori pose lainnya, klik tombol Tambah Kelas.</p>
+
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-c/gambar-4.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.22 Membuat kelas pose tubuh dan mengumpulkan data untuk setiap kelas sebagai contoh
+                            yang akan dipelajari oleh <i>AI</i></span>
+                    </div>
                 </li>
+
+                <li>Langkah 5: Mengumpulkan Data Pose</i>
+                    <p>Arahkan tubuh ke kamera, kemudian lakukan pose yang sesuai dengan nama kelas yang telah dibuat. Ambil
+                        beberapa contoh data untuk setiap pose agar AI dapat mempelajari ciri-ciri dari masing-masing posisi
+                        tubuh.</p>
+
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-c/gambar-5.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.23 Mengarahkan tubuh ke kamera dan menekan tombol Ambil Data untuk mengumpulkan
+                            contoh pose yang akan dipelajari oleh <i>AI</i></span>
+                    </div>
+                </li>
+
+                <li>Langkah 6: Melatih AI</i>
+                    <p>Setelah data pose untuk setiap kelas terkumpul, klik tombol Latih AI untuk memulai proses pelatihan.
+                        Pada tahap ini, AI akan mempelajari pola dari setiap pose yang telah direkam.</p>
+
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-c/gambar-6.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.24 Menekan tombol Latih <i>AI</i> untuk memulai proses pelatihan berdasarkan data
+                            pose tubuh yang telah dikumpulkan</span>
+                    </div>
+                </li>
+                <li>Langkah 7: Melihat Hasil Prediksi</i>
+                    <p>Setelah pelatihan selesai, tampilkan salah satu pose di depan kamera. <i>AI</i> akan mengenali pose
+                        tersebut dan menampilkan hasil prediksi secara <i>real-time</i> (langsung) pada layar.</p>
+
+                    <div class="materi-image">
+                        <img src="{{ asset('images/bab-3/materi-c/gambar-7.jpg') }}" alt="Ilustrasi AI">
+                        <span>Gambar C.25 Hasil prediksi <i>AI</i> ditampilkan secara <i>real-time</i>, menunjukkan bahwa
+                            pose tubuh yang terdeteksi termasuk ke dalam kelas Tangan di bawah</span>
+                    </div>
+                </li>
+
             </ol>
+
+            <p>
+                <strong>Catatan Penting</strong>
+            <ul>
+                <li>Pastikan seluruh tubuh atau bagian tubuh yang diamati terlihat jelas oleh kamera.</li>
+                <li>Gunakan pencahayaan yang cukup agar pose dapat terdeteksi dengan baik.</li>
+                <li>Ambil data pose dalam jumlah yang cukup untuk setiap kelas agar hasil prediksi lebih akurat.</li>
+                <li>Hindari pose yang terlalu mirip karena dapat menyulitkan AI dalam membedakan setiap kategori.</li>
+            </ul>
+            </p>
         </div>
     </div>
 
     @php
-            use App\Models\Materi;
-            use App\Models\UserProgress;
+        use App\Models\Materi;
+        use App\Models\UserProgress;
 
-            // ambil materi (karena kamu tidak pakai controller)
-            $materi = Materi::where('slug', 'bab-3-materi-c')->first();
+        // ambil materi (karena kamu tidak pakai controller)
+        $materi = Materi::where('slug', 'bab-3-materi-c')->first();
 
-            // cek progress
-            $isCompleted = UserProgress::where('user_id', auth()->id())
-                ->where('materi_id', $materi->id ?? 0)
-                ->where('status', 'completed')
-                ->exists();
-        @endphp
+        // cek progress
+        $isCompleted = UserProgress::where('user_id', auth()->id())
+            ->where('materi_id', $materi->id ?? 0)
+            ->where('status', 'completed')
+            ->exists();
+    @endphp
 
     <div id="progress"></div>
-
-    <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4">
-        @csrf
-        <input type="hidden" name="materi_id" value="9">
-
-        <button type="submit" class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}" {{ $isCompleted ? 'disabled' : '' }}>
-            {{ $isCompleted ? 'Materi Sudah Selesai' : 'Tandai Materi Selesai' }}
-        </button>
-    </form>
 
     <section class="ai-debug">
         <h2>Aktivitas 3.3</h2>
@@ -87,7 +125,8 @@
         <div class="debug-card" data-answer="b">
             <h4>Kasus 1</h4>
             <p>
-                Model AI sering salah membedakan antara berdiri dan jongkok, terutama saat diuji oleh siswa lain. Penyebab paling masuk akal adalah ....
+                Model AI sering salah membedakan antara berdiri dan jongkok, terutama saat diuji oleh siswa lain. Penyebab
+                paling masuk akal adalah ....
             </p>
             <div class="debug-options">
                 <button onclick="checkDebug(this, 'a')">Nama kelas terlalu panjang</button>
@@ -102,7 +141,8 @@
         <div class="debug-card" data-answer="c">
             <h4>Kasus 2</h4>
             <p>
-                Saat diuji di ruang kelas, AI sering salah mengenali pose, tetapi saat diuji di rumah hasilnya lebih akurat. Penyebab paling masuk akal adalah ....
+                Saat diuji di ruang kelas, AI sering salah mengenali pose, tetapi saat diuji di rumah hasilnya lebih akurat.
+                Penyebab paling masuk akal adalah ....
             </p>
 
             <div class="debug-options">
@@ -118,7 +158,8 @@
         <div class="debug-card" data-answer="b">
             <h4>Kasus 3</h4>
             <p>
-                Model mendeteksi pose “Lambaikan Tangan” meskipun pengguna hanya berdiri diam. Penyebab paling masuk akal adalah …
+                Model mendeteksi pose “Lambaikan Tangan” meskipun pengguna hanya berdiri diam. Penyebab paling masuk akal
+                adalah …
             </p>
 
             <div class="debug-options">
@@ -134,7 +175,8 @@
         <div class="debug-card" data-answer="b">
             <h4>Kasus 4</h4>
             <p>
-                Model bekerja dengan baik untuk siswa yang melatihnya, tetapi sering salah saat diuji oleh teman lain. Penyebab paling masuk akal adalah ....
+                Model bekerja dengan baik untuk siswa yang melatihnya, tetapi sering salah saat diuji oleh teman lain.
+                Penyebab paling masuk akal adalah ....
             </p>
 
             <div class="debug-options">
@@ -150,18 +192,37 @@
         <div class="debug-card" data-answer="c">
             <h4>Kasus 5</h4>
             <p>
-                Persentase prediksi AI sering rendah (misalnya: Berdiri 45%, Jongkok 40%, Lambaikan Tangan 15%). Penyebab paling masuk akal adalah …
+                Persentase prediksi AI sering rendah (misalnya: Berdiri 45%, Jongkok 40%, Lambaikan Tangan 15%). Penyebab
+                paling masuk akal adalah …
             </p>
 
             <div class="debug-options">
                 <button onclick="checkDebug(this, 'a')">AI rusak</button>
                 <button onclick="checkDebug(this, 'b')">Kelas terlalu sedikit</button>
-                <button onclick="checkDebug(this, 'c')">Model belum yakin karena data pose kurang jelas atau kurang banyak</button>
+                <button onclick="checkDebug(this, 'c')">Model belum yakin karena data pose kurang jelas atau kurang
+                    banyak</button>
                 <button onclick="checkDebug(this, 'd')">Pose tidak bisa dideteksi oleh AI</button>
             </div>
 
             <div class="debug-feedback"></div>
         </div>
+
+        <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4" id="formSelesai">
+            @csrf
+            <input type="hidden" name="materi_id" value="{{ $materi->id }}">
+
+            <button
+                type="submit"
+                id="btnSelesai"
+                class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}"
+                {{ $isCompleted ? 'disabled' : '' }}>
+
+                {{ $isCompleted ? 'Aktivitas Selesai' : 'Submit Aktivitas' }}
+
+            </button>
+
+            <div id="scoreInfo" class="mt-2"></div>
+        </form>
     </section>
 
 @endsection

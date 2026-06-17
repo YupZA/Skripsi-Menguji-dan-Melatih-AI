@@ -169,44 +169,36 @@
 
         <div id="progress"></div>
 
-        <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4">
-            @csrf
-            <input type="hidden" name="materi_id" value="{{ $materi->id }}">
-
-            <button type="submit" class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}" {{ $isCompleted ? 'disabled' : '' }}>
-
-                {{ $isCompleted ? 'Materi Sudah Selesai' : 'Tandai Materi Selesai' }}
-            </button>
-        </form>
+        
 
         <section class="ai-interactive">
             <h2>Aktivitas 1.1</h2>
             <p>Pilih jawaban yang paling tepat untuk setiap pernyataan.</p>
 
             <?php
-    $questions = [
-        [
-            'text' => 'Sistem dapat mengenali wajah pengguna dan membuka kunci ponsel secara otomatis.',
-            'answer' => 'ai'
-        ],
-        [
-            'text' => 'Sistem dapat belajar dari data dan meningkatkan hasilnya.',
-            'answer' => 'ai'
-        ],
-        [
-            'text' => 'Kalkulator hanya menghitung sesuai rumus.',
-            'answer' => 'program'
-        ],
-        [
-            'text' => 'Aplikasi rekomendasi musik yang menyarankan lagu berdasarkan kebiasaan mendengarkan pengguna.',
-            'answer' => 'ai'
-        ],
-        [
-            'text' => 'Aplikasi alarm yang berbunyi pada waktu yang sudah ditentukan tanpa perubahan perilaku.',
-            'answer' => 'program'
-        ],
-    ];
-                                                                ?>
+                $questions = [
+                    [
+                        'text' => 'Sistem dapat mengenali wajah pengguna dan membuka kunci ponsel secara otomatis.',
+                        'answer' => 'ai'
+                    ],
+                    [
+                        'text' => 'Sistem dapat belajar dari data dan meningkatkan hasilnya.',
+                        'answer' => 'ai'
+                    ],
+                    [
+                        'text' => 'Kalkulator hanya menghitung sesuai rumus.',
+                        'answer' => 'program'
+                    ],
+                    [
+                        'text' => 'Aplikasi rekomendasi musik yang menyarankan lagu berdasarkan kebiasaan mendengarkan pengguna.',
+                        'answer' => 'ai'
+                    ],
+                    [
+                        'text' => 'Aplikasi alarm yang berbunyi pada waktu yang sudah ditentukan tanpa perubahan perilaku.',
+                        'answer' => 'program'
+                    ],
+                ];
+            ?>
 
             <?php foreach ($questions as $index => $q): ?>
             <div class="ai-question" data-answer="<?= $q['answer']; ?>">
@@ -221,7 +213,24 @@
             </div>
             <?php endforeach; ?>
 
-@endsection
+            <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4" id="formSelesai">
+                @csrf
+                <input type="hidden" name="materi_id" value="{{ $materi->id }}">
+
+                <button
+                    type="submit"
+                    id="btnSelesai"
+                    class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}"
+                    {{ $isCompleted ? 'disabled' : '' }}>
+
+                    {{ $isCompleted ? 'Aktivitas Selesai' : 'Submit Aktivitas' }}
+
+                </button>
+
+                <div id="scoreInfo" class="mt-2"></div>
+            </form>
+
+        @endsection
 
         @push('scripts')
             <script src="{{ asset('js/interaktif/materi-1/materi-a.js') }}"></script>

@@ -121,14 +121,7 @@
 
     <div id="progress"></div>
 
-    <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4">
-        @csrf
-        <input type="hidden" name="materi_id" value="6">
-
-        <button type="submit" class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}" {{ $isCompleted ? 'disabled' : '' }}>
-            {{ $isCompleted ? 'Materi Sudah Selesai' : 'Tandai Materi Selesai' }}
-        </button>
-    </form>
+    
 
     <section class="ai-dragdrop">
         <h2>Aktivitas 2.3</h2>
@@ -158,6 +151,23 @@
                 <h3>Proyek Pose Tubuh</h3>
             </div>
         </div>
+
+        <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4" id="formSelesai">
+            @csrf
+            <input type="hidden" name="materi_id" value="{{ $materi->id }}">
+
+            <button
+                type="submit"
+                id="btnSelesai"
+                class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}"
+                {{ $isCompleted ? 'disabled' : '' }}>
+
+                {{ $isCompleted ? 'Aktivitas Selesai' : 'Submit Aktivitas' }}
+
+            </button>
+
+            <div id="scoreInfo" class="mt-2"></div>
+        </form>
     </section>
 
 @endsection
