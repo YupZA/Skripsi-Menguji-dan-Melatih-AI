@@ -620,4 +620,98 @@ footer {
   }
 }
 
+/* FIX: overlay sidebar menutupi quiz saat mode HP */
+body.quiz-mode #layoutSidenav_content::before {
+  display: none !important;
+  content: none !important;
+  pointer-events: none !important;
+}
 
+/* Pastikan konten quiz bisa diklik */
+body.quiz-mode #layoutSidenav_content {
+  margin-left: 0 !important;
+  width: 100% !important;
+  position: relative;
+  z-index: 1;
+}
+
+/* Sembunyikan sidebar sepenuhnya di halaman quiz */
+body.quiz-mode #layoutSidenav_nav {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+/* FIX: posisi quiz tetap di tengah saat sidebar disembunyikan */
+body.quiz-mode #layoutSidenav {
+  display: block !important;
+}
+
+body.quiz-mode #layoutSidenav_content {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  width: 100% !important;
+}
+
+body.quiz-mode main {
+  width: 100%;
+}
+
+
+
+/* intro petunjuk tetap tengah */
+body.quiz-mode .quiz-intro {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* area soal + navigasi tetap rapi */
+body.quiz-mode .quiz-layout {
+  justify-content: center;
+}
+
+/* ==========================
+   RESPONSIVE QUIZ MOBILE
+========================== */
+
+@media (max-width: 992px){
+
+    /* Soal menjadi 1 kolom */
+    .quiz-layout{
+        grid-template-columns: 1fr;
+        gap:20px;
+    }
+
+    /* Navigator tidak lagi sticky */
+    .quiz-nav{
+        width:100%;
+        position:static;
+        top:auto;
+    }
+
+    /* Card memenuhi layar */
+    .quiz-card{
+        width:100%;
+    }
+
+    /* Tombol sebelumnya & selanjutnya */
+    .nav-top{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-bottom{
+        flex-wrap:wrap;
+    }
+
+    /* Timer */
+    .quiz-timer{
+        position:static;
+        margin-bottom:20px;
+    }
+
+    /* Judul */
+    .quiz-title{
+        font-size:1.7rem;
+    }
+
+}

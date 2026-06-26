@@ -275,8 +275,14 @@
     
 
     <section class="ai-flow">
-        <h2>Aktivitas 1.3</h2>
-        <p>Seret langkah-langkah berikut agar membentuk alur AI yang benar.</p>
+        <h2>Aktivitas 3 : Menyusun Urutan Proses Kecerdasan Buatan</h2>
+        <p>Petunjuk pengerjaan aktivitas 3 :</p>
+        <ul>
+            <li>Perhatikan setiap langkah proses kecerdasan buatan yang tersedia.</li>
+            <li>Seret dan susun langkah-langkah tersebut hingga membentuk urutan proses yang benar.</li>
+            <li>Periksa kembali urutan yang telah dibuat, kemudian klik tombol <strong>Cek Urutan</strong>.</li>
+            <li>Jika urutan sudah benar, klik tombol <strong>Submit Aktivitas</strong> untuk menyelesaikan aktivitas.</li>
+        </ul>
 
         <div class="flow-items">
             <div class="flow-item" draggable="true" data-step="2">
@@ -309,7 +315,7 @@
                 class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}"
                 {{ $isCompleted ? 'disabled' : 'disabled' }}>
 
-                {{ $isCompleted ? 'Aktivitas Selesai' : 'Submit Aktivitas' }}
+                {{ $isCompleted ? 'Aktivitas Selesai' : 'Kumpul Aktivitas' }}
 
             </button>
 

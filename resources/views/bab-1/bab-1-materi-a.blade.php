@@ -172,8 +172,14 @@
         
 
         <section class="ai-interactive">
-            <h2>Aktivitas 1.1</h2>
-            <p>Pilih jawaban yang paling tepat untuk setiap pernyataan.</p>
+            <h2>Aktivitas 1 : Mengidentifikasi Program Biasa atau Kecerdasan Buatan</h2>
+            <p>Petunjuk pengerjaan aktivitas 1 :</p>
+            <ul>
+                <li>Bacalah setiap pernyataan dengan teliti.</li>
+                <li>Tentukan apakah pernyataan tersebut termasuk Program Biasa atau Kecerdasan Buatan (<i>Artificial Intelligence</i>). </li>
+                <li>Klik salah satu tombol jawaban yang tersedia.</li>
+                <li>Setelah semua soal dijawab, klik tombol <strong>Submit Aktivitas</strong>. </li>
+            </ul>
 
             <?php
                 $questions = [
@@ -223,7 +229,7 @@
                     class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}"
                     {{ $isCompleted ? 'disabled' : '' }}>
 
-                    {{ $isCompleted ? 'Aktivitas Selesai' : 'Submit Aktivitas' }}
+                    {{ $isCompleted ? 'Aktivitas Selesai' : 'Kumpul Aktivitas' }}
 
                 </button>
 

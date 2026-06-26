@@ -39,8 +39,8 @@
                 </div>
             </main>
 
-            {{-- FOOTER --}}
-            @include('layouts.footer')
+            <!-- {{-- FOOTER --}}
+            @include('layouts.footer') -->
         </div>
     </div>
 
@@ -53,7 +53,7 @@
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
         crossorigin="anonymous"></script>
     <script src="{{ asset('js/datatables-simple-demo.js') }}"></script>
-    <script src="{{ asset('js/tes.js') }}"></script>
+    <!-- <script src="{{ asset('js/tes.js') }}"></script> -->
 
     @stack('scripts')
 </body>

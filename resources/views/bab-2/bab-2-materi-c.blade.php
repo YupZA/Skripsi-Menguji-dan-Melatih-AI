@@ -4,7 +4,7 @@
 
 @section('content')
     <div>
-        <h1 class="mt-4">PENGENALAN GOOGLE TEACHABLE LEARNING MACHINE</h1>
+        <h1 class="mt-4">PENGENALAN GOOGLE TEACHABLE MACHINE</h1>
         <div>
             <h2>3. Jenis Proyek di Google Teachable Machine</h2>
             <p>
@@ -124,15 +124,23 @@
     
 
     <section class="ai-dragdrop">
-        <h2>Aktivitas 2.3</h2>
-        <p>Seret setiap contoh ke jenis proyek yang sesuai.</p>
+        <h2>Aktivitas 3 : Mengelompokkan Program Berdasarkan Jenisnya</h2>
+        <p>Petunjuk Pengerjaan :</p>
+        <ul>
+            <li>Bacalah setiap contoh pada daftar pilihan dengan teliti.</li>
+            <li>Perhatikan setiap contoh kegiatan yang tersedia.</li>
+            <li>Seret setiap contoh ke jenis proyek yang sesuai, yaitu <strong>Proyek Gambar</strong>, <strong>Proyek Suara</strong>, atau <strong>Proyek Pose Tubuh</strong>.</li>
+            <li>Pastikan seluruh contoh telah ditempatkan pada kategori yang benar.</li>
+            <li>Periksa kembali hasil pengelompokan yang telah dilakukan.</li>
+            <li>Setelah semua contoh selesai dikelompokkan, klik tombol <strong>Kumpul Aktivitas</strong>.</li>
+        </ul>
 
         <!-- DRAG ITEMS -->
         <div class="drag-items">
             <div class="drag-item" draggable="true" data-type="image">Mengenali ekspresi wajah</div>
             <div class="drag-item" draggable="true" data-type="audio">Membedakan suara tepuk tangan</div>
             <div class="drag-item" draggable="true" data-type="pose">Mendeteksi gerakan jongkok</div>
-            <div class="drag-item" draggable="true" data-type="image">Membedakan kucing dan anjing</div>
+            <div class="drag-item" draggable="true" data-type="image">Membedakan bekantan dan monyet</div>
             <div class="drag-item" draggable="true" data-type="audio">Mengenali kata "ya" dan "tidak"</div>
             <div class="drag-item" draggable="true" data-type="pose">Mengenali lambaian tangan</div>
         </div>
@@ -162,7 +170,7 @@
                 class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}"
                 {{ $isCompleted ? 'disabled' : '' }}>
 
-                {{ $isCompleted ? 'Aktivitas Selesai' : 'Submit Aktivitas' }}
+                {{ $isCompleted ? 'Aktivitas Selesai' : 'Kumpul Aktivitas' }}
 
             </button>
 

@@ -6,11 +6,12 @@ function checkOutput(button, selected) {
   const question = button.closest(".ai-question");
   const correct = question.dataset.answer;
   const feedback = question.querySelector(".ai-feedback");
+  const explanation = question.dataset.explain || "Output AI dipilih berdasarkan pola dari input yang diberikan.";
 
   if (question.dataset.done === "true") return;
   question.dataset.done = "true";
 
-  question.querySelectorAll("button").forEach(btn => {
+  question.querySelectorAll(".ai-options button").forEach(btn => {
     btn.disabled = true;
     btn.style.opacity = "0.6";
   });
@@ -21,14 +22,29 @@ function checkOutput(button, selected) {
     totalBenar++;
     button.style.background = "#22c55e";
     button.style.color = "#000";
-    feedback.innerHTML = "✅ Benar! Output AI sesuai dengan input.";
+    feedback.innerHTML = `✅ Benar! ${explanation}`;
     feedback.style.color = "#22c55e";
   } else {
     button.style.background = "#ef4444";
     button.style.color = "#fff";
-    feedback.innerHTML = `❌ Salah. Output yang benar adalah <strong>${correct}</strong>.`;
+    feedback.innerHTML = `❌ Salah. Output yang benar adalah <strong>${correct}</strong>. ${explanation}`;
     feedback.style.color = "#ef4444";
   }
+
+  updateProgress();
+}
+
+function updateProgress() {
+  const totalSoal = document.querySelectorAll(".ai-question").length;
+  const progressText = document.getElementById("progressText");
+  const progressBar = document.getElementById("progressBar");
+
+  if (!progressText || !progressBar) return;
+
+  const persen = (totalDijawab / totalSoal) * 100;
+
+  progressText.textContent = `${totalDijawab}/${totalSoal} soal dijawab`;
+  progressBar.style.width = `${persen}%`;
 }
 
 document.getElementById("formSelesai").addEventListener("submit", function(e) {
@@ -55,17 +71,14 @@ document.getElementById("formSelesai").addEventListener("submit", function(e) {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-
   const btnSelesai = document.getElementById("btnSelesai");
 
-  // jika aktivitas sudah selesai
-  if (btnSelesai.innerText.trim() === "Aktivitas Selesai") {
-
+  if (btnSelesai && btnSelesai.innerText.trim() === "Aktivitas Selesai") {
     document.querySelectorAll(".ai-question button").forEach(btn => {
       btn.disabled = true;
       btn.style.opacity = "0.6";
     });
-
   }
 
+  updateProgress();
 });

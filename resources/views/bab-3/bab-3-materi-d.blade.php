@@ -4,7 +4,7 @@
 
 @section('content')
     <div>
-        <h1 class="mt-4">PENGENALAN GOOGLE TEACHABLE LEARNING MACHINE</h1>
+        <h1 class="mt-4">PRAKTIK MEMBUAT MODEL <i>AI</i> SEDERHANA</h1>
         <div>
             <h2>4. Perbandingan Model Suara, Gambar, dan Pose</h2>
             <p>
@@ -126,7 +126,6 @@
             use App\Models\Materi;
             use App\Models\UserProgress;
 
-            // ambil materi (karena kamu tidak pakai controller)
             $materi = Materi::where('slug', 'bab-3-materi-d')->first();
 
             // cek progress
@@ -139,8 +138,15 @@
     <div id="progress"></div>
 
     <section class="ai-dragdrop">
-        <h2>Aktivitas 3.4</h2>
-        <p>Seret setiap contoh ke jenis proyek yang sesuai.</p>
+        <h2>Aktivitas 4 : Menganalisis Konsep Model Gambar, Suara, dan Pose Tubuh pada <i>AI</i></h2>
+        <p>Petunjuk Pengerjaan : </p>
+        <ul>
+            <li>Bacalah setiap kasus dengan saksama.</li>
+            <li>Analisis penyebab kesalahan yang paling mungkin terjadi pada model kecerdasan buatan.</li>
+            <li>Pilih satu jawaban yang paling tepat berdasarkan materi tentang pembuatan model deteksi pose.</li>
+            <li>Kerjakan seluruh kasus hingga selesai.</li>
+            <li>Setelah semua jawaban dipilih, <i>klik</i> tombol <strong>Submit Aktivitas</strong>.</li>
+        </ul>
 
         <!-- DRAG ITEMS -->
         <div class="drag-items">

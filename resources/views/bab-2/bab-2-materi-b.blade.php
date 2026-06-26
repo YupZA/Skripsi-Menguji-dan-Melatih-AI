@@ -4,7 +4,7 @@
 
 @section('content')
     <div>
-        <h1 class="mt-4">PENGENALAN GOOGLE TEACHABLE LEARNING MACHINE</h1>
+        <h1 class="mt-4">PENGENALAN GOOGLE TEACHABLE MACHINE</h1>
         <div>
             <h2>2. <i>Google Teachable Machine</i> : Membuat <i>AI</i> Jadi Mudah</h2>
             <p>
@@ -133,9 +133,15 @@
     <div id="progress"></div>
 
     <section class="ai-classification">
-        <h2>Aktivitas 2.2</h2>
-        <p>Tentukan apakah contoh berikut termasuk <strong>Kecerdasan Buatan (AI)</strong> atau <strong>Program
-                Biasa</strong>.</p>
+        <h2>Aktivitas 2 : Mengidentifikasi Program Biasa atau Kecerdasan Buatan</h2>
+        <p>Petunjuk pengerjaan aktivitas 2 :</p>
+        <ul>
+            <li>Bacalah setiap pernyataan dengan teliti.</li>
+            <li>Tentukan apakah contoh yang diberikan termasuk <strong>Program Biasa</strong> atau <strong>Kecerdasan Buatan (<i>Artificial Intelligence</i>)</strong>.</li>
+            <li><i>Klik</i> salah satu pilihan jawaban yang sesuai pada setiap soal.</li>
+            <li>Kerjakan seluruh soal hingga selesai.</li>
+            <li>Setelah semua soal dijawab, <i>klik</i> tombol <strong>Kumpul Aktivitas</strong>.</li>
+        </ul>
 
         <div class="classify-item" data-answer="ai">
             <p>1. Google Assistant menjawab pertanyaan berdasarkan suara pengguna.</p>
@@ -182,7 +188,7 @@
                 class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}"
                 {{ $isCompleted ? 'disabled' : '' }}>
 
-                {{ $isCompleted ? 'Aktivitas Selesai' : 'Submit Aktivitas' }}
+                {{ $isCompleted ? 'Aktivitas Selesai' : 'Kumpul Aktivitas' }}
 
             </button>
 

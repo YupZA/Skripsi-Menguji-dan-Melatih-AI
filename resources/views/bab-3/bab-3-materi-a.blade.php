@@ -4,7 +4,7 @@
 
 @section('content')
     <div>
-        <h1 class="mt-4">PRAKTIK MEMBUAT MODEL AI SEDERHANA</h1>
+        <h1 class="mt-4">PRAKTIK MEMBUAT MODEL <i>AI</i> SEDERHANA</h1>
 
 
         <div class="row">
@@ -164,22 +164,28 @@
 
 
     <section class="ai-debug">
-        <h2>Aktivitas 3.1</h2>
+        <h2>Aktivitas 1 : Menganalisis Penyebab Kesalahan pada Sistem <i>AI</i></h2>
         <p class="debug-desc">
-            Perhatikan kasus berikut, lalu pilih penyebab yang paling masuk akal.
+            Petunjuk Pengerjaan :
         </p>
+        <ul>
+            <li>Bacalah setiap kasus dengan saksama.</li>
+            <li>Analisis penyebab kesalahan yang terjadi pada sistem kecerdasan buatan.</li>
+            <li>Pilih satu jawaban yang paling tepat berdasarkan konsep pelatihan model <i>AI</i> yang telah dipelajari.</li>
+            <li>Kerjakan seluruh kasus hingga selesai.</li>
+            <li>Setelah semua jawaban dipilih, <i>klik</i> tombol <strong>Kumpul Aktivitas</strong>.</li>
+        </ul>
 
         <div class="debug-card" data-answer="b">
             <h4>Kasus 1</h4>
             <p>
-                Sebuah model AI sering salah membedakan Tangan Terbuka dan Tangan Tertutup, terutama ketika posisi tangan
-                sedikit miring. Apa penyebab paling mungkin?
+                Sebuah model <i>AI</i> sering salah membedakan Tangan Terbuka dan Tangan Tertutup, terutama ketika posisi tangan sedikit miring. Penyebab paling mungkin dari masalah tersebut adalah ....
             </p>
             <div class="debug-options">
                 <button onclick="checkDebug(this, 'a')">Browser tidak kompatibel</button>
                 <button onclick="checkDebug(this, 'b')">Data gambar kurang bervariasi</button>
                 <button onclick="checkDebug(this, 'c')">Model belum diekspor</button>
-                <button onclick="checkDebug(this, 'd')">Webcam rusak</button>
+                <button onclick="checkDebug(this, 'd')"><i>Webcam</i> rusak</button>
             </div>
 
             <div class="debug-feedback"></div>
@@ -188,15 +194,14 @@
         <div class="debug-card" data-answer="b">
             <h4>Kasus 2</h4>
             <p>
-                Jumlah gambar pada Class 1 = 120 gambar, sedangkan Class 2 = 20 gambar. Hasil prediksi sering condong ke
-                Class 1 meskipun objeknya salah. Apa kesalahan utama yang terjadi?
+                Jumlah gambar pada <i>Class</i> 1 sebanyak 120 gambar, sedangkan <i>Class</i> 2 sebanyak 20 gambar. Hasil prediksi sering condong ke <i>Class</i> 1 meskipun objeknya salah. Kesalahan utama yang terjadi adalah ....
             </p>
 
             <div class="debug-options">
-                <button onclick="checkDebug(this, 'a')">Salah memilih Image Project</button>
+                <button onclick="checkDebug(this, 'a')">Salah memilih <i>Image Project</i></button>
                 <button onclick="checkDebug(this, 'b')">Data tiap kelas tidak seimbang</button>
                 <button onclick="checkDebug(this, 'c')">Kamera terlalu dekat</button>
-                <button onclick="checkDebug(this, 'd')">Belum klik “Preview”</button>
+                <button onclick="checkDebug(this, 'd')">Belum klik “<i>Preview</i>”</button>
             </div>
 
             <div class="debug-feedback"></div>
@@ -205,15 +210,14 @@
         <div class="debug-card" data-answer="a">
             <h4>Kasus 3</h4>
             <p>
-                Saat tombol Train Model ditekan, proses pelatihan berjalan sangat lama dan browser menjadi lambat. Apa
-                penyebab yang PALING masuk akal?
+                Saat proses <i>Train Model</i> dijalankan, pelatihan berlangsung sangat lama dan <i>browser</i> menjadi lambat. Penyebab yang paling mungkin adalah ....
             </p>
 
             <div class="debug-options">
-                <button onclick="checkDebug(this, 'a')">Terlalu banyak tab browser terbuka</button>
+                <button onclick="checkDebug(this, 'a')">Terlalu banyak <i>tab browser</i> terbuka</button>
                 <button onclick="checkDebug(this, 'b')">Jumlah data gambar sangat sedikit</button>
                 <button onclick="checkDebug(this, 'c')">Tidak menamai kelas</button>
-                <button onclick="checkDebug(this, 'd')">Salah memilih Webcam</button>
+                <button onclick="checkDebug(this, 'd')">Salah memilih <i>Webcam</i></button>
             </div>
 
             <div class="debug-feedback"></div>
@@ -222,15 +226,14 @@
         <div class="debug-card" data-answer="b">
             <h4>Kasus 4</h4>
             <p>
-                Model AI sudah selesai dilatih, tetapi saat diuji hasil prediksi sering berubah-ubah walaupun objeknya sama.
-                Kesalahan apa yang kemungkinan terjadi?
+                Model <i>AI</i> sudah selesai dilatih, tetapi saat diuji hasil prediksi sering berubah-ubah walaupun objeknya sama. Kesalahan yang kemungkinan terjadi adalah ....
             </p>
 
             <div class="debug-options">
-                <button onclick="checkDebug(this, 'a')">Tidak login akun Google</button>
+                <button onclick="checkDebug(this, 'a')">Tidak <i>login</i> akun Google</button>
                 <button onclick="checkDebug(this, 'b')">Pencahayaan dan latar belakang tidak konsisten</button>
-                <button onclick="checkDebug(this, 'c')">Salah memilih Standard Image Model</button>
-                <button onclick="checkDebug(this, 'd')">Preview belum dibuka</button>
+                <button onclick="checkDebug(this, 'c')">Salah memilih <i>Standard Image Model</i></button>
+                <button onclick="checkDebug(this, 'd')"><i>Preview</i> belum dibuka</button>
             </div>
 
             <div class="debug-feedback"></div>
@@ -239,15 +242,14 @@
         <div class="debug-card" data-answer="c">
             <h4>Kasus 5</h4>
             <p>
-                Saat diuji, AI selalu menampilkan persentase rendah (misalnya 50% – 50%) untuk dua kelas. Apa solusi TERBAIK
-                untuk memperbaiki model?
+                Saat diuji, <i>AI</i> selalu menampilkan persentase rendah, misalnya 50%–50%, untuk dua kelas. Solusi terbaik untuk memperbaiki model adalah ....
             </p>
 
             <div class="debug-options">
-                <button onclick="checkDebug(this, 'a')">Mengganti browser</button>
+                <button onclick="checkDebug(this, 'a')">Mengganti <i>browser</i></button>
                 <button onclick="checkDebug(this, 'b')">Mengurangi jumlah kelas</button>
                 <button onclick="checkDebug(this, 'c')">Menambah dan memperbaiki data latih</button>
-                <button onclick="checkDebug(this, 'd')">Menghapus Preview</button>
+                <button onclick="checkDebug(this, 'd')">Menghapus <i>Preview</i></button>
             </div>
 
             <div class="debug-feedback"></div>

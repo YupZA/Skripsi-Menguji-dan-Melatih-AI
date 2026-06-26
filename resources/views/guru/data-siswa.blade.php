@@ -44,14 +44,6 @@
         <div class="table-controls">
 
             <div class="filter-group">
-                <select id="statusFilter">
-                    <option value="">Semua Status</option>
-                    <option value="aktif">Aktif</option>
-                    <option value="nonaktif">Nonaktif</option>
-                </select>
-            </div>
-
-            <div class="filter-group">
                 <select id="kelasFilter">
                     <option value="">Semua Kelas</option>
                     @php

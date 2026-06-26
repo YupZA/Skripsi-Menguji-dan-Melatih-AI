@@ -4,7 +4,7 @@
 
 @section('content')
     <div>
-        <h1 class="mt-4">PENGENALAN GOOGLE TEACHABLE LEARNING MACHINE</h1>
+        <h1 class="mt-4">PRAKTIK MEMBUAT MODEL <i>AI</i> SEDERHANA</h1>
         <div>
             <h2>2. Membuat Model Deteksi Suara</h2>
             <p>
@@ -117,16 +117,23 @@
     
 
     <section class="ai-interactive">
-    <h2>Aktivitas 3.2</h2>
-    <p>Klik jawaban yang tepat.</p>
+    <h2>Aktivitas 2 : Membuat Model Deteksi Suara</h2>
+    <p>Petunjuk Pengerjaan : </p>
+    <ul>
+        <li>Bacalah setiap pernyataan dengan saksama.</li>
+        <li>Tentukan apakah pernyataan tersebut <strong>Benar</strong> atau <strong>Salah</strong> berdasarkan materi tentang pembuatan model deteksi suara.</li>
+        <li>Pilih satu jawaban pada setiap pernyataan.</li>
+        <li>Kerjakan seluruh soal hingga selesai.</li>
+        <li>Setelah semua jawaban dipilih, <i>klik</i> tombol <strong>Kumpul Aktivitas</strong>.</li>
+    </ul>
 
     @php
     $questions = [
-        ['text' => 'Audio Project digunakan untuk melatih AI mengenali suara.', 'answer' => 'benar'],
-        ['text' => 'Untuk melatih AI mengenali suara, proyek yang dipilih adalah Audio Project.', 'answer' => 'benar'],
+        ['text' => '<i>Audio Project</i> digunakan untuk melatih <i>AI</i> mengenali suara.', 'answer' => 'benar'],
+        ['text' => 'Untuk melatih kecerdasan buatan mengenali suara, proyek yang dipilih adalah <i>Audio Project</i>.', 'answer' => 'benar'],
         ['text' => 'Kelas dapat dinamai Tepuk Tangan dan Siulan.', 'answer' => 'benar'],
-        ['text' => 'Lingkungan bising membuat hasil AI lebih akurat.', 'answer' => 'salah'],
-        ['text' => 'Variasi suara membantu AI mengenali pola.', 'answer' => 'benar'],
+        ['text' => 'Lingkungan bising membuat hasil kecerdasan buatan lebih akurat.', 'answer' => 'salah'],
+        ['text' => 'Variasi suara membantu kecerdasan buatan mengenali pola.', 'answer' => 'benar'],
     ];
     @endphp
 

@@ -21,7 +21,7 @@
         <div class="register-card">
             <h1 class="register-title">Buat Akun</h1>
             <p class="register-subtitle">
-                Daftar sebagai siswa di platform AI
+                Silakan lengkapi data dibawah ini
             </p>
 
             @if ($errors->any())

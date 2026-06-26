@@ -27,7 +27,7 @@
     <!-- ================= NAVBAR ================= -->
     <header class="nav">
         <div class="brand">
-            <span class="brand-core">AI</span>
+            <span class="brand-core">TM AI</span>
             <span class="brand-dot"></span>
         </div>
 

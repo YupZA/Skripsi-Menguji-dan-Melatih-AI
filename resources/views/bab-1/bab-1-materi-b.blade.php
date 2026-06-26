@@ -130,8 +130,14 @@
     
 
     <section class="ai-dragdrop">
-        <h2>Aktivitas 1.2</h2>
-        <p>Seret setiap contoh ke kategori yang sesuai.</p>
+        <h2>Aktivitas 2 : Mengelompokkan Program Berdasarkan Jenisnya</h2>
+        <p>Petunjuk pengerjaan aktivitas 2 :</p>
+        <ul>
+            <li>Perhatikan setiap contoh program yang tersedia.</li>
+            <li>Seret setiap contoh program ke kategori yang sesuai, yaitu <strong>Program Biasa</strong> atau <strong>Kecerdasan Buatan</strong>.</li>
+            <li>Pastikan seluruh contoh program telah ditempatkan pada kategori yang benar.</li>
+            <li>Setelah semua contoh selesai dikelompokkan, klik tombol <strong>Submit Aktivitas</strong>.</li>
+        </ul>
 
         <!-- ITEMS -->
         <div class="drag-items">
@@ -175,7 +181,7 @@
                 class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}"
                 {{ $isCompleted ? 'disabled' : '' }}>
 
-                {{ $isCompleted ? 'Aktivitas Selesai' : 'Submit Aktivitas' }}
+                {{ $isCompleted ? 'Aktivitas Selesai' : 'Kumpul Aktivitas' }}
 
             </button>
 

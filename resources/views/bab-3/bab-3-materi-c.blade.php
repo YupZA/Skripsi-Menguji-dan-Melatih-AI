@@ -4,7 +4,7 @@
 
 @section('content')
     <div>
-        <h1 class="mt-4">PENGENALAN GOOGLE TEACHABLE LEARNING MACHINE</h1>
+        <h1 class="mt-4">PRAKTIK MEMBUAT MODEL <i>AI</i> SEDERHANA</h1>
         <div>
             <h2>3. Membuat Model Deteksi Pose Tubuh</h2>
             <p>
@@ -117,22 +117,30 @@
     <div id="progress"></div>
 
     <section class="ai-debug">
-        <h2>Aktivitas 3.3</h2>
+        <h2>Aktivitas 3 : Menganalisis Penyebab Kesalahan pada Sistem Kecerdasan Buatan</h2>
         <p class="debug-desc">
-            Perhatikan kasus berikut, lalu pilih penyebab yang paling masuk akal.
+            Petunjuk Pengerjaan :
         </p>
+
+        <ul>
+            <li>Bacalah setiap kasus dengan saksama.</li>
+            <li>Analisis penyebab kesalahan yang paling mungkin terjadi pada model kecerdasan buatan.</li>
+            <li>Pilih satu jawaban yang paling tepat berdasarkan materi tentang pembuatan model deteksi pose.</li>
+            <li>Kerjakan seluruh kasus hingga selesai.</li>
+            <li>Setelah semua jawaban dipilih, <i>klik</i> tombol <strong>Submit Aktivitas</strong>.</li>
+        </ul>
 
         <div class="debug-card" data-answer="b">
             <h4>Kasus 1</h4>
             <p>
-                Model AI sering salah membedakan antara berdiri dan jongkok, terutama saat diuji oleh siswa lain. Penyebab
+                Model kecerdasan buatan sering salah membedakan antara berdiri dan jongkok, terutama saat diuji oleh siswa lain. Penyebab
                 paling masuk akal adalah ....
             </p>
             <div class="debug-options">
                 <button onclick="checkDebug(this, 'a')">Nama kelas terlalu panjang</button>
                 <button onclick="checkDebug(this, 'b')">Jumlah data pose antar kelas tidak seimbang</button>
-                <button onclick="checkDebug(this, 'c')">Tombol Train Model belum ditekan</button>
-                <button onclick="checkDebug(this, 'd')">Browser yang digunakan berbeda</button>
+                <button onclick="checkDebug(this, 'c')">Tombol <i>Train Model</i> belum ditekan</button>
+                <button onclick="checkDebug(this, 'd')"><i>Browser</i> yang digunakan berbeda</button>
             </div>
 
             <div class="debug-feedback"></div>
@@ -141,15 +149,15 @@
         <div class="debug-card" data-answer="c">
             <h4>Kasus 2</h4>
             <p>
-                Saat diuji di ruang kelas, AI sering salah mengenali pose, tetapi saat diuji di rumah hasilnya lebih akurat.
+                Saat diuji di ruang kelas, kecerdasan buatan sering salah mengenali pose, tetapi saat diuji di rumah hasilnya lebih akurat.
                 Penyebab paling masuk akal adalah ....
             </p>
 
             <div class="debug-options">
                 <button onclick="checkDebug(this, 'a')">Kamera laptop rusak</button>
-                <button onclick="checkDebug(this, 'b')">Model AI hanya bisa digunakan di rumah</button>
+                <button onclick="checkDebug(this, 'b')">Model kecerdasan buatan hanya bisa digunakan di rumah</button>
                 <button onclick="checkDebug(this, 'c')">Perbedaan pencahayaan ruangan</button>
-                <button onclick="checkDebug(this, 'd')">AI belum selesai dilatih</button>
+                <button onclick="checkDebug(this, 'd')">Kecerdasan buatan belum selesai dilatih</button>
             </div>
 
             <div class="debug-feedback"></div>
@@ -159,13 +167,13 @@
             <h4>Kasus 3</h4>
             <p>
                 Model mendeteksi pose “Lambaikan Tangan” meskipun pengguna hanya berdiri diam. Penyebab paling masuk akal
-                adalah …
+                adalah ....
             </p>
 
             <div class="debug-options">
                 <button onclick="checkDebug(this, 'a')">Terlalu banyak kelas pose</button>
                 <button onclick="checkDebug(this, 'b')">Data pose terlalu sedikit dan kurang variasi</button>
-                <button onclick="checkDebug(this, 'c')">Webcam tidak aktif</button>
+                <button onclick="checkDebug(this, 'c')"><i>Webcam</i> tidak aktif</button>
                 <button onclick="checkDebug(this, 'd')">Nama kelas salah ketik</button>
             </div>
 
@@ -180,10 +188,10 @@
             </p>
 
             <div class="debug-options">
-                <button onclick="checkDebug(this, 'a')">AI tidak bisa mengenali orang lain</button>
+                <button onclick="checkDebug(this, 'a')">Kecerdasan buatan tidak bisa mengenali orang lain</button>
                 <button onclick="checkDebug(this, 'b')">Data hanya berasal dari satu orang sehingga kurang variasi</button>
                 <button onclick="checkDebug(this, 'c')">Pose terlalu sulit</button>
-                <button onclick="checkDebug(this, 'd')">AI hanya bisa digunakan sekali</button>
+                <button onclick="checkDebug(this, 'd')">Kecerdasan buatan hanya bisa digunakan sekali</button>
             </div>
 
             <div class="debug-feedback"></div>
@@ -192,16 +200,16 @@
         <div class="debug-card" data-answer="c">
             <h4>Kasus 5</h4>
             <p>
-                Persentase prediksi AI sering rendah (misalnya: Berdiri 45%, Jongkok 40%, Lambaikan Tangan 15%). Penyebab
-                paling masuk akal adalah …
+                Persentase prediksi kecerdasan buatan sering rendah (misalnya: Berdiri 45%, Jongkok 40%, Lambaikan Tangan 15%). Penyebab
+                paling masuk akal adalah ....
             </p>
 
             <div class="debug-options">
-                <button onclick="checkDebug(this, 'a')">AI rusak</button>
+                <button onclick="checkDebug(this, 'a')">Kecerdasan buatan rusak</button>
                 <button onclick="checkDebug(this, 'b')">Kelas terlalu sedikit</button>
                 <button onclick="checkDebug(this, 'c')">Model belum yakin karena data pose kurang jelas atau kurang
                     banyak</button>
-                <button onclick="checkDebug(this, 'd')">Pose tidak bisa dideteksi oleh AI</button>
+                <button onclick="checkDebug(this, 'd')">Pose tidak bisa dideteksi oleh kecerdasan buatan</button>
             </div>
 
             <div class="debug-feedback"></div>

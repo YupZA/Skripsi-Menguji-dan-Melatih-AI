@@ -34,7 +34,7 @@ html, body {
 .register-card {
   width: 100%;
   max-width: 480px;
-  padding: 34px 32px;
+  padding: 20px 32px;
   border-radius: 22px;
 
   background: rgba(255,255,255,0.08);
@@ -46,9 +46,9 @@ html, body {
 
 .register-title {
   text-align: center;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-weight: 800;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 
   background: linear-gradient(135deg, #00f5ff, #8b5cf6);
   -webkit-background-clip: text;
@@ -59,7 +59,7 @@ html, body {
   text-align: center;
   font-size: 0.9rem;
   color: #9aa4bf;
-  margin-bottom: 26px;
+  margin-bottom: 18px;
 }
 
 .register-field {

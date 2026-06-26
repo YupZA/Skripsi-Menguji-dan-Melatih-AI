@@ -43,10 +43,9 @@
                     {{-- SOAL 1 --}}
                     <div class="quiz-card quiz-question-item active" data-index="0">
                         <p class="quiz-question">
-                            1. Sebuah model kecerdasan buatan dilatih dengan ribuan gambar kucing dan anjing. Namun, ketika
-                            diuji
-                            menggunakan gambar baru, model sering salah menebak. Apa penyebab paling mungkin dari masalah
-                            tersebut?
+                            1. Sebuah model kecerdasan buatan dilatih dengan ribuan gambar bekantan dan monyet. Namun,
+                            ketika diuji menggunakan gambar baru, model sering salah menebak. Penyebab paling mungkin dari
+                            masalah tersebut adalah ....
                         </p>
                         <label><input type="radio" name="q1" value="a"> a. Data pelatihan terlalu bervariasi sehingga model
                             bingung</label>
@@ -67,10 +66,10 @@
                             berubah,
                             sistem tersebut kemungkinan termasuk ....
                         </p>
-                        <label><input type="radio" name="q2" value="a"> a. Model machine learning yang sudah dilatih
+                        <label><input type="radio" name="q2" value="a"> a. Model <i>machine learning</i> yang sudah dilatih
                             lama</label>
                         <label><input type="radio" name="q2" value="b"> b. Program biasa tanpa kemampuan belajar</label>
-                        <label><input type="radio" name="q2" value="c"> c. Model AI dengan data pelatihan kurang</label>
+                        <label><input type="radio" name="q2" value="c"> c. Model <i>AI</i> dengan data pelatihan kurang</label>
                         <label><input type="radio" name="q2" value="d"> d. Model prediksi yang sangat akurat</label>
                     </div>
 
@@ -78,7 +77,7 @@
                     <div class="quiz-card quiz-question-item active" data-index="2">
 
                         <p class="quiz-question">
-                            3. Mengapa tahap data cleaning penting sebelum melatih model machine learning?
+                            3. Tahap data <i>cleaning</i> penting dilakukan sebelum melatih model <i>machine learning</i> karena ....
                         </p>
                         <label><input type="radio" name="q3" value="a"> a. Agar model dapat menyimpan data dalam jumlah
                             lebih
@@ -100,7 +99,7 @@
                         <p class="quiz-question">
                             4. Sebuah model wajah pada ponsel sering salah mengenali pemiliknya saat cahaya redup. Solusi
                             paling
-                            efektif berdasarkan konsep machine learning adalah ....
+                            efektif berdasarkan konsep <i>machine learning</i> adalah ....
                         </p>
                         <label><input type="radio" name="q4" value="a"> a. Menambah data pelatihan dengan gambar wajah pada
                             kondisi
@@ -111,14 +110,14 @@
                         <label><input type="radio" name="q4" value="c"> c. Menghapus semua data wajah dan melatih model dari
                             awal
                             tanpa data lama</label>
-                        <label><input type="radio" name="q4" value="d"> d. Mengubah model AI menjadi program biasa</label>
+                        <label><input type="radio" name="q4" value="d"> d. Mengubah model <i>AI</i> menjadi program biasa</label>
                     </div>
 
                     {{-- SOAL 5 --}}
                     <div class="quiz-card quiz-question-item active" data-index="4">
 
                         <p class="quiz-question">
-                            5. Jika seorang siswa ingin membuat model AI yang mampu mengenali emosi manusia melalui suara,
+                            5. Jika seorang siswa ingin membuat model <i>AI</i> yang mampu mengenali emosi manusia melalui suara,
                             jenis
                             data paling relevan untuk dikumpulkan adalah ....
                         </p>
@@ -132,7 +131,7 @@
                     <div class="quiz-card quiz-question-item active" data-index="5">
 
                         <p class="quiz-question">
-                            6. Model machine learning dinyatakan “baik” jika ....
+                            6. Model <i>machine learning</i> dinyatakan “baik” jika ....
                         </p>
                         <label><input type="radio" name="q6" value="a"> a. Mampu menebak dengan benar hanya pada data
                             pelatihan</label>
@@ -149,29 +148,24 @@
                     <div class="quiz-card quiz-question-item active" data-index="6">
 
                         <p class="quiz-question">
-                            7. Leonardo da Vinci pernah merancang robot mekanik yang dapat bergerak seperti manusia. Apa
-                            relevansi
-                            temuan ini terhadap perkembangan AI modern?
+                            7. Dalam <i>machine learning</i>, model <i>AI</i> dapat mengenali pola karena dilatih menggunakan data yang
+                            sesuai. Hal ini menunjukkan bahwa model AI bekerja dengan cara ....
                         </p>
-                        <label><input type="radio" name="q7" value="a"> a. Robot tersebut sudah menggunakan algoritma
-                            modern</label>
-                        <label><input type="radio" name="q7" value="b"> b. Temuan tersebut menunjukkan bahwa konsep mesin
-                            cerdas
-                            sudah ada jauh sebelum teknologi digital</label>
-                        <label><input type="radio" name="q7" value="c"> c. Robot tersebut adalah model machine learning
-                            pertama</label>
-                        <label><input type="radio" name="q7" value="d"> d. Da Vinci menggunakan data pelatihan berupa
-                            gerakan
-                            manusia</label>
+                        <label><input type="radio" name="q7" value="a"> a. Mengikuti instruksi tetap tanpa proses
+                            belajar</label>
+                        <label><input type="radio" name="q7" value="b"> b. Belajar dari contoh data untuk mengenali pola
+                            tertentu</label>
+                        <label><input type="radio" name="q7" value="c"> c. Menebak hasil secara acak tanpa data
+                            pelatihan</label>
+                        <label><input type="radio" name="q7" value="d"> d. Menyimpan semua data tanpa melakukan
+                            prediksi</label>
                     </div>
 
                     {{-- SOAL 8 --}}
                     <div class="quiz-card quiz-question-item active" data-index="7">
 
                         <p class="quiz-question">
-                            8. Sebuah model AI untuk mengenali hewan diberi data pelatihan hanya berupa gambar anjing
-                            berwarna
-                            coklat. Akibatnya, model gagal mengenali anjing berwarna putih. Masalah ini terjadi karena ....
+                            8.	Sebuah model AI untuk mengenali ikan dilatih hanya menggunakan gambar ikan gabus yang berwarna gelap. Akibatnya, model kesulitan mengenali ikan gabus lain yang memiliki ukuran, posisi, atau pencahayaan yang berbeda. Masalah ini terjadi karena ....
                         </p>
                         <label><input type="radio" name="q8" value="a"> a. Data pelatihan terlalu beragam</label>
                         <label><input type="radio" name="q8" value="b"> b. Model terlatih terlalu cepat</label>
@@ -183,9 +177,8 @@
                     <div class="quiz-card quiz-question-item active" data-index="8">
 
                         <p class="quiz-question">
-                            9. Dalam proses machine learning, mengapa pengujian model (testing) tidak boleh menggunakan data
-                            yang
-                            sama dengan data pelatihan?
+                            9. Dalam proses <i>machine learning</i>, pengujian model atau <i>testing</i> tidak boleh menggunakan data yang
+                            sama dengan data pelatihan karena ....
                         </p>
                         <label><input type="radio" name="q9" value="a"> a. Karena penggunaan data yang sama akan mempercepat
                             proses
@@ -203,20 +196,12 @@
                     <div class="quiz-card quiz-question-item active" data-index="9">
 
                         <p class="quiz-question">
-                            10. Seorang peneliti ingin membuat model yang dapat membedakan antara burung elang dan burung
-                            lainnya.
-                            Setelah menguji model, hasilnya kurang akurat. Tindakan paling tepat untuk meningkatkan performa
-                            model
-                            adalah ....
+                            10. Seorang peserta didik membuat model <i>AI</i> menggunakan <i>Teachable Machine</i> untuk membedakan ikan gabus dan ikan papuyu. Setelah diuji menggunakan gambar baru, model sering salah mengenali kedua jenis ikan tersebut. Tindakan yang paling tepat untuk meningkatkan performa model adalah ....
                         </p>
-                        <label><input type="radio" name="q10" value="a"> a. Mengurangi jumlah contoh burung dalam data
-                            pelatihan</label>
-                        <label><input type="radio" name="q10" value="b"> b. Menambah data pelatihan dengan berbagai jenis
-                            burung
-                            elang dalam kondisi berbeda</label>
-                        <label><input type="radio" name="q10" value="c"> c. Menguji model menggunakan data pelatihan yang
-                            sama</label>
-                        <label><input type="radio" name="q10" value="d"> d. Menghapus fitur prediksi pada model</label>
+                        <label><input type="radio" name="q10" value="a"> a.	Mengurangi jumlah gambar ikan pada data pelatihan.</label>
+                        <label><input type="radio" name="q10" value="b"> b.	Menambahkan data pelatihan berupa gambar ikan gabus dan ikan papuyu dengan berbagai sudut, pencahayaan, dan posisi.</label>
+                        <label><input type="radio" name="q10" value="c"> c.	Menguji model menggunakan data pelatihan yang sama.</label>
+                        <label><input type="radio" name="q10" value="d"> d.	Menghapus fitur prediksi pada model.</label>
                     </div>
 
                     <!-- tombol navigasi quiz -->
@@ -244,7 +229,7 @@
                 <h4>Nomor Soal</h4>
 
                 <div class="quiz-nav-grid">
-                    <!-- Contoh 10 soal -->
+
                     <button class="nav-item" data-index="0">1</button>
                     <button class="nav-item" data-index="1">2</button>
                     <button class="nav-item" data-index="2">3</button>
