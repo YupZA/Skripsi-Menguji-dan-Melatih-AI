@@ -5,9 +5,6 @@
 @section('content')
     <section class="quiz-section">
         <h1 class="quiz-title">Evaluasi: Kecerdasan Buatan</h1>
-        <p class="quiz-desc">
-            Pilih satu jawaban yang paling benar pada setiap soal.
-        </p>
 
         <!-- Timer -->
         <div class="quiz-timer">

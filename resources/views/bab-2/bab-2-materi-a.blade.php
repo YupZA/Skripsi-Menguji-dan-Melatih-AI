@@ -249,7 +249,7 @@
             <div class="ai-input-box">
                 <span class="ai-label"><i>Input</i></span>
                 <button type="button" class="audio-btn" onclick="document.getElementById('audioTepuk').play()">▶ Putar Suara</button>
-                <audio id="audioTepuk" src="{{ asset('audio/tepuk-tangan.mp3') }}"></audio>
+                <audio id="audioTepuk" src="{{ asset('images/bab-2/materi-a/kuis-4.mpeg') }}"></audio>
                 <p>Suara tepuk tangan</p>
             </div>
 
@@ -281,7 +281,7 @@
         <div class="ai-flow">
             <div class="ai-input-box">
                 <span class="ai-label"><i>Input</i></span>
-                <img src="{{ asset('images/aktivitas/wajah-senyum.jpg') }}" alt="Wajah tersenyum">
+                <img src="{{ asset('images/bab-2/materi-a/kuis-5.png') }}" alt="Wajah tersenyum">
                 <p>Wajah tersenyum di depan kamera</p>
             </div>
 
@@ -313,7 +313,7 @@
         <div class="ai-flow">
             <div class="ai-input-box">
                 <span class="ai-label"><i>Input</i></span>
-                <img src="{{ asset('images/aktivitas/pose-berdiri.jpg') }}" alt="Pose berdiri">
+                <img src="{{ asset('images/bab-2/materi-a/kuis-3.png') }}" alt="Pose berdiri">
                 <p>Pose tubuh berdiri tegak</p>
             </div>
 

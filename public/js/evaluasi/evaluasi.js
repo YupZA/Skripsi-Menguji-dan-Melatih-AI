@@ -135,8 +135,29 @@ function submitQuiz(auto = false) {
     if (lulus) {
         html += `
             <p class="text-success fw-bold">LULUS</p>
-            <a href="/bab-1/bab-1-materi-a" class="btn btn-success mt-3">
-                Ingin mempelajari ulang materi?
+            <div class="summary-box mt-4">
+                <h4>Ringkasan Materi</h4>
+                <ul>
+                    <li>Kecerdasan Buatan (AI) merupakan teknologi yang mampu meniru kemampuan manusia dalam menyelesaikan tugas tertentu.</li>
+                    <li>Machine Learning memungkinkan komputer belajar dari data untuk membuat prediksi atau klasifikasi.</li>
+                    <li>Proses pengembangan model meliputi pengumpulan data, persiapan data, pelatihan model, pengujian model, dan evaluasi hasil.</li>
+                    <li>Kualitas dan variasi data sangat memengaruhi kinerja model AI.</li>
+                    <li>Google Teachable Machine dapat digunakan untuk membuat model AI berbasis gambar, suara, dan pose tanpa perlu menulis kode.</li>
+                </ul>
+            </div>
+            <div class="closing-box mt-3">
+                <h4>Selamat!</h4>
+                <p>
+                    Kamu telah menyelesaikan seluruh rangkaian pembelajaran
+                    Kecerdasan Buatan dan Machine Learning.
+                </p>
+                <p>
+                    Terima kasih telah mengikuti pembelajaran ini dengan baik.
+                    Semoga materi yang telah dipelajari dapat bermanfaat.
+                </p>
+            </div>
+            <a href="/dashboard/index" class="btn btn-success mt-3">
+                Kembali ke Dashboard
             </a>
         `;
     } else {
