@@ -8,27 +8,21 @@
 
         <h2><strong>2. Apa Itu Machine Learning</strong></h2>
         <p>
-            <i><strong>Machine learning</strong></i> merupakan salah satu cabang dari Kecerdasan Buatan (<i>Artificial
-                Intelligence</i>) yang memungkinkan
-            komputer belajar dari data tanpa harus diprogram secara langsung. Dengan kata lain, komputer “belajar sendiri”
-            dari pengalaman yang diperoleh melalui data.
+            <i><strong>Machine learning</strong></i> merupakan salah satu cabang dari kecerdasan buatan yang memungkinkan komputer belajar dari data tanpa harus diprogram secara langsung. Dengan kata lain, komputer dapat mengenali pola dari data yang diberikan, kemudian menggunakan pola tersebut untuk membantu melakukan prediksi.
         </p>
         <p>
-            Tiga konsep utama dalam proses <i>machine learning</i> :
+            Tiga konsep utama dalam proses <i>machine learning</i> adalah sebagai berikut.
         </p>
         <ol type="a">
             <li>
                 <strong>Data Pelatihan (<i>Training Data</i>)</strong>
             </li>
             <p>
-                <strong>Data pelatihan</strong> adalah sekumpulan informasi yang digunakan untuk “mengajarkan”
-                komputer agar dapat mengenali pola tertentu. Data ini dapat berupa gambar, suara,
+                Data pelatihan adalah sekumpulan informasi yang digunakan untuk melatih model kecerdasan buatan agar dapat mengenali pola tertentu. Data ini dapat berupa gambar, suara,
                 teks, atau gerakan tubuh, tergantung pada jenis model yang akan dilatih.
             </p>
             <p>
-                Semakin banyak, beragam, dan relevan data yang digunakan, semakin baik kemampuan model kecerdasan buatan
-                dalam mengenali pola dan melakukan prediksi. Misalnya, pelatihan model untuk mengenali hewan bekantan dan
-                monyet memerlukan banyak contoh gambar bekantan dan monyet dari berbagai sudut, warna, dan ukuran.
+                Semakin banyak, beragam, dan relevan data yang digunakan, semakin baik kemampuan model kecerdasan buatan dalam mengenali pola dan melakukan prediksi. Misalnya, pelatihan model kecerdasan buatan untuk mengenali hewan bekantan dan monyet memerlukan banyak contoh gambar bekantan dan monyet dari berbagai sudut, warna, dan ukuran.
             </p>
 
             <div class="materi-image">
@@ -38,8 +32,7 @@
 
             <div class="fun-fact">
                 <p>
-                    Gambar A.6 menunjukkan kumpulan gambar bekantan dan monyet yang digunakan sebagai data untuk melatih
-                    komputer agar dapat membedakan kedua jenis hewan tersebut.
+                    <strong>Gambar A.6</strong> menunjukkan kumpulan gambar bekantan dan monyet yang digunakan sebagai data pelatihan untuk membantu model kecerdasan buatan membedakan kedua jenis hewan tersebut.
                 </p>
             </div>
 
@@ -47,15 +40,10 @@
                 <strong>Model Kecerdasan Buatan</strong>
             </li>
             <p>
-                <strong>Model kecerdasan buatan</strong> adalah hasil akhir dari proses pelatihan (<i>training</i>). Dapat
-                dikatakan bahwa <strong>model</strong>
-                adalah otak buatan yang terbentuk setelah komputer mempelajari pola dari data pelatihan. Model inilah yang
-                nantinya digunakan untuk mengenali atau mengklasifikasikan data baru.
+                <strong>Model kecerdasan buatan</strong> adalah hasil dari proses pelatihan. Model dapat diibaratkan sebagai “otak buatan” yang terbentuk setelah komputer mempelajari pola dari data pelatihan. Model inilah yang nantinya digunakan untuk mengenali atau mengklasifikasikan data baru.
             </p>
             <p>
-                Sebagai contoh, setelah model dilatih menggunakan ribuan foto bekantan dan monyet atau ribuan suara bekantan
-                dan monyet, model tersebut dapat membedakan apakah data baru yang dimasukkan termasuk kategori “bekantan”
-                atau “monyet”.
+                Sebagai contoh, setelah model kecerdasan buatan dilatih menggunakan banyak gambar bekantan dan monyet, model tersebut dapat membedakan apakah data baru yang dimasukkan termasuk kategori “bekantan” atau “monyet”.
             </p>
 
             <div class="materi-image">
@@ -65,8 +53,8 @@
 
             <div class="fun-fact">
                 <p>
-                    Gambar A.7 menggambarkan proses kecerdasan buatan dalam mengolah data. Data masukan seperti gambar dan
-                    suara diproses oleh model AI, kemudian menghasilkan output berupa pengenalan atau klasifikasi sesuai
+                    <strong>Gambar A.7</strong> menggambarkan proses kecerdasan buatan dalam mengolah data. Data masukan seperti gambar dan
+                    suara diproses oleh model AI, kemudian menghasilkan <i>output</i> berupa pengenalan atau klasifikasi sesuai
                     dengan jenis datanya.
                 </p>
             </div>
@@ -75,13 +63,10 @@
                 <strong>Prediksi</strong>
             </li>
             <p>
-                <strong>Prediksi</strong> adalah kemampuan model untuk memberikan tebakan cerdas terhadap data baru
-                yang belum pernah dilihat sebelumnya. Berdasarkan pengetahuan yang telah diperoleh
-                dari data pelatihan, model akan mencoba mengenali atau mengklasifikasikan input baru
-                tersebut.
+                <strong>Prediksi</strong> adalah kemampuan model kecerdasan buatan untuk memberikan tebakan terhadap data baru yang belum pernah dilihat sebelumnya. Berdasarkan pola yang telah dipelajari dari data pelatihan, model kecerdasan buatan akan mencoba mengenali atau mengklasifikasikan <i>input</i> baru tersebut.
             </p>
             <p>
-                Sebagai contoh, ketika gambar seekor hewan yang belum pernah terdapat dalam data pelatihan dimasukkan, model
+                Sebagai contoh, ketika gambar seekor hewan yang belum pernah terdapat dalam data pelatihan dimasukkan, model kecerdasan buatan
                 akan mencoba melakukan prediksi, misalnya menentukan apakah gambar tersebut termasuk bekantan atau bukan.
             </p>
 
@@ -92,9 +77,7 @@
 
             <div class="fun-fact">
                 <p>
-                    Gambar A.8 menggambarkan bagaimana kecerdasan buatan memproses data gambar dan menghasilkan prediksi
-                    berupa kategori objek. Selain itu, ditampilkan juga tingkat kepercayaan (confidence) yang menunjukkan
-                    seberapa yakin sistem terhadap hasil prediksinya.
+                    <strong>Gambar A.8</strong> menggambarkan bagaimana model kecerdasan buatan memproses data gambar dan menghasilkan prediksi berupa kategori objek. Selain itu, ditampilkan juga tingkat kepercayaan (<i>confidence</i>) yang menunjukkan seberapa yakin model kecerdasan buatan terhadap hasil prediksinya.
                 </p>
             </div>
 
@@ -103,10 +86,7 @@
             Contoh kasus :
         </p>
         <p>
-            Kecerdasan buatan memerlukan data pelatihan yang cukup banyak dan bervariasi untuk membedakan bekantan dan
-            monyet, misalnya foto bekantan dengan berbagai pose dan latar belakang, serta foto monyet dari berbagai jenis
-            ras. Melalui proses pembelajaran tersebut, model dapat mengenali ciri khas bekantan dan monyet sehingga mampu
-            melakukan prediksi dengan lebih akurat.
+            Kecerdasan buatan memerlukan data pelatihan yang cukup banyak dan bervariasi untuk membedakan bekantan dan monyet, misalnya foto bekantan dan monyet dengan berbagai pose, sudut, ukuran, serta latar belakang. Melalui proses pelatihan tersebut, model kecerdasan buatan dapat mengenali ciri khas bekantan dan monyet sehingga mampu melakukan prediksi dengan lebih akurat.
 
         </p>
     </div>

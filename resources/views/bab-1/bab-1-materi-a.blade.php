@@ -13,10 +13,10 @@
                     <div class="card-footer d-flex align-items-center justify-content-between">
                         <div>Setelah mempelajari materi ini, siswa diharapkan :
                             <ul>
-                                <li>Memahami apa itu Kecerdasan Buatan (AI) dan konsep dasar pembelajaran mesin (machine
-                                    learning).</li>
-                                <li>Memahami perbedaan antara data latih (training data) dan data prediksi
-                                    (testing/prediction).</li>
+                                <li>Memahami apa itu Kecerdasan buatan dan konsep dasar <i>machine
+                                    learning</i> .</li>
+                                <li>Memahami perbedaan antara data latih (<i>training data</i>) dan data uji
+                                    (<i>testing data</i>).</li>
                             </ul>
                         </div>
                     </div>
@@ -25,8 +25,7 @@
             <div>
                 <h2>1. Apa Itu Kecerdasan Buatan</h2>
                 <p>
-                    <i><b>Artificial Intelligence</b></i> atau dalam Bahasa Indonesia disebut <b>Kecerdasan Buatan</b>,
-                    adalah sebuah teknologi
+                    <b>Kecerdasan buatan (<i>Artificial Intelligence/AI</i>),</b> adalah sebuah teknologi 
                     yang memungkinkan mesin atau komputer untuk meniru kemampuan otak manusia. Artinya, mesin bisa belajar,
                     mengenali pola, memecahkan masalah, dan bahkan memahami bahasa, hampir seperti manusia.
                 </p>
@@ -70,7 +69,7 @@
                     Beberapa contoh manfaat kecerdasan buatan di berbagai bidang :
                 </p>
                 <ul>
-                    <li>Bidang Kesehatan : kecerdasan buatan bisa membantu dokter mendeteksi penyakit lebih
+                    <li>Bidang Kesehatan : Kecerdasan buatan bisa membantu dokter mendeteksi penyakit lebih
                         cepat.</li>
                     <li>Bidang Pendidikan : Kecerdasan buatan bisa menjadi asisten belajar yang memahami
                         kebutuhan siswa.</li>
@@ -176,7 +175,7 @@
             <p>Petunjuk pengerjaan aktivitas 1 :</p>
             <ul>
                 <li>Bacalah setiap pernyataan dengan teliti.</li>
-                <li>Tentukan apakah pernyataan tersebut termasuk Program Biasa atau Kecerdasan Buatan (<i>Artificial Intelligence</i>). </li>
+                <li>Tentukan apakah pernyataan tersebut termasuk Program Biasa atau Kecerdasan Buatan</li>
                 <li>Klik salah satu tombol jawaban yang tersedia.</li>
                 <li>Setelah semua soal dijawab, klik tombol <strong>Submit Aktivitas</strong>. </li>
             </ul>
