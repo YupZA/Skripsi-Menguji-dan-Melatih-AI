@@ -22,7 +22,7 @@
                 teks, atau gerakan tubuh, tergantung pada jenis model yang akan dilatih.
             </p>
             <p>
-                Semakin banyak, beragam, dan relevan data yang digunakan, semakin baik kemampuan model kecerdasan buatan dalam mengenali pola dan melakukan prediksi. Misalnya, pelatihan model kecerdasan buatan untuk mengenali hewan bekantan dan monyet memerlukan banyak contoh gambar bekantan dan monyet dari berbagai sudut, warna, dan ukuran.
+                Semakin banyak, beragam, dan relevan data yang digunakan, semakin baik kemampuan model kecerdasan buatan dalam mengenali pola dan melakukan prediksi. Misalnya, pelatihan model kecerdasan buatan untuk mengenali hewan bekantan dan monyet memerlukan banyak contoh gambar bekantan dan monyet dari berbagai sudut, warna, dan ukuran. Contoh kumpulan data pelatihan yang digunakan untuk membedakan bekantan dan monyet dapat dilihat pada gambar A.6.
             </p>
 
             <div class="materi-image">
@@ -43,7 +43,7 @@
                 <strong>Model kecerdasan buatan</strong> adalah hasil dari proses pelatihan. Model dapat diibaratkan sebagai “otak buatan” yang terbentuk setelah komputer mempelajari pola dari data pelatihan. Model inilah yang nantinya digunakan untuk mengenali atau mengklasifikasikan data baru.
             </p>
             <p>
-                Sebagai contoh, setelah model kecerdasan buatan dilatih menggunakan banyak gambar bekantan dan monyet, model tersebut dapat membedakan apakah data baru yang dimasukkan termasuk kategori “bekantan” atau “monyet”.
+                Sebagai contoh, setelah model kecerdasan buatan dilatih menggunakan banyak gambar bekantan dan monyet, model tersebut dapat membedakan apakah data baru yang dimasukkan termasuk kategori “bekantan” atau “monyet”. Ilustrasi proses model kecerdasan buatan dalam mengolah data masukan dan menghasilkan kategori keluaran dapat diamati pada gambar A.7.
             </p>
 
             <div class="materi-image">
@@ -67,7 +67,7 @@
             </p>
             <p>
                 Sebagai contoh, ketika gambar seekor hewan yang belum pernah terdapat dalam data pelatihan dimasukkan, model kecerdasan buatan
-                akan mencoba melakukan prediksi, misalnya menentukan apakah gambar tersebut termasuk bekantan atau bukan.
+                akan mencoba melakukan prediksi, misalnya menentukan apakah gambar tersebut termasuk bekantan atau bukan. Contoh hasil prediksi yang dilakukan oleh model kecerdasan buatan terhadap gambar baru dapat dilihat pada gambar A.8.
             </p>
 
             <div class="materi-image">

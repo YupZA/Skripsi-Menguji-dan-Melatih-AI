@@ -8,12 +8,11 @@
         <div>
             <h2>3. Membuat Model Deteksi Pose Tubuh</h2>
             <p>
-                Proyek ini melatih AI untuk mengenali posisi atau gerakan tubuh manusia. Cocok untuk aktivitas seperti
-                pengenalan gerakan olahraga, tarian, atau isyarat tangan.
+                Proyek ini melatih kecerdasan buatan untuk mengenali posisi atau gerakan tubuh manusia. Proyek ini cocok untuk aktivitas seperti pengenalan gerakan olahraga, tarian, atau isyarat tangan.
             </p>
             <ol type="a">
-                <li>Langkah 1: Membuka Halaman <i>AI</i>
-                    <p>Buka website pembelajaran AI melalui browser, kemudian masuk ke halaman utama aplikasi.</p>
+                <li>Langkah 1: Membuka Halaman Pembelajaran Kecerdasan Buatan
+                    <p>Buka website pembelajaran kecerdasan buatan melalui <i>browser</i>, kemudian masuk ke halaman utama aplikasi.</p>
 
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-3/materi-c/gambar-1.png') }}" alt="Ilustrasi AI">
@@ -32,7 +31,7 @@
                 </li>
 
                 <li>Langkah 3: Memilih Mode Latih Pose Tubuh</i>
-                    <p>Pada halaman pilihan mode, pilih Latih Pose Tubuh untuk melatih AI menggunakan data berupa pose atau
+                    <p>Pada halaman pilihan mode, pilih Latih Pose Tubuh untuk melatih kecerdasan buatan menggunakan data berupa pose atau
                         gerakan tubuh yang ditangkap oleh kamera.</p>
 
                     <div class="materi-image">
@@ -43,8 +42,8 @@
                 </li>
 
                 <li>Langkah 4: Membuat Kelas Pose</i>
-                    <p>Masukkan nama kelas pada kolom yang tersedia sesuai dengan pose yang akan dilatih, misalnya Berdiri,
-                        Duduk, atau Jongkok. Jika ingin menambahkan kategori pose lainnya, klik tombol Tambah Kelas.</p>
+                    <p>Masukkan nama kelas pada kolom yang tersedia sesuai dengan pose yang akan dilatih, misalnya berdiri,
+                        duduk, atau jongkok. Jika ingin menambahkan kategori pose lainnya, klik tombol Tambah Kelas.</p>
 
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-3/materi-c/gambar-4.jpg') }}" alt="Ilustrasi AI">
@@ -55,7 +54,7 @@
 
                 <li>Langkah 5: Mengumpulkan Data Pose</i>
                     <p>Arahkan tubuh ke kamera, kemudian lakukan pose yang sesuai dengan nama kelas yang telah dibuat. Ambil
-                        beberapa contoh data untuk setiap pose agar AI dapat mempelajari ciri-ciri dari masing-masing posisi
+                        beberapa contoh data untuk setiap pose agar kecerdasan buatan dapat mempelajari ciri-ciri dari masing-masing posisi
                         tubuh.</p>
 
                     <div class="materi-image">
@@ -65,9 +64,9 @@
                     </div>
                 </li>
 
-                <li>Langkah 6: Melatih AI</i>
+                <li>Langkah 6: Melatih Kecerdasan Buatan</i>
                     <p>Setelah data pose untuk setiap kelas terkumpul, klik tombol Latih AI untuk memulai proses pelatihan.
-                        Pada tahap ini, AI akan mempelajari pola dari setiap pose yang telah direkam.</p>
+                        Pada tahap ini, kecerdasan buatan akan mempelajari pola dari setiap pose yang telah direkam.</p>
 
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-3/materi-c/gambar-6.jpg') }}" alt="Ilustrasi AI">
@@ -76,8 +75,8 @@
                     </div>
                 </li>
                 <li>Langkah 7: Melihat Hasil Prediksi</i>
-                    <p>Setelah pelatihan selesai, tampilkan salah satu pose di depan kamera. <i>AI</i> akan mengenali pose
-                        tersebut dan menampilkan hasil prediksi secara <i>real-time</i> (langsung) pada layar.</p>
+                    <p>Setelah pelatihan selesai, tampilkan salah satu pose di depan kamera. Kecerdasan buatan akan mengenali pose
+                        tersebut dan menampilkan hasil prediksi secara <i>real-time</i> atau langsung pada layar.</p>
 
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-3/materi-c/gambar-7.jpg') }}" alt="Ilustrasi AI">
@@ -94,7 +93,7 @@
                 <li>Pastikan seluruh tubuh atau bagian tubuh yang diamati terlihat jelas oleh kamera.</li>
                 <li>Gunakan pencahayaan yang cukup agar pose dapat terdeteksi dengan baik.</li>
                 <li>Ambil data pose dalam jumlah yang cukup untuk setiap kelas agar hasil prediksi lebih akurat.</li>
-                <li>Hindari pose yang terlalu mirip karena dapat menyulitkan AI dalam membedakan setiap kategori.</li>
+                <li>Hindari pose yang terlalu mirip karena dapat menyulitkan kecerdasan buatan dalam membedakan setiap kategori.</li>
             </ul>
             </p>
         </div>

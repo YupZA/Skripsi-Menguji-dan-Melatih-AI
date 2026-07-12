@@ -10,33 +10,33 @@
             <p>
                 Google Teachable Machine menyediakan tiga jenis model utama model gambar (<i>Image Model</i>), model suara (<i>Audio
                 Model</i>), dan model pose tubuh (<i>Pose Model</i>). Meskipun ketiganya memiliki tujuan yang sama, yaitu melatih
-                kecerdasan buatan (AI) agar dapat mengenali pola dari data, setiap model memiliki perbedaan dalam jenis
+                kecerdasan buatan agar dapat mengenali pola dari data, setiap model memiliki perbedaan dalam jenis
                 data, cara pelatihan, serta penerapannya.
             </p>
             <ol type="a">
                 <li>
                     Model Gambar (<i>Image Model</i>)
-                    <br>Model gambar digunakan untuk melatih AI agar mampu mengenali pola visual dari berbagai gambar atau
+                    <br>Model gambar digunakan untuk melatih kecerdasan buatan agar mampu mengenali pola visual dari berbagai gambar atau
                     objek. Data yang digunakan berupa citra (<I>image</I>) yang bisa diambil melalui kamera (webcam) atau diunggah
                     dari komputer.
                     <ul>
                         <li>Jenis Data: Gambar atau foto.</li>
                         <li>Contoh Proyek: Membedakan antara kucing dan anjing, mengenali ekspresi wajah (senang, sedih,
                             marah), atau mengenali bentuk tangan tertentu.</li>
-                        <li>Cara Kerja: AI menganalisis pola warna, bentuk, dan tekstur pada gambar.</li>
+                        <li>Cara Kerja: Kecerdasan buatan menganalisis pola warna, bentuk, dan tekstur pada gambar.</li>
                         <li>Kelebihan: Mudah digunakan dan hasilnya terlihat langsung.</li>
                         <li>Keterbatasan: Dipengaruhi oleh pencahayaan, posisi, dan latar belakang gambar.</li>
                     </ul>
                 </li>
                 <li>
                     Model Suara (<i>Audio Model</i>)
-                    <br>Model suara digunakan untuk melatih AI agar dapat mengenali pola bunyi atau suara tertentu. Data
+                    <br>Model suara digunakan untuk melatih kecerdasan buatan agar dapat mengenali pola bunyi atau suara tertentu. Data
                     yang digunakan berupa rekaman suara yang direkam langsung melalui mikrofon atau diunggah dari perangkat.
                     <ul>
                         <li>Jenis Data: Gelombang suara (<i>audio</i>).</li>
                         <li>Contoh Proyek: Membedakan suara tepuk tangan dan siulan, mengenali kata “ya” dan “tidak”, atau
                             mengidentifikasi suara hewan.</li>
-                        <li>Cara Kerja: AI mempelajari perbedaan frekuensi, volume, dan ritme dari suara yang diberikan.
+                        <li>Cara Kerja: Kecerdasan buatan mempelajari perbedaan frekuensi, volume, dan ritme dari suara yang diberikan.
                         </li>
                         <li>Kelebihan: Dapat digunakan untuk interaksi suara seperti asisten virtual.</li>
                         <li>Keterbatasan: Kualitas hasil dipengaruhi oleh kebisingan lingkungan dan kejelasan suara.</li>
@@ -44,13 +44,13 @@
                 </li>
                 <li>
                     Model Pose Tubuh (<i>Pose Model</i>)
-                    <br>Model pose digunakan untuk melatih AI agar dapat mengenali gerakan atau posisi tubuh manusia. Data
+                    <br>Model pose digunakan untuk melatih kecerdasan buatan agar dapat mengenali gerakan atau posisi tubuh manusia. Data
                     diperoleh melalui kamera (webcam) yang menangkap bentuk tubuh dan pergerakan pengguna.
                     <ul>
                         <li>Jenis Data: Citra gerakan (<i>pose tubuh</i>).</li>
                         <li>Contoh Proyek: Membedakan posisi berdiri dan jongkok, mengenali lambaian tangan, atau mendeteksi
                             gerakan olahraga.</li>
-                        <li>Cara Kerja: AI menganalisis posisi titik-titik tubuh (seperti kepala, tangan, kaki) yang
+                        <li>Cara Kerja: Kecerdasan buatan menganalisis posisi titik-titik tubuh (seperti kepala, tangan, kaki) yang
                             ditangkap kamera.</li>
                         <li>Kelebihan: Dapat digunakan untuk aplikasi berbasis gerakan, seperti permainan interaktif atau
                             pelatihan olahraga.</li>
@@ -112,10 +112,10 @@
                 Ketiga jenis model di Google Teachable Machine memiliki fungsi yang saling melengkapi.
             <ul>
                 <li>Model Gambar cocok untuk pengenalan visual.</li>
-                <li>Model Suara cocok untuk pengenalan <i>audio</i> atau komunikasi berbasis suara.</li>
+                <li>Model Suara cocok untuk pengenalan suara atau komunikasi berbasis suara.</li>
                 <li>Model Pose Tubuh cocok untuk pengenalan gerakan manusia.</li>
             </ul>
-            Melalui pemanfaatan berbagai jenis model ini, peserta didik dapat belajar secara langsung bagaimana AI
+            Melalui pemanfaatan berbagai jenis model ini, peserta didik dapat belajar secara langsung bagaimana kecerdasan buatan
             bekerja dalam berbagai konteks kehidupan nyata, serta mengembangkan kreativitas dalam menciptakan proyek
             berbasis teknologi cerdas.
             </p>

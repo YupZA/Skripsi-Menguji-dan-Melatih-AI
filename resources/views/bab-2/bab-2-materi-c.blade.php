@@ -19,11 +19,7 @@
                     Proyek Gambar (<i>Image Project</i>)
                 </li>
                 <p>
-                    Proyek ini berfokus pada pelatihan kecerdasan buatan untuk mengenali dan membedakan berbagai jenis
-                    gambar. Misalnya,
-                    peserta didik dapat membuat model yang mampu membedakan antara gambar ikan gabus dan ikan papuyu, atau
-                    mengenali ekspresi wajah seperti senang, sedih, dan marah. Melalui kegiatan ini, peserta didik belajar
-                    bagaimana sistem kecerdasan buatan memproses data <i>visual</i> untuk mengenali pola tertentu.
+                    Proyek ini berfokus pada pelatihan kecerdasan buatan untuk mengenali dan membedakan berbagai jenis gambar. Misalnya, peserta didik dapat membuat model kecerdasan buatan yang mampu membedakan gambar ikan gabus dan ikan papuyu, atau mengenali ekspresi wajah seperti senang, sedih, dan marah. Melalui kegiatan ini, peserta didik belajar bagaimana sistem kecerdasan buatan memproses data <i>visual</i> untuk mengenali pola tertentu.
                 </p>
                 <div class="materi-image">
                     <img src="{{ asset('images/bab-2/materi-c/gambar-1.png') }}" alt="Ilustrasi AI">
@@ -43,12 +39,7 @@
                     Proyek Suara (<i>Audio Project</i>)
                 </li>
                 <p>
-                    Dalam proyek ini, peserta didik dapat melatih AI untuk mengenali berbagai jenis suara. Contohnya, model
-                    kecerdasan buatan dapat diajarkan untuk membedakan antara tepuk tangan dan siulan, mengenali kata-kata
-                    sederhana
-                    seperti “ya” dan “tidak”, atau bahkan suara hewan seperti anjing dan kucing. Melalui proyek ini, peserta
-                    didik memahami bagaimana komputer dapat menganalisis gelombang suara dan mengenali perbedaan
-                    karakteristik bunyi.
+                    Dalam proyek ini, peserta didik dapat melatih kecerdasan buatan untuk mengenali berbagai jenis suara. Contohnya, model kecerdasan buatan dapat diajarkan untuk membedakan tepuk tangan dan siulan, mengenali kata-kata sederhana seperti “ya” dan “tidak”, atau mengenali suara hewan. Melalui proyek ini, peserta didik memahami bagaimana komputer dapat menganalisis suara dan mengenali perbedaan karakteristik bunyi.
                 </p>
                 <div class="materi-image">
                     <img src="{{ asset('images/bab-2/materi-c/gambar-2.png') }}" alt="Ilustrasi AI">
@@ -68,11 +59,7 @@
                     Proyek Pose Tubuh (<i>Pose Project</i>)
                 </li>
                 <p>
-                    Proyek ini digunakan untuk melatih kecerdasan buatan dalam mengenali gerakan atau posisi tubuh manusia.
-                    Contohnya,
-                    peserta didik dapat membuat model yang mampu membedakan antara berdiri dan jongkok, melambaikan tangan
-                    dan diam, atau gerakan olahraga dan tarian. Melalui proyek ini, peserta didik dapat memahami bagaimana
-                    kecerdasan memproses data <i>visual</i> dari kamera untuk mengidentifikasi pola gerakan.
+                    Proyek ini digunakan untuk melatih kecerdasan buatan dalam mengenali gerakan atau posisi tubuh manusia. Contohnya, peserta didik dapat membuat model kecerdasan buatan  yang mampu membedakan antara berdiri dan jongkok, melambaikan tangan dan diam, atau gerakan olahraga dan tarian. Melalui proyek ini, peserta didik dapat memahami bagaimana kecerdasan buatan memproses data <i>visual</i> dari kamera untuk mengidentifikasi pola gerakan.
                 </p>
                 <div class="materi-image">
                     <img src="{{ asset('images/bab-2/materi-c/gambar-3.png') }}" alt="Ilustrasi AI">
@@ -87,19 +74,11 @@
                 </div>
 
                 <p>
-                    Dengan memanfaatkan ketiga jenis proyek tersebut, Google Teachable Machine memungkinkan peserta didik
-                    untuk:
+                    Dengan memanfaatkan ketiga jenis proyek tersebut, <i>Google Teachable Machine</i> memungkinkan peserta didik untuk memahami konsep dasar <i>machine learning</i> secara mudah, membangun dan melatih model kecerdasan buatan sederhana secara mandiri tanpa menulis kode, serta melihat secara langsung bagaimana komputer belajar dan melakukan prediksi terhadap data baru.
                 </p>
-                <ul>
-                    <li>Memahami konsep dasar <i>Machine Learning</i> dengan cara yang mudah dan menyenangkan.</li>
-                    <li>Membangun dan melatih model kecerdasan buatan sederhana secara mandiri tanpa perlu menulis kode.</li>
-                    <li>Melihat secara langsung bagaimana komputer dapat “belajar” dan melakukan prediksi terhadap data
-                        baru.</li>
-                </ul>
+                
                 <p>
-                    Melalui kegiatan eksploratif ini, peserta didik tidak hanya memperoleh pemahaman teoritis mengenai
-                    kecerdasan buatan, tetapi juga pengalaman praktis dalam menciptakan model kecerdasan buatan yang relevan dengan
-                    kehidupan sehari-hari.
+                    Melalui kegiatan eksploratif ini, peserta didik tidak hanya memperoleh pemahaman teoritis mengenai kecerdasan buatan, tetapi juga pengalaman praktis dalam membuat model kecerdasan buatan yang relevan dengan kehidupan sehari-hari.
                 </p>
             </ol>
         </div>

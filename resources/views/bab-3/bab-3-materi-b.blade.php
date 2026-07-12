@@ -32,7 +32,7 @@
                 </li>
 
                 <li>Langkah 3: Memilih Mode Latih Suara
-                    <p>Pada halaman pilihan mode, pilih Latih Suara untuk melatih AI menggunakan data berupa rekaman suara.</p>
+                    <p>Pada halaman pilihan mode, pilih Latih Suara untuk melatih kecerdasan buatan menggunakan data berupa rekaman suara.</p>
                     
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-3/materi-b/gambar-3.jpg') }}" alt="Ilustrasi AI">
@@ -58,7 +58,7 @@
                     </div>
                 </li>
 
-                <li>Langkah 6: Melatih AI
+                <li>Langkah 6: Melatih Kecerdasan Buatan
                     <p>Setelah seluruh rekaman suara selesai dibuat, klik tombol Latih AI untuk memulai proses pelatihan.</p>
                     
                     <div class="materi-image">
@@ -77,7 +77,7 @@
                 </li>
 
                 <li>Langkah 8: Menguji AI
-                    <p>Setelah pelatihan selesai, klik tombol Mulai Mendengar. Ucapkan suara yang ingin diuji, kemudian AI akan mencoba mengenali dan menampilkan kategori suara yang paling sesuai berdasarkan hasil pelatihan sebelumnya.</p>
+                    <p>Setelah pelatihan selesai, klik tombol Mulai Mendengar. Ucapkan suara yang ingin diuji, kemudian kecerdasan buatan akan mencoba mengenali dan menampilkan kategori suara yang paling sesuai berdasarkan hasil pelatihan sebelumnya.</p>
                     
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-3/materi-b/gambar-8.jpg') }}" alt="Ilustrasi AI">

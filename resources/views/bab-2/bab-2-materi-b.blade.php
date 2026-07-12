@@ -8,13 +8,7 @@
         <div>
             <h2>2. <i>Google Teachable Machine</i> : Membuat <i>AI</i> Jadi Mudah</h2>
             <p>
-                <strong>Google Teachable Machine</strong> adalah platform berbasis web yang dikembangkan oleh Google untuk
-                memudahkan siapa
-                pun dalam membuat dan melatih model kecerdasan buatan tanpa perlu menulis satu baris kode pun. Keunggulan
-                utama <i>Teachable Machine</i> adalah sifatnya yang <i>user-friendly</i>. Pengguna dari berbagai latar
-                belakang baik
-                pelajar, guru, maupun peneliti dapat memahami konsep dasar <i>machine learning</i> secara praktis dan cepat.
-                <i>Platform</i> ini dirancang untuk memberikan pengalaman belajar yang menyenangkan sekaligus edukatif.
+                <i>Google Teachable Machine</i> adalah platform berbasis <i>web</i> yang dikembangkan oleh Google untuk memudahkan pengguna dalam membuat dan melatih model kecerdasan buatan tanpa harus menulis kode program. Keunggulan utama <i>Teachable Machine</i> adalah tampilannya yang mudah digunakan. Pengguna dari berbagai latar belakang, seperti pelajar, guru, maupun pemula, dapat memahami konsep dasar <i>machine learning</i> secara praktis dan cepat. Platform ini dirancang untuk memberikan pengalaman belajar yang menyenangkan dan edukatif.
             </p>
             <ol type="a">
                 <li>Fungsi dan manfaat</li>
@@ -35,9 +29,7 @@
                         tubuh.
                     </li>
                     <li>Mendukung pembelajaran yang lebih menarik.
-                        <br>Siswa dapat belajar menggunakan aplikasi berbasis kecerdasan buatan yang interaktif dan
-                        menyesuaikan dengan
-                        gaya belajar mereka.
+                        Siswa dapat belajar menggunakan platform berbasis kecerdasan buatan yang interaktif dan mudah digunakan.
                     </li>
                     <li>
                         Menumbuhkan pemahaman tentang etika dan tanggung jawab penggunaan kecerdasan buatan.
@@ -94,10 +86,7 @@
                     </li>
                     <li>
                         Pendidikan dan Pembelajaran
-                        <br>Kecerdasan buatan juga banyak digunakan dalam dunia pendidikan. Misalnya, aplikasi belajar yang
-                        menyesuaikan
-                        kesulitan soal dengan kemampuan pengguna, atau platform seperti Duolingo yang mengenali kesalahan
-                        umum siswa dan memberikan latihan tambahan.
+                        <br>Kecerdasan buatan juga banyak digunakan dalam dunia pendidikan. Misalnya, aplikasi belajar yang menyesuaikan tingkat kesulitan soal dengan kemampuan pengguna. Contoh lainnya adalah platform seperti Duolingo yang mengenali kesalahan umum siswa dan memberikan latihan tambahan.
                     </li>
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-2/materi-b/gambar-2.png') }}" alt="Ilustrasi AI">

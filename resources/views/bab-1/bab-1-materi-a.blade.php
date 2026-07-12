@@ -81,12 +81,10 @@
                 </ul>
 
                 <p>
-                    Contoh kecerdasan buatan yang terkenal dan sering kita dengar :
+                    Contoh Kecerdasan Buatan yang terkenal dan sering dijumpai dalam kehidupan sehari-hari antara lain sebagai berikut.
                 </p>
                 <ul>
-                    <li>Siri (Apple) dan Google Assistant – Membantu kita mencari informasi hanya dengan
-                        suara.
-                    </li>
+                    <li>Siri dan Google Assistant merupakan contoh asisten virtual berbasis kecerdasan buatan. Kedua aplikasi ini dapat membantu pengguna mencari informasi, menjawab pertanyaan, dan menjalankan perintah melalui suara. Contoh tampilan logo Siri dan Google Assistant dapat dilihat pada Gambar A.1 dan A.2.
                     <div class="materi-image inline">
                         <figure>
                             <img src="{{ asset('images/bab-1/materi-a/gambar-1.png') }}">
@@ -99,15 +97,14 @@
                         </figure>
                     </div>
 
-                    <li>ChatGPT – Kecerdasan buatan yang bisa menjawab pertanyaan dan ngobrol seperti
-                        manusia.
+                    <li>ChatGPT merupakan contoh kecerdasan buatan yang dapat memahami pertanyaan dan menghasilkan jawaban. Contoh tampilan logo OpenAI sebagai pengembang ChatGPT dapat dilihat pada Gambar A.3.
                     </li>
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-1/materi-a/gambar-3.png') }}" alt="Ilustrasi AI">
                         <span>Gambar A.3 Logo OpenAI</span>
                     </div>
 
-                    <li>Deep Blue – Komputer kecerdasan buatan yang pernah mengalahkan juara dunia catur.
+                    <li>Deep Blue merupakan komputer kecerdasan buatan yang pernah mengalahkan juara dunia catur. Contoh superkomputer IBM Deep Blue dapat dilihat pada gambar A.4.
                     </li>
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-1/materi-a/gambar-4.jpg') }}" alt="Ilustrasi AI">
@@ -123,8 +120,7 @@
                         </p>
                     </div>
 
-                    <li>Sophia – Robot kecerdasan buatan yang bisa berbicara dan punya wajah seperti
-                        manusia.
+                    <li>Sophia merupakan robot humanoid yang menggunakan teknologi kecerdasan buatan untuk berinteraksi dengan manusia. Contoh robot humanoid Sophia dapat dilihat pada gambar A.5.
                     </li>
 
                     <div class="materi-image">
@@ -142,11 +138,9 @@
                         </p>
                     </div>
 
-                    <li>Rekomendasi film atau musik di YouTube, Netflix, atau Spotify yang pas banget dengan
-                        seleramu.</li>
-                    <li>Filter spam email yang otomatis memisahkan email penting dan email sampah.</li>
-                    <li>Fitur pendeteksi wajah di kamera ponsel untuk membuka kunci atau menambahkan efek.
-                    </li>
+                    <li>Sistem rekomendasi pada YouTube, Netflix, atau Spotify menggunakan kecerdasan buatan untuk mempelajari preferensi pengguna dan menyarankan konten yang sesuai.</li>
+                    <li>Filter spam email memanfaatkan kecerdasan buatan untuk membedakan email penting dan email yang tidak diinginkan secara otomatis.</li>
+                    <li>Fitur pendeteksi wajah pada ponsel menggunakan kecerdasan buatan untuk mengenali wajah pengguna saat membuka kunci perangkat atau menambahkan efek kamera.
                 </ul>
             </div>
         </div>

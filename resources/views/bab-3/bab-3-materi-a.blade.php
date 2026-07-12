@@ -15,8 +15,8 @@
 
                         <div>Setelah mempelajari materi ini, siswa diharapkan :
                             <ul>
-                                <li>Mampu secara mandiri membuat model <i>AI</i> sederhana.</li>
-                                <li>Mampu mengumpulkan data, melatih model, dan menguji akurasi hasilnya.</li>
+                                <li>Mampu membuat model kecerdasan buatan sederhana secara mandiri.</li>
+                                <li>Mampu mengumpulkan data, melatih model, dan menguji akurasi hasil prediksi.</li>
                             </ul>
                         </div>
 
@@ -27,8 +27,7 @@
         <div>
             <h2>1. Membuat Model Gambar</h2>
             <p>
-                Proyek Gambar digunakan untuk melatih model kecerdasan buatan agar dapat mengenali dan membedakan objek pada
-                gambar, seperti bekantan, monyet, bentuk tangan, ekspresi wajah, atau benda-benda di sekitar.
+                Proyek gambar digunakan untuk melatih kecerdasan buatan agar dapat mengenali dan membedakan objek pada gambar, seperti bekantan, monyet, bentuk tangan, ekspresi wajah, atau benda di sekitar.
 
             </p>
             <p>
@@ -36,9 +35,9 @@
             </p>
 
             <ol type="a">
-                <li>Langkah 1 : Membuka Halaman <i>AI</i>
+                <li>Langkah 1 : Membuka Halaman Pembelajaran Kecerdasan Buatan
                     <p>
-                        Buka <i>website</i> pembelajaran <i>AI</i> melalui <i>browser</i>, kemudian masuk ke halaman utama
+                        Buka <i>website</i> pembelajaran kecerdasan buatan melalui <i>browser</i>, kemudian masuk ke halaman utama
                         aplikasi.
                     </p>
 
@@ -61,8 +60,7 @@
                 </li>
 
                 <li>Langkah 3: Memilih Mode Gambar
-                    <p>Langkah Pada halaman pilihan mode, pilih Latih Gambar. Mode ini digunakan untuk melatih <i>AI</i>
-                        menggunakan data berupa gambar.
+                    <p>Pada halaman pilihan mode, pilih Latih Gambar. Mode ini digunakan untuk melatih kecerdasan buatan menggunakan data berupa gambar.
                     </p>
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-3/materi-a/gambar-3.jpg') }}" alt="Ilustrasi AI">
@@ -73,7 +71,7 @@
 
                 <li>Langkah 4: Membuat Kelas Gambar
                     <p>Masukkan nama kelas pada kolom yang tersedia, misalnya bekantan, monyet, atau ikan gabus. Jika ingin
-                        menambahkan kategori lain, klik tombol Tambah Kelas menguji model.
+                        menambahkan kategori lain, klik tombol Tambah Kelas.
                     </p>
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-3/materi-a/gambar-4.jpg') }}" alt="Ilustrasi AI">
@@ -95,7 +93,7 @@
 
                 <li>Langkah 6: Melatih AI
                     <p>Setelah semua gambar berhasil dipilih, klik tombol Latih AI. Sistem akan mempelajari gambar-gambar
-                        yang telah diunggah untuk membuat model AI.
+                        yang telah diunggah untuk membuat model kecerdasan buatan.
                     </p>
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-3/materi-a/gambar-6.jpg') }}" alt="Ilustrasi AI">
@@ -120,7 +118,7 @@
                 </li>
 
                 <li>Langkah 9: Melihat Hasil Prediksi
-                    <p>Klik tombol Prediksi untuk melihat hasil pengenalan gambar oleh AI. Sistem akan menampilkan kelas yang menurut AI paling sesuai dengan gambar yang diuji.</p>
+                    <p>Klik tombol Prediksi untuk melihat hasil pengenalan gambar oleh kecerdasan buatan. Sistem akan menampilkan kelas yang paling sesuai dengan gambar yang diuji.</p>
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-3/materi-a/gambar-9.jpg') }}" alt="Ilustrasi AI">
                         <span>Gambar C.9 Menekan tombol Prediksi untuk melihat hasil pengenalan objek berdasarkan model AI yang telah dilatih sebelumnya</span>

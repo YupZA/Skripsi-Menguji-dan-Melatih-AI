@@ -30,27 +30,13 @@
         <div>
             <h2>1. Apa Itu Google Teachable Machine</h2>
             <p>
-                <strong><i>Google Teachable Machine</i></strong> merupakan alat berbasis web yang dikembangkan oleh Google
-                untuk membantu pengguna
-                mempelajari pembelajaran mesin <i>(machine learning)</i> secara mudah dan menarik. Pengguna dapat membuat
-                model
-                kecerdasan buatan (<i>artificial intelligence</i>) melalui Teachable Machine tanpa harus menguasai
-                pemrograman atau
-                menulis kode yang rumit.
+                <strong><i>Google Teachable Machine</i></strong> merupakan alat berbasis <i>web</i> yang dikembangkan oleh Google untuk membantu pengguna mempelajari <i>machine learning</i> secara mudah dan menarik. Pengguna dapat membuat dan melatih model kecerdasan buatan melalui <i>Teachable Machine</i> tanpa harus menguasai pemrograman atau menulis kode yang rumit.
             </p>
             <p>
-                Teachable Machine dapat digunakan untuk melatih komputer agar mampu mengenali gambar, suara, atau pose tubuh
-                manusia melalui beberapa langkah sederhana. Misalnya, komputer dapat dilatih untuk membedakan foto bekantan
-                dan monyet, mengenali suara tepuk tangan, atau mendeteksi gerakan tertentu menggunakan kamera.
+                <i>Teachable Machine</i> dapat digunakan untuk melatih komputer agar mampu mengenali gambar, suara, atau pose tubuh manusia melalui beberapa langkah sederhana. Misalnya, komputer dapat dilatih untuk membedakan foto bekantan dan monyet, mengenali suara tepuk tangan, atau mendeteksi gerakan tertentu menggunakan kamera.
             </p>
             <p>
-                Alat ini sangat cocok digunakan oleh pelajar, termasuk siswa SMP, karena memiliki tampilan yang sederhana
-                dan proses penggunaan yang cepat. Pengguna hanya perlu menyiapkan contoh data, seperti beberapa gambar atau
-                suara. Selanjutnya, <i>Teachable Machine</i> akan mempelajari pola dari data tersebut dan membuat model yang
-                dapat
-                digunakan untuk pengenalan secara otomatis. Melalui <i>Teachable Machine</i>, pembelajaran tentang
-                kecerdasan
-                buatan dan <i>machine learning</i> menjadi lebih menarik dan mudah dipahami.
+                Alat ini sangat cocok digunakan oleh pelajar, termasuk siswa SMP, karena memiliki tampilan yang sederhana dan proses penggunaan yang cepat. Pengguna hanya perlu menyiapkan contoh data, seperti gambar atau suara. Selanjutnya, <i>Teachable Machine</i> akan mempelajari pola dari data tersebut dan menghasilkan model kecerdasan buatan yang dapat digunakan untuk melakukan pengenalan secara otomatis.
 
             </p>
             <p>
@@ -63,11 +49,15 @@
                 <li>
                     Pembelajaran Terbimbing (<i>Supervised Learning</i>)
                 </li>
+
                 <p>
-                    Teachable Machine menggunakan pendekatan yang disebut <i>supervised learning</i> atau pembelajaran
-                    terbimbing.
-                    Artinya, komputer belajar dari contoh data yang sudah diberi label oleh manusia.
+                    Pembelajaran terbimbing (<i>supervised learning</i>) merupakan salah satu metode <i>machine learning</i> yang menggunakan data berlabel sebagai bahan pembelajaran. Pada metode ini, setiap data telah memiliki kategori atau kelas yang benar sehingga komputer dapat mempelajari hubungan antara data masukan (<i>input</i>) dan labelnya (<i>output</i>). Selama proses pelatihan, model akan mencari pola atau karakteristik yang membedakan setiap kelas. Setelah proses pelatihan selesai, model dapat menggunakan pola tersebut untuk memprediksi label pada data baru yang belum pernah dilihat sebelumnya.
                 </p>
+
+                <p>
+                    <i>Teachable Machine</i> menggunakan pendekatan yang disebut <i>supervised learning</i> atau pembelajaran terbimbing. Artinya, komputer belajar dari contoh data yang sudah diberi label oleh manusia.
+                </p>
+
                 <p>
                     Contohnya:
                 </p>
@@ -75,6 +65,9 @@
                     <li>Gambar ikan gabus diberi label Ikan Gabus</li>
                     <li>Gambar ikan papuyu diberi label Ikan Papuyu</li>
                 </ul>
+                <p>
+                    Pada pembelajaran terbimbing, komputer belajar dari data yang telah diberi label oleh manusia. Contoh proses pembelajaran terbimbing menggunakan data ikan gabus dan ikan papuyu dapat dilihat pada gambar B.1.
+                </p>
                 <div class="materi-image">
                     <img src="{{ asset('images/bab-2/materi-a/gambar-1.png') }}" alt="Ilustrasi AI">
                     <span>Gambar B.1 Contoh proses <i>Supervised Learning</i>, di mana <i>AI</i> belajar mengenali perbedaan
@@ -102,7 +95,7 @@
                     Konsep <i>Input</i> dan <i>Output</i>
                 </li>
                 <p>
-                    Dalam <i>Machine Learning</i>, komputer bekerja dengan sistem <i>input</i> dan <i>output</i>.
+                    Dalam <i>machine learning</i>, komputer bekerja menggunakan konsep <i>input</i> dan <i>output</i>.
                 </p>
                 <ol>
                     <li><i><strong>Input</strong></i> adalah data yang dimasukkan ke dalam sistem, seperti gambar, suara,
@@ -116,7 +109,7 @@
                     menunjukkan
                     gambar melalui kamera sebagai <i>input</i>, kemudian komputer menampilkan hasil prediksi berupa label
                     yang
-                    sesuai sebagai <i>output</i>.
+                    sesuai sebagai <i>output</i>. Hubungan antara data masukan (<i>input</i>), model kecerdasan buatan, dan hasil keluaran (<i>output</i>) dapat diamati pada gambar B.2.
                 </p>
                 <div class="materi-image">
                     <img src="{{ asset('images/bab-2/materi-a/gambar-2.png') }}" alt="Ilustrasi AI">
@@ -138,18 +131,13 @@
                     <i>output</i> yang dihasilkan dapat berupa label “senyum”.
                 </p>
                 <li>
-                    <i>Training Model</i> secara Visual
+                    Pelatihan Model Secara <i>Visual</i>
                 </li>
                 <p>
-                    <strong>Salah satu keunggulan Teachable Machine</strong> adalah proses <i>training model</i> secara
-                    visual, yang membuat
-                    pembelajaran menjadi lebih mudah dipahami.
+                    Salah satu keunggulan <i><strong>teachable machine</strong></i> adalah proses pelatihan model secara visual, sehingga pembelajaran menjadi lebih mudah dipahami.
                 </p>
                 <p>
-                    Biasanya, pelatihan model <i>Machine Learning</i> dilakukan dengan menulis kode dan menggunakan data
-                    dalam
-                    bentuk angka atau file teks. Namun di Teachable Machine, semua proses tersebut ditampilkan dalam bentuk
-                    gambar dan tampilan visual yang interaktif.
+                    Biasanya, pelatihan model kecerdasan buatan dilakukan menggunakan kode program dan data dalam bentuk angka atau file teks. Namun, pada <i>Teachable Machine</i> seluruh proses tersebut ditampilkan dalam bentuk <i>visual</i> yang interaktif sehingga lebih mudah dipahami oleh pengguna.
                 </p>
                 <p>
                     Langkah-langkah pelatihan di Teachable Machine:
@@ -160,6 +148,9 @@
                     <li>Menekan tombol <i>Train Model</i> untuk memulai proses pembelajaran.</li>
                     <li>Setelah selesai, model siap diuji dan digunakan untuk mengenali data baru.</li>
                 </ol>
+                <p>
+                    Salah satu keunggulan Google Teachable Machine adalah proses pelatihan model yang ditampilkan secara visual dan mudah dipahami. Tahapan pelatihan model dapat dilihat pada gambar B.3.
+                </p>
                 <div class="materi-image">
                     <img src="{{ asset('images/bab-2/materi-a/gambar-3.png') }}" alt="Ilustrasi AI">
                     <span>Gambar B.3 Tahapan pelatihan dan prediksi model AI</span>
