@@ -68,15 +68,15 @@ function submitQuiz(auto = false) {
     // kunci jawaban
     const answers = {
         q1: "b",
-        q2: "b",
+        q2: "a",
         q3: "c",
-        q4: "b",
-        q5: "c",
-        q6: "b",
-        q7: "a",
+        q4: "a",
+        q5: "d",
+        q6: "c",
+        q7: "b",
         q8: "c",
         q9: "b",
-        q10: "b",
+        q10: "d",
     };
 
     let score = 0;

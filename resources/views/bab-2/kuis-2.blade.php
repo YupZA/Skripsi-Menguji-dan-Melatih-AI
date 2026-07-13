@@ -71,16 +71,12 @@
                     <div class="quiz-card quiz-question-item active" data-index="2">
 
                         <p class="quiz-question">
-                            3. Seorang guru ingin menunjukkan konsep <i>input-output</i> menggunakan <i>Teachable Machine</i>. Aktivitas yang paling tepat menggambarkan konsep tersebut adalah ....
+                            3.	Seorang siswa menunjukkan gambar ikan gabus ke kamera pada teachable machine. Sistem kemudian menampilkan label "Ikan Gabus" dengan tingkat keyakinan 92%. Berdasarkan peristiwa tersebut, yang berperan sebagai input dan output secara berurutan adalah ....
                         </p>
-                        <label><input type="radio" name="q3" value="a"> a. Menekan tombol <i>Train Model</i> hingga proses
-                            selesai</label>
-                        <label><input type="radio" name="q3" value="b"> b. Melihat label muncul secara otomatis ketika siswa
-                            menunjukkan gambar ke kamera</label>
-                        <label><input type="radio" name="q3" value="c"> c. Mengelompokkan data ke beberapa <i>folder</i> sebelum
-                            mengunggahnya</label>
-                        <label><input type="radio" name="q3" value="d"> d. Memilih jenis proyek (<i>Image, Audio</i>, atau
-                            <i>Pose</i>)</label>
+                        <label><input type="radio" name="q3" value="a"> a. Kamera dan model kecerdasan buatan</label>
+                        <label><input type="radio" name="q3" value="b"> b. Gambar ikan gabus dan label hasil prediksi</label>
+                        <label><input type="radio" name="q3" value="c"> c. Model kecerdasan buatan dan kamera</label>
+                        <label><input type="radio" name="q3" value="d"> d. Data pelatihan dan gambar ikan gabus</label>
                     </div>
 
                     <!-- soal 4 -->
@@ -136,16 +132,12 @@
                     <div class="quiz-card quiz-question-item active" data-index="6">
 
                         <p class="quiz-question">
-                            7. Teachable Machine dianggap efektif untuk pembelajaran berbasis proyek di sekolah karena ....
+                            7. Seorang guru ingin mengenalkan konsep kecerdasan buatan kepada siswa SMP yang belum pernah belajar pemrograman. Guru memilih menggunakan teachable machine dibandingkan membuat program kecerdasan buatan secara manual. Alasan yang paling tepat adalah ....
                         </p>
-                        <label><input type="radio" name="q7" value="a"> a. Karena seluruh proses dilakukan dengan kode
-                            pemrograman</label>
-                        <label><input type="radio" name="q7" value="b"> b. Karena memungkinkan siswa melatih model <i>AI</i> tanpa
-                            perlu memahami data</label>
-                        <label><input type="radio" name="q7" value="c"> c. Karena menyediakan tampilan <i>visual</i> interaktif
-                            yang memudahkan eksperimen langsung</label>
-                        <label><input type="radio" name="q7" value="d"> d. Karena tidak membutuhkan kamera atau
-                            mikrofon</label>
+                        <label><input type="radio" name="q7" value="a"> a. Teachable Machine menghasilkan model yang selalu lebih akurat daripada aplikasi lain</label>
+                        <label><input type="radio" name="q7" value="b"> b. Teachable Machine memungkinkan siswa belajar melalui eksperimen langsung tanpa harus menulis kode program</label>
+                        <label><input type="radio" name="q7" value="c"> c. Teachable Machine hanya dapat digunakan untuk proyek gambar</label>
+                        <label><input type="radio" name="q7" value="d"> d. Teachable Machine tidak memerlukan data pelatihan</label>
                     </div>
 
                     <!-- soal 8 -->
@@ -167,29 +159,24 @@
                     <div class="quiz-card quiz-question-item active" data-index="8">
 
                         <p class="quiz-question">
-                            9. Jika siswa ingin membuat sistem otomatis yang dapat menyalakan lampu ketika seseorang
-                            melambaikan tangan, proyek <i>Teachable Machine</i> yang paling sesuai adalah ....
+                            9. Seorang siswa ingin membuat sistem yang dapat menyalakan lampu secara otomatis ketika pengguna melambaikan tangan di depan kamera. Jenis proyek yang paling sesuai digunakan adalah ....
                         </p>
-                        <label><input type="radio" name="q9" value="a"> a. <i>Image Project</i></label>
-                        <label><input type="radio" name="q9" value="b"> b. <i>Audio Project</i></label>
-                        <label><input type="radio" name="q9" value="c"> c. <i>Pose Project</i></label>
-                        <label><input type="radio" name="q9" value="d"> d. Semua proyek dapat digunakan</label>
+                        <label><input type="radio" name="q9" value="a"> a. Image Project, karena mengenali objek pada gambar</i></label>
+                        <label><input type="radio" name="q9" value="b"> b. Audio Project, karena menerima input dari suara pengguna</i></label>
+                        <label><input type="radio" name="q9" value="c"> c. Pose Project, karena mengenali gerakan dan posisi tubuh manusia</i></label>
+                        <label><input type="radio" name="q9" value="d"> d. Semua jenis proyek memiliki kemampuan yang sama</label>
                     </div>
 
                     <!-- soal 10 -->
                     <div class="quiz-card quiz-question-item active" data-index="9">
 
                         <p class="quiz-question">
-                            10.	Seorang guru ingin mengajarkan etika penggunaan <i>AI</i> melalui <i>Teachable Machine</i>. Aktivitas yang paling tepat untuk menekankan aspek tanggung jawab dalam pengumpulan data adalah ....
+                            10.	Seorang siswa ingin membuat model kecerdasan buatan menggunakan foto teman-temannya. Sebelum mengumpulkan data, guru menjelaskan pentingnya etika dalam penggunaan kecerdasan buatan. Tindakan yang paling tepat adalah ....
                         </p>
-                        <label><input type="radio" name="q10" value="a"> a. Menggunakan gambar orang asing tanpa izin untuk
-                            data pelatihan</label>
-                        <label><input type="radio" name="q10" value="b"> b. Mengambil data secara acak dari internet tanpa
-                            sumber</label>
-                        <label><input type="radio" name="q10" value="c"> c. Mengumpulkan gambar atau suara sendiri dengan
-                            persetujuan peserta</label>
-                        <label><input type="radio" name="q10" value="d"> d. Menggunakan data apa pun selama hasil prediksi
-                            akurat</label>
+                        <label><input type="radio" name="q10" value="a"> a.	Menggunakan foto siapa saja yang ditemukan di internet agar jumlah data lebih banyak</label>
+                        <label><input type="radio" name="q10" value="b"> b.	Menggunakan foto teman tanpa memberi tahu mereka agar proses lebih cepat</label>
+                        <label><input type="radio" name="q10" value="c"> c.	Mengumpulkan foto atau suara dengan persetujuan pemilik data dan menjelaskan tujuan penggunaannya</label>
+                        <label><input type="radio" name="q10" value="d"> d.	Menggunakan data apa pun selama model dapat menghasilkan prediksi yang akurat</label>
                     </div>
 
                     <!-- tombol navigasi quiz -->

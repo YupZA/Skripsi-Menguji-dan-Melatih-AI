@@ -65,10 +65,10 @@
                             2. Model suara untuk mengenali tepuk tangan sering salah mendeteksi suara hujan sebagai tepuk
                             tangan. Berdasarkan konsep training data, apa penyebab utamanya?
                         </p>
-                        <label><input type="radio" name="q2" value="a"> a. Data untuk kelas tepuk tangan berasal dari banyak
-                            orang</label>
-                        <label><input type="radio" name="q2" value="b"> b. Data untuk kelas lain tidak memiliki variasi
+                        <label><input type="radio" name="q2" value="a"> a. Data untuk kelas lain tidak memiliki variasi
                             suara yang cukup</label>
+                        <label><input type="radio" name="q2" value="b"> b. Data untuk kelas tepuk tangan berasal dari banyak
+                            orang</label>
                         <label><input type="radio" name="q2" value="c"> c. Jumlah kelas terlalu banyak</label>
                         <label><input type="radio" name="q2" value="d"> d. Model dilatih terlalu lama</label>
                     </div>
@@ -92,60 +92,60 @@
                     <div class="quiz-card quiz-question-item active" data-index="3">
 
                         <p class="quiz-question">
-                            4. Bagaimana hubungan antara jumlah data dan kemampuan model Teachable Machine dalam mengenali
-                            pola?
+                            4. Seorang siswa membuat dua model gambar untuk mengenali bekantan dan monyet. Model A dilatih
+                            menggunakan 20 gambar per kelas, sedangkan Model B dilatih menggunakan 200 gambar per kelas
+                            dengan variasi sudut dan pencahayaan yang berbeda. Ketika diuji menggunakan gambar baru, Model B
+                            menghasilkan prediksi yang lebih akurat. Kesimpulan yang paling tepat adalah ....
                         </p>
-                        <label><input type="radio" name="q4" value="a"> a. Semakin sedikit data, semakin baik model
-                            mempelajari pola</label>
-                        <label><input type="radio" name="q4" value="b"> b. Semakin banyak data bervariasi, semakin akurat
-                            model dalam memprediksi</label>
-                        <label><input type="radio" name="q4" value="c"> c. Jumlah data tidak berpengaruh terhadap
-                            hasil</label>
-                        <label><input type="radio" name="q4" value="d"> d. Model hanya membutuhkan satu data setiap
-                            kelas</label>
+                        <label><input type="radio" name="q4" value="a"> a. Data yang lebih banyak dan bervariasi membantu
+                            model mengenali pola dengan lebih baik</label>
+                        <label><input type="radio" name="q4" value="b"> b. Jumlah data tidak memengaruhi kemampuan
+                            model</label>
+                        <label><input type="radio" name="q4" value="c"> c. Model dengan data lebih sedikit selalu lebih
+                            cepat dan lebih akurat</label>
+                        <label><input type="radio" name="q4" value="d"> d. Akurasi model hanya dipengaruhi oleh jenis
+                            perangkat yang digunakan</label>
                     </div>
 
                     <!-- soal 5 -->
                     <div class="quiz-card quiz-question-item active" data-index="4">
 
                         <p class="quiz-question">
-                            5. Seorang siswa ingin membuat permainan interaktif yang merespons gerakan tubuh pemain. Jenis
-                            model Teachable Machine yang paling sesuai adalah ....
+                            5. Seorang siswa ingin membuat permainan yang mengharuskan pemain melambaikan tangan untuk
+                            menggerakkan karakter dan berjongkok untuk menghindari rintangan. Jenis model yang paling sesuai
+                            digunakan adalah ....
                         </p>
                         <label><input type="radio" name="q5" value="a"> a. Image Model</label>
                         <label><input type="radio" name="q5" value="b"> b. Audio Model</label>
-                        <label><input type="radio" name="q5" value="c"> c. Pose Model</label>
-                        <label><input type="radio" name="q5" value="d"> d. Standard Model</label>
+                        <label><input type="radio" name="q5" value="c"> c. Standard Model</label>
+                        <label><input type="radio" name="q5" value="d"> d. Pose Model</label>
                     </div>
 
                     <!-- soal 6 -->
                     <div class="quiz-card quiz-question-item active" data-index="5">
 
                         <p class="quiz-question">
-                            6. Jika sebuah model gambar menunjukkan hasil prediksi seperti berikut: <br>Tangan Terbuka: 40%
-                            <br>Tangan Tertutup: 60% <br>Apa interpretasi terbaik dari hasil tersebut?
+                            6. Sebuah model memberikan hasil prediksi berikut:
+                            <br>Tangan Terbuka: 40%
+                            <br>Tangan Tertutup: 60%
+                            <br>Berdasarkan hasil tersebut, tindakan yang paling tepat dilakukan pengguna adalah ....
                         </p>
-                        <label><input type="radio" name="q6" value="a"> a. AI tidak bisa mengenali gambar apa pun</label>
-                        <label><input type="radio" name="q6" value="b"> b. AI lebih yakin bahwa gambar termasuk kelas Tangan
-                            Tertutup</label>
-                        <label><input type="radio" name="q6" value="c"> c. AI memerlukan lebih banyak kelas</label>
-                        <label><input type="radio" name="q6" value="d"> d. AI sudah berfungsi maksimal</label>
+                        <label><input type="radio" name="q6" value="a"> a. Menganggap hasil prediksi pasti salah</label>
+                        <label><input type="radio" name="q6" value="b"> b. Mengabaikan hasil prediksi karena persentase tidak mencapai 100%</label>
+                        <label><input type="radio" name="q6" value="c"> c. Menyimpulkan bahwa model lebih yakin gambar termasuk kelas Tangan Tertutup, tetapi masih terdapat kemungkinan kesalahan prediksi</label>
+                        <label><input type="radio" name="q6" value="d"> d. Menghapus model dan membuat model baru</label>
                     </div>
 
                     <!-- soal 7 -->
                     <div class="quiz-card quiz-question-item active" data-index="6">
 
                         <p class="quiz-question">
-                            7. Mengapa kualitas lingkungan sangat penting saat merekam suara untuk model Audio Project?
+                            7.	Dua kelompok siswa membuat model audio project untuk mengenali tepuk tangan. Kelompok pertama merekam suara di ruang kelas yang tenang, sedangkan kelompok kedua merekam suara di kantin yang ramai. Ketika diuji, model kelompok pertama menghasilkan prediksi yang lebih akurat. Penyebab yang paling mungkin adalah ....
                         </p>
-                        <label><input type="radio" name="q7" value="a"> a. Karena suara bising membuat model sulit memahami
-                            pola suara inti</label>
-                        <label><input type="radio" name="q7" value="b"> b. Karena model audio hanya bekerja di ruang
-                            tertutup</label>
-                        <label><input type="radio" name="q7" value="c"> c. Karena rekaman harus dilakukan tanpa
-                            mikrofon</label>
-                        <label><input type="radio" name="q7" value="d"> d. Karena perbedaan suara tidak memengaruhi
-                            akurasi</label>
+                        <label><input type="radio" name="q7" value="a"> a. Ruang yang ramai menghasilkan lebih banyak data</label>
+                        <label><input type="radio" name="q7" value="b"> b. Kebisingan lingkungan mengganggu model dalam mengenali pola suara utama</label>
+                        <label><input type="radio" name="q7" value="c"> c. Audio Project hanya dapat digunakan di ruang tertutup</label>
+                        <label><input type="radio" name="q7" value="d"> d. Jumlah siswa yang merekam suara terlalu banyak</label>
                     </div>
 
                     <!-- soal 8 -->
@@ -167,15 +167,18 @@
                     <div class="quiz-card quiz-question-item active" data-index="8">
 
                         <p class="quiz-question">
-                            9. Seorang guru ingin menunjukkan perbedaan cara kerja antara model gambar, suara, dan pose.
-                            Contoh demonstrasi paling tepat adalah ....
+                            9. Seorang guru ingin memperagakan tiga proyek berbeda menggunakan teachable machine:
+                            <ul>
+                                <li>Mengenali ekspresi wajah siswa.</li>
+                                <li>Mengenali suara tepuk tangan.</li>
+                                <li>Mengenali gerakan jongkok.</li>
+                            </ul>
+                            Kesimpulan yang paling tepat mengenai ketiga proyek tersebut adalah ....
                         </p>
-                        <label><input type="radio" name="q9" value="a"> a. Membandingkan ukuran file setiap model</label>
-                        <label><input type="radio" name="q9" value="b"> b. Menunjukkan bagaimana ketiganya menggunakan jenis
-                            input berbeda untuk mengenali pola tertentu</label>
-                        <label><input type="radio" name="q9" value="c"> c. Menggunakan satu jenis data untuk semua
-                            model</label>
-                        <label><input type="radio" name="q9" value="d"> d. Melatih semua model tanpa data</label>
+                        <label><input type="radio" name="q9" value="a"> a. Ketiganya menggunakan jenis data yang sama</label>
+                        <label><input type="radio" name="q9" value="b"> b. Ketiganya menggunakan input berbeda, tetapi memiliki tujuan yang sama yaitu mengenali pola dari data</label>
+                        <label><input type="radio" name="q9" value="c"> c. Ketiganya hanya dapat digunakan untuk gambar</label>
+                        <label><input type="radio" name="q9" value="d"> d. Ketiganya tidak memerlukan proses pelatihan</label>
                     </div>
 
                     <!-- soal 10 -->

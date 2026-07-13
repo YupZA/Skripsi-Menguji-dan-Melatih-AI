@@ -192,6 +192,13 @@
     <section class="ai-inline-interactive">
     <h2>Aktivitas 1 : Menentukan <i>Output</i> dari <i>Input</i> pada Sistem <i>AI</i></h2>
     
+    <p>
+        Tujuan Aktivitas <br> Setelah menyelesaikan aktivitas ini, siswa diharapkan mampu menentukan <i>output</i> yang sesuai berdasarkan <i>input</i> yang diberikan pada sistem kecerdasan buatan.
+    </p>
+
+    <p>
+        Petunjuk Pengerjaan Aktivitas
+    </p>
     <ul>
         <li>Bacalah setiap <i>input</i> yang diberikan dengan teliti. </li>
         <li>Perhatikan pilihan jawaban yang tersedia pada setiap nomor.</li>

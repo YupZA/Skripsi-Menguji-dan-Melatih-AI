@@ -166,6 +166,11 @@
 
         <section class="ai-interactive">
             <h2>Aktivitas 1 : Mengidentifikasi Program Biasa atau Kecerdasan Buatan</h2>
+            
+            <p>
+                Tujuan Aktivitas <br>Setelah menyelesaikan aktivitas ini, siswa diharapkan mampu membedakan program biasa dan kecerdasan buatan berdasarkan karakteristik serta cara kerjanya.
+            </p>
+
             <p>Petunjuk pengerjaan aktivitas 1 :</p>
             <ul>
                 <li>Bacalah setiap pernyataan dengan teliti.</li>

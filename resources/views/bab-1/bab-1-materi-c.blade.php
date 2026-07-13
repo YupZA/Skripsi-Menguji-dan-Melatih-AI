@@ -282,9 +282,13 @@
     <div id="progress"></div>
 
     
-
     <section class="ai-flow">
         <h2>Aktivitas 3 : Menyusun Urutan Proses Kecerdasan Buatan</h2>
+
+        <p>
+            Tujuan Aktivitas <br>
+            Setelah menyelesaikan aktivitas ini, siswa diharapkan mampu menyusun tahapan proses kecerdasan buatan secara berurutan, mulai dari data hingga menghasilkan prediksi.
+        </p>
         <p>Petunjuk pengerjaan aktivitas 3 :</p>
         <ul>
             <li>Perhatikan setiap langkah proses kecerdasan buatan yang tersedia.</li>

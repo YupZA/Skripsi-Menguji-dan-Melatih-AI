@@ -139,6 +139,9 @@
 
     <section class="ai-dragdrop">
         <h2>Aktivitas 4 : Menganalisis Konsep Model Gambar, Suara, dan Pose Tubuh pada <i>AI</i></h2>
+        <p>
+            Tujuan Aktivitas <br>Setelah menyelesaikan aktivitas ini, siswa diharapkan mampu menentukan jenis proyek kecerdasan buatan yang sesuai berdasarkan data yang digunakan, yaitu gambar, suara, atau pose tubuh.
+        </p>
         <p>Petunjuk Pengerjaan : </p>
         <ul>
             <li>Bacalah setiap kasus dengan saksama.</li>

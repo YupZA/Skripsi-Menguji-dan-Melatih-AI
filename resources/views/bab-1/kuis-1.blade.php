@@ -62,15 +62,12 @@
                     <div class="quiz-card quiz-question-item active" data-index="1">
 
                         <p class="quiz-question">
-                            2. Jika sebuah sistem AI dapat mengikuti instruksi tetapi tidak bisa beradaptasi ketika kondisi
-                            berubah,
-                            sistem tersebut kemungkinan termasuk ....
+                            2. Seorang siswa membuat aplikasi yang selalu menampilkan pesan "Selamat Pagi" setiap pukul 06.00 tanpa memperhatikan cuaca, lokasi, atau kebiasaan pengguna. Berdasarkan cara kerjanya, aplikasi tersebut termasuk ....
                         </p>
-                        <label><input type="radio" name="q2" value="a"> a. Model <i>machine learning</i> yang sudah dilatih
-                            lama</label>
+                        <label><input type="radio" name="q2" value="a"> a. Model machine learning</label>
                         <label><input type="radio" name="q2" value="b"> b. Program biasa tanpa kemampuan belajar</label>
-                        <label><input type="radio" name="q2" value="c"> c. Model <i>AI</i> dengan data pelatihan kurang</label>
-                        <label><input type="radio" name="q2" value="d"> d. Model prediksi yang sangat akurat</label>
+                        <label><input type="radio" name="q2" value="c"> c. Kecerdasan buatan yang telah dilatih</label>
+                        <label><input type="radio" name="q2" value="d"> d. Sistem prediksi otomatis</label>
                     </div>
 
                     {{-- SOAL 3 --}}
@@ -117,48 +114,48 @@
                     <div class="quiz-card quiz-question-item active" data-index="4">
 
                         <p class="quiz-question">
-                            5. Jika seorang siswa ingin membuat model <i>AI</i> yang mampu mengenali emosi manusia melalui suara,
-                            jenis
-                            data paling relevan untuk dikumpulkan adalah ....
+                            5.	Seorang siswa ingin membuat model kecerdasan buatan yang dapat membedakan suara marah, sedih, dan senang. Namun, ia hanya mengumpulkan rekaman suara marah. Kemungkinan masalah yang akan terjadi adalah ....
                         </p>
-                        <label><input type="radio" name="q5" value="a"> a. Foto berbagai ekspresi wajah</label>
-                        <label><input type="radio" name="q5" value="b"> b. Rekaman suara dengan variasi emosi</label>
-                        <label><input type="radio" name="q5" value="c"> c. Teks percakapan digital</label>
-                        <label><input type="radio" name="q5" value="d"> d. Video gerakan tubuh tanpa suara</label>
+                        <label><input type="radio" name="q5" value="a"> a. Model dapat mengenali semua emosi dengan baik</label>
+                        <label><input type="radio" name="q5" value="b"> b. Model kesulitan membedakan emosi selain marah</label>
+                        <label><input type="radio" name="q5" value="c"> c. Model menjadi lebih cepat dilatih dan lebih akurat</label>
+                        <label><input type="radio" name="q5" value="d"> d. Model tidak memerlukan data tambahan</label>
                     </div>
 
                     {{-- SOAL 6 --}}
                     <div class="quiz-card quiz-question-item active" data-index="5">
 
                         <p class="quiz-question">
-                            6. Model <i>machine learning</i> dinyatakan “baik” jika ....
+                            6. Dua model kecerdasan buatan menghasilkan hasil berikut:
+                            <ul>
+                                <li>Model A: Akurasi data pelatihan 100%, akurasi data baru 55%</li>
+                                <li>Model B: Akurasi data pelatihan 90%, akurasi data baru 88%</li>
+                            </ul>
+                            Model yang lebih baik adalah ….
                         </p>
-                        <label><input type="radio" name="q6" value="a"> a. Mampu menebak dengan benar hanya pada data
-                            pelatihan</label>
-                        <label><input type="radio" name="q6" value="b"> b. Perlu diubah setiap kali ada data baru</label>
-                        <label><input type="radio" name="q6" value="c"> c. Bisa mengenali pola pada data yang belum pernah
-                            dilihat
-                            sebelumnya</label>
-                        <label><input type="radio" name="q6" value="d"> d. Memiliki jumlah data pelatihan lebih sedikit
-                            daripada
-                            data uji</label>
+                        <label><input type="radio" name="q6" value="a"> a. Model A karena memiliki akurasi pelatihan lebih tinggi</label>
+                        <label><input type="radio" name="q6" value="b"> b. Model A karena mempelajari seluruh data pelatihan</label>
+                        <label><input type="radio" name="q6" value="c"> c. Model B karena mampu bekerja lebih baik pada data baru</label>
+                        <label><input type="radio" name="q6" value="d"> d. Keduanya sama baik</label>
                     </div>
 
                     {{-- SOAL 7 --}}
                     <div class="quiz-card quiz-question-item active" data-index="6">
 
                         <p class="quiz-question">
-                            7. Dalam <i>machine learning</i>, model <i>AI</i> dapat mengenali pola karena dilatih menggunakan data yang
-                            sesuai. Hal ini menunjukkan bahwa model AI bekerja dengan cara ....
+                            7.	Empat kelompok siswa membuat model untuk mengenali ikan gabus dan ikan papuyu.
+                            <ul>
+                                <li>Kelompok A: 20 gambar, latar sama</li>
+                                <li>Kelompok B: 100 gambar, berbagai sudut dan pencahayaan</li>
+                                <li>Kelompok C: 15 gambar, sebagian buram</li>
+                                <li>Kelompok D: 20 gambar, hanya satu jenis ikan</li>
+                                Kelompok yang kemungkinan menghasilkan model terbaik adalah ....
+                            </ul>
                         </p>
-                        <label><input type="radio" name="q7" value="a"> a. Mengikuti instruksi tetap tanpa proses
-                            belajar</label>
-                        <label><input type="radio" name="q7" value="b"> b. Belajar dari contoh data untuk mengenali pola
-                            tertentu</label>
-                        <label><input type="radio" name="q7" value="c"> c. Menebak hasil secara acak tanpa data
-                            pelatihan</label>
-                        <label><input type="radio" name="q7" value="d"> d. Menyimpan semua data tanpa melakukan
-                            prediksi</label>
+                        <label><input type="radio" name="q7" value="a">a. Kelompok A</label>
+                        <label><input type="radio" name="q7" value="b"> b. Kelompok B</label>
+                        <label><input type="radio" name="q7" value="c"> c. Kelompok C</label>
+                        <label><input type="radio" name="q7" value="d"> d. Kelompok D</label>
                     </div>
 
                     {{-- SOAL 8 --}}

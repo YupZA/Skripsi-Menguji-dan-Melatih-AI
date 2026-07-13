@@ -12,7 +12,7 @@
         <div class="hero-content">
           <h1>Pembelajaran Teachable Machine</h1>
           <p>
-            Platform pembelajaran cerdas untuk memahami, melatih, dan menguji
+            Platform pembelajaran untuk memahami, melatih, dan menguji
             kecerdasan buatan secara interaktif.
           </p>
         </div>

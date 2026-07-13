@@ -111,6 +111,10 @@
 
     <section class="ai-dragdrop">
         <h2>Aktivitas 2 : Mengelompokkan Program Berdasarkan Jenisnya</h2>
+        
+        <p>
+            Tujuan Aktivitas <br> Setelah menyelesaikan aktivitas ini, siswa diharapkan mampu mengelompokkan contoh teknologi ke dalam kategori program biasa atau kecerdasan buatan berdasarkan karakteristiknya.
+        </p>
         <p>Petunjuk pengerjaan aktivitas 2 :</p>
         <ul>
             <li>Perhatikan setiap contoh program yang tersedia.</li>

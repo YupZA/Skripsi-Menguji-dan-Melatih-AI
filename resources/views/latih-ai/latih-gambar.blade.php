@@ -34,7 +34,7 @@
                     <span class="class-badge">Dataset 1</span>
                 </div>
 
-                <input type="text" class="class-name" placeholder="Contoh: Kucing">
+                <input type="text" class="class-name" placeholder="Contoh: Bekantan">
 
                 <label class="input-label">Masukkan data gambar</label>
 
@@ -54,7 +54,7 @@
                     <span class="class-badge">Dataset 2</span>
                 </div>
 
-                <input type="text" class="class-name" placeholder="Contoh: Anjing">
+                <input type="text" class="class-name" placeholder="Contoh: Monyet">
 
                 <label class="input-label">
                     Masukkan data gambar
@@ -137,7 +137,7 @@
                             <h4>Beri Nama Kelas</h4>
                             <p>
                                 Masukkan nama pada setiap kelas sesuai dengan kelompok
-                                gambar yang ingin dibedakan, misalnya Kucing dan Anjing.
+                                gambar yang ingin dibedakan, misalnya Bekantan dan Monyet.
                             </p>
                         </div>
 

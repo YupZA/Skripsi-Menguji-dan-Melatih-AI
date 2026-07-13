@@ -21,6 +21,11 @@
                 <p>
                     Proyek ini berfokus pada pelatihan kecerdasan buatan untuk mengenali dan membedakan berbagai jenis gambar. Misalnya, peserta didik dapat membuat model kecerdasan buatan yang mampu membedakan gambar ikan gabus dan ikan papuyu, atau mengenali ekspresi wajah seperti senang, sedih, dan marah. Melalui kegiatan ini, peserta didik belajar bagaimana sistem kecerdasan buatan memproses data <i>visual</i> untuk mengenali pola tertentu.
                 </p>
+
+                <p>
+                    Contoh proses pelatihan model gambar menggunakan <i>google teachable machine</i> dapat diamati pada gambar B.6. Pada gambar tersebut terlihat tahapan pemberian data gambar, pelatihan model, hingga proses prediksi hasil klasifikasi.
+                </p>
+
                 <div class="materi-image">
                     <img src="{{ asset('images/bab-2/materi-c/gambar-1.png') }}" alt="Ilustrasi AI">
                     <span>Gambar B.6 Pelatihan model gambar menggunakan Teachable Machine</span>
@@ -40,6 +45,10 @@
                 </li>
                 <p>
                     Dalam proyek ini, peserta didik dapat melatih kecerdasan buatan untuk mengenali berbagai jenis suara. Contohnya, model kecerdasan buatan dapat diajarkan untuk membedakan tepuk tangan dan siulan, mengenali kata-kata sederhana seperti “ya” dan “tidak”, atau mengenali suara hewan. Melalui proyek ini, peserta didik memahami bagaimana komputer dapat menganalisis suara dan mengenali perbedaan karakteristik bunyi.
+                </p>
+
+                <p>
+                    Contoh pelatihan model suara menggunakan <i>google teachable machine</i> dapat dilihat pada gambar B.7. Gambar tersebut memperlihatkan proses pengumpulan data suara, pelatihan model, serta hasil prediksi yang dihasilkan berdasarkan suara yang dideteksi.
                 </p>
                 <div class="materi-image">
                     <img src="{{ asset('images/bab-2/materi-c/gambar-2.png') }}" alt="Ilustrasi AI">
@@ -61,6 +70,11 @@
                 <p>
                     Proyek ini digunakan untuk melatih kecerdasan buatan dalam mengenali gerakan atau posisi tubuh manusia. Contohnya, peserta didik dapat membuat model kecerdasan buatan  yang mampu membedakan antara berdiri dan jongkok, melambaikan tangan dan diam, atau gerakan olahraga dan tarian. Melalui proyek ini, peserta didik dapat memahami bagaimana kecerdasan buatan memproses data <i>visual</i> dari kamera untuk mengidentifikasi pola gerakan.
                 </p>
+
+                <p>
+                    Contoh pelatihan model pose tubuh menggunakan <i>google teachable machine</i> dapat diamati pada gambar B.8. Gambar tersebut menunjukkan proses pelatihan kecerdasan buatan untuk mengenali beberapa jenis pose tubuh serta hasil prediksi yang ditampilkan setelah model selesai dilatih.
+                </p>
+
                 <div class="materi-image">
                     <img src="{{ asset('images/bab-2/materi-c/gambar-3.png') }}" alt="Ilustrasi AI">
                     <span>Gambar B.8 Pelatihan model pose tubuh menggunakan Teachable Machine</span>
@@ -100,10 +114,12 @@
 
     <div id="progress"></div>
 
-    
-
     <section class="ai-dragdrop">
         <h2>Aktivitas 3 : Mengelompokkan Program Berdasarkan Jenisnya</h2>
+        <p>
+            Tujuan Aktivitas <br>Setelah menyelesaikan aktivitas ini, siswa diharapkan mampu mengelompokkan berbagai contoh penerapan ke dalam proyek gambar, proyek suara, atau proyek pose tubuh berdasarkan jenis data yang digunakan.
+
+        </p>
         <p>Petunjuk Pengerjaan :</p>
         <ul>
             <li>Bacalah setiap contoh pada daftar pilihan dengan teliti.</li>

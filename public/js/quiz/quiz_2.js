@@ -73,7 +73,7 @@ function submitQuiz(auto = false) {
         q4: "b",
         q5: "c",
         q6: "b",
-        q7: "c",
+        q7: "b",
         q8: "a",
         q9: "c",
         q10: "c",

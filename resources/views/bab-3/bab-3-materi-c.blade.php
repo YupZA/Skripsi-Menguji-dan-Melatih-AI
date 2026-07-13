@@ -8,11 +8,13 @@
         <div>
             <h2>3. Membuat Model Deteksi Pose Tubuh</h2>
             <p>
-                Proyek ini melatih kecerdasan buatan untuk mengenali posisi atau gerakan tubuh manusia. Proyek ini cocok untuk aktivitas seperti pengenalan gerakan olahraga, tarian, atau isyarat tangan.
+                Proyek pose tubuh digunakan untuk melatih kecerdasan buatan agar dapat mengenali posisi atau gerakan tubuh manusia. Proyek ini dapat digunakan untuk mengenali pose seperti berdiri, jongkok, mengangkat tangan, atau gerakan lainnya yang ditangkap melalui kamera.
             </p>
             <ol type="a">
                 <li>Langkah 1: Membuka Halaman Pembelajaran Kecerdasan Buatan
-                    <p>Buka website pembelajaran kecerdasan buatan melalui <i>browser</i>, kemudian masuk ke halaman utama aplikasi.</p>
+                    <p>
+                        Buka website pembelajaran kecerdasan buatan melalui browser, kemudian masuk ke halaman utama aplikasi. Tampilan halaman utama website pembelajaran kecerdasan buatan yang akan digunakan untuk membuat model pose tubuh dapat dilihat pada Gambar C.19.
+                    </p>
 
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-3/materi-c/gambar-1.png') }}" alt="Ilustrasi AI">
@@ -21,8 +23,9 @@
                 </li>
 
                 <li>Langkah 2: Memilih Menu Latih AI</i>
-                    <p>Klik menu Latih AI pada navigasi atau tombol Mulai Melatih yang tersedia pada halaman beranda.</p>
-
+                    <p>
+                        Klik menu Latih AI pada navigasi atau tombol Mulai Melatih yang tersedia pada halaman beranda. Contoh tampilan menu Latih AI dan tombol Mulai Melatih yang digunakan untuk masuk ke halaman pelatihan kecerdasan buatan dapat dilihat pada Gambar C.20.
+                    </p>
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-3/materi-c/gambar-2.jpg') }}" alt="Ilustrasi AI">
                         <span>Gambar C.20 Pengguna memilih menu Latih AI atau tombol Mulai Melatih untuk masuk ke halaman
@@ -31,8 +34,9 @@
                 </li>
 
                 <li>Langkah 3: Memilih Mode Latih Pose Tubuh</i>
-                    <p>Pada halaman pilihan mode, pilih Latih Pose Tubuh untuk melatih kecerdasan buatan menggunakan data berupa pose atau
-                        gerakan tubuh yang ditangkap oleh kamera.</p>
+                    <p>
+                        Pada halaman pilihan mode, pilih Latih Pose Tubuh untuk melatih kecerdasan buatan  menggunakan data berupa pose atau gerakan tubuh yang ditangkap oleh kamera. Tampilan halaman pemilihan mode pelatihan dengan opsi Latih Pose Tubuh dapat dilihat pada Gambar C.21.
+                    </p>
 
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-3/materi-c/gambar-3.jpg') }}" alt="Ilustrasi AI">
@@ -41,9 +45,10 @@
                     </div>
                 </li>
 
-                <li>Langkah 4: Membuat Kelas Pose</i>
-                    <p>Masukkan nama kelas pada kolom yang tersedia sesuai dengan pose yang akan dilatih, misalnya berdiri,
-                        duduk, atau jongkok. Jika ingin menambahkan kategori pose lainnya, klik tombol Tambah Kelas.</p>
+                <li>Langkah 4: Membuat Kelas Pose dan Data Pose</i>
+                    <p>
+                        Masukkan nama pose pada kolom Nama Kelas Pose, misalnya Berdiri atau Jongkok. Selanjutnya, isikan nama data pose pada kolom Nama Data Pose untuk memberi identitas pada data yang akan diambil. Jika ingin menambahkan kategori pose lainnya, klik tombol Tambah Kelas. Contoh pembuatan kelas pose dan pengisian data pose yang akan digunakan sebagai data pelatihan dapat dilihat pada Gambar C.22.
+                    </p>
 
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-3/materi-c/gambar-4.jpg') }}" alt="Ilustrasi AI">
@@ -52,10 +57,10 @@
                     </div>
                 </li>
 
-                <li>Langkah 5: Mengumpulkan Data Pose</i>
-                    <p>Arahkan tubuh ke kamera, kemudian lakukan pose yang sesuai dengan nama kelas yang telah dibuat. Ambil
-                        beberapa contoh data untuk setiap pose agar kecerdasan buatan dapat mempelajari ciri-ciri dari masing-masing posisi
-                        tubuh.</p>
+                <li>Langkah 5: Mengambil Data Pose</i>
+                    <p>
+                        Posisikan tubuh di depan kamera sesuai dengan pose yang telah ditentukan, kemudian klik tombol Ambil Data Pose. Sistem akan menyimpan pose yang sedang ditampilkan sebagai data pelatihan. Lakukan pengambilan data beberapa kali untuk setiap kelas pose agar model memiliki cukup contoh untuk dipelajari. Proses pengambilan data pose menggunakan kamera sebagai data pelatihan kecerdasan buatan dapat dilihat pada Gambar C.23.
+                    </p>
 
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-3/materi-c/gambar-5.jpg') }}" alt="Ilustrasi AI">
@@ -65,8 +70,9 @@
                 </li>
 
                 <li>Langkah 6: Melatih Kecerdasan Buatan</i>
-                    <p>Setelah data pose untuk setiap kelas terkumpul, klik tombol Latih AI untuk memulai proses pelatihan.
-                        Pada tahap ini, kecerdasan buatan akan mempelajari pola dari setiap pose yang telah direkam.</p>
+                    <p>
+                        Setelah setiap kelas memiliki beberapa data pose, klik tombol Latih AI untuk memulai proses pelatihan model kecerdasan buatan. Pada tahap ini, sistem akan mempelajari pola dari setiap pose yang telah dikumpulkan. Tampilan saat proses pelatihan model pose tubuh dimulai dapat dilihat pada Gambar C.24.
+                    </p>
 
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-3/materi-c/gambar-6.jpg') }}" alt="Ilustrasi AI">
@@ -75,8 +81,9 @@
                     </div>
                 </li>
                 <li>Langkah 7: Melihat Hasil Prediksi</i>
-                    <p>Setelah pelatihan selesai, tampilkan salah satu pose di depan kamera. Kecerdasan buatan akan mengenali pose
-                        tersebut dan menampilkan hasil prediksi secara <i>real-time</i> atau langsung pada layar.</p>
+                    <p>
+                        Tunggu hingga proses pelatihan selesai. Setelah berhasil, sistem akan menampilkan informasi bahwa model telah selesai dilatih dan siap digunakan untuk pengujian. Setelah model selesai dilatih, lakukan salah satu pose di depan kamera. Sistem akan secara otomatis mengenali pose yang ditampilkan dan menampilkan hasil prediksi berupa nama kelas pose yang terdeteksi, tingkat keyakinan model, serta persentase keyakinan untuk setiap kelas yang tersedia. Contoh tampilan hasil prediksi pose tubuh yang dikenali oleh kecerdasan buatan secara langsung (real-time) dapat dilihat pada Gambar C.25.
+                    </p>
 
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-3/materi-c/gambar-7.jpg') }}" alt="Ilustrasi AI">
@@ -92,8 +99,10 @@
             <ul>
                 <li>Pastikan seluruh tubuh atau bagian tubuh yang diamati terlihat jelas oleh kamera.</li>
                 <li>Gunakan pencahayaan yang cukup agar pose dapat terdeteksi dengan baik.</li>
-                <li>Ambil data pose dalam jumlah yang cukup untuk setiap kelas agar hasil prediksi lebih akurat.</li>
-                <li>Hindari pose yang terlalu mirip karena dapat menyulitkan kecerdasan buatan dalam membedakan setiap kategori.</li>
+                <li>Ambil beberapa data pose untuk setiap kelas agar model memiliki cukup contoh untuk dipelajari.</li>
+                <li>Gunakan variasi posisi tubuh saat pengambilan data agar model lebih mampu mengenali pose dalam berbagai kondisi.</li>
+                <li>Hindari pose yang terlalu mirip karena dapat menyulitkan model dalam membedakan setiap kategori.</li>
+                <li>Jika hasil prediksi kurang akurat, tambahkan lebih banyak data pose dan lakukan pelatihan ulang agar kemampuan model meningkat.</li>
             </ul>
             </p>
         </div>
@@ -117,6 +126,10 @@
 
     <section class="ai-debug">
         <h2>Aktivitas 3 : Menganalisis Penyebab Kesalahan pada Sistem Kecerdasan Buatan</h2>
+
+        <p>
+            Tujuan Aktivitas <br>Setelah menyelesaikan aktivitas ini, siswa diharapkan mampu menganalisis penyebab kesalahan pada model kecerdasan buatan berbasis pose tubuh serta menentukan solusi yang tepat untuk meningkatkan hasil prediksi.
+        </p>
         <p class="debug-desc">
             Petunjuk Pengerjaan :
         </p>

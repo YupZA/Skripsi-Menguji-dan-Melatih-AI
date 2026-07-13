@@ -43,6 +43,9 @@
                         Meningkatkan efisiensi dan kenyamanan
                         <br>Misalnya, sistem otomatis yang menyalakan lampu atau AC berdasarkan suhu ruangan.
                     </li>
+                    <p>
+                        Berbagai manfaat penggunaan <i>google teachable machine</i> dalam pembelajaran kecerdasan buatan dapat diamati pada gambar B.4. Gambar tersebut menunjukkan beberapa keterampilan dan pemahaman yang dapat dikembangkan melalui penggunaan <i>teachable machine</i>.
+                    </p>
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-2/materi-b/gambar-1.png') }}" alt="Ilustrasi AI">
                         <span>Gambar B.4 Manfaat dan konsep pembelajaran kecerdasan buatan</span>
@@ -88,6 +91,11 @@
                         Pendidikan dan Pembelajaran
                         <br>Kecerdasan buatan juga banyak digunakan dalam dunia pendidikan. Misalnya, aplikasi belajar yang menyesuaikan tingkat kesulitan soal dengan kemampuan pengguna. Contoh lainnya adalah platform seperti Duolingo yang mengenali kesalahan umum siswa dan memberikan latihan tambahan.
                     </li>
+
+                    <p>
+                        Kecerdasan buatan telah diterapkan pada berbagai teknologi yang sering digunakan dalam kehidupan sehari-hari. Beberapa contoh penerapan tersebut dapat diamati pada Gambar B.5.
+                    </p>
+
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-2/materi-b/gambar-2.png') }}" alt="Ilustrasi AI">
                         <span>Gambar B.5 Contoh penerapan kecerdasan buatan</span>
@@ -123,6 +131,9 @@
 
     <section class="ai-classification">
         <h2>Aktivitas 2 : Mengidentifikasi Program Biasa atau Kecerdasan Buatan</h2>
+        <p>
+            Tujuan Aktivitas <br> Setelah menyelesaikan aktivitas ini, siswa diharapkan mampu membedakan program biasa dan kecerdasan buatan berdasarkan karakteristik serta cara kerjanya dalam kehidupan sehari-hari.
+        </p>
         <p>Petunjuk pengerjaan aktivitas 2 :</p>
         <ul>
             <li>Bacalah setiap pernyataan dengan teliti.</li>
