@@ -30,7 +30,7 @@
         </div>
 
 
-        <!-- SEARCH -->
+        <!-- pencarian -->
         <div class="search-box">
             <div class="search-wrapper">
                 <input type="text" id="searchInput" placeholder="Cari nama atau kelas...">
@@ -38,7 +38,7 @@
             </div>
         </div>
 
-        <!-- FILTER & SHOW -->
+        <!-- pencarian -->
         <div class="table-controls">
             <div class="filter-group">
                 <select id="kelasFilter">
@@ -63,7 +63,7 @@
             </div>
         </div>
 
-        <!-- TABLE -->
+        <!-- tabel -->
         <div class="table-wrapper">
             <table class="progres-table">
                 <thead>

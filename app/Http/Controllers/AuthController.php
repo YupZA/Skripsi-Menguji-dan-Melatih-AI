@@ -68,22 +68,43 @@ class AuthController extends Controller
 
     public function login(Request $request)
     {
-        $credentials = $request->validate([
+        $request->validate([
             'email' => 'required|email',
             'password' => 'required',
+            'role' => 'required|in:siswa,guru',
         ]);
 
-        if (Auth::attempt($credentials)) {
-            $request->session()->regenerate();
+        $credentials = $request->only('email', 'password');
 
-            return auth()->user()->isGuru()
-                ? redirect('/guru/dashboard')
-                : redirect('/landing-page/beranda');
+        if (!Auth::attempt($credentials)) {
+            return back()
+                ->withErrors([
+                    'email' => 'Email atau password salah.',
+                ])
+                ->withInput($request->only('email', 'role'));
         }
 
-        return back()->withErrors([
-            'email' => 'Login gagal',
-        ]);
+        $user = Auth::user();
+
+        // Memeriksa apakah role akun sesuai dengan pilihan login
+        if ($user->role !== $request->role) {
+            Auth::logout();
+
+            $request->session()->invalidate();
+            $request->session()->regenerateToken();
+
+            return back()
+                ->withErrors([
+                    'email' => 'Akun tidak sesuai dengan jenis pengguna yang dipilih.',
+                ])
+                ->withInput($request->only('email', 'role'));
+        }
+
+        $request->session()->regenerate();
+
+        return $user->isGuru()
+            ? redirect('/guru/dashboard')
+            : redirect('/landing-page/beranda');
     }
 
     public function logout(Request $request)

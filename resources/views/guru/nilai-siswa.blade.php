@@ -29,7 +29,7 @@
             </div>
         </div>
 
-        <!-- SEARCH -->
+        <!-- pencarian -->
         <div class="search-box">
             <div class="search-wrapper">
                 <input type="text" id="searchInput" placeholder="Cari nama atau kelas...">
@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        <!-- FILTER & SHOW -->
+        <!-- filter -->
         <div class="table-controls">
             <form method="GET" action="{{ route('guru.nilai') }}">
                 <select name="kelas" onchange="this.form.submit()">
@@ -63,7 +63,7 @@
             </div>
         </div>
 
-        <!-- TABLE -->
+        <!-- tabel -->
         <div class="table-wrapper">
             <table class="nilai-table">
                 <thead>

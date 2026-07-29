@@ -18,7 +18,7 @@
             </div>
         </div>
 
-        <!-- STATS -->
+        <!-- stats -->
         <div class="stats-grid">
             <div class="stat-card">
                 <h4>Total Kelas</h4>
@@ -37,7 +37,7 @@
         </div>
 
 
-        <!-- SEARCH -->
+        <!-- pencarian -->
         <div class="search-box">
             <input type="text" placeholder="Cari kelas...">
         </div>
@@ -75,7 +75,7 @@
             </div>
 
         </div>
-        <!-- TABLE -->
+        <!-- tabel -->
         <div class="table-wrapper">
             <table class="kelas-table">
                 <thead>
@@ -232,7 +232,7 @@
         function openEditKelasModal(id, nama, status) {
 
             const modal = document.getElementById('editKelasModal');
-            modal.classList.add('active');   // ⬅️ pakai active
+            modal.classList.add('active');   
 
             document.getElementById('editNamaKelas').value = nama;
 
@@ -242,7 +242,7 @@
 
         function closeEditKelas() {
             document.getElementById('editKelasModal')
-                .classList.remove('active');   // ⬅️ pakai active
+                .classList.remove('active');   
         }
 
         function openInfoModal() {

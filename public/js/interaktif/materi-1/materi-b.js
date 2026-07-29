@@ -1,101 +1,288 @@
 let draggedItem = null;
+
 const KKM = 75;
 
-document.querySelectorAll(".drag-item").forEach(item => {
-    item.addEventListener("dragstart", () => {
-        if (item.getAttribute("draggable") === "false") return;
-
-        draggedItem = item;
-        setTimeout(() => item.style.opacity = "0.5", 0);
-    });
-
-    item.addEventListener("dragend", () => {
-        if (draggedItem) {
-            draggedItem.style.opacity = "1";
-        }
-        draggedItem = null;
-    });
+document.addEventListener("DOMContentLoaded", function () {
+    initializeDragItems();
+    initializeDropZones();
+    initializeActivityForm();
 });
 
-document.querySelectorAll(".drop-zone").forEach(zone => {
-    zone.addEventListener("dragover", e => {
-        e.preventDefault();
-        zone.classList.add("hover");
+/**
+ * Memasang event drag pada seluruh item.
+ */
+function initializeDragItems() {
+    document.querySelectorAll(".drag-item").forEach((item) => {
+        item.addEventListener("dragstart", function () {
+            if (item.getAttribute("draggable") === "false") {
+                return;
+            }
+
+            draggedItem = item;
+
+            setTimeout(() => {
+                item.style.opacity = "0.5";
+            }, 0);
+        });
+
+        item.addEventListener("dragend", function () {
+            if (draggedItem) {
+                draggedItem.style.opacity = "1";
+            }
+
+            draggedItem = null;
+        });
     });
-
-    zone.addEventListener("dragleave", () => {
-        zone.classList.remove("hover");
-    });
-
-    zone.addEventListener("drop", () => {
-        zone.classList.remove("hover");
-
-        if (!draggedItem) return;
-
-        const accept = zone.dataset.accept;
-        const type = draggedItem.dataset.type;
-
-        zone.appendChild(draggedItem);
-
-        draggedItem.classList.remove("correct", "wrong");
-
-        if (accept === type) {
-            draggedItem.classList.add("correct");
-            draggedItem.dataset.correct = "true";
-            showFeedback("✅ Benar! Penempatan tepat.", true);
-        } else {
-            draggedItem.classList.add("wrong");
-            draggedItem.dataset.correct = "false";
-            showFeedback("❌ Salah. Penempatan kurang tepat.", false);
-        }
-
-        draggedItem.setAttribute("draggable", "false");
-        draggedItem.style.cursor = "default";
-        draggedItem.style.opacity = "1";
-        draggedItem = null;
-    });
-});
-
-function showFeedback(text, success) {
-    const feedback = document.getElementById("dropFeedback");
-    feedback.textContent = text;
-    feedback.style.color = success ? "#22c55e" : "#ef4444";
 }
 
-document.getElementById("formSelesai").addEventListener("submit", function(e) {
-    const totalItem = document.querySelectorAll(".drag-item").length;
-    const sudahDikerjakan = document.querySelectorAll('.drag-item[draggable="false"]').length;
-    const totalBenar = document.querySelectorAll('.drag-item[data-correct="true"]').length;
+/**
+ * Memasang event pada seluruh tempat drop.
+ */
+function initializeDropZones() {
+    document.querySelectorAll(".drop-zone").forEach((zone) => {
+        zone.addEventListener("dragover", function (event) {
+            event.preventDefault();
+            zone.classList.add("hover");
+        });
 
-    const nilai = Math.round((totalBenar / totalItem) * 100);
-    const scoreInfo = document.getElementById("scoreInfo");
+        zone.addEventListener("dragleave", function () {
+            zone.classList.remove("hover");
+        });
 
-    if (sudahDikerjakan < totalItem) {
-        e.preventDefault();
-        scoreInfo.innerHTML = "❌ Semua contoh harus diseret ke kategori terlebih dahulu.";
-        scoreInfo.style.color = "#ef4444";
+        zone.addEventListener("drop", function (event) {
+            event.preventDefault();
+            zone.classList.remove("hover");
+
+            if (!draggedItem) {
+                return;
+            }
+
+            const acceptedType = zone.dataset.accept;
+            const itemType = draggedItem.dataset.type;
+
+            zone.appendChild(draggedItem);
+
+            draggedItem.classList.remove(
+                "correct",
+                "wrong"
+            );
+
+            if (acceptedType === itemType) {
+                draggedItem.classList.add("correct");
+                draggedItem.dataset.correct = "true";
+
+                showFeedback(
+                    "✅ Benar! Penempatan sudah tepat.",
+                    "success"
+                );
+            } else {
+                draggedItem.classList.add("wrong");
+                draggedItem.dataset.correct = "false";
+
+                showFeedback(
+                    "❌ Penempatan kurang tepat.",
+                    "error"
+                );
+            }
+
+            draggedItem.setAttribute("draggable", "false");
+            draggedItem.style.cursor = "default";
+            draggedItem.style.opacity = "1";
+
+            draggedItem = null;
+        });
+    });
+}
+
+/**
+ * Menampilkan feedback setelah item ditempatkan.
+ */
+function showFeedback(text, type) {
+    const feedback = document.getElementById("dropFeedback");
+
+    if (!feedback) {
         return;
     }
 
-    if (nilai < KKM) {
-        e.preventDefault();
-        scoreInfo.innerHTML = `❌ Nilai kamu ${nilai}. Belum mencapai KKM ${KKM}. Materi belum selesai.`;
-        scoreInfo.style.color = "#ef4444";
+    feedback.textContent = text;
+
+    feedback.classList.remove(
+        "feedback-success",
+        "feedback-error"
+    );
+
+    if (type === "success") {
+        feedback.classList.add("feedback-success");
+    } else {
+        feedback.classList.add("feedback-error");
+    }
+}
+
+/**
+ * Memeriksa hasil aktivitas.
+ */
+function initializeActivityForm() {
+    const form = document.getElementById("formSelesai");
+    const submitButton = document.getElementById("btnSelesai");
+
+    if (!form || !submitButton) {
         return;
     }
 
-    scoreInfo.innerHTML = `✅ Nilai kamu ${nilai}. Aktivitas selesai.`;
-    scoreInfo.style.color = "#22c55e";
-});
+    form.addEventListener("submit", function (event) {
+        const items = document.querySelectorAll(".drag-item");
 
-document.addEventListener("DOMContentLoaded", function () {
-    const btnSelesai = document.getElementById("btnSelesai");
+        const totalItem = items.length;
 
-    if (btnSelesai && btnSelesai.innerText.trim() === "Aktivitas Selesai") {
-        document.querySelectorAll(".drag-item").forEach(item => {
-            item.setAttribute("draggable", "false");
-            item.style.opacity = "0.6";
-            item.style.pointerEvents = "none";
+        const sudahDikerjakan = document.querySelectorAll(
+            '.drag-item[draggable="false"]'
+        ).length;
+
+        const totalBenar = document.querySelectorAll(
+            '.drag-item[data-correct="true"]'
+        ).length;
+
+        const nilai = Math.round(
+            (totalBenar / totalItem) * 100
+        );
+
+        const scoreInfo = document.getElementById("scoreInfo");
+
+        const isCompleted =
+            submitButton.dataset.completed === "true";
+
+        if (sudahDikerjakan < totalItem) {
+            event.preventDefault();
+
+            scoreInfo.innerHTML =
+                "❌ Semua contoh harus ditempatkan ke kategori terlebih dahulu.";
+
+            scoreInfo.className = "score-info score-error";
+            return;
+        }
+
+        /*
+         * Jika materi sebelumnya sudah selesai,
+         * pengerjaan hanya dianggap sebagai latihan.
+         */
+        if (isCompleted) {
+            event.preventDefault();
+
+            if (nilai >= KKM) {
+                scoreInfo.innerHTML =
+                    `✅ Nilai latihan kamu ${nilai}. ` +
+                    `Kamu telah mencapai KKM ${KKM}. ` +
+                    "Penyelesaian materi sebelumnya tidak berubah.";
+
+                scoreInfo.className =
+                    "score-info score-success";
+            } else {
+                scoreInfo.innerHTML =
+                    `Nilai latihan kamu ${nilai}. ` +
+                    `Belum mencapai KKM ${KKM}. ` +
+                    "Penyelesaian materi sebelumnya tetap tersimpan.";
+
+                scoreInfo.className =
+                    "score-info score-warning";
+            }
+
+            return;
+        }
+
+        /*
+         * Pengerjaan pertama harus mencapai KKM
+         * agar progres dikirim ke server.
+         */
+        if (nilai < KKM) {
+            event.preventDefault();
+
+            scoreInfo.innerHTML =
+                `❌ Nilai kamu ${nilai}. ` +
+                `Belum mencapai KKM ${KKM}. ` +
+                "Silakan ulangi aktivitas.";
+
+            scoreInfo.className =
+                "score-info score-error";
+
+            return;
+        }
+
+        scoreInfo.innerHTML =
+            `✅ Nilai kamu ${nilai}. ` +
+            "Aktivitas selesai dan progres akan disimpan.";
+
+        scoreInfo.className =
+            "score-info score-success";
+    });
+}
+
+/**
+ * Mengembalikan aktivitas ke kondisi awal.
+ */
+function resetActivity() {
+    const itemContainer =
+        document.querySelector(".drag-items");
+
+    const items =
+        document.querySelectorAll(".drag-item");
+
+    const dropZones =
+        document.querySelectorAll(".drop-zone");
+
+    const feedback =
+        document.getElementById("dropFeedback");
+
+    const scoreInfo =
+        document.getElementById("scoreInfo");
+
+    if (!itemContainer) {
+        return;
+    }
+
+    items.forEach((item) => {
+        itemContainer.appendChild(item);
+
+        item.setAttribute("draggable", "true");
+
+        item.style.cursor = "grab";
+        item.style.opacity = "1";
+        item.style.pointerEvents = "auto";
+
+        item.classList.remove(
+            "correct",
+            "wrong"
+        );
+
+        delete item.dataset.correct;
+    });
+
+    dropZones.forEach((zone) => {
+        zone.classList.remove("hover");
+    });
+
+    if (feedback) {
+        feedback.textContent = "";
+
+        feedback.classList.remove(
+            "feedback-success",
+            "feedback-error"
+        );
+    }
+
+    if (scoreInfo) {
+        scoreInfo.innerHTML = "";
+        scoreInfo.className = "score-info";
+    }
+
+    draggedItem = null;
+
+    const activitySection =
+        document.querySelector(".ai-dragdrop");
+
+    if (activitySection) {
+        activitySection.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
         });
     }
-});
+}

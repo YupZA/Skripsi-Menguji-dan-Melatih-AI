@@ -140,3 +140,30 @@ html, body {
 .login-page *::after {
   box-sizing: border-box;
 }
+
+.role-selector{
+    display:flex;
+    margin-bottom:20px;
+    background:#f2f4f7;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.role-btn{
+    flex:1;
+    padding:12px;
+    border:none;
+    background:transparent;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.role-btn:hover{
+    background:#e8f0ff;
+}
+
+.role-btn.active{
+    background:#3b82f6;
+    color:#fff;
+}

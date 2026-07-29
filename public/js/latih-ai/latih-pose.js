@@ -31,9 +31,7 @@ async function init() {
     console.log("✅ Camera & Pose ready");
 }
 
-// =============================
-// CAMERA
-// =============================
+// Mengaktifkan kamera
 async function initCamera() {
     if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
         alert("Browser tidak mendukung webcam");
@@ -55,18 +53,13 @@ async function initCamera() {
     });
 }
 
-// =============================
-// POSE DETECTION
-// =============================
+// Memuat MoveNet
 async function initPose() {
     detector = await poseDetection.createDetector(
         poseDetection.SupportedModels.MoveNet
     );
 }
 
-// =============================
-// DRAW SKELETON
-// =============================
 function drawKeypoints(keypoints) {
     keypoints.forEach(p => {
         if (p.score > 0.4) {
@@ -98,9 +91,7 @@ function drawSkeleton(keypoints) {
     });
 }
 
-// =============================
-// RENDER LOOP (REALTIME VISUAL)
-// =============================
+// Deteksi dan prediksi realtime
 async function startRenderLoop() {
     while (true) {
         if (detector) {
@@ -114,7 +105,6 @@ async function startRenderLoop() {
                 drawKeypoints(keypoints);
                 drawSkeleton(keypoints);
 
-                // 🔥 PREDIKSI REALTIME
                 if (model && isPredicting) {
 
                     const features =
@@ -291,9 +281,7 @@ function displayPosePrediction(values) {
     `;
 }
 
-// =============================
-// DATASET
-// =============================
+// Mengolah titik tubuh
 function extractKeypoints(keypoints) {
 
     const validPoints =
@@ -471,6 +459,7 @@ function updatePoseClassName(input) {
         "Belum diberi nama";
 }
 
+// Menyimpan dataset pose
 async function capturePose(button) {
 
     if (!detector) {
@@ -595,6 +584,7 @@ function delay(milliseconds) {
     });
 }
 
+// merata-ratakan data pose
 function averagePoseFeatures(collection) {
 
     const featureLength =
@@ -735,9 +725,9 @@ function updatePoseDatasetInformation() {
     datasetInfo.innerText =
         `${dataset.length} data dari ${classCount} kelas`;
 }
-// =============================
-// TRAIN MODEL
-// =============================
+
+
+// Melatih ANN
 async function trainModel() {
 
     const cards =
@@ -1035,9 +1025,7 @@ function closePoseGuideModal() {
     );
 }
 
-// =============================
-// GLOBAL (UNTUK BLADE)
-// =============================
+
 window.addClass = addClass;
 window.capturePose = capturePose;
 window.trainModel = trainModel;

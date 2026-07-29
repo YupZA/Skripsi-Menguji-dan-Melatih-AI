@@ -8,10 +8,8 @@ let nextSampleId = 1;
 let model = null;
 let isListening = false;
 
-// =====================
-// INIT MIC
-// =====================
 
+// Mengaktifkan mikrofon
 async function initAudio() {
 
     if (!navigator.mediaDevices?.getUserMedia) {
@@ -44,10 +42,8 @@ async function initAudio() {
 }
 
 
-// =====================
-// AMBIL FFT
-// =====================
 
+// Mengambil frekuensi suara
 function getAudioFeatures() {
 
     const data =
@@ -61,9 +57,6 @@ function getAudioFeatures() {
         .map(v => v / 255);
 }
 
-// =====================
-// TAMBAH KELAS
-// =====================
 
 function addClass() {
 
@@ -156,10 +149,8 @@ function addClass() {
     container.appendChild(div);
 }
 
-// =====================
-// RECORD DATA
-// =====================
 
+// Menyimpan dataset
 async function recordSample(button) {
 
     const card = button.closest(".audio-class-card");
@@ -214,7 +205,7 @@ async function recordSample(button) {
         recordStatus.innerText =
             `🔴 Merekam "${sampleName}"... ${second}`;
 
-        // Mengambil beberapa data FFT setiap detik
+        
         for (let frame = 0; frame < 5; frame++) {
 
             collectedFeatures.push(getAudioFeatures());
@@ -257,6 +248,8 @@ function delay(milliseconds) {
 
 }
 
+
+// Merata-ratakan data suara 
 function averageAudioFeatures(featureCollection) {
 
     const featureLength = featureCollection[0].length;
@@ -395,10 +388,8 @@ function escapeHtml(value) {
     return element.innerHTML;
 }
 
-// =====================
-// TRAIN
-// =====================
 
+// Melatih ANN
 async function trainModel() {
 
     const cards =
@@ -598,10 +589,8 @@ function resetAudioModel() {
         "Belum ada prediksi";
 }
 
-// =====================
-// TEST REALTIME
-// =====================
 
+// Menguji realtime
 async function startListening() {
 
     if (!model) {
@@ -662,7 +651,6 @@ async function startListening() {
         await delay(400);
     }
 }
-
 
 
 function stopListening() {

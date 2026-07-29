@@ -27,10 +27,10 @@
 
         </div>
 
-        {{-- 🔥 WRAPPER UTAMA --}}
+        
         <div class="ai-main">
 
-            {{-- 🔥 KAMERA --}}
+            {{-- KAMERA --}}
             <div class="camera-section">
                 <div class="camera-wrapper">
                     <video id="webcam" autoplay playsinline></video>
@@ -57,7 +57,7 @@
                 </div>
             </div>
 
-            {{-- 🔥 DATASET --}}
+            {{-- DATASET --}}
             <div class="dataset-section">
 
                 <div class="dataset-header">

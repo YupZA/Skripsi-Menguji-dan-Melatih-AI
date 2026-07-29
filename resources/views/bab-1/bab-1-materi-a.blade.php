@@ -14,7 +14,7 @@
                         <div>Setelah mempelajari materi ini, siswa diharapkan :
                             <ul>
                                 <li>Memahami apa itu Kecerdasan buatan dan konsep dasar <i>machine
-                                    learning</i> .</li>
+                                        learning</i> .</li>
                                 <li>Memahami perbedaan antara data latih (<i>training data</i>) dan data uji
                                     (<i>testing data</i>).</li>
                             </ul>
@@ -25,7 +25,7 @@
             <div>
                 <h2>1. Apa Itu Kecerdasan Buatan</h2>
                 <p>
-                    <b>Kecerdasan buatan (<i>Artificial Intelligence/AI</i>),</b> adalah sebuah teknologi 
+                    <b>Kecerdasan buatan (<i>Artificial Intelligence/AI</i>),</b> adalah sebuah teknologi
                     yang memungkinkan mesin atau komputer untuk meniru kemampuan otak manusia. Artinya, mesin bisa belajar,
                     mengenali pola, memecahkan masalah, dan bahkan memahami bahasa, hampir seperti manusia.
                 </p>
@@ -81,30 +81,36 @@
                 </ul>
 
                 <p>
-                    Contoh Kecerdasan Buatan yang terkenal dan sering dijumpai dalam kehidupan sehari-hari antara lain sebagai berikut.
+                    Contoh Kecerdasan Buatan yang terkenal dan sering dijumpai dalam kehidupan sehari-hari antara lain
+                    sebagai berikut.
                 </p>
                 <ul>
-                    <li>Siri dan Google Assistant merupakan contoh asisten virtual berbasis kecerdasan buatan. Kedua aplikasi ini dapat membantu pengguna mencari informasi, menjawab pertanyaan, dan menjalankan perintah melalui suara. Contoh tampilan logo Siri dan Google Assistant dapat dilihat pada Gambar A.1 dan A.2.
-                    <div class="materi-image inline">
-                        <figure>
-                            <img src="{{ asset('images/bab-1/materi-a/gambar-1.png') }}">
-                            <figcaption>Gambar A.1 Logo Siri</figcaption>
-                        </figure>
+                    <li>Siri dan Google Assistant merupakan contoh asisten virtual berbasis kecerdasan buatan. Kedua
+                        aplikasi ini dapat membantu pengguna mencari informasi, menjawab pertanyaan, dan menjalankan
+                        perintah melalui suara. Contoh tampilan logo Siri dan Google Assistant dapat dilihat pada Gambar A.1
+                        dan A.2.
+                        <div class="materi-image inline">
+                            <figure>
+                                <img src="{{ asset('images/bab-1/materi-a/gambar-1.png') }}">
+                                <figcaption>Gambar A.1 Logo Siri</figcaption>
+                            </figure>
 
-                        <figure>
-                            <img src="{{ asset('images/bab-1/materi-a/gambar-2.png') }}">
-                            <figcaption>Gambar A.2 Ilustrasi Kecerdasan Buatan</figcaption>
-                        </figure>
-                    </div>
+                            <figure>
+                                <img src="{{ asset('images/bab-1/materi-a/gambar-2.png') }}">
+                                <figcaption>Gambar A.2 Ilustrasi Kecerdasan Buatan</figcaption>
+                            </figure>
+                        </div>
 
-                    <li>ChatGPT merupakan contoh kecerdasan buatan yang dapat memahami pertanyaan dan menghasilkan jawaban. Contoh tampilan logo OpenAI sebagai pengembang ChatGPT dapat dilihat pada Gambar A.3.
+                    <li>ChatGPT merupakan contoh kecerdasan buatan yang dapat memahami pertanyaan dan menghasilkan jawaban.
+                        Contoh tampilan logo OpenAI sebagai pengembang ChatGPT dapat dilihat pada Gambar A.3.
                     </li>
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-1/materi-a/gambar-3.png') }}" alt="Ilustrasi AI">
                         <span>Gambar A.3 Logo OpenAI</span>
                     </div>
 
-                    <li>Deep Blue merupakan komputer kecerdasan buatan yang pernah mengalahkan juara dunia catur. Contoh superkomputer IBM Deep Blue dapat dilihat pada gambar A.4.
+                    <li>Deep Blue merupakan komputer kecerdasan buatan yang pernah mengalahkan juara dunia catur. Contoh
+                        superkomputer IBM Deep Blue dapat dilihat pada gambar A.4.
                     </li>
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-1/materi-a/gambar-4.jpg') }}" alt="Ilustrasi AI">
@@ -120,7 +126,8 @@
                         </p>
                     </div>
 
-                    <li>Sophia merupakan robot humanoid yang menggunakan teknologi kecerdasan buatan untuk berinteraksi dengan manusia. Contoh robot humanoid Sophia dapat dilihat pada gambar A.5.
+                    <li>Sophia merupakan robot humanoid yang menggunakan teknologi kecerdasan buatan untuk berinteraksi
+                        dengan manusia. Contoh robot humanoid Sophia dapat dilihat pada gambar A.5.
                     </li>
 
                     <div class="materi-image">
@@ -138,9 +145,12 @@
                         </p>
                     </div>
 
-                    <li>Sistem rekomendasi pada YouTube, Netflix, atau Spotify menggunakan kecerdasan buatan untuk mempelajari preferensi pengguna dan menyarankan konten yang sesuai.</li>
-                    <li>Filter spam email memanfaatkan kecerdasan buatan untuk membedakan email penting dan email yang tidak diinginkan secara otomatis.</li>
-                    <li>Fitur pendeteksi wajah pada ponsel menggunakan kecerdasan buatan untuk mengenali wajah pengguna saat membuka kunci perangkat atau menambahkan efek kamera.
+                    <li>Sistem rekomendasi pada YouTube, Netflix, atau Spotify menggunakan kecerdasan buatan untuk
+                        mempelajari preferensi pengguna dan menyarankan konten yang sesuai.</li>
+                    <li>Filter spam email memanfaatkan kecerdasan buatan untuk membedakan email penting dan email yang tidak
+                        diinginkan secara otomatis.</li>
+                    <li>Fitur pendeteksi wajah pada ponsel menggunakan kecerdasan buatan untuk mengenali wajah pengguna saat
+                        membuka kunci perangkat atau menambahkan efek kamera.
                 </ul>
             </div>
         </div>
@@ -150,7 +160,7 @@
             use App\Models\Materi;
             use App\Models\UserProgress;
 
-            // ambil materi (karena kamu tidak pakai controller)
+            // ambil materi 
             $materi = Materi::where('slug', 'bab-1-materi-a')->first();
 
             // cek progress
@@ -162,13 +172,14 @@
 
         <div id="progress"></div>
 
-        
+
 
         <section class="ai-interactive">
             <h2>Aktivitas 1 : Mengidentifikasi Program Biasa atau Kecerdasan Buatan</h2>
-            
+
             <p>
-                Tujuan Aktivitas <br>Setelah menyelesaikan aktivitas ini, siswa diharapkan mampu membedakan program biasa dan kecerdasan buatan berdasarkan karakteristik serta cara kerjanya.
+                Tujuan Aktivitas <br>Setelah menyelesaikan aktivitas ini, siswa diharapkan mampu membedakan program biasa
+                dan kecerdasan buatan berdasarkan karakteristik serta cara kerjanya.
             </p>
 
             <p>Petunjuk pengerjaan aktivitas 1 :</p>
@@ -180,29 +191,29 @@
             </ul>
 
             <?php
-                $questions = [
-                    [
-                        'text' => 'Sistem dapat mengenali wajah pengguna dan membuka kunci ponsel secara otomatis.',
-                        'answer' => 'ai'
-                    ],
-                    [
-                        'text' => 'Sistem dapat belajar dari data dan meningkatkan hasilnya.',
-                        'answer' => 'ai'
-                    ],
-                    [
-                        'text' => 'Kalkulator hanya menghitung sesuai rumus.',
-                        'answer' => 'program'
-                    ],
-                    [
-                        'text' => 'Aplikasi rekomendasi musik yang menyarankan lagu berdasarkan kebiasaan mendengarkan pengguna.',
-                        'answer' => 'ai'
-                    ],
-                    [
-                        'text' => 'Aplikasi alarm yang berbunyi pada waktu yang sudah ditentukan tanpa perubahan perilaku.',
-                        'answer' => 'program'
-                    ],
-                ];
-            ?>
+    $questions = [
+        [
+            'text' => 'Sistem dapat mengenali wajah pengguna dan membuka kunci ponsel secara otomatis.',
+            'answer' => 'ai'
+        ],
+        [
+            'text' => 'Sistem dapat belajar dari data dan meningkatkan hasilnya.',
+            'answer' => 'ai'
+        ],
+        [
+            'text' => 'Kalkulator hanya menghitung sesuai rumus.',
+            'answer' => 'program'
+        ],
+        [
+            'text' => 'Aplikasi rekomendasi musik yang menyarankan lagu berdasarkan kebiasaan mendengarkan pengguna.',
+            'answer' => 'ai'
+        ],
+        [
+            'text' => 'Aplikasi alarm yang berbunyi pada waktu yang sudah ditentukan tanpa perubahan perilaku.',
+            'answer' => 'program'
+        ],
+    ];
+                            ?>
 
             <?php foreach ($questions as $index => $q): ?>
             <div class="ai-question" data-answer="<?= $q['answer']; ?>">
@@ -218,23 +229,46 @@
             <?php endforeach; ?>
 
             <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4" id="formSelesai">
+
                 @csrf
+
                 <input type="hidden" name="materi_id" value="{{ $materi->id }}">
 
-                <button
-                    type="submit"
-                    id="btnSelesai"
-                    class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}"
-                    {{ $isCompleted ? 'disabled' : '' }}>
+                @if ($isCompleted)
+                    <div class="activity-info">
+                        <i class="fas fa-circle-info"></i>
 
-                    {{ $isCompleted ? 'Aktivitas Selesai' : 'Kumpul Aktivitas' }}
+                        <div>
+                            <strong>Mode Latihan</strong>
 
-                </button>
+                            <p>
+                                Aktivitas ini telah diselesaikan. Kamu dapat mengulanginya
+                                sebagai latihan tanpa mengubah penyelesaian materi sebelumnya.
+                            </p>
+                        </div>
+                    </div>
+                @endif
 
-                <div id="scoreInfo" class="mt-2"></div>
+                <div class="activity-buttons">
+                    <button type="submit" id="btnSelesai" class="btn-check-activity"
+                        data-completed="{{ $isCompleted ? 'true' : 'false' }}">
+
+                        <i class="fas fa-check"></i>
+
+                        {{ $isCompleted ? 'Periksa Hasil Latihan' : 'Kumpul Aktivitas' }}
+                    </button>
+
+                    <button type="button" id="btnUlangi" class="btn-repeat-activity" onclick="resetActivity()">
+
+                        <i class="fas fa-rotate-right"></i>
+                        Ulangi Latihan
+                    </button>
+                </div>
+
+                <div id="scoreInfo" class="score-info"></div>
             </form>
 
-        @endsection
+@endsection
 
         @push('scripts')
             <script src="{{ asset('js/interaktif/materi-1/materi-a.js') }}"></script>

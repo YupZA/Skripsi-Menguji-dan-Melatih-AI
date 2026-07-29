@@ -12,7 +12,6 @@
         <i class="fas fa-robot decor decor-3"></i>
       </div>
 
-      <!-- ===== HERO ===== -->
       <section class="hero">
 
         <div class="hero-content">
@@ -28,7 +27,7 @@
         </div>
       </section>
 
-      <!-- ===== FEATURES ===== -->
+      
       <section class="features">
         <div class="ai-modules">
 

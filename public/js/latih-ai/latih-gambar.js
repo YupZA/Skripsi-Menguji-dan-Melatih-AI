@@ -67,6 +67,7 @@ function resetModel() {
     document.getElementById("result").innerHTML = "";
 }
 
+// Membaca Gambar
 async function loadImage(file) {
 
     return new Promise(resolve => {
@@ -77,6 +78,7 @@ async function loadImage(file) {
 
 }
 
+// Mengubah gambar menjadi angka
 function imageToTensor(img) {
 
     return tf.browser.fromPixels(img)
@@ -87,6 +89,7 @@ function imageToTensor(img) {
 
 }
 
+// Membuat dan melatih CNN nya 
 async function trainModel() {
 
     const classes = document.querySelectorAll(".upload-box");
@@ -186,6 +189,7 @@ async function trainModel() {
 
         trainingStatus.innerText = "Proses pelatihan dimulai...";
 
+        // proses belajar model nya
         await model.fit(xTensor, yTensor, {
             epochs: 10,
             shuffle: true,
@@ -236,7 +240,6 @@ function openGuideModal() {
     modal.classList.add("active");
     modal.setAttribute("aria-hidden", "false");
 
-    /* Mulai scroll modal dari paling atas */
     modal.scrollTop = 0;
 
     document.body.classList.add("modal-open");
@@ -286,7 +289,7 @@ document.addEventListener("keydown", function (event) {
 
 });
 
-
+// Menguji gambarnya
 async function predict() {
 
     if (!model) {

@@ -8,16 +8,20 @@
         <div>
             <h2>4. Perbandingan Model Suara, Gambar, dan Pose</h2>
             <p>
-                Google Teachable Machine menyediakan tiga jenis model utama model gambar (<i>Image Model</i>), model suara (<i>Audio
-                Model</i>), dan model pose tubuh (<i>Pose Model</i>). Meskipun ketiganya memiliki tujuan yang sama, yaitu melatih
+                Google Teachable Machine menyediakan tiga jenis model utama model gambar (<i>Image Model</i>), model suara
+                (<i>Audio
+                    Model</i>), dan model pose tubuh (<i>Pose Model</i>). Meskipun ketiganya memiliki tujuan yang sama,
+                yaitu melatih
                 kecerdasan buatan agar dapat mengenali pola dari data, setiap model memiliki perbedaan dalam jenis
                 data, cara pelatihan, serta penerapannya.
             </p>
             <ol type="a">
                 <li>
                     Model Gambar (<i>Image Model</i>)
-                    <br>Model gambar digunakan untuk melatih kecerdasan buatan agar mampu mengenali pola visual dari berbagai gambar atau
-                    objek. Data yang digunakan berupa citra (<I>image</I>) yang bisa diambil melalui kamera (webcam) atau diunggah
+                    <br>Model gambar digunakan untuk melatih kecerdasan buatan agar mampu mengenali pola visual dari
+                    berbagai gambar atau
+                    objek. Data yang digunakan berupa citra (<I>image</I>) yang bisa diambil melalui kamera (webcam) atau
+                    diunggah
                     dari komputer.
                     <ul>
                         <li>Jenis Data: Gambar atau foto.</li>
@@ -30,13 +34,15 @@
                 </li>
                 <li>
                     Model Suara (<i>Audio Model</i>)
-                    <br>Model suara digunakan untuk melatih kecerdasan buatan agar dapat mengenali pola bunyi atau suara tertentu. Data
+                    <br>Model suara digunakan untuk melatih kecerdasan buatan agar dapat mengenali pola bunyi atau suara
+                    tertentu. Data
                     yang digunakan berupa rekaman suara yang direkam langsung melalui mikrofon atau diunggah dari perangkat.
                     <ul>
                         <li>Jenis Data: Gelombang suara (<i>audio</i>).</li>
                         <li>Contoh Proyek: Membedakan suara tepuk tangan dan siulan, mengenali kata “ya” dan “tidak”, atau
                             mengidentifikasi suara hewan.</li>
-                        <li>Cara Kerja: Kecerdasan buatan mempelajari perbedaan frekuensi, volume, dan ritme dari suara yang diberikan.
+                        <li>Cara Kerja: Kecerdasan buatan mempelajari perbedaan frekuensi, volume, dan ritme dari suara yang
+                            diberikan.
                         </li>
                         <li>Kelebihan: Dapat digunakan untuk interaksi suara seperti asisten virtual.</li>
                         <li>Keterbatasan: Kualitas hasil dipengaruhi oleh kebisingan lingkungan dan kejelasan suara.</li>
@@ -44,13 +50,15 @@
                 </li>
                 <li>
                     Model Pose Tubuh (<i>Pose Model</i>)
-                    <br>Model pose digunakan untuk melatih kecerdasan buatan agar dapat mengenali gerakan atau posisi tubuh manusia. Data
+                    <br>Model pose digunakan untuk melatih kecerdasan buatan agar dapat mengenali gerakan atau posisi tubuh
+                    manusia. Data
                     diperoleh melalui kamera (webcam) yang menangkap bentuk tubuh dan pergerakan pengguna.
                     <ul>
                         <li>Jenis Data: Citra gerakan (<i>pose tubuh</i>).</li>
                         <li>Contoh Proyek: Membedakan posisi berdiri dan jongkok, mengenali lambaian tangan, atau mendeteksi
                             gerakan olahraga.</li>
-                        <li>Cara Kerja: Kecerdasan buatan menganalisis posisi titik-titik tubuh (seperti kepala, tangan, kaki) yang
+                        <li>Cara Kerja: Kecerdasan buatan menganalisis posisi titik-titik tubuh (seperti kepala, tangan,
+                            kaki) yang
                             ditangkap kamera.</li>
                         <li>Kelebihan: Dapat digunakan untuk aplikasi berbasis gerakan, seperti permainan interaktif atau
                             pelatihan olahraga.</li>
@@ -110,51 +118,68 @@
             </table>
             <p>
                 Ketiga jenis model di Google Teachable Machine memiliki fungsi yang saling melengkapi.
+            </p>
+
             <ul>
                 <li>Model Gambar cocok untuk pengenalan visual.</li>
                 <li>Model Suara cocok untuk pengenalan suara atau komunikasi berbasis suara.</li>
                 <li>Model Pose Tubuh cocok untuk pengenalan gerakan manusia.</li>
             </ul>
-            Melalui pemanfaatan berbagai jenis model ini, peserta didik dapat belajar secara langsung bagaimana kecerdasan buatan
-            bekerja dalam berbagai konteks kehidupan nyata, serta mengembangkan kreativitas dalam menciptakan proyek
-            berbasis teknologi cerdas.
+
+            <p>
+                Melalui pemanfaatan berbagai jenis model ini, peserta didik dapat belajar secara
+                langsung bagaimana kecerdasan buatan bekerja dalam berbagai konteks kehidupan nyata,
+                serta mengembangkan kreativitas dalam menciptakan proyek berbasis teknologi cerdas.
             </p>
         </div>
     </div>
 
     @php
-            use App\Models\Materi;
-            use App\Models\UserProgress;
+        use App\Models\Materi;
+        use App\Models\UserProgress;
 
-            $materi = Materi::where('slug', 'bab-3-materi-d')->first();
+        $materi = Materi::where('slug', 'bab-3-materi-d')->first();
 
-            // cek progress
-            $isCompleted = UserProgress::where('user_id', auth()->id())
-                ->where('materi_id', $materi->id ?? 0)
-                ->where('status', 'completed')
-                ->exists();
-        @endphp
+        // cek progress
+        $isCompleted = UserProgress::where('user_id', auth()->id())
+            ->where('materi_id', $materi->id ?? 0)
+            ->where('status', 'completed')
+            ->exists();
+    @endphp
 
     <div id="progress"></div>
 
     <section class="ai-dragdrop">
         <h2>Aktivitas 4 : Menganalisis Konsep Model Gambar, Suara, dan Pose Tubuh pada <i>AI</i></h2>
         <p>
-            Tujuan Aktivitas <br>Setelah menyelesaikan aktivitas ini, siswa diharapkan mampu menentukan jenis proyek kecerdasan buatan yang sesuai berdasarkan data yang digunakan, yaitu gambar, suara, atau pose tubuh.
+            Tujuan Aktivitas <br>Setelah menyelesaikan aktivitas ini, siswa diharapkan mampu menentukan jenis proyek
+            kecerdasan buatan yang sesuai berdasarkan data yang digunakan, yaitu gambar, suara, atau pose tubuh.
         </p>
-        <p>Petunjuk Pengerjaan : </p>
+        <p>Petunjuk Pengerjaan:</p>
+
         <ul>
-            <li>Bacalah setiap kasus dengan saksama.</li>
-            <li>Analisis penyebab kesalahan yang paling mungkin terjadi pada model kecerdasan buatan.</li>
-            <li>Pilih satu jawaban yang paling tepat berdasarkan materi tentang pembuatan model deteksi pose.</li>
-            <li>Kerjakan seluruh kasus hingga selesai.</li>
-            <li>Setelah semua jawaban dipilih, <i>klik</i> tombol <strong>Submit Aktivitas</strong>.</li>
+            <li>Bacalah setiap contoh penerapan kecerdasan buatan dengan saksama.</li>
+            <li>Perhatikan jenis data yang digunakan pada setiap contoh.</li>
+            <li>
+                Seret setiap contoh ke kategori yang sesuai, yaitu
+                <strong>Proyek Gambar</strong>,
+                <strong>Proyek Suara</strong>, atau
+                <strong>Proyek Pose Tubuh</strong>.
+            </li>
+            <li>Pastikan seluruh contoh telah ditempatkan pada kategori yang sesuai.</li>
+            <li>Periksa kembali hasil pengelompokan yang telah dilakukan.</li>
+            <li>
+                Setelah seluruh contoh dikelompokkan, klik tombol
+                <strong>Kumpul Aktivitas</strong>.
+            </li>
         </ul>
 
         <!-- DRAG ITEMS -->
         <div class="drag-items">
-            <div class="drag-item" draggable="true" data-type="image">AI mengenali jenis buah (apel, pisang, jeruk) dari kamera</div>
-            <div class="drag-item" draggable="true" data-type="audio">AI membedakan suara pintu diketuk dan pintu dibanting</div>
+            <div class="drag-item" draggable="true" data-type="image">AI mengenali jenis buah (apel, pisang, jeruk) dari
+                kamera</div>
+            <div class="drag-item" draggable="true" data-type="audio">AI membedakan suara pintu diketuk dan pintu dibanting
+            </div>
             <div class="drag-item" draggable="true" data-type="pose">AI mengenali gerakan mengangkat tangan kanan</div>
             <div class="drag-item" draggable="true" data-type="image">AI mengidentifikasi jenis kendaraan dari foto</div>
             <div class="drag-item" draggable="true" data-type="audio">AI mengenali suara kucing dan anjing</div>
@@ -177,20 +202,43 @@
         </div>
 
         <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4" id="formSelesai">
+
             @csrf
+
             <input type="hidden" name="materi_id" value="{{ $materi->id }}">
 
-            <button
-                type="submit"
-                id="btnSelesai"
-                class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}"
-                {{ $isCompleted ? 'disabled' : '' }}>
+            @if ($isCompleted)
+                <div class="activity-info">
+                    <i class="fas fa-circle-info"></i>
 
-                {{ $isCompleted ? 'Aktivitas Selesai' : 'Submit Aktivitas' }}
+                    <div>
+                        <strong>Mode Latihan</strong>
 
-            </button>
+                        <p>
+                            Aktivitas ini telah diselesaikan. Kamu dapat mengulanginya
+                            sebagai latihan tanpa mengubah penyelesaian materi sebelumnya.
+                        </p>
+                    </div>
+                </div>
+            @endif
 
-            <div id="scoreInfo" class="mt-2"></div>
+            <div class="activity-buttons">
+                <button type="submit" id="btnSelesai" class="btn-check-activity"
+                    data-completed="{{ $isCompleted ? 'true' : 'false' }}">
+
+                    <i class="fas fa-check"></i>
+
+                    {{ $isCompleted ? 'Periksa Hasil Latihan' : 'Kumpul Aktivitas' }}
+                </button>
+
+                <button type="button" id="btnUlangi" class="btn-repeat-activity" onclick="resetModelComparisonActivity()">
+
+                    <i class="fas fa-rotate-right"></i>
+                    Ulangi Latihan
+                </button>
+            </div>
+
+            <div id="scoreInfo" class="score-info"></div>
         </form>
     </section>
 

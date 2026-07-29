@@ -19,11 +19,17 @@
                     Proyek Gambar (<i>Image Project</i>)
                 </li>
                 <p>
-                    Proyek ini berfokus pada pelatihan kecerdasan buatan untuk mengenali dan membedakan berbagai jenis gambar. Misalnya, peserta didik dapat membuat model kecerdasan buatan yang mampu membedakan gambar ikan gabus dan ikan papuyu, atau mengenali ekspresi wajah seperti senang, sedih, dan marah. Melalui kegiatan ini, peserta didik belajar bagaimana sistem kecerdasan buatan memproses data <i>visual</i> untuk mengenali pola tertentu.
+                    Proyek ini berfokus pada pelatihan kecerdasan buatan untuk mengenali dan membedakan berbagai jenis
+                    gambar. Misalnya, peserta didik dapat membuat model kecerdasan buatan yang mampu membedakan gambar ikan
+                    gabus dan ikan papuyu, atau mengenali ekspresi wajah seperti senang, sedih, dan marah. Melalui kegiatan
+                    ini, peserta didik belajar bagaimana sistem kecerdasan buatan memproses data <i>visual</i> untuk
+                    mengenali pola tertentu.
                 </p>
 
                 <p>
-                    Contoh proses pelatihan model gambar menggunakan <i>google teachable machine</i> dapat diamati pada gambar B.6. Pada gambar tersebut terlihat tahapan pemberian data gambar, pelatihan model, hingga proses prediksi hasil klasifikasi.
+                    Contoh proses pelatihan model gambar menggunakan <i>google teachable machine</i> dapat diamati pada
+                    gambar B.6. Pada gambar tersebut terlihat tahapan pemberian data gambar, pelatihan model, hingga proses
+                    prediksi hasil klasifikasi.
                 </p>
 
                 <div class="materi-image">
@@ -33,7 +39,8 @@
 
                 <div class="fun-fact">
                     <p>
-                        <strong>Gambar B.6</strong> menunjukkan bagaimana model kecerdasan buatan dilatih menggunakan data ikan gabus
+                        <strong>Gambar B.6</strong> menunjukkan bagaimana model kecerdasan buatan dilatih menggunakan data
+                        ikan gabus
                         dan
                         ikan papuyu, kemudian digunakan untuk memprediksi bahwa gambar yang diberikan adalah ikan papuyu
                         dengan tingkat akurasi tertentu.
@@ -44,11 +51,16 @@
                     Proyek Suara (<i>Audio Project</i>)
                 </li>
                 <p>
-                    Dalam proyek ini, peserta didik dapat melatih kecerdasan buatan untuk mengenali berbagai jenis suara. Contohnya, model kecerdasan buatan dapat diajarkan untuk membedakan tepuk tangan dan siulan, mengenali kata-kata sederhana seperti “ya” dan “tidak”, atau mengenali suara hewan. Melalui proyek ini, peserta didik memahami bagaimana komputer dapat menganalisis suara dan mengenali perbedaan karakteristik bunyi.
+                    Dalam proyek ini, peserta didik dapat melatih kecerdasan buatan untuk mengenali berbagai jenis suara.
+                    Contohnya, model kecerdasan buatan dapat diajarkan untuk membedakan tepuk tangan dan siulan, mengenali
+                    kata-kata sederhana seperti “ya” dan “tidak”, atau mengenali suara hewan. Melalui proyek ini, peserta
+                    didik memahami bagaimana komputer dapat menganalisis suara dan mengenali perbedaan karakteristik bunyi.
                 </p>
 
                 <p>
-                    Contoh pelatihan model suara menggunakan <i>google teachable machine</i> dapat dilihat pada gambar B.7. Gambar tersebut memperlihatkan proses pengumpulan data suara, pelatihan model, serta hasil prediksi yang dihasilkan berdasarkan suara yang dideteksi.
+                    Contoh pelatihan model suara menggunakan <i>google teachable machine</i> dapat dilihat pada gambar B.7.
+                    Gambar tersebut memperlihatkan proses pengumpulan data suara, pelatihan model, serta hasil prediksi yang
+                    dihasilkan berdasarkan suara yang dideteksi.
                 </p>
                 <div class="materi-image">
                     <img src="{{ asset('images/bab-2/materi-c/gambar-2.png') }}" alt="Ilustrasi AI">
@@ -57,7 +69,8 @@
 
                 <div class="fun-fact">
                     <p>
-                        <strong>Gambar B.7</strong> menunjukkan proses pelatihan kecerdasan buatan menggunakan data suara, seperti
+                        <strong>Gambar B.7</strong> menunjukkan proses pelatihan kecerdasan buatan menggunakan data suara,
+                        seperti
                         <i>background
                             noise</i>, tepuk tangan, atau siulan, hingga menghasilkan prediksi berdasarkan suara yang
                         dikenali.
@@ -68,11 +81,17 @@
                     Proyek Pose Tubuh (<i>Pose Project</i>)
                 </li>
                 <p>
-                    Proyek ini digunakan untuk melatih kecerdasan buatan dalam mengenali gerakan atau posisi tubuh manusia. Contohnya, peserta didik dapat membuat model kecerdasan buatan  yang mampu membedakan antara berdiri dan jongkok, melambaikan tangan dan diam, atau gerakan olahraga dan tarian. Melalui proyek ini, peserta didik dapat memahami bagaimana kecerdasan buatan memproses data <i>visual</i> dari kamera untuk mengidentifikasi pola gerakan.
+                    Proyek ini digunakan untuk melatih kecerdasan buatan dalam mengenali gerakan atau posisi tubuh manusia.
+                    Contohnya, peserta didik dapat membuat model kecerdasan buatan yang mampu membedakan antara berdiri dan
+                    jongkok, melambaikan tangan dan diam, atau gerakan olahraga dan tarian. Melalui proyek ini, peserta
+                    didik dapat memahami bagaimana kecerdasan buatan memproses data <i>visual</i> dari kamera untuk
+                    mengidentifikasi pola gerakan.
                 </p>
 
                 <p>
-                    Contoh pelatihan model pose tubuh menggunakan <i>google teachable machine</i> dapat diamati pada gambar B.8. Gambar tersebut menunjukkan proses pelatihan kecerdasan buatan untuk mengenali beberapa jenis pose tubuh serta hasil prediksi yang ditampilkan setelah model selesai dilatih.
+                    Contoh pelatihan model pose tubuh menggunakan <i>google teachable machine</i> dapat diamati pada gambar
+                    B.8. Gambar tersebut menunjukkan proses pelatihan kecerdasan buatan untuk mengenali beberapa jenis pose
+                    tubuh serta hasil prediksi yang ditampilkan setelah model selesai dilatih.
                 </p>
 
                 <div class="materi-image">
@@ -82,17 +101,24 @@
 
                 <div class="fun-fact">
                     <p>
-                        <strong>Gambar B.8</strong> menunjukkan bagaimana kecerdasan buatan dilatih untuk mengenali gerakan tubuh, seperti
-                        <i>tree pose</i> atau <i>warrior pose</i>, kemudian menghasilkan prediksi berdasarkan gerakan yang terdeteksi.
+                        <strong>Gambar B.8</strong> menunjukkan bagaimana kecerdasan buatan dilatih untuk mengenali gerakan
+                        tubuh, seperti
+                        <i>tree pose</i> atau <i>warrior pose</i>, kemudian menghasilkan prediksi berdasarkan gerakan yang
+                        terdeteksi.
                     </p>
                 </div>
 
                 <p>
-                    Dengan memanfaatkan ketiga jenis proyek tersebut, <i>Google Teachable Machine</i> memungkinkan peserta didik untuk memahami konsep dasar <i>machine learning</i> secara mudah, membangun dan melatih model kecerdasan buatan sederhana secara mandiri tanpa menulis kode, serta melihat secara langsung bagaimana komputer belajar dan melakukan prediksi terhadap data baru.
+                    Dengan memanfaatkan ketiga jenis proyek tersebut, <i>Google Teachable Machine</i> memungkinkan peserta
+                    didik untuk memahami konsep dasar <i>machine learning</i> secara mudah, membangun dan melatih model
+                    kecerdasan buatan sederhana secara mandiri tanpa menulis kode, serta melihat secara langsung bagaimana
+                    komputer belajar dan melakukan prediksi terhadap data baru.
                 </p>
-                
+
                 <p>
-                    Melalui kegiatan eksploratif ini, peserta didik tidak hanya memperoleh pemahaman teoritis mengenai kecerdasan buatan, tetapi juga pengalaman praktis dalam membuat model kecerdasan buatan yang relevan dengan kehidupan sehari-hari.
+                    Melalui kegiatan eksploratif ini, peserta didik tidak hanya memperoleh pemahaman teoritis mengenai
+                    kecerdasan buatan, tetapi juga pengalaman praktis dalam membuat model kecerdasan buatan yang relevan
+                    dengan kehidupan sehari-hari.
                 </p>
             </ol>
         </div>
@@ -102,7 +128,7 @@
         use App\Models\Materi;
         use App\Models\UserProgress;
 
-        // ambil materi (karena kamu tidak pakai controller)
+        // ambil materi
         $materi = Materi::where('slug', 'bab-2-materi-c')->first();
 
         // cek progress
@@ -117,14 +143,16 @@
     <section class="ai-dragdrop">
         <h2>Aktivitas 3 : Mengelompokkan Program Berdasarkan Jenisnya</h2>
         <p>
-            Tujuan Aktivitas <br>Setelah menyelesaikan aktivitas ini, siswa diharapkan mampu mengelompokkan berbagai contoh penerapan ke dalam proyek gambar, proyek suara, atau proyek pose tubuh berdasarkan jenis data yang digunakan.
+            Tujuan Aktivitas <br>Setelah menyelesaikan aktivitas ini, siswa diharapkan mampu mengelompokkan berbagai contoh
+            penerapan ke dalam proyek gambar, proyek suara, atau proyek pose tubuh berdasarkan jenis data yang digunakan.
 
         </p>
         <p>Petunjuk Pengerjaan :</p>
         <ul>
             <li>Bacalah setiap contoh pada daftar pilihan dengan teliti.</li>
             <li>Perhatikan setiap contoh kegiatan yang tersedia.</li>
-            <li>Seret setiap contoh ke jenis proyek yang sesuai, yaitu <strong>Proyek Gambar</strong>, <strong>Proyek Suara</strong>, atau <strong>Proyek Pose Tubuh</strong>.</li>
+            <li>Seret setiap contoh ke jenis proyek yang sesuai, yaitu <strong>Proyek Gambar</strong>, <strong>Proyek
+                    Suara</strong>, atau <strong>Proyek Pose Tubuh</strong>.</li>
             <li>Pastikan seluruh contoh telah ditempatkan pada kategori yang benar.</li>
             <li>Periksa kembali hasil pengelompokan yang telah dilakukan.</li>
             <li>Setelah semua contoh selesai dikelompokkan, klik tombol <strong>Kumpul Aktivitas</strong>.</li>
@@ -156,20 +184,43 @@
         </div>
 
         <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4" id="formSelesai">
+
             @csrf
+
             <input type="hidden" name="materi_id" value="{{ $materi->id }}">
 
-            <button
-                type="submit"
-                id="btnSelesai"
-                class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}"
-                {{ $isCompleted ? 'disabled' : '' }}>
+            @if ($isCompleted)
+                <div class="activity-info">
+                    <i class="fas fa-circle-info"></i>
 
-                {{ $isCompleted ? 'Aktivitas Selesai' : 'Kumpul Aktivitas' }}
+                    <div>
+                        <strong>Mode Latihan</strong>
 
-            </button>
+                        <p>
+                            Aktivitas ini telah diselesaikan. Kamu dapat mengulanginya
+                            sebagai latihan tanpa mengubah penyelesaian materi sebelumnya.
+                        </p>
+                    </div>
+                </div>
+            @endif
 
-            <div id="scoreInfo" class="mt-2"></div>
+            <div class="activity-buttons">
+                <button type="submit" id="btnSelesai" class="btn-check-activity"
+                    data-completed="{{ $isCompleted ? 'true' : 'false' }}">
+
+                    <i class="fas fa-check"></i>
+
+                    {{ $isCompleted ? 'Periksa Hasil Latihan' : 'Kumpul Aktivitas' }}
+                </button>
+
+                <button type="button" id="btnUlangi" class="btn-repeat-activity" onclick="resetProjectActivity()">
+
+                    <i class="fas fa-rotate-right"></i>
+                    Ulangi Latihan
+                </button>
+            </div>
+
+            <div id="scoreInfo" class="score-info"></div>
         </form>
     </section>
 

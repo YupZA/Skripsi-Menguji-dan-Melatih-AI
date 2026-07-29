@@ -32,14 +32,56 @@
         <form method="POST" action="/login">
             @csrf
 
+            {{-- Pilihan jenis pengguna --}}
+            <div class="role-selector">
+                <button
+                    type="button"
+                    class="role-btn {{ old('role', 'siswa') === 'siswa' ? 'active' : '' }}"
+                    data-role="siswa"
+                >
+                    Siswa
+                </button>
+
+                <button
+                    type="button"
+                    class="role-btn {{ old('role') === 'guru' ? 'active' : '' }}"
+                    data-role="guru"
+                >
+                    Guru
+                </button>
+            </div>
+
+            {{-- Nilai ini akan dikirim ke controller --}}
+            <input
+                type="hidden"
+                name="role"
+                id="role"
+                value="{{ old('role', 'siswa') }}"
+            >
+
             <div class="login-field">
-                <label>Email</label>
-                <input type="email" name="email" placeholder="masukkan email" required>
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value="{{ old('email') }}"
+                    placeholder="Masukkan email"
+                    autocomplete="email"
+                    required
+                >
             </div>
 
             <div class="login-field">
-                <label>Password</label>
-                <input type="password" name="password" placeholder="masukkan password" required>
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Masukkan password"
+                    autocomplete="current-password"
+                    required
+                >
             </div>
 
             <button type="submit" class="login-btn">
@@ -54,6 +96,24 @@
     </div>
 
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const roleButtons = document.querySelectorAll('.role-btn');
+        const roleInput = document.getElementById('role');
+
+        roleButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                roleButtons.forEach(function (item) {
+                    item.classList.remove('active');
+                });
+
+                this.classList.add('active');
+                roleInput.value = this.dataset.role;
+            });
+        });
+    });
+</script>
 
 </body>
 </html>

@@ -1,89 +1,243 @@
 let draggedItem = null;
+
 const KKM = 75;
 
-document.querySelectorAll(".drag-item").forEach(item => {
-  item.addEventListener("dragstart", () => {
-    if (item.getAttribute("draggable") === "false") return;
-
-    draggedItem = item;
-    setTimeout(() => item.classList.add("dragging"), 0);
-  });
-
-  item.addEventListener("dragend", () => {
-    item.classList.remove("dragging");
-    draggedItem = null;
-  });
+document.addEventListener("DOMContentLoaded", function () {
+    initializeDragItems();
+    initializeDropZones();
+    initializeActivityForm();
 });
 
-document.querySelectorAll(".drop-zone").forEach(zone => {
-  zone.addEventListener("dragover", e => {
-    e.preventDefault();
-    zone.classList.add("hover");
-  });
+/**
+ * Memasang fungsi drag pada setiap item.
+ */
+function initializeDragItems() {
+    document.querySelectorAll(".drag-item").forEach((item) => {
+        item.addEventListener("dragstart", function () {
+            if (item.getAttribute("draggable") === "false") {
+                return;
+            }
 
-  zone.addEventListener("dragleave", () => {
-    zone.classList.remove("hover");
-  });
+            draggedItem = item;
 
-  zone.addEventListener("drop", () => {
-    zone.classList.remove("hover");
+            setTimeout(() => {
+                item.classList.add("dragging");
+            }, 0);
+        });
 
-    if (!draggedItem) return;
+        item.addEventListener("dragend", function () {
+            item.classList.remove("dragging");
+            draggedItem = null;
+        });
+    });
+}
 
-    const correctType = zone.dataset.accept;
-    const itemType = draggedItem.dataset.type;
+/**
+ * Memasang fungsi drop pada setiap kotak proyek.
+ */
+function initializeDropZones() {
+    document.querySelectorAll(".drop-zone").forEach((zone) => {
+        zone.addEventListener("dragover", function (event) {
+            event.preventDefault();
+            zone.classList.add("hover");
+        });
 
-    zone.appendChild(draggedItem);
+        zone.addEventListener("dragleave", function () {
+            zone.classList.remove("hover");
+        });
 
-    draggedItem.classList.remove("correct", "wrong");
+        zone.addEventListener("drop", function (event) {
+            event.preventDefault();
+            zone.classList.remove("hover");
 
-    if (correctType === itemType) {
-      draggedItem.classList.add("correct");
-      draggedItem.dataset.correct = "true";
-    } else {
-      draggedItem.classList.add("wrong");
-      draggedItem.dataset.correct = "false";
+            if (!draggedItem) {
+                return;
+            }
+
+            const acceptedType = zone.dataset.accept;
+            const itemType = draggedItem.dataset.type;
+
+            zone.appendChild(draggedItem);
+
+            draggedItem.classList.remove(
+                "correct",
+                "wrong"
+            );
+
+            if (acceptedType === itemType) {
+                draggedItem.classList.add("correct");
+                draggedItem.dataset.correct = "true";
+            } else {
+                draggedItem.classList.add("wrong");
+                draggedItem.dataset.correct = "false";
+            }
+
+            draggedItem.setAttribute("draggable", "false");
+            draggedItem.style.cursor = "default";
+            draggedItem.style.opacity = "1";
+
+            draggedItem = null;
+        });
+    });
+}
+
+/**
+ * Menangani proses pengumpulan aktivitas.
+ */
+function initializeActivityForm() {
+    const form =
+        document.getElementById("formSelesai");
+
+    const submitButton =
+        document.getElementById("btnSelesai");
+
+    if (!form || !submitButton) {
+        return;
     }
 
-    draggedItem.setAttribute("draggable", "false");
-    draggedItem = null;
-  });
-});
+    form.addEventListener("submit", function (event) {
+        const totalItem =
+            document.querySelectorAll(".drag-item").length;
 
-document.getElementById("formSelesai").addEventListener("submit", function(e) {
-  const totalItem = document.querySelectorAll(".drag-item").length;
-  const sudahDikerjakan = document.querySelectorAll('.drag-item[draggable="false"]').length;
-  const totalBenar = document.querySelectorAll('.drag-item[data-correct="true"]').length;
+        const sudahDikerjakan =
+            document.querySelectorAll(
+                '.drag-item[draggable="false"]'
+            ).length;
 
-  const nilai = Math.round((totalBenar / totalItem) * 100);
-  const scoreInfo = document.getElementById("scoreInfo");
+        const totalBenar =
+            document.querySelectorAll(
+                '.drag-item[data-correct="true"]'
+            ).length;
 
-  if (sudahDikerjakan < totalItem) {
-    e.preventDefault();
-    scoreInfo.innerHTML = "❌ Semua contoh harus diseret ke kotak proyek terlebih dahulu.";
-    scoreInfo.style.color = "#ef4444";
-    return;
-  }
+        const nilai =
+            totalItem > 0
+                ? Math.round((totalBenar / totalItem) * 100)
+                : 0;
 
-  if (nilai < KKM) {
-    e.preventDefault();
-    scoreInfo.innerHTML = `❌ Nilai kamu ${nilai}. Belum mencapai KKM ${KKM}. Materi belum selesai.`;
-    scoreInfo.style.color = "#ef4444";
-    return;
-  }
+        const scoreInfo =
+            document.getElementById("scoreInfo");
 
-  scoreInfo.innerHTML = `✅ Nilai kamu ${nilai}. Aktivitas selesai.`;
-  scoreInfo.style.color = "#22c55e";
-});
+        const isCompleted =
+            submitButton.dataset.completed === "true";
 
-document.addEventListener("DOMContentLoaded", function () {
-  const btnSelesai = document.getElementById("btnSelesai");
+        if (sudahDikerjakan < totalItem) {
+            event.preventDefault();
 
-  if (btnSelesai && btnSelesai.innerText.trim() === "Aktivitas Selesai") {
-    document.querySelectorAll(".drag-item").forEach(item => {
-      item.setAttribute("draggable", "false");
-      item.style.opacity = "0.6";
-      item.style.pointerEvents = "none";
+            scoreInfo.textContent =
+                "❌ Semua contoh harus diseret ke jenis proyek terlebih dahulu.";
+
+            scoreInfo.className =
+                "score-info score-error";
+
+            return;
+        }
+
+        /*
+         * Jika materi sudah pernah selesai,
+         * pengerjaan hanya dianggap latihan.
+         */
+        if (isCompleted) {
+            event.preventDefault();
+
+            if (nilai >= KKM) {
+                scoreInfo.textContent =
+                    `✅ Nilai latihan kamu ${nilai}. ` +
+                    `Kamu telah mencapai KKM ${KKM}. ` +
+                    "Penyelesaian materi sebelumnya tidak berubah.";
+
+                scoreInfo.className =
+                    "score-info score-success";
+            } else {
+                scoreInfo.textContent =
+                    `Nilai latihan kamu ${nilai}. ` +
+                    `Belum mencapai KKM ${KKM}. ` +
+                    "Penyelesaian materi sebelumnya tetap tersimpan.";
+
+                scoreInfo.className =
+                    "score-info score-warning";
+            }
+
+            return;
+        }
+
+        /*
+         * Pengerjaan pertama harus mencapai KKM.
+         */
+        if (nilai < KKM) {
+            event.preventDefault();
+
+            scoreInfo.textContent =
+                `❌ Nilai kamu ${nilai}. ` +
+                `Belum mencapai KKM ${KKM}. ` +
+                "Silakan ulangi aktivitas.";
+
+            scoreInfo.className =
+                "score-info score-error";
+
+            return;
+        }
+
+        scoreInfo.textContent =
+            `✅ Nilai kamu ${nilai}. ` +
+            "Aktivitas selesai dan progres akan disimpan.";
+
+        scoreInfo.className =
+            "score-info score-success";
     });
-  }
-});
+}
+
+/**
+ * Mengembalikan semua item ke posisi awal.
+ */
+function resetModelComparisonActivity() {
+    const itemContainer =
+        document.querySelector(".drag-items");
+
+    const items =
+        document.querySelectorAll(".drag-item");
+
+    const dropZones =
+        document.querySelectorAll(".drop-zone");
+
+    const scoreInfo =
+        document.getElementById("scoreInfo");
+
+    if (!itemContainer) {
+        return;
+    }
+
+    items.forEach((item) => {
+        itemContainer.appendChild(item);
+
+        item.setAttribute("draggable", "true");
+
+        item.style.cursor = "grab";
+        item.style.opacity = "1";
+        item.style.pointerEvents = "auto";
+
+        item.classList.remove(
+            "dragging",
+            "correct",
+            "wrong"
+        );
+
+        delete item.dataset.correct;
+    });
+
+    dropZones.forEach((zone) => {
+        zone.classList.remove("hover");
+    });
+
+    if (scoreInfo) {
+        scoreInfo.textContent = "";
+        scoreInfo.className = "score-info";
+    }
+
+    draggedItem = null;
+
+    document.querySelector(".ai-dragdrop")
+        ?.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+}

@@ -30,13 +30,21 @@
         <div>
             <h2>1. Apa Itu Google Teachable Machine</h2>
             <p>
-                <strong><i>Google Teachable Machine</i></strong> merupakan alat berbasis <i>web</i> yang dikembangkan oleh Google untuk membantu pengguna mempelajari <i>machine learning</i> secara mudah dan menarik. Pengguna dapat membuat dan melatih model kecerdasan buatan melalui <i>Teachable Machine</i> tanpa harus menguasai pemrograman atau menulis kode yang rumit.
+                <strong><i>Google Teachable Machine</i></strong> merupakan alat berbasis <i>web</i> yang dikembangkan oleh
+                Google untuk membantu pengguna mempelajari <i>machine learning</i> secara mudah dan menarik. Pengguna dapat
+                membuat dan melatih model kecerdasan buatan melalui <i>Teachable Machine</i> tanpa harus menguasai
+                pemrograman atau menulis kode yang rumit.
             </p>
             <p>
-                <i>Teachable Machine</i> dapat digunakan untuk melatih komputer agar mampu mengenali gambar, suara, atau pose tubuh manusia melalui beberapa langkah sederhana. Misalnya, komputer dapat dilatih untuk membedakan foto bekantan dan monyet, mengenali suara tepuk tangan, atau mendeteksi gerakan tertentu menggunakan kamera.
+                <i>Teachable Machine</i> dapat digunakan untuk melatih komputer agar mampu mengenali gambar, suara, atau
+                pose tubuh manusia melalui beberapa langkah sederhana. Misalnya, komputer dapat dilatih untuk membedakan
+                foto bekantan dan monyet, mengenali suara tepuk tangan, atau mendeteksi gerakan tertentu menggunakan kamera.
             </p>
             <p>
-                Alat ini sangat cocok digunakan oleh pelajar, termasuk siswa SMP, karena memiliki tampilan yang sederhana dan proses penggunaan yang cepat. Pengguna hanya perlu menyiapkan contoh data, seperti gambar atau suara. Selanjutnya, <i>Teachable Machine</i> akan mempelajari pola dari data tersebut dan menghasilkan model kecerdasan buatan yang dapat digunakan untuk melakukan pengenalan secara otomatis.
+                Alat ini sangat cocok digunakan oleh pelajar, termasuk siswa SMP, karena memiliki tampilan yang sederhana
+                dan proses penggunaan yang cepat. Pengguna hanya perlu menyiapkan contoh data, seperti gambar atau suara.
+                Selanjutnya, <i>Teachable Machine</i> akan mempelajari pola dari data tersebut dan menghasilkan model
+                kecerdasan buatan yang dapat digunakan untuk melakukan pengenalan secara otomatis.
 
             </p>
             <p>
@@ -51,11 +59,18 @@
                 </li>
 
                 <p>
-                    Pembelajaran terbimbing (<i>supervised learning</i>) merupakan salah satu metode <i>machine learning</i> yang menggunakan data berlabel sebagai bahan pembelajaran. Pada metode ini, setiap data telah memiliki kategori atau kelas yang benar sehingga komputer dapat mempelajari hubungan antara data masukan (<i>input</i>) dan labelnya (<i>output</i>). Selama proses pelatihan, model akan mencari pola atau karakteristik yang membedakan setiap kelas. Setelah proses pelatihan selesai, model dapat menggunakan pola tersebut untuk memprediksi label pada data baru yang belum pernah dilihat sebelumnya.
+                    Pembelajaran terbimbing (<i>supervised learning</i>) merupakan salah satu metode <i>machine learning</i>
+                    yang menggunakan data berlabel sebagai bahan pembelajaran. Pada metode ini, setiap data telah memiliki
+                    kategori atau kelas yang benar sehingga komputer dapat mempelajari hubungan antara data masukan
+                    (<i>input</i>) dan labelnya (<i>output</i>). Selama proses pelatihan, model akan mencari pola atau
+                    karakteristik yang membedakan setiap kelas. Setelah proses pelatihan selesai, model dapat menggunakan
+                    pola tersebut untuk memprediksi label pada data baru yang belum pernah dilihat sebelumnya.
                 </p>
 
                 <p>
-                    <i>Teachable Machine</i> menggunakan pendekatan yang disebut <i>supervised learning</i> atau pembelajaran terbimbing. Artinya, komputer belajar dari contoh data yang sudah diberi label oleh manusia.
+                    <i>Teachable Machine</i> menggunakan pendekatan yang disebut <i>supervised learning</i> atau
+                    pembelajaran terbimbing. Artinya, komputer belajar dari contoh data yang sudah diberi label oleh
+                    manusia.
                 </p>
 
                 <p>
@@ -66,7 +81,9 @@
                     <li>Gambar ikan papuyu diberi label Ikan Papuyu</li>
                 </ul>
                 <p>
-                    Pada pembelajaran terbimbing, komputer belajar dari data yang telah diberi label oleh manusia. Contoh proses pembelajaran terbimbing menggunakan data ikan gabus dan ikan papuyu dapat dilihat pada gambar B.1.
+                    Pada pembelajaran terbimbing, komputer belajar dari data yang telah diberi label oleh manusia. Contoh
+                    proses pembelajaran terbimbing menggunakan data ikan gabus dan ikan papuyu dapat dilihat pada gambar
+                    B.1.
                 </p>
                 <div class="materi-image">
                     <img src="{{ asset('images/bab-2/materi-a/gambar-1.png') }}" alt="Ilustrasi AI">
@@ -109,7 +126,8 @@
                     menunjukkan
                     gambar melalui kamera sebagai <i>input</i>, kemudian komputer menampilkan hasil prediksi berupa label
                     yang
-                    sesuai sebagai <i>output</i>. Hubungan antara data masukan (<i>input</i>), model kecerdasan buatan, dan hasil keluaran (<i>output</i>) dapat diamati pada gambar B.2.
+                    sesuai sebagai <i>output</i>. Hubungan antara data masukan (<i>input</i>), model kecerdasan buatan, dan
+                    hasil keluaran (<i>output</i>) dapat diamati pada gambar B.2.
                 </p>
                 <div class="materi-image">
                     <img src="{{ asset('images/bab-2/materi-a/gambar-2.png') }}" alt="Ilustrasi AI">
@@ -134,10 +152,13 @@
                     Pelatihan Model Secara <i>Visual</i>
                 </li>
                 <p>
-                    Salah satu keunggulan <i><strong>teachable machine</strong></i> adalah proses pelatihan model secara visual, sehingga pembelajaran menjadi lebih mudah dipahami.
+                    Salah satu keunggulan <i><strong>teachable machine</strong></i> adalah proses pelatihan model secara
+                    visual, sehingga pembelajaran menjadi lebih mudah dipahami.
                 </p>
                 <p>
-                    Biasanya, pelatihan model kecerdasan buatan dilakukan menggunakan kode program dan data dalam bentuk angka atau file teks. Namun, pada <i>Teachable Machine</i> seluruh proses tersebut ditampilkan dalam bentuk <i>visual</i> yang interaktif sehingga lebih mudah dipahami oleh pengguna.
+                    Biasanya, pelatihan model kecerdasan buatan dilakukan menggunakan kode program dan data dalam bentuk
+                    angka atau file teks. Namun, pada <i>Teachable Machine</i> seluruh proses tersebut ditampilkan dalam
+                    bentuk <i>visual</i> yang interaktif sehingga lebih mudah dipahami oleh pengguna.
                 </p>
                 <p>
                     Langkah-langkah pelatihan di Teachable Machine:
@@ -149,7 +170,8 @@
                     <li>Setelah selesai, model siap diuji dan digunakan untuk mengenali data baru.</li>
                 </ol>
                 <p>
-                    Salah satu keunggulan Google Teachable Machine adalah proses pelatihan model yang ditampilkan secara visual dan mudah dipahami. Tahapan pelatihan model dapat dilihat pada gambar B.3.
+                    Salah satu keunggulan Google Teachable Machine adalah proses pelatihan model yang ditampilkan secara
+                    visual dan mudah dipahami. Tahapan pelatihan model dapat dilihat pada gambar B.3.
                 </p>
                 <div class="materi-image">
                     <img src="{{ asset('images/bab-2/materi-a/gambar-3.png') }}" alt="Ilustrasi AI">
@@ -175,7 +197,7 @@
         use App\Models\Materi;
         use App\Models\UserProgress;
 
-        // ambil materi (karena kamu tidak pakai controller)
+        // ambil materi 
         $materi = Materi::where('slug', 'bab-2-materi-a')->first();
 
         // cek progress
@@ -187,209 +209,241 @@
 
     <div id="progress"></div>
 
-    
+
 
     <section class="ai-inline-interactive">
-    <h2>Aktivitas 1 : Menentukan <i>Output</i> dari <i>Input</i> pada Sistem <i>AI</i></h2>
-    
-    <p>
-        Tujuan Aktivitas <br> Setelah menyelesaikan aktivitas ini, siswa diharapkan mampu menentukan <i>output</i> yang sesuai berdasarkan <i>input</i> yang diberikan pada sistem kecerdasan buatan.
-    </p>
+        <h2>Aktivitas 1 : Menentukan <i>Output</i> dari <i>Input</i> pada Sistem <i>AI</i></h2>
 
-    <p>
-        Petunjuk Pengerjaan Aktivitas
-    </p>
-    <ul>
-        <li>Bacalah setiap <i>input</i> yang diberikan dengan teliti. </li>
-        <li>Perhatikan pilihan jawaban yang tersedia pada setiap nomor.</li>
-        <li>Perhatikan <i>input</i> berupa gambar, suara, ekspresi, atau pose.</li>
-        <li>Pilih <i>output</i> yang paling sesuai.</li>
-        <li>Setelah semua soal dijawab, <i>klik</i> tombol <strong>Kumpul Aktivitas</strong>.</li>
-    </ul>
+        <p>
+            Tujuan Aktivitas <br> Setelah menyelesaikan aktivitas ini, siswa diharapkan mampu menentukan <i>output</i> yang
+            sesuai berdasarkan <i>input</i> yang diberikan pada sistem kecerdasan buatan.
+        </p>
 
-    <!-- SOAL 1 -->
-    <div class="ai-question" data-answer="gabus" data-explain="Model AI mengenali ciri ikan gabus dari bentuk tubuh, warna, dan kepala yang khas.">
-        <p><strong>1. <i>Image Project</i></strong></p>
+        <p>
+            Petunjuk Pengerjaan Aktivitas
+        </p>
+        <ul>
+            <li>Bacalah setiap <i>input</i> yang diberikan dengan teliti. </li>
+            <li>Perhatikan pilihan jawaban yang tersedia pada setiap nomor.</li>
+            <li>Perhatikan <i>input</i> berupa gambar, suara, ekspresi, atau pose.</li>
+            <li>Pilih <i>output</i> yang paling sesuai.</li>
+            <li>Setelah semua soal dijawab, <i>klik</i> tombol <strong>Kumpul Aktivitas</strong>.</li>
+        </ul>
 
-        <div class="ai-flow">
-            <div class="ai-input-box">
-                <span class="ai-label"><i>Input</i></span>
-                <img src="{{ asset('images/bab-2/materi-a/kuis-1.JPG') }}" alt="Gambar ikan gabus">
-                <p>Gambar seekor ikan gabus</p>
-            </div>
+        <!-- SOAL 1 -->
+        <div class="ai-question" data-answer="gabus"
+            data-explain="Model AI mengenali ciri ikan gabus dari bentuk tubuh, warna, dan kepala yang khas.">
+            <p><strong>1. <i>Image Project</i></strong></p>
 
-            <div class="ai-arrow">→</div>
+            <div class="ai-flow">
+                <div class="ai-input-box">
+                    <span class="ai-label"><i>Input</i></span>
+                    <img src="{{ asset('images/bab-2/materi-a/kuis-1.JPG') }}" alt="Gambar ikan gabus">
+                    <p>Gambar seekor ikan gabus</p>
+                </div>
 
-            <div class="ai-model-box">
-                <p>Model <i>AI</i></p>
-            </div>
+                <div class="ai-arrow">→</div>
 
-            <div class="ai-arrow">→</div>
+                <div class="ai-model-box">
+                    <p>Model <i>AI</i></p>
+                </div>
 
-            <div class="ai-output-box">
-                <span class="ai-label"><i>Output</i>?</span>
-                <div class="ai-options">
-                    <button type="button" onclick="checkOutput(this, 'papuyu')">Ikan Papuyu</button>
-                    <button type="button" onclick="checkOutput(this, 'gabus')">Ikan Gabus</button>
-                    <button type="button" onclick="checkOutput(this, 'nila')">Ikan Nila</button>
+                <div class="ai-arrow">→</div>
+
+                <div class="ai-output-box">
+                    <span class="ai-label"><i>Output</i>?</span>
+                    <div class="ai-options">
+                        <button type="button" onclick="checkOutput(this, 'papuyu')">Ikan Papuyu</button>
+                        <button type="button" onclick="checkOutput(this, 'gabus')">Ikan Gabus</button>
+                        <button type="button" onclick="checkOutput(this, 'nila')">Ikan Nila</button>
+                    </div>
                 </div>
             </div>
+
+            <div class="ai-feedback"></div>
         </div>
 
-        <div class="ai-feedback"></div>
-    </div>
+        <!-- SOAL 2 -->
+        <div class="ai-question" data-answer="tepuk tangan"
+            data-explain="Model AI mengenali pola bunyi tepukan sehingga output yang tepat adalah tepuk tangan.">
+            <p><strong>2. <i>Audio Project</i></strong></p>
 
-    <!-- SOAL 2 -->
-    <div class="ai-question" data-answer="tepuk tangan" data-explain="Model AI mengenali pola bunyi tepukan sehingga output yang tepat adalah tepuk tangan.">
-        <p><strong>2. <i>Audio Project</i></strong></p>
+            <div class="ai-flow">
+                <div class="ai-input-box">
+                    <span class="ai-label"><i>Input</i></span>
+                    <button type="button" class="audio-btn" onclick="document.getElementById('audioTepuk').play()">▶ Putar
+                        Suara</button>
+                    <audio id="audioTepuk" src="{{ asset('images/bab-2/materi-a/kuis-4.mpeg') }}"></audio>
+                    <p>Suara tepuk tangan</p>
+                </div>
 
-        <div class="ai-flow">
-            <div class="ai-input-box">
-                <span class="ai-label"><i>Input</i></span>
-                <button type="button" class="audio-btn" onclick="document.getElementById('audioTepuk').play()">▶ Putar Suara</button>
-                <audio id="audioTepuk" src="{{ asset('images/bab-2/materi-a/kuis-4.mpeg') }}"></audio>
-                <p>Suara tepuk tangan</p>
-            </div>
+                <div class="ai-arrow">→</div>
 
-            <div class="ai-arrow">→</div>
+                <div class="ai-model-box">
+                    <p>Model <i>AI</i></p>
+                </div>
 
-            <div class="ai-model-box">
-                <p>Model <i>AI</i></p>
-            </div>
+                <div class="ai-arrow">→</div>
 
-            <div class="ai-arrow">→</div>
-
-            <div class="ai-output-box">
-                <span class="ai-label"><i>Output</i>?</span>
-                <div class="ai-options">
-                    <button type="button" onclick="checkOutput(this, 'bicara')">Bicara</button>
-                    <button type="button" onclick="checkOutput(this, 'tepuk tangan')">Tepuk tangan</button>
-                    <button type="button" onclick="checkOutput(this, 'musik')">Musik</button>
+                <div class="ai-output-box">
+                    <span class="ai-label"><i>Output</i>?</span>
+                    <div class="ai-options">
+                        <button type="button" onclick="checkOutput(this, 'bicara')">Bicara</button>
+                        <button type="button" onclick="checkOutput(this, 'tepuk tangan')">Tepuk tangan</button>
+                        <button type="button" onclick="checkOutput(this, 'musik')">Musik</button>
+                    </div>
                 </div>
             </div>
+
+            <div class="ai-feedback"></div>
         </div>
 
-        <div class="ai-feedback"></div>
-    </div>
+        <!-- SOAL 3 -->
+        <div class="ai-question" data-answer="senyum"
+            data-explain="Model AI mengenali ekspresi wajah dari pola mata, pipi, dan mulut.">
+            <p><strong>3. <i>Image Project</i></strong></p>
 
-    <!-- SOAL 3 -->
-    <div class="ai-question" data-answer="senyum" data-explain="Model AI mengenali ekspresi wajah dari pola mata, pipi, dan mulut.">
-        <p><strong>3. <i>Image Project</i></strong></p>
+            <div class="ai-flow">
+                <div class="ai-input-box">
+                    <span class="ai-label"><i>Input</i></span>
+                    <img src="{{ asset('images/bab-2/materi-a/kuis-5.png') }}" alt="Wajah tersenyum">
+                    <p>Wajah tersenyum di depan kamera</p>
+                </div>
 
-        <div class="ai-flow">
-            <div class="ai-input-box">
-                <span class="ai-label"><i>Input</i></span>
-                <img src="{{ asset('images/bab-2/materi-a/kuis-5.png') }}" alt="Wajah tersenyum">
-                <p>Wajah tersenyum di depan kamera</p>
-            </div>
+                <div class="ai-arrow">→</div>
 
-            <div class="ai-arrow">→</div>
+                <div class="ai-model-box">
+                    <p>Model <i>AI</i></p>
+                </div>
 
-            <div class="ai-model-box">
-                <p>Model <i>AI</i></p>
-            </div>
+                <div class="ai-arrow">→</div>
 
-            <div class="ai-arrow">→</div>
-
-            <div class="ai-output-box">
-                <span class="ai-label"><i>Output</i>?</span>
-                <div class="ai-options">
-                    <button type="button" onclick="checkOutput(this, 'marah')">Marah</button>
-                    <button type="button" onclick="checkOutput(this, 'senyum')">Senyum</button>
-                    <button type="button" onclick="checkOutput(this, 'sedih')">Sedih</button>
+                <div class="ai-output-box">
+                    <span class="ai-label"><i>Output</i>?</span>
+                    <div class="ai-options">
+                        <button type="button" onclick="checkOutput(this, 'marah')">Marah</button>
+                        <button type="button" onclick="checkOutput(this, 'senyum')">Senyum</button>
+                        <button type="button" onclick="checkOutput(this, 'sedih')">Sedih</button>
+                    </div>
                 </div>
             </div>
+
+            <div class="ai-feedback"></div>
         </div>
 
-        <div class="ai-feedback"></div>
-    </div>
+        <!-- SOAL 4 -->
+        <div class="ai-question" data-answer="berdiri"
+            data-explain="Model AI mengenali posisi tubuh berdasarkan pola pose yang terlihat.">
+            <p><strong>4. <i>Pose Project</i></strong></p>
 
-    <!-- SOAL 4 -->
-    <div class="ai-question" data-answer="berdiri" data-explain="Model AI mengenali posisi tubuh berdasarkan pola pose yang terlihat.">
-        <p><strong>4. <i>Pose Project</i></strong></p>
+            <div class="ai-flow">
+                <div class="ai-input-box">
+                    <span class="ai-label"><i>Input</i></span>
+                    <img src="{{ asset('images/bab-2/materi-a/kuis-3.png') }}" alt="Pose berdiri">
+                    <p>Pose tubuh berdiri tegak</p>
+                </div>
 
-        <div class="ai-flow">
-            <div class="ai-input-box">
-                <span class="ai-label"><i>Input</i></span>
-                <img src="{{ asset('images/bab-2/materi-a/kuis-3.png') }}" alt="Pose berdiri">
-                <p>Pose tubuh berdiri tegak</p>
-            </div>
+                <div class="ai-arrow">→</div>
 
-            <div class="ai-arrow">→</div>
+                <div class="ai-model-box">
+                    <p>Model <i>AI</i></p>
+                </div>
 
-            <div class="ai-model-box">
-                <p>Model <i>AI</i></p>
-            </div>
+                <div class="ai-arrow">→</div>
 
-            <div class="ai-arrow">→</div>
-
-            <div class="ai-output-box">
-                <span class="ai-label"><i>Output</i>?</span>
-                <div class="ai-options">
-                    <button type="button" onclick="checkOutput(this, 'duduk')">Duduk</button>
-                    <button type="button" onclick="checkOutput(this, 'berdiri')">Berdiri</button>
-                    <button type="button" onclick="checkOutput(this, 'melompat')">Melompat</button>
+                <div class="ai-output-box">
+                    <span class="ai-label"><i>Output</i>?</span>
+                    <div class="ai-options">
+                        <button type="button" onclick="checkOutput(this, 'duduk')">Duduk</button>
+                        <button type="button" onclick="checkOutput(this, 'berdiri')">Berdiri</button>
+                        <button type="button" onclick="checkOutput(this, 'melompat')">Melompat</button>
+                    </div>
                 </div>
             </div>
+
+            <div class="ai-feedback"></div>
         </div>
 
-        <div class="ai-feedback"></div>
-    </div>
+        <!-- SOAL 5 -->
+        <div class="ai-question" data-answer="gabus"
+            data-explain="Ciri kepala menyerupai ular dan mampu hidup di air rendah oksigen merupakan ciri ikan gabus.">
+            <p><strong>5. <i>Image Project</i></strong></p>
 
-    <!-- SOAL 5 -->
-    <div class="ai-question" data-answer="gabus" data-explain="Ciri kepala menyerupai ular dan mampu hidup di air rendah oksigen merupakan ciri ikan gabus.">
-        <p><strong>5. <i>Image Project</i></strong></p>
+            <div class="ai-flow">
+                <div class="ai-input-box">
+                    <span class="ai-label"><i>Input</i></span>
+                    <img src="{{ asset('images/bab-2/materi-a/kuis-2.JPG') }}" alt="Ciri ikan gabus">
+                    <p>Ikan dengan kepala menyerupai ular dan tahan di perairan rendah oksigen.</p>
+                </div>
 
-        <div class="ai-flow">
-            <div class="ai-input-box">
-                <span class="ai-label"><i>Input</i></span>
-                <img src="{{ asset('images/bab-2/materi-a/kuis-2.JPG') }}" alt="Ciri ikan gabus">
-                <p>Ikan dengan kepala menyerupai ular dan tahan di perairan rendah oksigen.</p>
-            </div>
+                <div class="ai-arrow">→</div>
 
-            <div class="ai-arrow">→</div>
+                <div class="ai-model-box">
+                    <p>Model <i>AI</i></p>
+                </div>
 
-            <div class="ai-model-box">
-                <p>Model <i>AI</i></p>
-            </div>
+                <div class="ai-arrow">→</div>
 
-            <div class="ai-arrow">→</div>
-
-            <div class="ai-output-box">
-                <span class="ai-label"><i>Output</i>?</span>
-                <div class="ai-options">
-                    <button type="button" onclick="checkOutput(this, 'papuyu')">Ikan Papuyu</button>
-                    <button type="button" onclick="checkOutput(this, 'gabus')">Ikan Gabus</button>
-                    <button type="button" onclick="checkOutput(this, 'nila')">Ikan Nila</button>
+                <div class="ai-output-box">
+                    <span class="ai-label"><i>Output</i>?</span>
+                    <div class="ai-options">
+                        <button type="button" onclick="checkOutput(this, 'papuyu')">Ikan Papuyu</button>
+                        <button type="button" onclick="checkOutput(this, 'gabus')">Ikan Gabus</button>
+                        <button type="button" onclick="checkOutput(this, 'nila')">Ikan Nila</button>
+                    </div>
                 </div>
             </div>
+
+            <div class="ai-feedback"></div>
         </div>
 
-        <div class="ai-feedback"></div>
-    </div>
+        <!-- <div class="ai-progress-box">
+            <p><strong>Progress Aktivitas:</strong> <span id="progressText">0/5 soal dijawab</span></p>
+            <div class="ai-progress">
+                <div id="progressBar"></div>
+            </div>
+        </div> -->
 
-    <!-- <div class="ai-progress-box">
-        <p><strong>Progress Aktivitas:</strong> <span id="progressText">0/5 soal dijawab</span></p>
-        <div class="ai-progress">
-            <div id="progressBar"></div>
-        </div>
-    </div> -->
+        <form method="POST" action="{{ url('/materi/selesai') }}" id="formSelesai" class="mt-4">
 
-    <form method="POST" action="{{ url('/materi/selesai') }}" id="formSelesai" class="mt-4">
-        @csrf
-        <input type="hidden" name="materi_id" value="{{ $materi->id }}">
+            @csrf
 
-        <button
-            type="submit"
-            id="btnSelesai"
-            class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}"
-            {{ $isCompleted ? 'disabled' : '' }}>
-            {{ $isCompleted ? 'Aktivitas Selesai' : 'Submit Aktivitas' }}
-        </button>
+            <input type="hidden" name="materi_id" value="{{ $materi->id }}">
 
-        <div id="scoreInfo" class="mt-2"></div>
-    </form>
-</section>
+            @if ($isCompleted)
+                <div class="activity-info">
+                    <i class="fas fa-circle-info"></i>
+
+                    <div>
+                        <strong>Mode Latihan</strong>
+
+                        <p>
+                            Aktivitas ini telah diselesaikan. Kamu dapat mengulanginya
+                            sebagai latihan tanpa mengubah penyelesaian materi sebelumnya.
+                        </p>
+                    </div>
+                </div>
+            @endif
+
+            <div class="activity-buttons">
+                <button type="submit" id="btnSelesai" class="btn-check-activity"
+                    data-completed="{{ $isCompleted ? 'true' : 'false' }}">
+
+                    <i class="fas fa-check"></i>
+
+                    {{ $isCompleted ? 'Periksa Hasil Latihan' : 'Kumpul Aktivitas' }}
+                </button>
+
+                <button type="button" id="btnUlangi" class="btn-repeat-activity" onclick="resetOutputActivity()">
+
+                    <i class="fas fa-rotate-right"></i>
+                    Ulangi Latihan
+                </button>
+            </div>
+
+            <div id="scoreInfo" class="score-info"></div>
+        </form>
+    </section>
 
 @endsection
 

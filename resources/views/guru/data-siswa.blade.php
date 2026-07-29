@@ -69,7 +69,7 @@
 
         </div>
 
-        <!-- TABLE -->
+        
         <div class="table-wrapper">
             <table class="siswa-table">
                 <thead>

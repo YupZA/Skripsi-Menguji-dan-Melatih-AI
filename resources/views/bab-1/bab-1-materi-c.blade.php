@@ -8,7 +8,11 @@
 
         <h2><strong>3. Langkah-Langkah Proses <i>Machine Learning</i></strong></h2>
         <p>
-            Kecerdasan buatan memungkinkan komputer melakukan tugas yang biasanya memerlukan kecerdasan manusia, seperti mengenali pola, belajar dari data, dan membuat prediksi. Salah satu cara agar komputer dapat belajar adalah melalui <i>machine learning</i>, yaitu proses ketika komputer belajar dari data tanpa harus diprogram secara langsung. Agar proses pembelajaran tersebut berjalan dengan baik, terdapat beberapa langkah yang perlu dilakukan.
+            Kecerdasan buatan memungkinkan komputer melakukan tugas yang biasanya memerlukan kecerdasan manusia, seperti
+            mengenali pola, belajar dari data, dan membuat prediksi. Salah satu cara agar komputer dapat belajar adalah
+            melalui <i>machine learning</i>, yaitu proses ketika komputer belajar dari data tanpa harus diprogram secara
+            langsung. Agar proses pembelajaran tersebut berjalan dengan baik, terdapat beberapa langkah yang perlu
+            dilakukan.
         </p>
         <ol type="a">
             <li>
@@ -27,7 +31,8 @@
                 <li>Gerakan, seperti pose tubuh atau ekspresi wajah.</li>
             </ul>
             <p>
-                Berbagai jenis data dapat digunakan sebagai bahan pembelajaran bagi komputer. Contoh jenis data yang umum digunakan dalam kecerdasan buatan dapat dilihat pada gambar A.9.
+                Berbagai jenis data dapat digunakan sebagai bahan pembelajaran bagi komputer. Contoh jenis data yang umum
+                digunakan dalam kecerdasan buatan dapat dilihat pada gambar A.9.
             </p>
 
             <div class="materi-image">
@@ -71,7 +76,8 @@
             </ul>
 
             <p>
-                Kualitas data sangat memengaruhi kemampuan komputer dalam mempelajari pola. Perbedaan antara data yang berkualitas baik dan data yang kurang baik dapat diamati pada gambar A.10.
+                Kualitas data sangat memengaruhi kemampuan komputer dalam mempelajari pola. Perbedaan antara data yang
+                berkualitas baik dan data yang kurang baik dapat diamati pada gambar A.10.
             </p>
 
             <div class="materi-image">
@@ -91,7 +97,10 @@
                 <strong>Melatih Model (<i>Training Model</i>)</strong>
             </li>
             <p>
-                Semua data yang telah disiapkan dimasukkan ke dalam sistem, kemudian komputer mencari pola atau ciri khas dari setiap data. Melalui proses ini terbentuk model kecerdasan buatan, yaitu hasil pembelajaran komputer dari data yang telah diberikan. Model kecerdasan buatan nantinya digunakan untuk mengenali atau mengklasifikasikan data baru.
+                Semua data yang telah disiapkan dimasukkan ke dalam sistem, kemudian komputer mencari pola atau ciri khas
+                dari setiap data. Melalui proses ini terbentuk model kecerdasan buatan, yaitu hasil pembelajaran komputer
+                dari data yang telah diberikan. Model kecerdasan buatan nantinya digunakan untuk mengenali atau
+                mengklasifikasikan data baru.
             </p>
             <p>Contoh :</p>
             <p>
@@ -104,7 +113,8 @@
                 <li>Ukuran tubuh yang relatif besar</li>
             </ul>
             <p>
-                Setelah data disiapkan, komputer mulai mempelajari ciri-ciri yang membedakan setiap kategori data. Ilustrasi proses pelatihan model dapat dilihat pada gambar A.11.
+                Setelah data disiapkan, komputer mulai mempelajari ciri-ciri yang membedakan setiap kategori data. Ilustrasi
+                proses pelatihan model dapat dilihat pada gambar A.11.
             </p>
             <div class="materi-image">
                 <img src="{{ asset('images/bab-1/materi-c/gambar-3.png') }}" alt="Ilustrasi AI">
@@ -129,7 +139,9 @@
                 <strong>Menguji Model (<i>Testing Model</i>)</strong>
             </li>
             <p>
-                Langkah selanjutnya adalah menguji kemampuan model kecerdasan buatan menggunakan data baru yang belum pernah digunakan pada proses pelatihan. Pengujian dilakukan untuk mengetahui apakah model kecerdasan buatan benar-benar memahami pola dalam data, bukan sekadar menghafal data pelatihan. 
+                Langkah selanjutnya adalah menguji kemampuan model kecerdasan buatan menggunakan data baru yang belum pernah
+                digunakan pada proses pelatihan. Pengujian dilakukan untuk mengetahui apakah model kecerdasan buatan
+                benar-benar memahami pola dalam data, bukan sekadar menghafal data pelatihan.
             </p>
             <p>Contoh :</p>
             <p>
@@ -139,7 +151,8 @@
             <p>“Gambar ini termasuk bekantan atau monyet?”</p>
 
             <p>
-                Setelah proses pelatihan selesai, model perlu diuji menggunakan data baru untuk mengetahui kemampuannya dalam melakukan klasifikasi. Contoh proses pengujian model ditunjukkan pada gambar A.12.
+                Setelah proses pelatihan selesai, model perlu diuji menggunakan data baru untuk mengetahui kemampuannya
+                dalam melakukan klasifikasi. Contoh proses pengujian model ditunjukkan pada gambar A.12.
             </p>
 
             <div class="materi-image">
@@ -167,7 +180,9 @@
             </li>
 
             <p>
-                Setelah model kecerdasan buatan menunjukkan kinerja yang baik, model tersebut dapat digunakan untuk melakukan prediksi terhadap data baru. Pada tahap ini, model kecerdasan buatan memanfaatkan pola yang telah dipelajari selama proses pelatihan untuk membantu mengenali atau mengklasifikasikan data secara otomatis.
+                Setelah model kecerdasan buatan menunjukkan kinerja yang baik, model tersebut dapat digunakan untuk
+                melakukan prediksi terhadap data baru. Pada tahap ini, model kecerdasan buatan memanfaatkan pola yang telah
+                dipelajari selama proses pelatihan untuk membantu mengenali atau mengklasifikasikan data secara otomatis.
             <p>Contoh :</p>
             <ul>
                 <li>Model bisa mengenali wajah di kamera ponsel (<i>Face Recognition</i>).</li>
@@ -177,7 +192,8 @@
             </ul>
 
             <p>
-                erdasan buatan telah digunakan dalam berbagai bidang kehidupan sehari-hari. Beberapa contoh penerapannya dapat diamati pada gambar A.13.
+                erdasan buatan telah digunakan dalam berbagai bidang kehidupan sehari-hari. Beberapa contoh penerapannya
+                dapat diamati pada gambar A.13.
             </p>
 
             <div class="materi-image">
@@ -195,7 +211,9 @@
             <p>Analogi untuk mempermudah pemahaman dapat dilihat pada proses mengenali bekantan dan monyet.</p>
 
             <ol>
-                <li>Mengumpulkan data : Banyak gambar bekantan dan monyet dikumpulkan sebagai bahan pelatihan. Proses pembelajaran kecerdasan buatan diawali dengan pengumpulan data sebagai bahan pelatihan. Contoh tahap pengumpulan data dapat dilihat pada gambar A.14.
+                <li>Mengumpulkan data : Banyak gambar bekantan dan monyet dikumpulkan sebagai bahan pelatihan. Proses
+                    pembelajaran kecerdasan buatan diawali dengan pengumpulan data sebagai bahan pelatihan. Contoh tahap
+                    pengumpulan data dapat dilihat pada gambar A.14.
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-1/materi-c/gambar-6.png') }}" alt="Ilustrasi AI">
                         <span>Gambar A.14 Ilustrasi tahap mengumpulkan data pada proses pembelajaran kecerdasan buatan untuk
@@ -204,58 +222,86 @@
 
                     <div class="fun-fact">
                         <p>
-                            Gambar A.14 memperlihatkan langkah pertama dalam proses pembelajaran kecerdasan buatan, yaitu mengumpulkan data. Pada tahap ini, berbagai gambar bekantan dan monyet dikumpulkan sebagai bahan pelatihan agar model kecerdasan buatan memiliki cukup contoh untuk mempelajari perbedaan ciri dari kedua hewan tersebut.
+                            Gambar A.14 memperlihatkan langkah pertama dalam proses pembelajaran kecerdasan buatan, yaitu
+                            mengumpulkan data. Pada tahap ini, berbagai gambar bekantan dan monyet dikumpulkan sebagai bahan
+                            pelatihan agar model kecerdasan buatan memiliki cukup contoh untuk mempelajari perbedaan ciri
+                            dari kedua hewan tersebut.
                         </p>
                     </div>
                 </li>
-                <li>Menyiapkan data : Setiap gambar diberi label, misalnya “Bekantan” atau “Monyet”. Data yang telah dikumpulkan perlu diberi label agar komputer dapat membedakan setiap kategori. Ilustrasi proses pemberian label ditunjukkan pada gambar A.15.
+                <li>Menyiapkan data : Setiap gambar diberi label, misalnya “Bekantan” atau “Monyet”. Data yang telah
+                    dikumpulkan perlu diberi label agar komputer dapat membedakan setiap kategori. Ilustrasi proses
+                    pemberian label ditunjukkan pada gambar A.15.
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-1/materi-c/gambar-7.png') }}" alt="Ilustrasi AI">
-                        <span>Gambar A.15 Ilustrasi tahap menyiapkan data dengan memberi label pada gambar bekantan dan monyet.</span>
+                        <span>Gambar A.15 Ilustrasi tahap menyiapkan data dengan memberi label pada gambar bekantan dan
+                            monyet.</span>
                     </div>
 
                     <div class="fun-fact">
                         <p>
-                            Gambar A.15 memperlihatkan langkah kedua dalam proses pembelajaran kecerdasan buatan, yaitu menyiapkan data. Pada tahap ini, gambar bekantan dan monyet yang telah dikumpulkan diberi label sesuai kategorinya. Pemberian label yang jelas membantu komputer membedakan setiap jenis data dengan lebih tepat sebelum model dilatih.
+                            Gambar A.15 memperlihatkan langkah kedua dalam proses pembelajaran kecerdasan buatan, yaitu
+                            menyiapkan data. Pada tahap ini, gambar bekantan dan monyet yang telah dikumpulkan diberi label
+                            sesuai kategorinya. Pemberian label yang jelas membantu komputer membedakan setiap jenis data
+                            dengan lebih tepat sebelum model dilatih.
                         </p>
                     </div>
                 </li>
 
-                <li>Melatih model : Komputer mempelajari ciri-ciri yang membedakan bekantan dan monyet. Setelah data diberi label, komputer mulai mempelajari pola dan ciri khas dari setiap kategori. Proses tersebut dapat diamati pada gambar A.16.
+                <li>Melatih model : Komputer mempelajari ciri-ciri yang membedakan bekantan dan monyet. Setelah data diberi
+                    label, komputer mulai mempelajari pola dan ciri khas dari setiap kategori. Proses tersebut dapat diamati
+                    pada gambar A.16.
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-1/materi-c/gambar-8.png') }}" alt="Ilustrasi AI">
-                        <span>Gambar A.16 Ilustrasi tahap melatih model kecerdasan buatan untuk mengenali pola gambar bekantan dan monyet.</span>
+                        <span>Gambar A.16 Ilustrasi tahap melatih model kecerdasan buatan untuk mengenali pola gambar
+                            bekantan dan monyet.</span>
                     </div>
 
                     <div class="fun-fact">
                         <p>
-                            Gambar A.16 memperlihatkan langkah ketiga dalam proses pembelajaran kecerdasan buatan, yaitu melatih model. Pada tahap ini, data gambar bekantan dan monyet yang telah diberi label dimasukkan ke dalam sistem. Komputer kemudian mempelajari ciri-ciri pembeda dari kedua kategori tersebut, seperti hidung panjang, wajah kemerahan, warna bulu, dan bentuk wajah, sehingga model dapat mengenali pola data dengan lebih baik.
+                            Gambar A.16 memperlihatkan langkah ketiga dalam proses pembelajaran kecerdasan buatan, yaitu
+                            melatih model. Pada tahap ini, data gambar bekantan dan monyet yang telah diberi label
+                            dimasukkan ke dalam sistem. Komputer kemudian mempelajari ciri-ciri pembeda dari kedua kategori
+                            tersebut, seperti hidung panjang, wajah kemerahan, warna bulu, dan bentuk wajah, sehingga model
+                            dapat mengenali pola data dengan lebih baik.
                         </p>
                     </div>
                 </li>
                 <li>Menguji model : Gambar baru dimasukkan, kemudian komputer mencoba memprediksi apakah gambar tersebut
-                    termasuk bekantan atau monyet. Kemampuan model perlu diuji menggunakan data yang belum pernah digunakan sebelumnya. Contoh proses pengujian model ditunjukkan pada gambar A.17.
+                    termasuk bekantan atau monyet. Kemampuan model perlu diuji menggunakan data yang belum pernah digunakan
+                    sebelumnya. Contoh proses pengujian model ditunjukkan pada gambar A.17.
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-1/materi-c/gambar-9.png') }}" alt="Ilustrasi AI">
-                        <span>Gambar A.17 Ilustrasi tahap menguji model kecerdasan buatan untuk memprediksi gambar baru.</span>
+                        <span>Gambar A.17 Ilustrasi tahap menguji model kecerdasan buatan untuk memprediksi gambar
+                            baru.</span>
                     </div>
 
                     <div class="fun-fact">
                         <p>
-                            Gambar A.17 memperlihatkan langkah keempat dalam proses pembelajaran kecerdasan buatan, yaitu menguji model. Pada tahap ini, gambar baru yang belum digunakan dalam pelatihan dimasukkan ke dalam sistem. Komputer kemudian mencoba memprediksi apakah gambar tersebut termasuk bekantan atau monyet. Pengujian dilakukan untuk mengetahui kemampuan model dalam mengenali data baru dengan tepat.
+                            Gambar A.17 memperlihatkan langkah keempat dalam proses pembelajaran kecerdasan buatan, yaitu
+                            menguji model. Pada tahap ini, gambar baru yang belum digunakan dalam pelatihan dimasukkan ke
+                            dalam sistem. Komputer kemudian mencoba memprediksi apakah gambar tersebut termasuk bekantan
+                            atau monyet. Pengujian dilakukan untuk mengetahui kemampuan model dalam mengenali data baru
+                            dengan tepat.
                         </p>
                     </div>
                 </li>
                 <li>Menggunakan model : apabila hasil prediksi sudah sering benar, model dapat digunakan untuk membantu
-                    mengenali gambar hewan serupa secara otomatis. Model yang telah berhasil dilatih dan diuji dapat digunakan untuk mengenali data baru secara otomatis. Contoh penggunaan model dapat dilihat pada gambar A.18.
+                    mengenali gambar hewan serupa secara otomatis. Model yang telah berhasil dilatih dan diuji dapat
+                    digunakan untuk mengenali data baru secara otomatis. Contoh penggunaan model dapat dilihat pada gambar
+                    A.18.
                     <div class="materi-image">
                         <img src="{{ asset('images/bab-1/materi-c/gambar-10.png') }}" alt="Ilustrasi AI">
-                        <span>Gambar A.18 Ilustrasi tahap menggunakan model kecerdasan buatan untuk mengenali gambar baru secara otomatis.</span>
+                        <span>Gambar A.18 Ilustrasi tahap menggunakan model kecerdasan buatan untuk mengenali gambar baru
+                            secara otomatis.</span>
                     </div>
 
                     <div class="fun-fact">
                         <p>
-                            Gambar A.18 memperlihatkan langkah kelima dalam proses pembelajaran kecerdasan buatan, yaitu menggunakan model. Pada tahap ini, model yang telah dilatih dan diuji dapat digunakan untuk mengenali data baru secara otomatis. Gambar baru yang dimasukkan akan diproses oleh sistem, kemudian model memberikan hasil prediksi berupa kategori bekantan atau monyet.
+                            Gambar A.18 memperlihatkan langkah kelima dalam proses pembelajaran kecerdasan buatan, yaitu
+                            menggunakan model. Pada tahap ini, model yang telah dilatih dan diuji dapat digunakan untuk
+                            mengenali data baru secara otomatis. Gambar baru yang dimasukkan akan diproses oleh sistem,
+                            kemudian model memberikan hasil prediksi berupa kategori bekantan atau monyet.
                         </p>
                     </div>
                 </li>
@@ -269,7 +315,7 @@
         use App\Models\Materi;
         use App\Models\UserProgress;
 
-        // ambil materi (karena kamu tidak pakai controller)
+        // ambil materi 
         $materi = Materi::where('slug', 'bab-1-materi-c')->first();
 
         // cek progress
@@ -281,20 +327,21 @@
 
     <div id="progress"></div>
 
-    
+
     <section class="ai-flow">
         <h2>Aktivitas 3 : Menyusun Urutan Proses Kecerdasan Buatan</h2>
 
         <p>
             Tujuan Aktivitas <br>
-            Setelah menyelesaikan aktivitas ini, siswa diharapkan mampu menyusun tahapan proses kecerdasan buatan secara berurutan, mulai dari data hingga menghasilkan prediksi.
+            Setelah menyelesaikan aktivitas ini, siswa diharapkan mampu menyusun tahapan proses kecerdasan buatan secara
+            berurutan, mulai dari data hingga menghasilkan prediksi.
         </p>
         <p>Petunjuk pengerjaan aktivitas 3 :</p>
         <ul>
             <li>Perhatikan setiap langkah proses kecerdasan buatan yang tersedia.</li>
             <li>Seret dan susun langkah-langkah tersebut hingga membentuk urutan proses yang benar.</li>
-            <li>Periksa kembali urutan yang telah dibuat, kemudian klik tombol <strong>Cek Urutan</strong>.</li>
-            <li>Jika urutan sudah benar, klik tombol <strong>Submit Aktivitas</strong> untuk menyelesaikan aktivitas.</li>
+            <li>Seret dan susun langkah-langkah hingga membentuk urutan proses yang benar.</li>
+            <li>Setelah selesai menyusun, klik tombol <strong>Kumpul Aktivitas</strong> untuk memeriksa hasil.</li>
         </ul>
 
         <div class="flow-items">
@@ -312,27 +359,46 @@
             </div>
         </div>
 
-        <button class="btn-flow-check" onclick="checkFlow()">
-            Cek Urutan
-        </button>
-
         <div id="flowResult" class="flow-result"></div>
 
         <form method="POST" action="{{ url('/materi/selesai') }}" class="mt-4" id="formSelesai">
+
             @csrf
+
             <input type="hidden" name="materi_id" value="{{ $materi->id }}">
 
-            <button
-                type="submit"
-                id="btnSelesai"
-                class="btn {{ $isCompleted ? 'btn-secondary' : 'btn-success' }}"
-                {{ $isCompleted ? 'disabled' : 'disabled' }}>
+            @if ($isCompleted)
+                <div class="activity-info">
+                    <i class="fas fa-circle-info"></i>
 
-                {{ $isCompleted ? 'Aktivitas Selesai' : 'Kumpul Aktivitas' }}
+                    <div>
+                        <strong>Mode Latihan</strong>
 
-            </button>
+                        <p>
+                            Aktivitas ini telah diselesaikan. Kamu dapat mengulanginya
+                            sebagai latihan tanpa mengubah penyelesaian materi sebelumnya.
+                        </p>
+                    </div>
+                </div>
+            @endif
 
-            <div id="scoreInfo" class="mt-2"></div>
+            <div class="activity-buttons">
+                <button type="submit" id="btnSelesai" class="btn-check-activity"
+                    data-completed="{{ $isCompleted ? 'true' : 'false' }}">
+
+                    <i class="fas fa-check"></i>
+
+                    {{ $isCompleted ? 'Periksa Hasil Latihan' : 'Kumpul Aktivitas' }}
+                </button>
+
+                <button type="button" id="btnUlangi" class="btn-repeat-activity" onclick="resetFlowActivity()">
+
+                    <i class="fas fa-rotate-right"></i>
+                    Ulangi Latihan
+                </button>
+            </div>
+
+            <div id="scoreInfo" class="score-info"></div>
         </form>
     </section>
 
